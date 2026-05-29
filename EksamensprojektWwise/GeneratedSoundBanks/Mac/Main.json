@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
+    "Language": "SFX",
+    "Hash": "{00D9939C-9203-C98E-0C4F-A9EA54200349}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "368103941",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "K 43 K Latter - Hysterisk lang PITCHED-WAV.wav",
+      "CachePath": "A9/{A9AD2235-3E69-DA71-179A-35C9149ABC8A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1963904025",
+      "Name": "Play_Testlyd",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Testlyd",
+      "GUID": "{4E61DA24-6F36-4098-A304-755A4FF3E9A5}",
+      "DurationType": "OneShot",
+      "DurationMin": "10.75",
+      "DurationMax": "10.75",
+      "MediaRefs": [
+       {
+        "Id": "368103941"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{58E7E6F1-08C4-04B2-4473-8AFA97316463}"
+ }
+}
