@@ -149,15 +149,5 @@
 # Assets/Plugins/Editor/Jetbrains/
 # .idea
 
-
-<<<<<<< Updated upstream
-EksamensprojektWwise/EksamensprojektWwise.crossover.validationcache
-=======
 *.validationcache
 *.wsettings
->>>>>>> Stashed changes
-*.wsettings
-*.validationcache
-*.validationcache
-*.wsettings
-*.validationcache
