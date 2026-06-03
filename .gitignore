@@ -149,5 +149,5 @@
 # Assets/Plugins/Editor/Jetbrains/
 # .idea
 
-*.validationcache
-*.wsettings
+*.crossover.validationcache
+*.crossover.wsettings
