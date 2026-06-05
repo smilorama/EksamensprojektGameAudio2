@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Ambiance" ID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Cave" ID="{E4F86BA9-7DED-49D6-99F4-905CC349AA36}" ShortID="455470142"/>
+				<Folder Name="Outside" ID="{52DCB440-A719-4A68-A4BE-14F5D7AA4372}" ShortID="254607049"/>
+				<Folder Name="Temple" ID="{1422E93A-0FCF-4852-96AC-A8F3FFFC7BBD}" ShortID="187392344"/>
+				<Folder Name="Tunnel" ID="{E7A3226A-4878-490F-8A3C-81303DF89D80}" ShortID="35098144"/>
+				<Folder Name="TheWeird" ID="{93CADD4D-100B-4FD9-9086-8DEEB007C9DC}" ShortID="168240851"/>
+				<Folder Name="Running Water" ID="{60EDB17B-64FE-46BC-9846-59F39B0D2E43}" ShortID="881171529"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
