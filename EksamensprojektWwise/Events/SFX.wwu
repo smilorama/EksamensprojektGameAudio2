@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{258506C8-9C45-41F6-98A0-132D0B7B814C}" SchemaVersion="133" RootDocumentID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" ParentDocumentID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}">
+	<Events>
+		<WorkUnit Name="SFX" ID="{258506C8-9C45-41F6-98A0-132D0B7B814C}" OwnerID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" PersistMode="Nested"/>
+	</Events>
+</WwiseDocument>
