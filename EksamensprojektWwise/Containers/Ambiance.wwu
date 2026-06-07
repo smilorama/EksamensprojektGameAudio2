@@ -3,12 +3,114 @@
 	<Containers>
 		<WorkUnit Name="Ambiance" ID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Cave" ID="{E4F86BA9-7DED-49D6-99F4-905CC349AA36}" ShortID="455470142"/>
-				<Folder Name="Outside" ID="{52DCB440-A719-4A68-A4BE-14F5D7AA4372}" ShortID="254607049"/>
+				<Folder Name="Cave" ID="{E4F86BA9-7DED-49D6-99F4-905CC349AA36}" ShortID="455470142">
+					<ChildrenList>
+						<Sound Name="Cave_loop" ID="{B142F949-97AF-4B6B-9DD2-7D4F625BB058}" ShortID="777864748">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Underground, Cave, Deep, Wind 01 SND46579" ID="{7D6FCAE3-24A5-4AAB-AAA1-55A6CDB922AB}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="12187.5"/>
+										<Property Name="LoopBegin" Type="Real64" Value="18.79004"/>
+										<Property Name="LoopEnd" Type="Real64" Value="102.91815"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Originals\SFX\Ambience, Underground, Cave, Deep, Wind 01 SND46579.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="799234239"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Underground, Cave, Deep, Wind 01 SND46579" ID="{7D6FCAE3-24A5-4AAB-AAA1-55A6CDB922AB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Outside" ID="{52DCB440-A719-4A68-A4BE-14F5D7AA4372}" ShortID="254607049">
+					<ChildrenList>
+						<Sound Name="Bird_Loop" ID="{700DCC38-B20E-4C0D-A97F-5E59864B1295}" ShortID="763643661">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698" ID="{64331A5E-0C19-48C6-A931-1F06102E6453}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="12098.49"/>
+										<Property Name="LoopBegin" Type="Real64" Value="9.06658"/>
+										<Property Name="LoopEnd" Type="Real64" Value="142.39857"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Originals\SFX\Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="710763542"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698" ID="{64331A5E-0C19-48C6-A931-1F06102E6453}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="Temple" ID="{1422E93A-0FCF-4852-96AC-A8F3FFFC7BBD}" ShortID="187392344"/>
 				<Folder Name="Tunnel" ID="{E7A3226A-4878-490F-8A3C-81303DF89D80}" ShortID="35098144"/>
 				<Folder Name="TheWeird" ID="{93CADD4D-100B-4FD9-9086-8DEEB007C9DC}" ShortID="168240851"/>
-				<Folder Name="Running Water" ID="{60EDB17B-64FE-46BC-9846-59F39B0D2E43}" ShortID="881171529"/>
+				<Folder Name="Running Water" ID="{60EDB17B-64FE-46BC-9846-59F39B0D2E43}" ShortID="881171529">
+					<ChildrenList>
+						<Sound Name="Water_Loop" ID="{323817F7-2ED1-4CCF-95F4-DBE7E40C49C0}" ShortID="878780088">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Water, Flow, Water Flowing, Small Stream 01 SND65495" ID="{B5357C4C-5706-4523-BC45-817262BD19AE}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="18281.25"/>
+										<Property Name="LoopBegin" Type="Real64" Value="21.77936"/>
+										<Property Name="LoopEnd" Type="Real64" Value="164.62633"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Originals\SFX\Water, Flow, Water Flowing, Small Stream 01 SND65495.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="640707114"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Water, Flow, Water Flowing, Small Stream 01 SND65495" ID="{B5357C4C-5706-4523-BC45-817262BD19AE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

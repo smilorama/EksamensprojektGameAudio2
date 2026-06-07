@@ -16,6 +16,96 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310" ID="{73D17544-ED73-49EE-8C51-95BD44AA878F}" ShortID="396523200">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310" ID="{006F69DB-5D0F-4887-A7DD-288E16E4DE6E}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="924424003"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310" ID="{006F69DB-5D0F-4887-A7DD-288E16E4DE6E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1" ID="{0BFE8AF7-CF13-4E1B-AFB8-EA59245EA123}" ShortID="267590816">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1" ID="{8EE56480-DD9F-4B0D-8DD0-6AC09B9EDF8B}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="93540194"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1" ID="{8EE56480-DD9F-4B0D-8DD0-6AC09B9EDF8B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2" ID="{D60E79CA-F098-40D3-B40E-815E4939668C}" ShortID="680252408">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2" ID="{BB5AFC80-F6BE-4304-8B12-37B565334592}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="241482612"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2" ID="{BB5AFC80-F6BE-4304-8B12-37B565334592}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3" ID="{E89C36DD-5DDF-4266-A95B-F4D6A16518F7}" ShortID="185042427">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3" ID="{3F089290-19BC-47DF-A3A1-C757F8488C3D}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="76714845"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3" ID="{3F089290-19BC-47DF-A3A1-C757F8488C3D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Liquid" ID="{A85669CB-EB51-4312-AADA-37224A824664}" ShortID="329804548">
 									<ReferenceList>
@@ -26,6 +116,74 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Water, Drip, Drip, Glugs SND138199 1" ID="{C59877BE-8493-44DB-801C-8023751BB1E7}" ShortID="349726805">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Water, Drip, Drip, Glugs SND138199 1" ID="{071D5266-732C-4801-8D18-F21C7D0B9A1E}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Water, Drip, Drip, Glugs SND138199 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="179104024"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Water, Drip, Drip, Glugs SND138199 1" ID="{071D5266-732C-4801-8D18-F21C7D0B9A1E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Water, Drip, Drip, Glugs SND138199 2" ID="{A05844E2-255D-492A-9319-C3563763DF0A}" ShortID="528120425">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Water, Drip, Drip, Glugs SND138199 2" ID="{A402CAF4-E189-4940-8A9F-78C01F34A316}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Water, Drip, Drip, Glugs SND138199 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1046621383"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Water, Drip, Drip, Glugs SND138199 2" ID="{A402CAF4-E189-4940-8A9F-78C01F34A316}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Water, Drip, Drip, Glugs SND138199 3" ID="{305A989D-15BC-4428-ADD4-8868BE0E69E7}" ShortID="807234870">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Water, Drip, Drip, Glugs SND138199 3" ID="{9C17DDEB-248A-4922-AAAE-B3A7510C246F}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Water, Drip, Drip, Glugs SND138199 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="756680328"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Water, Drip, Drip, Glugs SND138199 3" ID="{9C17DDEB-248A-4922-AAAE-B3A7510C246F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Refreshed" ID="{AC881A77-B716-4A81-9C38-581F0678DFDF}" ShortID="795865353">
 									<ReferenceList>
@@ -36,6 +194,30 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Food &amp; Drink, Drinking, Human, Drink, Slurp Water Followed By Refreshed Ahh SND22913" ID="{D679B2B1-A4EF-4184-9169-AB2C2DB60298}" ShortID="293743666">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Food &amp; Drink, Drinking, Human, Drink, Slurp Water Followed By Refreshed Ahh SND22913" ID="{CE2750A4-04F1-4D31-B6BE-2E81818B6F35}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Food &amp; Drink, Drinking, Human, Drink, Slurp Water Followed By Refreshed Ahh SND22913.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="211184319"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Food &amp; Drink, Drinking, Human, Drink, Slurp Water Followed By Refreshed Ahh SND22913" ID="{CE2750A4-04F1-4D31-B6BE-2E81818B6F35}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Slurp" ID="{BC8911B7-5484-467F-BE0A-852738B2C6C2}" ShortID="160411074">
 									<ReferenceList>
@@ -46,6 +228,52 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Food &amp; Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943" ID="{8BB36FBD-2ABC-48EE-AED3-DB8CC12CCA9D}" ShortID="460526619">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Food &amp; Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943" ID="{D84D2CDF-D5F7-4627-AC3E-52C1073CB958}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Food &amp; Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="269890350"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Food &amp; Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943" ID="{D84D2CDF-D5F7-4627-AC3E-52C1073CB958}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Food &amp; Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943 1" ID="{349FF5BA-948D-4DCC-B307-0F26BF5E9B89}" ShortID="620571251">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Food &amp; Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943 1" ID="{06054E86-CD0C-40F4-9313-5E58C600BEC9}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Food &amp; Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="195421402"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Food &amp; Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943 1" ID="{06054E86-CD0C-40F4-9313-5E58C600BEC9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
@@ -63,6 +291,140 @@
 									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334" ID="{8217FB28-AF9E-4105-954E-5C30E80F443A}" ShortID="509488561">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334" ID="{A3933E46-BB66-43F1-A087-1BA59FA9DFA3}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="76161126"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334" ID="{A3933E46-BB66-43F1-A087-1BA59FA9DFA3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1" ID="{406211C0-4BCF-49D9-A340-171F6DCBE012}" ShortID="42979530">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1" ID="{0DEB1B65-0472-4F03-BDAC-2C3B1E7181EF}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="887528280"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1" ID="{0DEB1B65-0472-4F03-BDAC-2C3B1E7181EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2" ID="{B6C7A3B6-46F7-4BF8-9BEB-F5318937510B}" ShortID="133133494">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2" ID="{D90DBBAA-0039-4C51-868B-AA230760FA36}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="994355771"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2" ID="{D90DBBAA-0039-4C51-868B-AA230760FA36}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3" ID="{12238371-DB7F-4F49-B4CD-CF3881C49EC6}" ShortID="980412791">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3" ID="{1618BCFC-A0C3-4153-A47D-117176903DB2}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="862967256"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3" ID="{1618BCFC-A0C3-4153-A47D-117176903DB2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4" ID="{2E3F18FF-8318-4265-BF9F-E69E38157CD1}" ShortID="97095623">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4" ID="{8FF22DEF-0C8C-45B5-9C10-14604B6F9D5C}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="9050923"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4" ID="{8FF22DEF-0C8C-45B5-9C10-14604B6F9D5C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5" ID="{8F0190F5-7BDC-44D2-A65C-AC29BEC1698A}" ShortID="1010342282">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5" ID="{12350118-687A-44C8-9EA4-FC36A68DD880}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="64353166"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5" ID="{12350118-687A-44C8-9EA4-FC36A68DD880}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Impact_Terrain" ID="{1C2E722E-8C72-43BE-A548-F26F61C8DD9E}" ShortID="212379544">
 							<ReferenceList>
@@ -73,6 +435,74 @@
 									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892" ID="{C31A90D1-2255-443D-BF1A-8BBB34E465BC}" ShortID="423783349">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892" ID="{F2BC8C0D-5027-44F2-A887-4D4245AA8B54}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="615642400"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892" ID="{F2BC8C0D-5027-44F2-A887-4D4245AA8B54}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 1" ID="{9E966B85-4ECD-4914-A5C9-EC73EEB37BEB}" ShortID="165523240">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 1" ID="{54B77AAC-36A8-4777-B4E9-1032A980B025}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="136009524"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 1" ID="{54B77AAC-36A8-4777-B4E9-1032A980B025}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 2" ID="{4C5F2FD5-5CB6-4365-AED2-8EBE818756BA}" ShortID="990959057">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 2" ID="{CDD0834C-BF16-4750-97AB-A895DF94CA6F}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="306789449"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 2" ID="{CDD0834C-BF16-4750-97AB-A895DF94CA6F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" ShortID="354051291">
 							<ReferenceList>
@@ -83,6 +513,96 @@
 									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349" ID="{5E1D4E94-2387-490F-AF59-B417CFA7277A}" ShortID="1015182470">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349" ID="{8E228007-0068-4078-9FD0-6FDDB6E9F57A}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Swooshes, Swish, Sword Swing, Heavy Slow SND59349.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="604110561"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349" ID="{8E228007-0068-4078-9FD0-6FDDB6E9F57A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349 1" ID="{5820FB10-218D-444E-B85A-3E687D305F63}" ShortID="787084581">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349 1" ID="{0A2E8094-2A03-4A16-B6D9-FA131B3AFC78}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="532906210"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349 1" ID="{0A2E8094-2A03-4A16-B6D9-FA131B3AFC78}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349 2" ID="{216AE5D3-4D0F-4143-A17D-2110AC58DF47}" ShortID="798335257">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349 2" ID="{B242F312-E59B-4740-94BF-069449747300}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="534031158"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349 2" ID="{B242F312-E59B-4740-94BF-069449747300}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349 3" ID="{144F5509-7832-4DD5-935D-7FC0CF86658A}" ShortID="402369676">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349 3" ID="{3EE8733D-6A02-42F0-9EC9-87186D9975AB}">
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="83300568"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Swooshes, Swish, Sword Swing, Heavy Slow SND59349 3" ID="{3EE8733D-6A02-42F0-9EC9-87186D9975AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
@@ -301,12 +821,102 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550" ID="{42366795-F2FF-4D83-B8C0-5E1FAACDA5A9}" ShortID="229323278">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550" ID="{31E96802-F29E-4568-91CE-ED20C6CDCC98}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="837739392"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550" ID="{31E96802-F29E-4568-91CE-ED20C6CDCC98}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 1" ID="{5ADCCCC0-A9A6-499D-861C-3961B278C5F5}" ShortID="736440462">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 1" ID="{76DD386D-60E5-492F-936D-FBFEDBE2C808}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="961012028"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 1" ID="{76DD386D-60E5-492F-936D-FBFEDBE2C808}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 2" ID="{302BF73B-D5E5-4435-9508-351EAF4B51A1}" ShortID="242425114">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 2" ID="{058F9501-8598-48A3-82F3-C353403CF834}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="867498023"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 2" ID="{058F9501-8598-48A3-82F3-C353403CF834}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 3" ID="{F762C9D0-39C3-4948-A1B0-AD8D82255F34}" ShortID="953764199">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 3" ID="{13C868AB-C7E4-49A7-8E31-DC794BF95682}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="572671242"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Voices, Male, Type 04, Attack, Growl, Video Game 05 SND85550 3" ID="{13C868AB-C7E4-49A7-8E31-DC794BF95682}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="Footsteps" ID="{2A458A63-7AD6-459B-A84E-B4A875CA21A3}" ShortID="640116394">
 									<ChildrenList>
-										<RandomSequenceContainer Name="Footsteps_Player" ID="{EDD3B7CE-1316-415B-83D4-C4CDA7546712}" ShortID="322428753">
+										<RandomSequenceContainer Name="Footsteps_Dirt_Player" ID="{EDD3B7CE-1316-415B-83D4-C4CDA7546712}" ShortID="322428753">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -315,6 +925,230 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Footsteps, Human, Sneakers, Sand, Walk, Close SND128201" ID="{8A804639-ACD3-4C17-837F-EDF83AEBCAF2}" ShortID="99031432">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Footsteps, Human, Sneakers, Sand, Walk, Close SND128201" ID="{61268E71-61BE-4131-97E4-C345CC2AFC3B}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Footsteps, Human, Sneakers, Sand, Walk, Close SND128201.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="13760286"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Footsteps, Human, Sneakers, Sand, Walk, Close SND128201" ID="{61268E71-61BE-4131-97E4-C345CC2AFC3B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Footsteps, Human, Sneakers, Sand, Walk, Close SND128201 1" ID="{EF4C31B2-04B2-4F64-A1C2-AF3E766C7507}" ShortID="153414103">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Footsteps, Human, Sneakers, Sand, Walk, Close SND128201 1" ID="{4073BAEF-E178-4C2F-945A-7349C87DCD8C}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Footsteps, Human, Sneakers, Sand, Walk, Close SND128201 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="900824505"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Footsteps, Human, Sneakers, Sand, Walk, Close SND128201 1" ID="{4073BAEF-E178-4C2F-945A-7349C87DCD8C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Footsteps, Human, Sneakers, Sand, Walk, Close SND128201 2" ID="{63190C25-2893-4118-8F26-2B20C950AC5B}" ShortID="243914824">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Footsteps, Human, Sneakers, Sand, Walk, Close SND128201 2" ID="{357365B4-05E5-4ABA-AAEF-23C64295EF0A}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Footsteps, Human, Sneakers, Sand, Walk, Close SND128201 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="965790422"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Footsteps, Human, Sneakers, Sand, Walk, Close SND128201 2" ID="{357365B4-05E5-4ABA-AAEF-23C64295EF0A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Footsteps_Stone_Player" ID="{5A717A67-CCE6-44EA-A942-075717D51CE9}" ShortID="330553547">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Footsteps, Human, Stone Floor, Walk, Scuffs SND50669" ID="{D8C17DF0-3846-4772-BD4B-65DECAF48950}" ShortID="227792794">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Footsteps, Human, Stone Floor, Walk, Scuffs SND50669" ID="{DE5A71B2-F161-41BB-8B52-A750969A6F3D}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Footsteps, Human, Stone Floor, Walk, Scuffs SND50669.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="311738652"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Footsteps, Human, Stone Floor, Walk, Scuffs SND50669" ID="{DE5A71B2-F161-41BB-8B52-A750969A6F3D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Footsteps, Human, Stone Floor, Walk, Scuffs SND50669 1" ID="{DE3AB147-3434-49D2-A849-0632ED5E7708}" ShortID="480308210">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Footsteps, Human, Stone Floor, Walk, Scuffs SND50669 1" ID="{4D8B33AE-F5BE-4B8C-AEE5-D6E78DB5FAD5}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Footsteps, Human, Stone Floor, Walk, Scuffs SND50669 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="644509077"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Footsteps, Human, Stone Floor, Walk, Scuffs SND50669 1" ID="{4D8B33AE-F5BE-4B8C-AEE5-D6E78DB5FAD5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Footsteps, Human, Stone Floor, Walk, Scuffs SND50669 2" ID="{942695CF-AADB-4427-9AD6-02821DE0E5BF}" ShortID="861730760">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Footsteps, Human, Stone Floor, Walk, Scuffs SND50669 2" ID="{E441FCEF-750A-4F56-B65A-E37D178BE1CB}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Footsteps, Human, Stone Floor, Walk, Scuffs SND50669 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="13502317"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Footsteps, Human, Stone Floor, Walk, Scuffs SND50669 2" ID="{E441FCEF-750A-4F56-B65A-E37D178BE1CB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Footsteps_Water_Player" ID="{A7625790-AA78-4D05-B690-5332505FE24C}" ShortID="912131321">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Water, Splash, Hand Splash, Small, Singular 02 SND92886 2" ID="{659B8EE8-3512-4BC0-B6F4-E1E09CA35BDF}" ShortID="591128810">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Water, Splash, Hand Splash, Small, Singular 02 SND92886 2" ID="{E068C4E2-DA09-4E4B-BF56-F95749FBBADE}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Water, Splash, Hand Splash, Small, Singular 02 SND92886 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="879039182"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Water, Splash, Hand Splash, Small, Singular 02 SND92886 2" ID="{E068C4E2-DA09-4E4B-BF56-F95749FBBADE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Water, Splash, Hand Splash, Small, Singular 02 SND92886 3" ID="{4BDD9BBB-89F7-4CB7-8023-C434FAA1BEEC}" ShortID="460539059">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Water, Splash, Hand Splash, Small, Singular 02 SND92886 3" ID="{F7A67F02-3F4B-4D8D-B663-CC03A976F579}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Water, Splash, Hand Splash, Small, Singular 02 SND92886 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="430801982"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Water, Splash, Hand Splash, Small, Singular 02 SND92886 3" ID="{F7A67F02-3F4B-4D8D-B663-CC03A976F579}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Water, Splash, Hand Splash, Small, Singular 02 SND92886 4" ID="{A5D5B830-4807-4001-83D3-9B0AC05D1C22}" ShortID="162070283">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Water, Splash, Hand Splash, Small, Singular 02 SND92886 4" ID="{1C388D4A-FFB7-4F2F-9CC3-1D1B3B16F9A7}">
+															<Language>SFX</Language>
+															<AudioFile>Originals\SFX\Water, Splash, Hand Splash, Small, Singular 02 SND92886 4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="340215008"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Water, Splash, Hand Splash, Small, Singular 02 SND92886 4" ID="{1C388D4A-FFB7-4F2F-9CC3-1D1B3B16F9A7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
@@ -409,6 +1243,18 @@
 									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rocks, Impact, Brick, Wall, Fall 02 SND152055" ID="{E1B1D262-ACE6-4DEE-A2E1-EF0B47FD2402}">
+									<Language>SFX</Language>
+									<AudioFile>Originals\SFX\Rocks, Impact, Brick, Wall, Fall 02 SND152055.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="105070530"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rocks, Impact, Brick, Wall, Fall 02 SND152055" ID="{E1B1D262-ACE6-4DEE-A2E1-EF0B47FD2402}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</Folder>
