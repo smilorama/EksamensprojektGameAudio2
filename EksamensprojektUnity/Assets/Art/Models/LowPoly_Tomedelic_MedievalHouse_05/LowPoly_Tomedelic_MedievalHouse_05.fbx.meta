@@ -3,7 +3,12 @@ guid: 84d91a3b0394148fa9709a21d51c35fa
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MedievalHouseMaterial_05
+    second: {fileID: 2100000, guid: b9b914e61eb494199bc6e7da3668dda6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
