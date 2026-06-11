@@ -18,6 +18,9 @@ public class Enemy : MonoBehaviour
     [Header("Attack")]
     [SerializeField] private float attackCooldown = 2f;
 
+    [Header("Health")]
+    [SerializeField] private int maxHealth = 50;
+
     private NavMeshAgent _agent;
     private Animator _animator;
     private CharacterController _controller;
@@ -29,6 +32,7 @@ public class Enemy : MonoBehaviour
     private enum State { Idle, Aggro }
     private State _state = State.Idle;
 
+    private int _currentHealth;
     private float _detectionTimer;
     private float _attackTimer;
     private bool _isPerformingAction;
@@ -42,6 +46,8 @@ public class Enemy : MonoBehaviour
         _agent.updatePosition = false;
         _agent.updateRotation = false;
         _agent.speed = moveSpeed;
+
+        _currentHealth = maxHealth;
     }
 
     private void Update()
@@ -141,6 +147,43 @@ public class Enemy : MonoBehaviour
             _isPerformingAction = true;
             _animator.SetTrigger("Attack");
         }
+    }
+
+    public int CurrentHealth => _currentHealth;
+    public int MaxHealth     => maxHealth;
+    public bool IsAggro      => _state == State.Aggro;
+
+    public void TakeDamage(int amount)
+    {
+        if (_dead) return;
+        _currentHealth -= amount;
+        if (_currentHealth <= 0)
+            StartDeath();
+    }
+
+    private bool _dead;
+
+    private void StartDeath()
+    {
+        _dead = true;
+
+        // stop all movement and AI immediately
+        _agent.isStopped = true;
+        _agent.enabled   = false;
+        _controller.enabled = false;
+        _isPerformingAction = false;
+
+        // reset all animator params so nothing can interrupt Death
+        _animator.SetFloat("Vertical",   0f);
+        _animator.SetFloat("Horizontal", 0f);
+        _animator.SetBool("isMoving",    false);
+        _animator.ResetTrigger("Attack");
+
+        // force Death on Action Override layer (index 1) at time 0
+        _animator.SetLayerWeight(1, 1f);
+        _animator.Play("Death", 1, 0f);
+
+        Destroy(gameObject, 3f);
     }
 
     public void OnActionComplete()
