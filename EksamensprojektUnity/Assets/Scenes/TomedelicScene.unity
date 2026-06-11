@@ -232,6 +232,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4507796530836520817}
+  - {fileID: 7305681391675730983}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8628307
@@ -3060,6 +3061,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 90cf93beb5d7b4d3eb7a3d6475187472, type: 3}
   m_PrefabInstance: {fileID: 221867530}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &225929559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 225929560}
+  m_Layer: 0
+  m_Name: Pillars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &225929560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225929559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2569553125250524788}
+  - {fileID: 2130631205}
+  - {fileID: 386498939}
+  - {fileID: 682530833}
+  - {fileID: 430138505}
+  - {fileID: 1679927295}
+  m_Father: {fileID: 1859940402}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &226593554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5265,7 +5303,9 @@ Transform:
   m_LocalPosition: {x: 2.96378, y: 0.0055, z: -0.94432}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 468155103}
+  - {fileID: 403714811}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &359542088 stripped
@@ -5557,6 +5597,7 @@ GameObject:
   - component: {fileID: 386498939}
   - component: {fileID: 386498938}
   - component: {fileID: 386498937}
+  - component: {fileID: 386498940}
   m_Layer: 0
   m_Name: LowPoly_Tomedelic_StoneBrickCylindricPillar_01 (4)
   m_TagString: Untagged
@@ -5629,13 +5670,36 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386498936}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 99.05409, y: -6.0411997, z: -46.286}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 122.09265, y: -6.05219, z: -35.20094}
   m_LocalScale: {x: 0.62877, y: 0.62877, z: 0.62877}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 225929560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &386498940
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386498936}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9750153
+  m_Height: 13.416191
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 6.3763227, z: -0.04952073}
 --- !u!4 &389734673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1064458111539832515, guid: 9b1b08b09d252499989a305aee6732f7, type: 3}
@@ -6044,15 +6108,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403714810}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.52939, y: 0.00549, z: -24.2658}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.43439, y: -0.000010000076, z: -23.32148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2089491550}
   - {fileID: 1889866691}
   - {fileID: 81258954}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 356554140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &404587117
 PrefabInstance:
@@ -6535,6 +6599,7 @@ GameObject:
   - component: {fileID: 430138505}
   - component: {fileID: 430138504}
   - component: {fileID: 430138503}
+  - component: {fileID: 430138506}
   m_Layer: 0
   m_Name: LowPoly_Tomedelic_StoneBrickCylindricPillar_01 (2)
   m_TagString: Untagged
@@ -6607,13 +6672,36 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430138502}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 92.80409, y: -6.0411997, z: -41.786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 115.84265, y: -6.05219, z: -30.70094}
   m_LocalScale: {x: 0.62877, y: 0.62877, z: 0.62877}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 225929560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &430138506
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430138502}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9750153
+  m_Height: 13.416191
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 6.3763227, z: -0.04952073}
 --- !u!1001 &430547663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7226,6 +7314,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fad1fa430fb549279f20622627c4c2a, type: 3}
+--- !u!1 &468155102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 468155103}
+  m_Layer: 0
+  m_Name: Tools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &468155103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468155102}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 95.490944, y: -3.75721, z: -49.06567}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1160642700}
+  - {fileID: 1256812426}
+  m_Father: {fileID: 356554140}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &473067474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1064458111539832515, guid: 9b1b08b09d252499989a305aee6732f7, type: 3}
@@ -10254,6 +10375,7 @@ GameObject:
   - component: {fileID: 682530833}
   - component: {fileID: 682530832}
   - component: {fileID: 682530831}
+  - component: {fileID: 682530834}
   m_Layer: 0
   m_Name: LowPoly_Tomedelic_StoneBrickCylindricPillar_01 (1)
   m_TagString: Untagged
@@ -10326,13 +10448,36 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682530830}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 96.05409, y: -6.0411997, z: -41.786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 119.09265, y: -6.05219, z: -30.70094}
   m_LocalScale: {x: 0.62877, y: 0.62877, z: 0.62877}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 225929560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &682530834
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682530830}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9750153
+  m_Height: 13.416191
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 6.3763227, z: -0.04952073}
 --- !u!4 &691842625 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4198414015114658821, guid: 6fad1fa430fb549279f20622627c4c2a, type: 3}
@@ -15594,6 +15739,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Camera
       value: 
@@ -15660,6 +15809,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1734744605}
+    - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1734744606}
     - targetCorrespondingSourceObject: {fileID: 4135013735270702863, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       insertIndex: -1
       addedObject: {fileID: 657799174}
@@ -16137,12 +16289,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160642697}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -98.45473, y: 3.75171, z: 50.00999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 468155103}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1164040109
 PrefabInstance:
@@ -17585,12 +17737,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256812424}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.75401, y: 2.9958, z: 5.16278}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -104.20874, y: 6.74751, z: 55.17277}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 468155103}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1260667679
 PrefabInstance:
@@ -23798,6 +23950,7 @@ GameObject:
   - component: {fileID: 1679927295}
   - component: {fileID: 1679927294}
   - component: {fileID: 1679927293}
+  - component: {fileID: 1679927296}
   m_Layer: 0
   m_Name: LowPoly_Tomedelic_StoneBrickCylindricPillar_01 (3)
   m_TagString: Untagged
@@ -23870,13 +24023,36 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679927292}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 99.05409, y: -6.0411997, z: -41.786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 122.09265, y: -6.05219, z: -30.70094}
   m_LocalScale: {x: 0.62877, y: 0.62877, z: 0.62877}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 225929560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1679927296
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679927292}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9750153
+  m_Height: 13.416191
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 6.3763227, z: -0.04952073}
 --- !u!4 &1679961880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1064458111539832515, guid: 9b1b08b09d252499989a305aee6732f7, type: 3}
@@ -24395,6 +24571,26 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1734744606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734744597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8fb954c143b4ef7bfb4b82ca94eec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Footsteps
+  walkInterval: 0.5
+  sprintInterval: 0.3
+  sprintSpeedThreshold: 5
+  moveThreshold: 0.1
+  rayLength: 2
+  excludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1737843480 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b304edd129ff24bc69161f2877120bb9, type: 3}
@@ -25712,6 +25908,7 @@ Transform:
   - {fileID: 1246149103}
   - {fileID: 1255279220}
   - {fileID: 995327184}
+  - {fileID: 225929560}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1862272907
@@ -29509,6 +29706,7 @@ GameObject:
   - component: {fileID: 2130631205}
   - component: {fileID: 2130631204}
   - component: {fileID: 2130631203}
+  - component: {fileID: 2130631206}
   m_Layer: 0
   m_Name: LowPoly_Tomedelic_StoneBrickCylindricPillar_01 (5)
   m_TagString: Untagged
@@ -29581,13 +29779,36 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130631202}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 93.05409, y: -6.0411997, z: -46.286}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 116.09265, y: -6.05219, z: -35.20094}
   m_LocalScale: {x: 0.62877, y: 0.62877, z: 0.62877}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 225929560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2130631206
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130631202}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9750153
+  m_Height: 13.416191
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 6.3763227, z: -0.04952073}
 --- !u!1001 &2135272206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31381,12 +31602,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2946253937264377038}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 96.05409, y: -6.0411997, z: -46.286}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 119.09265, y: -6.05219, z: -35.20094}
   m_LocalScale: {x: 0.62877, y: 0.62877, z: 0.62877}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 225929560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2618061258038182030
 Transform:
@@ -31673,6 +31894,7 @@ GameObject:
   - component: {fileID: 2569553125250524788}
   - component: {fileID: 1443185295578261969}
   - component: {fileID: 3739058789560786203}
+  - component: {fileID: 3739058789560786204}
   m_Layer: 0
   m_Name: LowPoly_Tomedelic_StoneBrickCylindricPillar_01
   m_TagString: Untagged
@@ -32271,6 +32493,29 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &3739058789560786204
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2946253937264377038}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9750153
+  m_Height: 13.416191
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 6.3763227, z: -0.04952073}
 --- !u!4 &3845319599011789828
 Transform:
   m_ObjectHideFlags: 0
@@ -34143,8 +34388,8 @@ Transform:
   m_GameObject: {fileID: 7937926569089250973}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7876812, z: -0, w: 0.6160831}
-  m_LocalPosition: {x: 93.46, y: -0.862, z: -9.77}
-  m_LocalScale: {x: 0.5901763, y: 0.5901763, z: 0.5901763}
+  m_LocalPosition: {x: 90.865, y: -6.3876495, z: -2.4388804}
+  m_LocalScale: {x: 0.59017634, y: 0.5901763, z: 0.59017634}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6574516826726826486}
@@ -34153,7 +34398,7 @@ Transform:
   - {fileID: 5248599859057980453}
   - {fileID: 2968624531688459443}
   - {fileID: 6087210158551723927}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 5598201}
   m_LocalEulerAnglesHint: {x: 0, y: 103.939, z: 0}
 --- !u!4 &7493054755671006115
 Transform:
@@ -34971,21 +35216,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1516820524}
-  - {fileID: 403714811}
+  - {fileID: 1174288196}
   - {fileID: 356554140}
+  - {fileID: 1126987958}
   - {fileID: 1859940402}
   - {fileID: 1351380918}
   - {fileID: 504120286}
   - {fileID: 1329603017}
-  - {fileID: 1126987958}
   - {fileID: 5598201}
-  - {fileID: 1174288196}
-  - {fileID: 1160642700}
-  - {fileID: 7305681391675730983}
-  - {fileID: 1256812426}
-  - {fileID: 2569553125250524788}
-  - {fileID: 2130631205}
-  - {fileID: 386498939}
-  - {fileID: 682530833}
-  - {fileID: 430138505}
-  - {fileID: 1679927295}
