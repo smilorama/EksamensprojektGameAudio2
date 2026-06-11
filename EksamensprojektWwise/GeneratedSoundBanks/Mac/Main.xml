@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="172">
+	<SoundBanks>
+		<SoundBank Id="3161908922" Type="User" GUID="{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}" Language="SFX" Hash="{C3DA7EA2-0DD0-F32F-257B-98197B99FD9B}">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="40854654" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_04.wav</ShortName>
+					<CachePath>7A/{7A4C180B-3846-BDA3-0ADB-39CAFA84F9DC}.wem</CachePath>
+				</File>
+				<File Id="76714845" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3.wav</ShortName>
+					<CachePath>54/{54621A52-D54B-A3FD-AD35-C4FF1A3C5227}.wem</CachePath>
+				</File>
+				<File Id="93540194" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1.wav</ShortName>
+					<CachePath>54/{5413BF63-D057-5816-452B-302C2A108EAE}.wem</CachePath>
+				</File>
+				<File Id="117866836" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Stone_03.wav</ShortName>
+					<CachePath>F3/{F3D3BE6D-82CB-B2B2-E12A-D85994FB96A0}.wem</CachePath>
+				</File>
+				<File Id="241482612" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2.wav</ShortName>
+					<CachePath>04/{04289718-11F7-2D3C-1CCC-D94AEBF13F2F}.wem</CachePath>
+				</File>
+				<File Id="285422653" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Grass_01.wav</ShortName>
+					<CachePath>D3/{D3758535-B5FB-BBE4-33CD-170DD69985A0}.wem</CachePath>
+				</File>
+				<File Id="346434020" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_03.wav</ShortName>
+					<CachePath>C6/{C6078ED9-B2C4-5EA2-D0AC-0CA1DE9DB223}.wem</CachePath>
+				</File>
+				<File Id="403657178" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Stone_04.wav</ShortName>
+					<CachePath>F4/{F4CBC9A3-0E39-E5F0-F413-E7D642A0E7BF}.wem</CachePath>
+				</File>
+				<File Id="420241297" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Stone_02.wav</ShortName>
+					<CachePath>55/{556AD53B-8A74-2CC2-287E-6A2948E2BA27}.wem</CachePath>
+				</File>
+				<File Id="645500148" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Stone_01.wav</ShortName>
+					<CachePath>B5/{B5D70AB6-BAD1-66BA-6366-D8C74CD23F61}.wem</CachePath>
+				</File>
+				<File Id="688127468" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Grass_03.wav</ShortName>
+					<CachePath>37/{37E4D688-2158-74B6-11A1-A08D97693417}.wem</CachePath>
+				</File>
+				<File Id="795461115" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_01.wav</ShortName>
+					<CachePath>AA/{AAD40C20-60D7-3CE6-F7A9-1606399A2AEE}.wem</CachePath>
+				</File>
+				<File Id="816504299" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_02.wav</ShortName>
+					<CachePath>28/{284EFA4C-96E6-C3DC-DF51-007369672C1F}.wem</CachePath>
+				</File>
+				<File Id="829219745" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_06.wav</ShortName>
+					<CachePath>23/{23E10118-45B8-C5F2-5117-E4E161861BF9}.wem</CachePath>
+				</File>
+				<File Id="870104127" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Stone_05.wav</ShortName>
+					<CachePath>79/{79C2FD7B-9AD8-4C3E-651F-9CBD97FC3CA2}.wem</CachePath>
+				</File>
+				<File Id="900721683" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Grass_04.wav</ShortName>
+					<CachePath>CB/{CB2B3272-4F28-B830-87DC-5C4B69122F7E}.wem</CachePath>
+				</File>
+				<File Id="908738018" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Grass_02.wav</ShortName>
+					<CachePath>44/{44DBE797-85DD-39BB-E9AE-E3FFCBF812AA}.wem</CachePath>
+				</File>
+				<File Id="924424003" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310.wav</ShortName>
+					<CachePath>28/{2817771D-A7DD-A407-EDF0-ABE6B7072D1E}.wem</CachePath>
+				</File>
+				<File Id="1021673391" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_05.wav</ShortName>
+					<CachePath>A6/{A6CD3C34-0750-1CF8-F810-0097EF544391}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\SFX\Play_Footsteps" GUID="{5006E459-F2A4-4044-8B85-DAC82A1B3B8A}" DurationType="OneShot" DurationMin="0.22152083" DurationMax="0.5843958">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="4248645337" GUID="{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"/>
+							<MediaRefs>
+								<MediaRef Id="285422653"/>
+								<MediaRef Id="688127468"/>
+								<MediaRef Id="900721683"/>
+								<MediaRef Id="908738018"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="1216965916" GUID="{0DA7F6CF-E32D-410A-B986-195A12189456}"/>
+							<MediaRefs>
+								<MediaRef Id="117866836"/>
+								<MediaRef Id="403657178"/>
+								<MediaRef Id="420241297"/>
+								<MediaRef Id="645500148"/>
+								<MediaRef Id="870104127"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1834394558" Id="2195636714" GUID="{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"/>
+							<MediaRefs>
+								<MediaRef Id="40854654"/>
+								<MediaRef Id="346434020"/>
+								<MediaRef Id="795461115"/>
+								<MediaRef Id="816504299"/>
+								<MediaRef Id="829219745"/>
+								<MediaRef Id="1021673391"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3819089238" Name="Play_Glass" ObjectPath="\Events\SFX\Play_Glass" GUID="{03D1CF50-10BA-4F5C-A160-CBFE1A5B8450}" DurationType="OneShot" DurationMin="0.19585417" DurationMax="0.35440624">
+					<MediaRefs>
+						<MediaRef Id="76714845"/>
+						<MediaRef Id="93540194"/>
+						<MediaRef Id="241482612"/>
+						<MediaRef Id="924424003"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="288340792" Name="ParkeringRev_001_Baelte1" ObjectPath="\Busses\Default Work Unit\Reverb Audio Bus\ParkeringRev_001_Baelte1" GUID="{1C819525-A377-47E8-AA30-AE1F2AC1DC10}"/>
+					</AuxBusRefs>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1834394558" Name="Surface" ObjectPath="\Switches\Default Work Unit\Surface" GUID="{0DAB6914-6D47-450C-9BA0-1482A41A4A1D}">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Surface\Stone" GUID="{0DA7F6CF-E32D-410A-B986-195A12189456}"/>
+						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\Surface\Dirt" GUID="{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"/>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\Surface\Grass" GUID="{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{41AE9A84-CBB7-6E40-B1DA-40B236F7E632}</FileHash>
+</SoundBanksInfo>

@@ -1,10 +1,19 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	348963605	Reverb			\Default Work Unit\Reverb	
+	1715656151	Reverb Stereo			\Default Work Unit\Reverb Stereo	
 	1974573347	Bitcrush			\Default Work Unit\Bitcrush	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	2954846929	Reverb Audio Bus			\Default Work Unit\Reverb Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	2151286348	ParkeringReverb			\Default Work Unit\Reverb\ParkeringReverb	
+	230976631	ParkeringRev_003_Klap1			\Default Work Unit\Reverb Audio Bus\ParkeringRev_003_Klap1	
+	288340792	ParkeringRev_001_Baelte1			\Default Work Unit\Reverb Audio Bus\ParkeringRev_001_Baelte1	
+	484890516	Church_Small_Wood			\Default Work Unit\Reverb Audio Bus\Church_Small_Wood	
+	903063735	ParkeringRev_005_Klap3			\Default Work Unit\Reverb Audio Bus\ParkeringRev_005_Klap3	
+	1020492676	ParkeringRev_002_Baelte2			\Default Work Unit\Reverb Audio Bus\ParkeringRev_002_Baelte2	
+	2665109655	ParkeringRev_006_Klap4			\Default Work Unit\Reverb Audio Bus\ParkeringRev_006_Klap4	
+	2767839671	ParkeringRev_007_Klap5			\Default Work Unit\Reverb Audio Bus\ParkeringRev_007_Klap5	
+	3813691439	ParkeringRev_008_Klap6			\Default Work Unit\Reverb Audio Bus\ParkeringRev_008_Klap6	
+	3950004767	ParkeringRev_004_Klap2			\Default Work Unit\Reverb Audio Bus\ParkeringRev_004_Klap2	
 
 Effect plug-ins	ID	Name	Type				Notes
 	484890516	Church_Small_Wood	Wwise RoomVerb			

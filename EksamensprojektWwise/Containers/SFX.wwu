@@ -16,7 +16,7 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="ParkeringReverb" ID="{1C819525-A377-47E8-AA30-AE1F2AC1DC10}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+											<ObjectRef Name="ParkeringRev_001_Baelte1" ID="{1C819525-A377-47E8-AA30-AE1F2AC1DC10}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1261,7 +1261,7 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
-				<SwitchContainer Name="Footstep" ID="{9FD65A87-34BD-4AFE-B590-4ACD68EF3239}" ShortID="285858122">
+				<SwitchContainer Name="Footsteps" ID="{9FD65A87-34BD-4AFE-B590-4ACD68EF3239}" ShortID="285858122">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1274,7 +1274,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Stone_Footstep" ID="{AAEFBF95-C62B-40A7-801D-1D5BE1632E56}" ShortID="607463344">
+						<RandomSequenceContainer Name="Stone_Footsteps" ID="{AAEFBF95-C62B-40A7-801D-1D5BE1632E56}" ShortID="607463344">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1396,7 +1396,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Dirt_Footstep" ID="{3DD2BDC9-75D0-4525-BB09-D607C95E1EF5}" ShortID="424630678">
+						<RandomSequenceContainer Name="Dirt_Footsteps" ID="{3DD2BDC9-75D0-4525-BB09-D607C95E1EF5}" ShortID="424630678">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1540,7 +1540,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Grass_Footstep" ID="{6107AF91-6B6B-4F2B-8955-40AD77C466AF}" ShortID="241743280">
+						<RandomSequenceContainer Name="Grass_Footsteps" ID="{6107AF91-6B6B-4F2B-8955-40AD77C466AF}" ShortID="241743280">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1644,32 +1644,32 @@
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
-								<ItemRef Name="Grass_Footstep" ID="{6107AF91-6B6B-4F2B-8955-40AD77C466AF}"/>
+								<ItemRef Name="Grass_Footsteps" ID="{6107AF91-6B6B-4F2B-8955-40AD77C466AF}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="Stone_Footstep" ID="{AAEFBF95-C62B-40A7-801D-1D5BE1632E56}"/>
+								<ItemRef Name="Stone_Footsteps" ID="{AAEFBF95-C62B-40A7-801D-1D5BE1632E56}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="Dirt_Footstep" ID="{3DD2BDC9-75D0-4525-BB09-D607C95E1EF5}"/>
+								<ItemRef Name="Dirt_Footsteps" ID="{3DD2BDC9-75D0-4525-BB09-D607C95E1EF5}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
 							<Grouping>
 								<SwitchRef Name="Grass" ID="{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"/>
 								<ItemList>
-									<ItemRef Name="Grass_Footstep" ID="{6107AF91-6B6B-4F2B-8955-40AD77C466AF}"/>
+									<ItemRef Name="Grass_Footsteps" ID="{6107AF91-6B6B-4F2B-8955-40AD77C466AF}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
 								<SwitchRef Name="Stone" ID="{0DA7F6CF-E32D-410A-B986-195A12189456}"/>
 								<ItemList>
-									<ItemRef Name="Stone_Footstep" ID="{AAEFBF95-C62B-40A7-801D-1D5BE1632E56}"/>
+									<ItemRef Name="Stone_Footsteps" ID="{AAEFBF95-C62B-40A7-801D-1D5BE1632E56}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
 								<SwitchRef Name="Dirt" ID="{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"/>
 								<ItemList>
-									<ItemRef Name="Dirt_Footstep" ID="{3DD2BDC9-75D0-4525-BB09-D607C95E1EF5}"/>
+									<ItemRef Name="Dirt_Footsteps" ID="{3DD2BDC9-75D0-4525-BB09-D607C95E1EF5}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>

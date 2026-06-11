@@ -3,23 +3,25 @@
 	<Effects>
 		<WorkUnit Name="Default Work Unit" ID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}" PersistMode="Standalone">
 			<ChildrenList>
-				<Effect Name="ParkeringsKaelderReverb" ID="{7DC28D83-50E2-4861-AC70-332BA027B678}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-					<PropertyList>
-						<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
-						<Property Name="IRConvolutionStop" Type="Real64" Value="1.970875"/>
-					</PropertyList>
+				<Folder Name="ParkeringsKaelderReverb" ID="{3EE4A07D-40A0-4B68-8A18-8445CD83E462}" ShortID="369287527">
 					<ChildrenList>
-						<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_001_POS1_Baelte1" ID="{8C68866A-3C50-4DD1-94EF-4395729E1935}">
-							<ParentPluginID>8323075</ParentPluginID>
+						<Effect Name="ParkeringsKaelderRev_001_POS1_Baelte1" ID="{7DC28D83-50E2-4861-AC70-332BA027B678}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<PropertyList>
-								<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_001_POS1_Baelte1.wav"/>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.970875"/>
 							</PropertyList>
-							<MediaIDList>
-								<MediaID ID="632083201"/>
-							</MediaIDList>
-						</PluginMediaSource>
-					</ChildrenList>
-					<PluginData>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_001_POS1_Baelte1" ID="{8C68866A-3C50-4DD1-94EF-4395729E1935}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_001_POS1_Baelte1.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="632083201"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
@@ -82,7 +84,1209 @@
 		</CurveList>
 	</ConvolutionData>
 </PluginData>
-				</Effect>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_002_POS1_Baelte2" ID="{DC43F656-B593-4A24-8DC8-541B58649DA9}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.53158333333333"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_002_POS1_Baelte2" ID="{D020134E-E9EC-4585-B9BC-6DD835A1CE82}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_002_POS1_Baelte2.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="632083202"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.53158333333333</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.53158333333333</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_002_POS2_Baelte2" ID="{7043005D-1530-4DF2-ADA8-8C9023C81B77}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.53158333333333"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_002_POS2_Baelte2" ID="{72A0BDB1-D7B5-45ED-A2E0-D7F257E0AF18}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_002_POS2_Baelte2.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="482592376"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.53158333333333</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.53158333333333</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_001_POS2_Baelte1" ID="{914E1DB5-6759-4C8B-841C-EBD100DBCD17}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.970875"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_001_POS2_Baelte1" ID="{3C54B5E2-0E80-4D95-9F98-99BC106A3D57}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_001_POS2_Baelte1.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="316841660"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.970875</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.970875</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_003_POS1_Klap1" ID="{E9E1ED73-746D-4B46-BFE3-31F0D4D5451E}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="513"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.04602083333333"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_003_POS1_Klap1" ID="{B458E5F1-7E9F-4CDA-90C0-AE2093CE50B1}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_003_POS1_Klap1.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="1037469219"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.04602083333333</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.04602083333333</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_003_POS2_Klap1" ID="{F37AA737-9386-4F56-BC7A-B0676BFB24DD}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="513"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.04602083333333"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_003_POS2_Klap1" ID="{9FD24590-0451-4F1E-A3A1-610095BCE12E}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_003_POS2_Klap1.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="1037469220"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.04602083333333</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.04602083333333</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_004_POS1_Klap2" ID="{0524C14E-7C90-4FC0-8FA1-0724664069D4}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.82122916666667"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_004_POS1_Klap2" ID="{09FBD265-0529-4E2B-9BD5-16AC792CB7E9}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_004_POS1_Klap2.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="413241516"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.82122916666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.82122916666667</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_004_POS2_Klap2" ID="{FBDB7643-14B2-406F-8A24-4795EBC0F0A1}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.82122916666667"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_004_POS2_Klap2" ID="{876C5CBD-9E1A-4A93-979A-4FAC35FD5158}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_004_POS2_Klap2.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="413241517"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.82122916666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.82122916666667</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_005_POS1_Klap3" ID="{82AFE6A9-2514-4A00-800D-9647162F1C09}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.8153125"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_005_POS1_Klap3" ID="{5BEB6F51-5647-4559-8021-67FEC6FD277C}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_005_POS1_Klap3.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="458685331"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.8153125</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.8153125</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_005_POS2_Klap3" ID="{B30752CC-C769-4AF5-B5D6-5ECD613C3ABE}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.8153125"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_005_POS2_Klap3" ID="{39C23F84-C947-4A0E-83CD-1E6CB93C03B3}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_005_POS2_Klap3.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="111080024"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.8153125</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.8153125</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_006_POS1_Klap4" ID="{121B658F-0F8C-43E5-82E2-DE591C650097}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.143625"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_006_POS1_Klap4" ID="{C8F75ADC-EF75-447E-8B16-7658E5C2A6BE}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_006_POS1_Klap4.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="630256157"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.143625</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.143625</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_006_POS2_Klap4" ID="{B0F75007-F0C4-463C-9C0D-3B428C44A55B}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.143625"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_006_POS2_Klap4" ID="{EE26E8ED-0039-4764-91E8-5BCBAEA9E988}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_006_POS2_Klap4.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="519212060"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.143625</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.143625</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_007_POS1_Klap5" ID="{147D2327-6036-4322-BBF1-89CF834419F1}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="4.849"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_007_POS1_Klap5" ID="{235BD95E-1B9F-4D93-B7D6-079A64AF9827}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_007_POS1_Klap5.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="269216117"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>4.849</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>4.849</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_007_POS2_Klap5" ID="{4DBBD2C0-24DE-4E60-915F-8C095F14E7D8}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="4.849"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_007_POS2_Klap5" ID="{5A6A1E02-E5E9-4992-94DC-22EB4F1A462A}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_007_POS2_Klap5.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="123720562"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>4.849</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>4.849</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_008_POS1_Klap6" ID="{E451331B-824F-46CD-A4C8-B424A574100F}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.938875"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_008_POS1_Klap6" ID="{787128B0-408F-4F48-9AA5-5A0625124D81}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_008_POS1_Klap6.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="366673366"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.938875</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.938875</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+						<Effect Name="ParkeringsKaelderRev_008_POS2_Klap6" ID="{6DE92323-B6E3-4B88-8EC3-6F73B1A1B22A}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+							<PropertyList>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.938875"/>
+							</PropertyList>
+							<ChildrenList>
+								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_008_POS2_Klap6" ID="{BCA7B0DA-EC2F-462D-9C23-6A685A658DFD}">
+									<ParentPluginID>8323075</ParentPluginID>
+									<PropertyList>
+										<Property Name="DataFileName" Type="string" Value="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_008_POS2_Klap6.wav"/>
+									</PropertyList>
+									<MediaIDList>
+										<MediaID ID="109047318"/>
+									</MediaIDList>
+								</PluginMediaSource>
+							</ChildrenList>
+							<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.938875</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.938875</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+						</Effect>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

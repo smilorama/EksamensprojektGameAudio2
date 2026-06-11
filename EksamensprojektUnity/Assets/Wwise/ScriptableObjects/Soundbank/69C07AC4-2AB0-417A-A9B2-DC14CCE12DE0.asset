@@ -15,3 +15,4 @@ MonoBehaviour:
   objectName: Main
   id: 3161908922
   guid: 69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0
+  bank: {fileID: 11400000, guid: 08a772201452c47aaae519dd5eb15fb0, type: 2}

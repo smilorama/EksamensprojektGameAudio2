@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "EksamensprojektWwise",
+   "GUID": "{A784F15B-EB33-4CD3-9165-E2E5721B2967}",
+   "Generator": "2025.1.8.9170"
+  },
+  "CacheRoot": "../../../../../EksamensprojektWwise/.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{3B3F1EBF-02AF-4368-A32E-394516D26E9D}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../../../../EksamensprojektWwise/GeneratedSoundBanks/Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{EF584EB4-8FEB-4747-8076-0E124A1145A9}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "../../../../../EksamensprojektWwise/GeneratedSoundBanks/Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{5B716052-B1F2-433A-A968-C575FC87804F}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{FFC96EAA-1378-4AD5-DA1A-815878965819}"
+ }
+}

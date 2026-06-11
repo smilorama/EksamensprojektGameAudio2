@@ -1,3 +1,0 @@
-Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	2151286348	ParkeringReverb			\Default Work Unit\Reverb\ParkeringReverb	
-

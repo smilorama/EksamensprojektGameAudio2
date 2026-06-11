@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b596f218b3d5849c59ea4034ec1681d6, type: 3}
   m_Name: 1C819525-A377-47E8-AA30-AE1F2AC1DC10
   m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseAuxBusReference
-  objectName: ParkeringReverb
-  id: 2151286348
+  objectName: ParkeringRev_001_Baelte1
+  id: 288340792
   guid: 1C819525-A377-47E8-AA30-AE1F2AC1DC10
