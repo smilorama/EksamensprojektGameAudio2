@@ -46,7 +46,7 @@ public class Footsteps : MonoBehaviour
         string switchValue = _surfaceSwitches[surfaceIndex];
 
         AkSoundEngine.SetSwitch("Surface", switchValue, gameObject);
-        AkSoundEngine.PostEvent("Footstep", gameObject);
+        AkSoundEngine.PostEvent("Play_Footstep", gameObject);
     }
 
     private int GetSurfaceIndex()

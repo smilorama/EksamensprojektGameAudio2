@@ -1,0 +1,29 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2151286348",
+    "Type": "Bus",
+    "GUID": "{1C819525-A377-47E8-AA30-AE1F2AC1DC10}",
+    "Language": "SFX",
+    "Hash": "{6ABD95FC-1437-E779-1E47-457C6F6D93FF}",
+    "ObjectPath": "ParkeringReverb",
+    "ShortName": "ParkeringReverb",
+    "Path": "Bus/ParkeringReverb.bnk",
+    "AuxBusses": [
+     {
+      "Id": "2151286348",
+      "Name": "ParkeringReverb",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Reverb\\ParkeringReverb",
+      "GUID": "{1C819525-A377-47E8-AA30-AE1F2AC1DC10}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D4EBE576-970F-5A8B-BF79-0E56CC219D9F}"
+ }
+}

@@ -10,38 +10,323 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{00D9939C-9203-C98E-0C4F-A9EA54200349}",
+    "Hash": "{4035E496-8B8B-C5A6-E722-91311D84ED58}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
      {
-      "Id": "368103941",
+      "Id": "40854654",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "K 43 K Latter - Hysterisk lang PITCHED-WAV.wav",
-      "CachePath": "A9/{A9AD2235-3E69-DA71-179A-35C9149ABC8A}.wem"
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footstep_Dirt_04.wav",
+      "CachePath": "7A/{7A4C180B-3846-BDA3-0ADB-39CAFA84F9DC}.wem"
+     },
+     {
+      "Id": "76714845",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3.wav",
+      "CachePath": "54/{54621A52-D54B-A3FD-AD35-C4FF1A3C5227}.wem"
+     },
+     {
+      "Id": "93540194",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1.wav",
+      "CachePath": "54/{5413BF63-D057-5816-452B-302C2A108EAE}.wem"
+     },
+     {
+      "Id": "117866836",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footsteps_Stone_03.wav",
+      "CachePath": "F3/{F3D3BE6D-82CB-B2B2-E12A-D85994FB96A0}.wem"
+     },
+     {
+      "Id": "241482612",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2.wav",
+      "CachePath": "04/{04289718-11F7-2D3C-1CCC-D94AEBF13F2F}.wem"
+     },
+     {
+      "Id": "285422653",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footsteps_Grass_01.wav",
+      "CachePath": "D3/{D3758535-B5FB-BBE4-33CD-170DD69985A0}.wem"
+     },
+     {
+      "Id": "346434020",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footstep_Dirt_03.wav",
+      "CachePath": "C6/{C6078ED9-B2C4-5EA2-D0AC-0CA1DE9DB223}.wem"
+     },
+     {
+      "Id": "403657178",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footsteps_Stone_04.wav",
+      "CachePath": "F4/{F4CBC9A3-0E39-E5F0-F413-E7D642A0E7BF}.wem"
+     },
+     {
+      "Id": "420241297",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footsteps_Stone_02.wav",
+      "CachePath": "55/{556AD53B-8A74-2CC2-287E-6A2948E2BA27}.wem"
+     },
+     {
+      "Id": "645500148",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footsteps_Stone_01.wav",
+      "CachePath": "B5/{B5D70AB6-BAD1-66BA-6366-D8C74CD23F61}.wem"
+     },
+     {
+      "Id": "688127468",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footsteps_Grass_03.wav",
+      "CachePath": "37/{37E4D688-2158-74B6-11A1-A08D97693417}.wem"
+     },
+     {
+      "Id": "795461115",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footstep_Dirt_01.wav",
+      "CachePath": "AA/{AAD40C20-60D7-3CE6-F7A9-1606399A2AEE}.wem"
+     },
+     {
+      "Id": "816504299",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footstep_Dirt_02.wav",
+      "CachePath": "28/{284EFA4C-96E6-C3DC-DF51-007369672C1F}.wem"
+     },
+     {
+      "Id": "829219745",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footstep_Dirt_06.wav",
+      "CachePath": "23/{23E10118-45B8-C5F2-5117-E4E161861BF9}.wem"
+     },
+     {
+      "Id": "870104127",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footsteps_Stone_05.wav",
+      "CachePath": "79/{79C2FD7B-9AD8-4C3E-651F-9CBD97FC3CA2}.wem"
+     },
+     {
+      "Id": "900721683",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footsteps_Grass_04.wav",
+      "CachePath": "CB/{CB2B3272-4F28-B830-87DC-5C4B69122F7E}.wem"
+     },
+     {
+      "Id": "908738018",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footsteps_Grass_02.wav",
+      "CachePath": "44/{44DBE797-85DD-39BB-E9AE-E3FFCBF812AA}.wem"
+     },
+     {
+      "Id": "924424003",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310.wav",
+      "CachePath": "28/{2817771D-A7DD-A407-EDF0-ABE6B7072D1E}.wem"
+     },
+     {
+      "Id": "1021673391",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footstep_Dirt_05.wav",
+      "CachePath": "A6/{A6CD3C34-0750-1CF8-F810-0097EF544391}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "1602358412",
+      "Name": "Play_Footstep",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Footstep",
+      "GUID": "{5006E459-F2A4-4044-8B85-DAC82A1B3B8A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.22152083",
+      "DurationMax": "0.5843958",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "4248645337",
+         "GUID": "{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "285422653"
+         },
+         {
+          "Id": "688127468"
+         },
+         {
+          "Id": "900721683"
+         },
+         {
+          "Id": "908738018"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "1216965916",
+         "GUID": "{0DA7F6CF-E32D-410A-B986-195A12189456}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "117866836"
+         },
+         {
+          "Id": "403657178"
+         },
+         {
+          "Id": "420241297"
+         },
+         {
+          "Id": "645500148"
+         },
+         {
+          "Id": "870104127"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "2195636714",
+         "GUID": "{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "40854654"
+         },
+         {
+          "Id": "346434020"
+         },
+         {
+          "Id": "795461115"
+         },
+         {
+          "Id": "816504299"
+         },
+         {
+          "Id": "829219745"
+         },
+         {
+          "Id": "1021673391"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "3819089238",
+      "Name": "Play_Glass",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Glass",
+      "GUID": "{03D1CF50-10BA-4F5C-A160-CBFE1A5B8450}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.19585417",
+      "DurationMax": "0.35440624",
+      "MediaRefs": [
+       {
+        "Id": "76714845"
+       },
+       {
+        "Id": "93540194"
+       },
+       {
+        "Id": "241482612"
+       },
+       {
+        "Id": "924424003"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "2151286348",
+        "Name": "ParkeringReverb",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Reverb\\ParkeringReverb",
+        "GUID": "{1C819525-A377-47E8-AA30-AE1F2AC1DC10}"
+       }
+      ]
+     },
      {
       "Id": "1963904025",
       "Name": "Play_Testlyd",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Testlyd",
       "GUID": "{4E61DA24-6F36-4098-A304-755A4FF3E9A5}",
+      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "10.75",
-      "DurationMax": "10.75",
-      "MediaRefs": [
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1834394558",
+      "Name": "Surface",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Surface",
+      "GUID": "{0DAB6914-6D47-450C-9BA0-1482A41A4A1D}",
+      "Switches": [
        {
-        "Id": "368103941"
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Stone",
+        "GUID": "{0DA7F6CF-E32D-410A-B986-195A12189456}"
+       },
+       {
+        "Id": "2195636714",
+        "Name": "Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Dirt",
+        "GUID": "{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Grass",
+        "GUID": "{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{58E7E6F1-08C4-04B2-4473-8AFA97316463}"
+  "FileHash": "{63CE866D-20F0-B234-9890-F9741A5348AD}"
  }
 }

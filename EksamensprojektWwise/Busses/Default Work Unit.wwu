@@ -23,6 +23,28 @@
 							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="ParkeringReverb" ID="{1C819525-A377-47E8-AA30-AE1F2AC1DC10}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{02D82677-12DC-4A27-83C7-272F875725BA}" ShortID="586782788">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="ParkeringsKaelderReverb" ID="{7DC28D83-50E2-4861-AC70-332BA027B678}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">
 							<EffectSlot Name="" ID="{E5EDDA4F-5A2C-4603-A7CC-864FC43A4B95}" ShortID="432551208">

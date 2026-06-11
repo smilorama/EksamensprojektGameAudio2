@@ -10,38 +10,89 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{00D9939C-9203-C98E-0C4F-A9EA54200349}",
+    "Hash": "{1C385F67-F3C1-D394-325E-407DD4486C83}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
      {
-      "Id": "368103941",
+      "Id": "76714845",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "K 43 K Latter - Hysterisk lang PITCHED-WAV.wav",
-      "CachePath": "A9/{A9AD2235-3E69-DA71-179A-35C9149ABC8A}.wem"
+      "ShortName": "Originals\\SFX\\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3.wav",
+      "CachePath": "54/{54621A52-D54B-A3FD-AD35-C4FF1A3C5227}.wem"
+     },
+     {
+      "Id": "93540194",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1.wav",
+      "CachePath": "54/{5413BF63-D057-5816-452B-302C2A108EAE}.wem"
+     },
+     {
+      "Id": "241482612",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2.wav",
+      "CachePath": "04/{04289718-11F7-2D3C-1CCC-D94AEBF13F2F}.wem"
+     },
+     {
+      "Id": "924424003",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310.wav",
+      "CachePath": "28/{2817771D-A7DD-A407-EDF0-ABE6B7072D1E}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "3819089238",
+      "Name": "Play_Glass",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Glass",
+      "GUID": "{03D1CF50-10BA-4F5C-A160-CBFE1A5B8450}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.19585417",
+      "DurationMax": "0.35440624",
+      "MediaRefs": [
+       {
+        "Id": "76714845"
+       },
+       {
+        "Id": "93540194"
+       },
+       {
+        "Id": "241482612"
+       },
+       {
+        "Id": "924424003"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "2151286348",
+        "Name": "ParkeringReverb",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Reverb\\ParkeringReverb",
+        "GUID": "{1C819525-A377-47E8-AA30-AE1F2AC1DC10}"
+       }
+      ]
+     },
      {
       "Id": "1963904025",
       "Name": "Play_Testlyd",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Testlyd",
       "GUID": "{4E61DA24-6F36-4098-A304-755A4FF3E9A5}",
+      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "10.75",
-      "DurationMax": "10.75",
-      "MediaRefs": [
-       {
-        "Id": "368103941"
-       }
-      ]
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ]
    }
   ],
-  "FileHash": "{8F36D29B-A147-1114-5D20-848FE7D27AD7}"
+  "FileHash": "{0C2D1C72-4D98-76DB-5D8C-9C894A18BED9}"
  }
 }

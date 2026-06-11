@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Glass" ID="{03D1CF50-10BA-4F5C-A160-CBFE1A5B8450}">
+					<ChildrenList>
+						<Action Name="" ID="{1C64DEDC-1BBD-47F5-9638-0DAF4A327851}" ShortID="1014799067">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Glass" ID="{C08C0D86-39AB-4238-B85A-6CC4E8143036}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Footstep" ID="{5006E459-F2A4-4044-8B85-DAC82A1B3B8A}">
+					<ChildrenList>
+						<Action Name="" ID="{40571B99-33D6-4209-B945-7CB18F0C01E4}" ShortID="567268365">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footstep" ID="{9FD65A87-34BD-4AFE-B590-4ACD68EF3239}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
