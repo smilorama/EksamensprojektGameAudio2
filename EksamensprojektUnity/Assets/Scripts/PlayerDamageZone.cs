@@ -8,17 +8,13 @@ public class PlayerDamageZone : MonoBehaviour
 {
     [SerializeField] private int damage = 15;
 
+    [SerializeField] private string _hitEvent = "Play_WeaponHit";
+    [SerializeField] private GameObject _hitAudioEmitter;
+
     private bool _active;
 
-    public void Activate()
-    {
-        _active = true;
-    }
-
-    public void Deactivate()
-    {
-        _active = false;
-    }
+    public void Activate()  => _active = true;
+    public void Deactivate() => _active = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -28,6 +24,12 @@ public class PlayerDamageZone : MonoBehaviour
         Enemy enemy = other.GetComponent<Enemy>();
         if (enemy != null)
             enemy.TakeDamage(damage);
+
+        if (!string.IsNullOrEmpty(_hitEvent))
+        {
+            GameObject emitter = _hitAudioEmitter != null ? _hitAudioEmitter : gameObject;
+            AkSoundEngine.PostEvent(_hitEvent, emitter);
+        }
 
         _active = false;
     }

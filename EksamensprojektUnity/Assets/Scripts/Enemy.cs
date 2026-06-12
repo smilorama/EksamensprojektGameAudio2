@@ -3,7 +3,6 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(CharacterController))]
 public class Enemy : MonoBehaviour
 {
     [Header("Detection")]
@@ -21,9 +20,12 @@ public class Enemy : MonoBehaviour
     [Header("Health")]
     [SerializeField] private int maxHealth = 50;
 
+    [Header("Audio")]
+    [SerializeField] private string _deathEvent = "Play_EnemyDeath";
+    [SerializeField] private GameObject _audioEmitter;
+
     private NavMeshAgent _agent;
     private Animator _animator;
-    private CharacterController _controller;
     private Transform _player;
 
 
@@ -39,7 +41,6 @@ public class Enemy : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
-        _controller = GetComponent<CharacterController>();
 
         _agent.updatePosition = true;
         _agent.updateRotation = false;
@@ -169,7 +170,6 @@ public class Enemy : MonoBehaviour
         // stop all movement and AI immediately
         _agent.isStopped = true;
         _agent.enabled   = false;
-        _controller.enabled = false;
         _isPerformingAction = false;
 
         // reset all animator params so nothing can interrupt Death
@@ -181,6 +181,12 @@ public class Enemy : MonoBehaviour
         // force Death on Action Override layer (index 1) at time 0
         _animator.SetLayerWeight(1, 1f);
         _animator.Play("Death", 1, 0f);
+
+        if (!string.IsNullOrEmpty(_deathEvent))
+        {
+            GameObject emitter = _audioEmitter != null ? _audioEmitter : gameObject;
+            AkSoundEngine.PostEvent(_deathEvent, emitter);
+        }
 
         Destroy(gameObject, 3f);
     }

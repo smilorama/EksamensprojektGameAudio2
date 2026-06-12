@@ -42,6 +42,15 @@ public class WeaponBob : MonoBehaviour
     [SerializeField] private float _swaySmoothing = 8.0f;
     [SerializeField] private float _swayMaxOffset = 0.06f;
 
+    // ── Audio ────────────────────────────────────────────────────────────────
+    [Header("Audio")]
+    [Tooltip("Wwise event der spilles når swinget starter")]
+    [SerializeField] private string _swingEvent = "Play_WeaponSwing";
+    [Tooltip("Wwise event der spilles når våbnet rammer en enemy")]
+    [SerializeField] private string _hitEvent = "Play_WeaponHit";
+    [Tooltip("Emitter GameObject lyden afspilles fra — bruges til begge events")]
+    [SerializeField] private GameObject _weaponAudioEmitter;
+
     // ── Attack timing ─────────────────────────────────────────────────────────
     [Header("Attack — Timing")]
     [SerializeField] private float _attackCooldown = 0.8f;
@@ -164,12 +173,20 @@ public class WeaponBob : MonoBehaviour
 
     // ── Attack ────────────────────────────────────────────────────────────────
 
+    private void PostAudio(string wwiseEvent)
+    {
+        if (string.IsNullOrEmpty(wwiseEvent)) return;
+        GameObject emitter = _weaponAudioEmitter != null ? _weaponAudioEmitter : gameObject;
+        AkSoundEngine.PostEvent(wwiseEvent, emitter);
+    }
+
     private void BeginAttack()
     {
         _segment = AttackSegment.Windup;
         _segmentT = 0f;
         _damageActivated = false;
         _attackCooldownTimer = _attackCooldown;
+        PostAudio(_swingEvent);
     }
 
     private void TickAttack()
