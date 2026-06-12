@@ -153,3 +153,17 @@
 *.crossover.wsettings
 EksamensprojektWwise/EksamensprojektWwise.crossover.validationcache
 EksamensprojektWwise/EksamensprojektWwise.crossover.wsettings
+EksamensprojektWwise/GeneratedSoundBanks/Mac/Init.bnk
+EksamensprojektWwise/GeneratedSoundBanks/Mac/Init.json
+EksamensprojektWwise/GeneratedSoundBanks/Mac/Init.xml
+EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.bnk
+EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.json
+EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.txt
+EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.xml
+EksamensprojektWwise/GeneratedSoundBanks/Windows/Init.bnk
+EksamensprojektWwise/GeneratedSoundBanks/Windows/Init.json
+EksamensprojektWwise/GeneratedSoundBanks/Windows/Init.xml
+EksamensprojektWwise/GeneratedSoundBanks/Windows/Main.bnk
+EksamensprojektWwise/GeneratedSoundBanks/Windows/Main.json
+EksamensprojektWwise/GeneratedSoundBanks/Windows/Main.txt
+EksamensprojektWwise/GeneratedSoundBanks/Windows/Main.xml
