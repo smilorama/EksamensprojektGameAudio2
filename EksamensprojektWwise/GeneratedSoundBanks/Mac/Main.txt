@@ -1,12 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
-	473294595	Play_Outside			\Default Work Unit\Play_Outside	
-	726189174	Attack_HitNothing			\SFX\Attack_HitNothing	
-	1224938770	Attack_HitTerrain			\SFX\Attack_HitTerrain	
-	1564978696	Play_Water_Loop			\Default Work Unit\Play_Water_Loop	
-	1602358412	Play_Footstep			\SFX\Play_Footstep	
-	2541729425	Drink_Potion			\SFX\Drink_Potion	
-	3602995889	Play_Cave			\Default Work Unit\Play_Cave	
-	3927008369	Attack_HitEnemy			\SFX\Attack_HitEnemy	
+	473294595	Play_Outside			\Ambiance\Play_Outside	
+	726189174	Attack_HitNothing			\SFX\Player\Attack_HitNothing	
+	795377228	Play_Death_Creature			\SFX\Enemies\Play_Death_Creature	
+	1095021605	Play_Footstep_Enemy			\SFX\Enemies\Play_Footstep_Enemy	
+	1224938770	Attack_HitTerrain			\SFX\Player\Attack_HitTerrain	
+	1564978696	Play_Water_Loop			\Ambiance\Play_Water_Loop	
+	1602358412	Play_Footstep			\SFX\Player\Play_Footstep	
+	2541729425	Drink_Potion			\SFX\Player\Drink_Potion	
+	3602995889	Play_Cave			\Ambiance\Play_Cave	
+	3622272533	Play_Death_Cultist			\SFX\Enemies\Play_Death_Cultist	
+	3927008369	Attack_HitEnemy			\SFX\Player\Attack_HitEnemy	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	4050929301	Materials			\Default Work Unit\Materials	
@@ -19,52 +22,81 @@ Switch	ID	Name	Switch Group			Notes
 	4248645337	Grass	Materials			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	40854654	Footstep_Dirt_04	.cache\7A\{7A4C180B-3846-BDA3-0ADB-39CAFA84F9DC}.wem		\Containers\SFX\Footsteps\Dirt_Footsteps\Footstep_Dirt_04		53350
+	9050923	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4	.cache\ED\{EDD0C7E0-C3C3-0DEF-53DA-1139C42749FC}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4		186984
+	11324990	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 3	.cache\8F\{8FFDB817-26E2-6271-3420-B55BC2E50EB4}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 3		49154
+	40854654	Footstep_Dirt_04	.cache\7A\{7A4C180B-3846-BDA3-0ADB-39CAFA84F9DC}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_04		53350
+	64353166	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5	.cache\AC\{AC2D1F6C-BDBA-8C00-1660-35A935D24EB3}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5		199344
+	65402954	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 5	.cache\17\{1753A607-575E-E6F1-2DA9-9E1C845A2754}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 5		52726
+	76161126	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334	.cache\03\{03039F64-2556-896F-94C5-FC019AA298EA}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334		187888
 	76714845	Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3	.cache\54\{54621A52-D54B-A3FD-AD35-C4FF1A3C5227}.wem		\Containers\SFX\Pickups\Potions\Glass\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3		37700
 	83300568	Swooshes, Swish, Sword Swing, Heavy Slow SND59349 3	.cache\F1\{F13A1831-79F8-E7D3-7F95-1AB2A21BFF8D}.wem		\Containers\SFX\Weapon\Swoosh\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 3		79144
 	84267646	Cave Drip 5_L	.cache\A1\{A12B55E8-D824-6E28-DF43-49694D4B7A76}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 5_L		49530
 	93540194	Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1	.cache\54\{5413BF63-D057-5816-452B-302C2A108EAE}.wem		\Containers\SFX\Pickups\Potions\Glass\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1		64560
-	117866836	Footsteps_Stone_03	.cache\F3\{F3D3BE6D-82CB-B2B2-E12A-D85994FB96A0}.wem		\Containers\SFX\Footsteps\Stone_Footsteps\Footsteps_Stone_03		46988
+	136009524	Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 1	.cache\34\{346E6D03-E48D-9B4D-DDB2-A55EB13AAC81}.wem		\Containers\SFX\Weapon\Impact_Terrain\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 1		291016
+	151020892	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451	.cache\08\{08FA5967-3858-2A35-8BCB-4D59CD1FDA32}.wem		\Containers\SFX\Karaktere\Enemies\Creatures\Death\Death_Creature\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451		87684
+	159901596	Footsteps, Human, Boots, Tile, Walk, Close SND126059 4	.cache\FD\{FD59CD50-D1CF-11FA-4D7A-E41E350352B0}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 4		39878
 	179104024	Water, Drip, Drip, Glugs SND138199 1	.cache\B7\{B7771BAA-384A-4D39-7D2E-B453147D79A1}.wem		\Containers\SFX\Pickups\Potions\Liquid\Water, Drip, Drip, Glugs SND138199 1		62300
+	190250882	Footsteps, Human, Boots, Tile, Walk, Close SND126059 1	.cache\30\{305AF12A-C833-7347-D823-BD9C37A5602D}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 1		34534
 	195421402	Food & Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943 1	.cache\54\{544C8A26-9DF7-EE63-8DE0-E41DD6618F28}.wem		\Containers\SFX\Pickups\Potions\Slurp\Food & Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943 1		168312
 	211184319	Food & Drink, Drinking, Human, Drink, Slurp Water Followed By Refreshed Ahh SND22913	.cache\B2\{B23B4F3A-CF62-BA4C-F830-4C225879AFB8}.wem		\Containers\SFX\Pickups\Potions\Refreshed\Food & Drink, Drinking, Human, Drink, Slurp Water Followed By Refreshed Ahh SND22913		246536
 	241482612	Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2	.cache\04\{04289718-11F7-2D3C-1CCC-D94AEBF13F2F}.wem		\Containers\SFX\Pickups\Potions\Glass\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2		62772
 	247521029	Cave Drip 6_L	.cache\05\{057E1E08-4240-3727-92D5-D0326B6E3863}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 6_L		49530
 	248010114	Cave Drip 2_L	.cache\7C\{7C61732E-5935-CEA1-8CAA-F5501A5F023B}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 2_L		49530
 	269890350	Food & Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943	.cache\FA\{FA5D4A80-06D2-4E1B-AB17-F6A14DF5BB6E}.wem		\Containers\SFX\Pickups\Potions\Slurp\Food & Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943		132630
-	285422653	Footsteps_Grass_01	.cache\D3\{D3758535-B5FB-BBE4-33CD-170DD69985A0}.wem		\Containers\SFX\Footsteps\Grass_Footsteps\Footsteps_Grass_01		29786
+	273775820	Footsteps, Human, Boots, Tile, Walk, Close SND126059 2	.cache\CA\{CA2F7DC7-C3DC-5FDD-70FC-FD10B2155EFD}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 2		35128
+	285422653	Footsteps_Grass_01	.cache\D3\{D3758535-B5FB-BBE4-33CD-170DD69985A0}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Grass_Footsteps\Footsteps_Grass_01		29786
 	299777249	Cave Drip 9_L	.cache\27\{27A40A0A-B41D-3F6A-AF66-F28AD862493B}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 9_L		49530
+	305308172	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 4	.cache\65\{658EA053-0759-BA04-1CBE-72E62BA43CD9}.wem		\Containers\SFX\Karaktere\Enemies\Creatures\Death\Death_Creature\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 4		103044
+	306789449	Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 2	.cache\EE\{EE60678B-B838-19AA-5924-D27D2E40BAC5}.wem		\Containers\SFX\Weapon\Impact_Terrain\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 2		270652
+	314035865	Footsteps, Human, Boots, Tile, Walk, Close SND126059 9	.cache\A0\{A078459A-49FB-A60A-1321-9FFCE161F10E}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 9		41660
 	343147211	Cave Drip 11_L	.cache\3B\{3B080D0C-55C7-330C-7BC6-23CBBBDE8805}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 11_L		49530
-	346434020	Footstep_Dirt_03	.cache\C6\{C6078ED9-B2C4-5EA2-D0AC-0CA1DE9DB223}.wem		\Containers\SFX\Footsteps\Dirt_Footsteps\Footstep_Dirt_03		52358
+	346434020	Footstep_Dirt_03	.cache\C6\{C6078ED9-B2C4-5EA2-D0AC-0CA1DE9DB223}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_03		52358
 	365491036	Cave Drip 10_L	.cache\80\{8084AF65-B7F8-8A75-454E-A4EAA77A0A33}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 10_L		49530
 	379604598	Cave Drip 12_L	.cache\C2\{C2031738-8759-B910-1451-5145E22232E8}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 12_L		49530
-	403657178	Footsteps_Stone_04	.cache\F4\{F4CBC9A3-0E39-E5F0-F413-E7D642A0E7BF}.wem		\Containers\SFX\Footsteps\Stone_Footsteps\Footsteps_Stone_04		47758
-	420241297	Footsteps_Stone_02	.cache\55\{556AD53B-8A74-2CC2-287E-6A2948E2BA27}.wem		\Containers\SFX\Footsteps\Stone_Footsteps\Footsteps_Stone_02		48014
+	470773186	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911	.cache\0D\{0DD0F04C-4395-FBE7-8E6D-A5E1D835B3AD}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911		44280
 	531713444	Cave Drip 1_L	.cache\E0\{E0996158-DEBF-D355-556C-A4DC36CFEF18}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 1_L		49530
 	532906210	Swooshes, Swish, Sword Swing, Heavy Slow SND59349 1	.cache\39\{3984A409-0F8B-69BD-99E3-BDEE99B85E38}.wem		\Containers\SFX\Weapon\Swoosh\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 1		88068
 	534031158	Swooshes, Swish, Sword Swing, Heavy Slow SND59349 2	.cache\63\{63DCD947-D7FC-77D8-47A0-1F80F21A2DB5}.wem		\Containers\SFX\Weapon\Swoosh\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 2		74044
+	548223565	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 1	.cache\3B\{3B743701-7768-9CF0-049B-8DADBFDA085E}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 1		39082
+	548260550	Footsteps, Human, Boots, Tile, Walk, Close SND126059 5	.cache\C1\{C1CF8361-082D-DC05-C602-58EE36B051E0}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 5		36316
+	604086085	Footsteps, Human, Boots, Tile, Walk, Close SND126059 7	.cache\D2\{D2F97BB0-8EAA-E7F2-AD73-389EE4AD7CE6}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 7		35722
 	604110561	Swooshes, Swish, Sword Swing, Heavy Slow SND59349	.cache\96\{9634A6DA-6E7B-DACF-4510-1A797728A52F}.wem		\Containers\SFX\Weapon\Swoosh\Swooshes, Swish, Sword Swing, Heavy Slow SND59349		74044
 	610247601	Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616	.cache\BB\{BBCE4FE8-C64A-6015-BFF0-875FE9DA788D}.wem		\Containers\Ambiance\Outside\Outside\Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616		34560132
+	615642400	Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892	.cache\81\{81EEF401-69C2-FE54-EC7C-E91369CCE311}.wem		\Containers\SFX\Weapon\Impact_Terrain\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892		152828
+	627917384	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 2	.cache\48\{4839051D-4CFD-3DBF-FAB7-040CC5A7116E}.wem		\Containers\SFX\Karaktere\Enemies\Creatures\Death\Death_Creature\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 2		346888
 	640707114	Water_Loop	.cache\47\{47D19F9D-AA12-1A8E-20D6-9CB8FC9C2922}.wem		\Containers\Ambiance\Running Water\Water_Loop		34560144
-	645500148	Footsteps_Stone_01	.cache\B5\{B5D70AB6-BAD1-66BA-6366-D8C74CD23F61}.wem		\Containers\SFX\Footsteps\Stone_Footsteps\Footsteps_Stone_01		46220
-	688127468	Footsteps_Grass_03	.cache\37\{37E4D688-2158-74B6-11A1-A08D97693417}.wem		\Containers\SFX\Footsteps\Grass_Footsteps\Footsteps_Grass_03		32260
+	688127468	Footsteps_Grass_03	.cache\37\{37E4D688-2158-74B6-11A1-A08D97693417}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Grass_Footsteps\Footsteps_Grass_03		32260
 	710290391	Cave Drip 8_L	.cache\9B\{9BF68724-8D96-C291-3D82-FBDA16E91DB8}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 8_L		49530
 	710763542	Bird_Loop	.cache\A2\{A21FE95B-0498-0380-5AEA-32F77569674B}.wem		\Containers\Ambiance\Outside\Outside\Bird_Loop		28774256
 	756680328	Water, Drip, Drip, Glugs SND138199 3	.cache\EA\{EA3853A3-61BC-DF60-642F-D96BB1413E12}.wem		\Containers\SFX\Pickups\Potions\Liquid\Water, Drip, Drip, Glugs SND138199 3		181084
 	759909297	Cave Drip 14_L	.cache\7D\{7DFCC32D-52BA-F594-A9D0-D917DB009105}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 14_L		49530
-	795461115	Footstep_Dirt_01	.cache\AA\{AAD40C20-60D7-3CE6-F7A9-1606399A2AEE}.wem		\Containers\SFX\Footsteps\Dirt_Footsteps\Footstep_Dirt_01		54836
+	764656285	Footsteps, Human, Boots, Tile, Walk, Close SND126059 6	.cache\53\{53504CCA-0389-CE15-E6CF-8016D2D21E55}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 6		41066
+	795461115	Footstep_Dirt_01	.cache\AA\{AAD40C20-60D7-3CE6-F7A9-1606399A2AEE}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_01		54836
+	797834416	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 4	.cache\EC\{ECB55CD4-FA02-A180-B780-5B8419D468DE}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 4		45254
 	799013277	Cave Drip 15_L	.cache\38\{38AC8CDF-854B-809B-D415-91CDC170A893}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 15_L		49530
 	799234239	Cave_loop	.cache\36\{36ECCA96-1F51-8608-96EB-360CB9616083}.wem		\Containers\Ambiance\Cave\Cave\Cave_loop		23040144
 	801940484	Cave Drip 13_L	.cache\8E\{8E2C72E0-09A3-BC08-A484-0EB6BD7F3BD3}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 13_L		49530
 	809035489	Cave Drip 7_L	.cache\80\{800B9278-B023-86ED-61CA-1DD055655A4C}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 7_L		49530
-	816504299	Footstep_Dirt_02	.cache\28\{284EFA4C-96E6-C3DC-DF51-007369672C1F}.wem		\Containers\SFX\Footsteps\Dirt_Footsteps\Footstep_Dirt_02		52236
-	829219745	Footstep_Dirt_06	.cache\23\{23E10118-45B8-C5F2-5117-E4E161861BF9}.wem		\Containers\SFX\Footsteps\Dirt_Footsteps\Footstep_Dirt_06		47652
-	870104127	Footsteps_Stone_05	.cache\79\{79C2FD7B-9AD8-4C3E-651F-9CBD97FC3CA2}.wem		\Containers\SFX\Footsteps\Stone_Footsteps\Footsteps_Stone_05		48270
-	900721683	Footsteps_Grass_04	.cache\CB\{CB2B3272-4F28-B830-87DC-5C4B69122F7E}.wem		\Containers\SFX\Footsteps\Grass_Footsteps\Footsteps_Grass_04		37210
-	908738018	Footsteps_Grass_02	.cache\44\{44DBE797-85DD-39BB-E9AE-E3FFCBF812AA}.wem		\Containers\SFX\Footsteps\Grass_Footsteps\Footsteps_Grass_02		21362
+	816504299	Footstep_Dirt_02	.cache\28\{284EFA4C-96E6-C3DC-DF51-007369672C1F}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_02		52236
+	822069161	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 6	.cache\A4\{A4C3D8DD-518F-4132-0445-1BF1C56CBABE}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 6		63772
+	829219745	Footstep_Dirt_06	.cache\23\{23E10118-45B8-C5F2-5117-E4E161861BF9}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_06		47652
+	831596660	Footsteps, Human, Boots, Tile, Walk, Close SND126059 3	.cache\A0\{A0F53595-6432-638E-D692-97A0A1B17BF7}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 3		57098
+	862967256	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3	.cache\53\{53C1F275-F7D1-C82B-90BC-EA0665ED8AA8}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3		218432
+	883841130	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454	.cache\C0\{C006BA96-7B7E-C8CD-1E26-1C4835456F70}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Death\Death_Cultist\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454		68906
+	887528280	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1	.cache\1A\{1AD58C48-A557-25F8-2927-599A32A0AB82}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1		141152
+	900721683	Footsteps_Grass_04	.cache\CB\{CB2B3272-4F28-B830-87DC-5C4B69122F7E}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Grass_Footsteps\Footsteps_Grass_04		37210
+	906609901	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 2	.cache\E9\{E9055C1A-12DB-6A7F-2992-D8C8C47266D1}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 2		44280
+	908738018	Footsteps_Grass_02	.cache\44\{44DBE797-85DD-39BB-E9AE-E3FFCBF812AA}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Grass_Footsteps\Footsteps_Grass_02		21362
+	915784051	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 1	.cache\AC\{ACB10762-94DF-C2CB-2032-DB5721E0C9A2}.wem		\Containers\SFX\Karaktere\Enemies\Creatures\Death\Death_Creature\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 1		84540
 	924424003	Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310	.cache\28\{2817771D-A7DD-A407-EDF0-ABE6B7072D1E}.wem		\Containers\SFX\Pickups\Potions\Glass\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310		68140
+	925857258	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454 1	.cache\DF\{DFF2B6BE-39FD-7455-2860-A899939B85B8}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Death\Death_Cultist\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454 1		119652
+	929578660	Footsteps, Human, Boots, Tile, Walk, Close SND126059 10	.cache\CC\{CCC77AF1-480F-B53E-88C8-5AE34B6A0B71}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 10		40472
+	946977299	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 3	.cache\14\{14061B8C-2C7B-2BFA-9E73-1D988190F368}.wem		\Containers\SFX\Karaktere\Enemies\Creatures\Death\Death_Creature\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 3		374892
 	950148688	Cave Drip 3_L	.cache\71\{717D974F-0BBB-57B6-83B6-1F5C6DB16752}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 3_L		49530
-	1021673391	Footstep_Dirt_05	.cache\A6\{A6CD3C34-0750-1CF8-F810-0097EF544391}.wem		\Containers\SFX\Footsteps\Dirt_Footsteps\Footstep_Dirt_05		56198
+	973862875	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454 2	.cache\D4\{D4838BE8-E755-5464-04D1-0759499B5F3F}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Death\Death_Cultist\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454 2		122054
+	994355771	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2	.cache\90\{908FF402-58B8-8650-F2BB-1A5CBAB9E6AE}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2		163080
+	1017406152	Footsteps, Human, Boots, Tile, Walk, Close SND126059 8	.cache\E1\{E1558553-9A93-54C8-3F2E-FE2BFF7D489D}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 8		39878
+	1021673391	Footstep_Dirt_05	.cache\A6\{A6CD3C34-0750-1CF8-F810-0097EF544391}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_05		56198
 	1046621383	Water, Drip, Drip, Glugs SND138199 2	.cache\A2\{A2EDF82C-2360-2AB8-9077-10021C2A4E1B}.wem		\Containers\SFX\Pickups\Potions\Liquid\Water, Drip, Drip, Glugs SND138199 2		67564
 	1054966768	Cave Drip 4_L	.cache\28\{289CB703-46E3-90FC-D9F1-1560B61CF6B4}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 4_L		49530
 

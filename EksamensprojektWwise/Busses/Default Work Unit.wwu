@@ -9,97 +9,7 @@
 							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
 						</Reference>
 					</ReferenceList>
-				</Bus>
-				<Bus Name="Bitcrush" ID="{C62A92EF-AD30-426E-9F6D-FAE78730F558}">
-					<ReferenceList>
-						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
-						</Reference>
-					</ReferenceList>
-				</Bus>
-				<Bus Name="Reverb Audio Bus" ID="{3047A6CF-ADFD-4813-B284-C45DCA5F5583}">
-					<ReferenceList>
-						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
-						</Reference>
-					</ReferenceList>
 					<ChildrenList>
-						<AuxBus Name="ParkeringRev_001_Baelte1" ID="{1C819525-A377-47E8-AA30-AE1F2AC1DC10}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>516</Value>
-									</ValueList>
-								</Property>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<EffectSlot Name="" ID="{02D82677-12DC-4A27-83C7-272F875725BA}" ShortID="586782788">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-												<ObjectRef Name="ParkeringsKaelderRev_001_POS1_Baelte1" ID="{7DC28D83-50E2-4861-AC70-332BA027B678}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-									<EffectSlot Name="" ID="{690E01EB-241B-4B8A-89E2-829D240190B1}" ShortID="339538036">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-												<ObjectRef Name="ParkeringsKaelderRev_001_POS2_Baelte1" ID="{914E1DB5-6759-4C8B-841C-EBD100DBCD17}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="ParkeringRev_002_Baelte2" ID="{A8EA3155-BB37-49B2-B903-A8A4503DFB59}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>516</Value>
-									</ValueList>
-								</Property>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<PositioningInfo>
-								<Position Name="" ID="{1576BFA7-006A-4D9E-A7F7-25A340117EAA}"/>
-							</PositioningInfo>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<EffectSlot Name="" ID="{D837ED5C-77DA-4ECE-94D4-059659C80001}" ShortID="234822478">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-												<ObjectRef Name="ParkeringsKaelderRev_002_POS1_Baelte2" ID="{DC43F656-B593-4A24-8DC8-541B58649DA9}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-									<EffectSlot Name="" ID="{59C3F287-FE24-450F-8B9C-0479738C7863}" ShortID="21075288">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-												<ObjectRef Name="ParkeringsKaelderRev_002_POS2_Baelte2" ID="{7043005D-1530-4DF2-ADA8-8C9023C81B77}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Church_Small_Wood" ID="{376928F4-B70A-4B38-A6F3-3E6B5526058B}">
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<EffectSlot Name="" ID="{234F26E9-688F-4991-AD45-380EA14BDBE4}" ShortID="994760313">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-												<ObjectRef Name="Church_Small_Wood" ID="{940CCB47-F031-4C6A-B0E6-726CAC418C02}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
 						<AuxBus Name="ParkeringRev_003_Klap1" ID="{66BD27AD-84C4-4CC7-BAF0-61CD84B35513}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -193,6 +103,82 @@
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 												<ObjectRef Name="ParkeringsKaelderRev_005_POS2_Klap3" ID="{B30752CC-C769-4AF5-B5D6-5ECD613C3ABE}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="ParkeringRev_002_Baelte2" ID="{A8EA3155-BB37-49B2-B903-A8A4503DFB59}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<PositioningInfo>
+								<Position Name="" ID="{1576BFA7-006A-4D9E-A7F7-25A340117EAA}"/>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{D837ED5C-77DA-4ECE-94D4-059659C80001}" ShortID="234822478">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="ParkeringsKaelderRev_002_POS1_Baelte2" ID="{DC43F656-B593-4A24-8DC8-541B58649DA9}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+									<EffectSlot Name="" ID="{59C3F287-FE24-450F-8B9C-0479738C7863}" ShortID="21075288">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="ParkeringsKaelderRev_002_POS2_Baelte2" ID="{7043005D-1530-4DF2-ADA8-8C9023C81B77}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="Church_Small_Wood" ID="{376928F4-B70A-4B38-A6F3-3E6B5526058B}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{234F26E9-688F-4991-AD45-380EA14BDBE4}" ShortID="994760313">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Church_Small_Wood" ID="{940CCB47-F031-4C6A-B0E6-726CAC418C02}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="ParkeringRev_001_Baelte1" ID="{1C819525-A377-47E8-AA30-AE1F2AC1DC10}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{02D82677-12DC-4A27-83C7-272F875725BA}" ShortID="586782788">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="ParkeringsKaelderRev_001_POS1_Baelte1" ID="{7DC28D83-50E2-4861-AC70-332BA027B678}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+									<EffectSlot Name="" ID="{690E01EB-241B-4B8A-89E2-829D240190B1}" ShortID="339538036">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="ParkeringsKaelderRev_001_POS2_Baelte1" ID="{914E1DB5-6759-4C8B-841C-EBD100DBCD17}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
@@ -302,6 +288,20 @@
 							</ObjectLists>
 						</AuxBus>
 					</ChildrenList>
+				</Bus>
+				<Bus Name="Bitcrush" ID="{C62A92EF-AD30-426E-9F6D-FAE78730F558}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="Reverb Audio Bus" ID="{3047A6CF-ADFD-4813-B284-C45DCA5F5583}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
+						</Reference>
+					</ReferenceList>
 				</Bus>
 				<Bus Name="Reverb Stereo" ID="{F9CCC0EC-C546-4D78-A91B-5EBB90B00AAC}">
 					<ReferenceList>

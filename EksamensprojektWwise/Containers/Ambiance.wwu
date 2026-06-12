@@ -7,6 +7,9 @@
 					<ChildrenList>
 						<BlendContainer Name="Cave" ID="{40B9E19A-B387-4D4D-829D-714C0ED19078}" ShortID="2469468">
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>

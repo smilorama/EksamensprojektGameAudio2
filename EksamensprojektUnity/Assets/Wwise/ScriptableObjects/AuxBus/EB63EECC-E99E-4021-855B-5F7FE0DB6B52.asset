@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b596f218b3d5849c59ea4034ec1681d6, type: 3}
+  m_Name: EB63EECC-E99E-4021-855B-5F7FE0DB6B52
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseAuxBusReference
+  objectName: ParkeringRev_007_Klap5
+  id: 2767839671
+  guid: EB63EECC-E99E-4021-855B-5F7FE0DB6B52

@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="172">
 	<SoundBanks>
-		<SoundBank Id="3161908922" Type="User" GUID="{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}" Language="SFX" Hash="{5DEF2740-6B26-B916-68ED-CACB66DC29EF}">
+		<SoundBank Id="3161908922" Type="User" GUID="{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}" Language="SFX" Hash="{8B1E58A1-358E-086D-DF85-8C0A44D33284}">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="9050923" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4.wav</ShortName>
+					<CachePath>ED/{EDD0C7E0-C3C3-0DEF-53DA-1139C42749FC}.wem</CachePath>
+				</File>
+				<File Id="11324990" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 3.wav</ShortName>
+					<CachePath>8F/{8FFDB817-26E2-6271-3420-B55BC2E50EB4}.wem</CachePath>
+				</File>
 				<File Id="40854654" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_04.wav</ShortName>
 					<CachePath>7A/{7A4C180B-3846-BDA3-0ADB-39CAFA84F9DC}.wem</CachePath>
+				</File>
+				<File Id="64353166" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5.wav</ShortName>
+					<CachePath>AC/{AC2D1F6C-BDBA-8C00-1660-35A935D24EB3}.wem</CachePath>
+				</File>
+				<File Id="65402954" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 5.wav</ShortName>
+					<CachePath>17/{1753A607-575E-E6F1-2DA9-9E1C845A2754}.wem</CachePath>
+				</File>
+				<File Id="76161126" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334.wav</ShortName>
+					<CachePath>03/{03039F64-2556-896F-94C5-FC019AA298EA}.wem</CachePath>
 				</File>
 				<File Id="76714845" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3.wav</ShortName>
@@ -26,13 +46,25 @@
 					<ShortName>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1.wav</ShortName>
 					<CachePath>54/{5413BF63-D057-5816-452B-302C2A108EAE}.wem</CachePath>
 				</File>
-				<File Id="117866836" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Stone_03.wav</ShortName>
-					<CachePath>F3/{F3D3BE6D-82CB-B2B2-E12A-D85994FB96A0}.wem</CachePath>
+				<File Id="136009524" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 1.wav</ShortName>
+					<CachePath>34/{346E6D03-E48D-9B4D-DDB2-A55EB13AAC81}.wem</CachePath>
+				</File>
+				<File Id="151020892" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451.wav</ShortName>
+					<CachePath>08/{08FA5967-3858-2A35-8BCB-4D59CD1FDA32}.wem</CachePath>
+				</File>
+				<File Id="159901596" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Boots, Tile, Walk, Close SND126059 4.wav</ShortName>
+					<CachePath>FD/{FD59CD50-D1CF-11FA-4D7A-E41E350352B0}.wem</CachePath>
 				</File>
 				<File Id="179104024" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Water, Drip, Drip, Glugs SND138199 1.wav</ShortName>
 					<CachePath>B7/{B7771BAA-384A-4D39-7D2E-B453147D79A1}.wem</CachePath>
+				</File>
+				<File Id="190250882" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Boots, Tile, Walk, Close SND126059 1.wav</ShortName>
+					<CachePath>30/{305AF12A-C833-7347-D823-BD9C37A5602D}.wem</CachePath>
 				</File>
 				<File Id="195421402" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Food &amp; Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943 1.wav</ShortName>
@@ -58,6 +90,10 @@
 					<ShortName>Originals\SFX\Food &amp; Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943.wav</ShortName>
 					<CachePath>FA/{FA5D4A80-06D2-4E1B-AB17-F6A14DF5BB6E}.wem</CachePath>
 				</File>
+				<File Id="273775820" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Boots, Tile, Walk, Close SND126059 2.wav</ShortName>
+					<CachePath>CA/{CA2F7DC7-C3DC-5FDD-70FC-FD10B2155EFD}.wem</CachePath>
+				</File>
 				<File Id="285422653" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Grass_01.wav</ShortName>
 					<CachePath>D3/{D3758535-B5FB-BBE4-33CD-170DD69985A0}.wem</CachePath>
@@ -65,6 +101,18 @@
 				<File Id="299777249" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Cave Drip 9_L.wav</ShortName>
 					<CachePath>27/{27A40A0A-B41D-3F6A-AF66-F28AD862493B}.wem</CachePath>
+				</File>
+				<File Id="305308172" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 4.wav</ShortName>
+					<CachePath>65/{658EA053-0759-BA04-1CBE-72E62BA43CD9}.wem</CachePath>
+				</File>
+				<File Id="306789449" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 2.wav</ShortName>
+					<CachePath>EE/{EE60678B-B838-19AA-5924-D27D2E40BAC5}.wem</CachePath>
+				</File>
+				<File Id="314035865" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Boots, Tile, Walk, Close SND126059 9.wav</ShortName>
+					<CachePath>A0/{A078459A-49FB-A60A-1321-9FFCE161F10E}.wem</CachePath>
 				</File>
 				<File Id="343147211" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Cave Drip 11_L.wav</ShortName>
@@ -82,13 +130,9 @@
 					<ShortName>Originals\SFX\Cave Drip 12_L.wav</ShortName>
 					<CachePath>C2/{C2031738-8759-B910-1451-5145E22232E8}.wem</CachePath>
 				</File>
-				<File Id="403657178" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Stone_04.wav</ShortName>
-					<CachePath>F4/{F4CBC9A3-0E39-E5F0-F413-E7D642A0E7BF}.wem</CachePath>
-				</File>
-				<File Id="420241297" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Stone_02.wav</ShortName>
-					<CachePath>55/{556AD53B-8A74-2CC2-287E-6A2948E2BA27}.wem</CachePath>
+				<File Id="470773186" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911.wav</ShortName>
+					<CachePath>0D/{0DD0F04C-4395-FBE7-8E6D-A5E1D835B3AD}.wem</CachePath>
 				</File>
 				<File Id="531713444" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Cave Drip 1_L.wav</ShortName>
@@ -102,6 +146,18 @@
 					<ShortName>Originals\SFX\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 2.wav</ShortName>
 					<CachePath>63/{63DCD947-D7FC-77D8-47A0-1F80F21A2DB5}.wem</CachePath>
 				</File>
+				<File Id="548223565" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 1.wav</ShortName>
+					<CachePath>3B/{3B743701-7768-9CF0-049B-8DADBFDA085E}.wem</CachePath>
+				</File>
+				<File Id="548260550" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Boots, Tile, Walk, Close SND126059 5.wav</ShortName>
+					<CachePath>C1/{C1CF8361-082D-DC05-C602-58EE36B051E0}.wem</CachePath>
+				</File>
+				<File Id="604086085" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Boots, Tile, Walk, Close SND126059 7.wav</ShortName>
+					<CachePath>D2/{D2F97BB0-8EAA-E7F2-AD73-389EE4AD7CE6}.wem</CachePath>
+				</File>
 				<File Id="604110561" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Swooshes, Swish, Sword Swing, Heavy Slow SND59349.wav</ShortName>
 					<CachePath>96/{9634A6DA-6E7B-DACF-4510-1A797728A52F}.wem</CachePath>
@@ -110,13 +166,17 @@
 					<ShortName>Originals\SFX\Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616.wav</ShortName>
 					<CachePath>BB/{BBCE4FE8-C64A-6015-BFF0-875FE9DA788D}.wem</CachePath>
 				</File>
+				<File Id="615642400" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892.wav</ShortName>
+					<CachePath>81/{81EEF401-69C2-FE54-EC7C-E91369CCE311}.wem</CachePath>
+				</File>
+				<File Id="627917384" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 2.wav</ShortName>
+					<CachePath>48/{4839051D-4CFD-3DBF-FAB7-040CC5A7116E}.wem</CachePath>
+				</File>
 				<File Id="640707114" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Water, Flow, Water Flowing, Small Stream 01 SND65495.wav</ShortName>
 					<CachePath>47/{47D19F9D-AA12-1A8E-20D6-9CB8FC9C2922}.wem</CachePath>
-				</File>
-				<File Id="645500148" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Stone_01.wav</ShortName>
-					<CachePath>B5/{B5D70AB6-BAD1-66BA-6366-D8C74CD23F61}.wem</CachePath>
 				</File>
 				<File Id="688127468" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Grass_03.wav</ShortName>
@@ -138,9 +198,17 @@
 					<ShortName>Originals\SFX\Cave Drip 14_L.wav</ShortName>
 					<CachePath>7D/{7DFCC32D-52BA-F594-A9D0-D917DB009105}.wem</CachePath>
 				</File>
+				<File Id="764656285" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Boots, Tile, Walk, Close SND126059 6.wav</ShortName>
+					<CachePath>53/{53504CCA-0389-CE15-E6CF-8016D2D21E55}.wem</CachePath>
+				</File>
 				<File Id="795461115" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_01.wav</ShortName>
 					<CachePath>AA/{AAD40C20-60D7-3CE6-F7A9-1606399A2AEE}.wem</CachePath>
+				</File>
+				<File Id="797834416" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 4.wav</ShortName>
+					<CachePath>EC/{ECB55CD4-FA02-A180-B780-5B8419D468DE}.wem</CachePath>
 				</File>
 				<File Id="799013277" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Cave Drip 15_L.wav</ShortName>
@@ -162,29 +230,77 @@
 					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_02.wav</ShortName>
 					<CachePath>28/{284EFA4C-96E6-C3DC-DF51-007369672C1F}.wem</CachePath>
 				</File>
+				<File Id="822069161" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 6.wav</ShortName>
+					<CachePath>A4/{A4C3D8DD-518F-4132-0445-1BF1C56CBABE}.wem</CachePath>
+				</File>
 				<File Id="829219745" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_06.wav</ShortName>
 					<CachePath>23/{23E10118-45B8-C5F2-5117-E4E161861BF9}.wem</CachePath>
 				</File>
-				<File Id="870104127" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Stone_05.wav</ShortName>
-					<CachePath>79/{79C2FD7B-9AD8-4C3E-651F-9CBD97FC3CA2}.wem</CachePath>
+				<File Id="831596660" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Boots, Tile, Walk, Close SND126059 3.wav</ShortName>
+					<CachePath>A0/{A0F53595-6432-638E-D692-97A0A1B17BF7}.wem</CachePath>
+				</File>
+				<File Id="862967256" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3.wav</ShortName>
+					<CachePath>53/{53C1F275-F7D1-C82B-90BC-EA0665ED8AA8}.wem</CachePath>
+				</File>
+				<File Id="883841130" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454.wav</ShortName>
+					<CachePath>C0/{C006BA96-7B7E-C8CD-1E26-1C4835456F70}.wem</CachePath>
+				</File>
+				<File Id="887528280" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1.wav</ShortName>
+					<CachePath>1A/{1AD58C48-A557-25F8-2927-599A32A0AB82}.wem</CachePath>
 				</File>
 				<File Id="900721683" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Grass_04.wav</ShortName>
 					<CachePath>CB/{CB2B3272-4F28-B830-87DC-5C4B69122F7E}.wem</CachePath>
 				</File>
+				<File Id="906609901" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 2.wav</ShortName>
+					<CachePath>E9/{E9055C1A-12DB-6A7F-2992-D8C8C47266D1}.wem</CachePath>
+				</File>
 				<File Id="908738018" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footsteps_Grass_02.wav</ShortName>
 					<CachePath>44/{44DBE797-85DD-39BB-E9AE-E3FFCBF812AA}.wem</CachePath>
+				</File>
+				<File Id="915784051" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 1.wav</ShortName>
+					<CachePath>AC/{ACB10762-94DF-C2CB-2032-DB5721E0C9A2}.wem</CachePath>
 				</File>
 				<File Id="924424003" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310.wav</ShortName>
 					<CachePath>28/{2817771D-A7DD-A407-EDF0-ABE6B7072D1E}.wem</CachePath>
 				</File>
+				<File Id="925857258" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454 1.wav</ShortName>
+					<CachePath>DF/{DFF2B6BE-39FD-7455-2860-A899939B85B8}.wem</CachePath>
+				</File>
+				<File Id="929578660" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Boots, Tile, Walk, Close SND126059 10.wav</ShortName>
+					<CachePath>CC/{CCC77AF1-480F-B53E-88C8-5AE34B6A0B71}.wem</CachePath>
+				</File>
+				<File Id="946977299" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 04 SND137451 3.wav</ShortName>
+					<CachePath>14/{14061B8C-2C7B-2BFA-9E73-1D988190F368}.wem</CachePath>
+				</File>
 				<File Id="950148688" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Originals\SFX\Cave Drip 3_L.wav</ShortName>
 					<CachePath>71/{717D974F-0BBB-57B6-83B6-1F5C6DB16752}.wem</CachePath>
+				</File>
+				<File Id="973862875" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454 2.wav</ShortName>
+					<CachePath>D4/{D4838BE8-E755-5464-04D1-0759499B5F3F}.wem</CachePath>
+				</File>
+				<File Id="994355771" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2.wav</ShortName>
+					<CachePath>90/{908FF402-58B8-8650-F2BB-1A5CBAB9E6AE}.wem</CachePath>
+				</File>
+				<File Id="1017406152" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Originals\SFX\Footsteps, Human, Boots, Tile, Walk, Close SND126059 8.wav</ShortName>
+					<CachePath>E1/{E1558553-9A93-54C8-3F2E-FE2BFF7D489D}.wem</CachePath>
 				</File>
 				<File Id="1021673391" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Footstep_Dirt_05.wav</ShortName>
@@ -200,8 +316,21 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3927008369" Name="Attack_HitEnemy" ObjectPath="\Events\SFX\Attack_HitEnemy" GUID="{67F41537-AACD-4300-9B8D-D865207DAE9F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="726189174" Name="Attack_HitNothing" ObjectPath="\Events\SFX\Attack_HitNothing" GUID="{EF7344E1-E86D-45A6-BDC7-028CDB821CE0}" DurationType="OneShot" DurationMin="0.2161558" DurationMax="0.8163973">
+				<Event Id="3927008369" Name="Attack_HitEnemy" ObjectPath="\Events\SFX\Player\Attack_HitEnemy" GUID="{67F41537-AACD-4300-9B8D-D865207DAE9F}" DurationType="OneShot" DurationMin="0.5121793" DurationMax="2.125749">
+					<MediaRefs>
+						<MediaRef Id="9050923"/>
+						<MediaRef Id="64353166"/>
+						<MediaRef Id="76161126"/>
+						<MediaRef Id="83300568"/>
+						<MediaRef Id="532906210"/>
+						<MediaRef Id="534031158"/>
+						<MediaRef Id="604110561"/>
+						<MediaRef Id="862967256"/>
+						<MediaRef Id="887528280"/>
+						<MediaRef Id="994355771"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="726189174" Name="Attack_HitNothing" ObjectPath="\Events\SFX\Player\Attack_HitNothing" GUID="{EF7344E1-E86D-45A6-BDC7-028CDB821CE0}" DurationType="OneShot" DurationMin="0.2161558" DurationMax="0.8163973">
 					<MediaRefs>
 						<MediaRef Id="83300568"/>
 						<MediaRef Id="532906210"/>
@@ -209,8 +338,18 @@
 						<MediaRef Id="604110561"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1224938770" Name="Attack_HitTerrain" ObjectPath="\Events\SFX\Attack_HitTerrain" GUID="{01CD9D53-DAF2-4ACE-B947-C93E7C89666B}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2541729425" Name="Drink_Potion" ObjectPath="\Events\SFX\Drink_Potion" GUID="{BB610E01-F23E-4C0F-888E-1F7FB89B5681}" DurationType="OneShot" DurationMin="3.3365035" DurationMax="3.3544064">
+				<Event Id="1224938770" Name="Attack_HitTerrain" ObjectPath="\Events\SFX\Player\Attack_HitTerrain" GUID="{01CD9D53-DAF2-4ACE-B947-C93E7C89666B}" DurationType="OneShot" DurationMin="0.5464535" DurationMax="2.7998128">
+					<MediaRefs>
+						<MediaRef Id="83300568"/>
+						<MediaRef Id="136009524"/>
+						<MediaRef Id="306789449"/>
+						<MediaRef Id="532906210"/>
+						<MediaRef Id="534031158"/>
+						<MediaRef Id="604110561"/>
+						<MediaRef Id="615642400"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2541729425" Name="Drink_Potion" ObjectPath="\Events\SFX\Player\Drink_Potion" GUID="{BB610E01-F23E-4C0F-888E-1F7FB89B5681}" DurationType="OneShot" DurationMin="3.3365035" DurationMax="3.3544064">
 					<MediaRefs>
 						<MediaRef Id="76714845"/>
 						<MediaRef Id="93540194"/>
@@ -224,7 +363,7 @@
 						<MediaRef Id="1046621383"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3602995889" Name="Play_Cave" ObjectPath="\Events\Default Work Unit\Play_Cave" GUID="{92B5D3DC-9E85-4BBE-8DB5-768242C5F2D7}" DurationType="Infinite">
+				<Event Id="3602995889" Name="Play_Cave" ObjectPath="\Events\Ambiance\Play_Cave" GUID="{92B5D3DC-9E85-4BBE-8DB5-768242C5F2D7}" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="84267646"/>
 						<MediaRef Id="247521029"/>
@@ -243,12 +382,40 @@
 						<MediaRef Id="950148688"/>
 						<MediaRef Id="1054966768"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="484890516" Name="Church_Small_Wood" ObjectPath="\Busses\Default Work Unit\Reverb Audio Bus\Church_Small_Wood" GUID="{376928F4-B70A-4B38-A6F3-3E6B5526058B}"/>
-					</AuxBusRefs>
 				</Event>
-				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\SFX\Play_Footstep" GUID="{5006E459-F2A4-4044-8B85-DAC82A1B3B8A}" DurationType="OneShot" DurationMin="0" DurationMax="1.041275">
+				<Event Id="795377228" Name="Play_Death_Creature" ObjectPath="\Events\SFX\Enemies\Play_Death_Creature" GUID="{F7AB6EF1-1A4B-4432-8F51-4F216D9FF259}" DurationType="OneShot" DurationMin="0.879635" DurationMax="3.9041266">
+					<MediaRefs>
+						<MediaRef Id="151020892"/>
+						<MediaRef Id="305308172"/>
+						<MediaRef Id="627917384"/>
+						<MediaRef Id="915784051"/>
+						<MediaRef Id="946977299"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3622272533" Name="Play_Death_Cultist" ObjectPath="\Events\SFX\Enemies\Play_Death_Cultist" GUID="{AF4D5430-F88E-4EA7-9A45-3C4FDE39098D}" DurationType="OneShot" DurationMin="0.676551" DurationMax="1.345934">
+					<MediaRefs>
+						<MediaRef Id="883841130"/>
+						<MediaRef Id="925857258"/>
+						<MediaRef Id="973862875"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\SFX\Player\Play_Footstep" GUID="{5006E459-F2A4-4044-8B85-DAC82A1B3B8A}" DurationType="OneShot" DurationMin="0" DurationMax="1.1818514">
 					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4050929301" Id="2637588553" GUID="{E8149D30-1FA3-4149-9D41-710150DC386C}"/>
+							<MediaRefs>
+								<MediaRef Id="159901596"/>
+								<MediaRef Id="190250882"/>
+								<MediaRef Id="273775820"/>
+								<MediaRef Id="314035865"/>
+								<MediaRef Id="548260550"/>
+								<MediaRef Id="604086085"/>
+								<MediaRef Id="764656285"/>
+								<MediaRef Id="831596660"/>
+								<MediaRef Id="929578660"/>
+								<MediaRef Id="1017406152"/>
+							</MediaRefs>
+						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="4050929301" Id="4248645337" GUID="{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"/>
 							<MediaRefs>
@@ -261,11 +428,13 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="4050929301" Id="1216965916" GUID="{0DA7F6CF-E32D-410A-B986-195A12189456}"/>
 							<MediaRefs>
-								<MediaRef Id="117866836"/>
-								<MediaRef Id="403657178"/>
-								<MediaRef Id="420241297"/>
-								<MediaRef Id="645500148"/>
-								<MediaRef Id="870104127"/>
+								<MediaRef Id="11324990"/>
+								<MediaRef Id="65402954"/>
+								<MediaRef Id="470773186"/>
+								<MediaRef Id="548223565"/>
+								<MediaRef Id="797834416"/>
+								<MediaRef Id="822069161"/>
+								<MediaRef Id="906609901"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -281,13 +450,64 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="473294595" Name="Play_Outside" ObjectPath="\Events\Default Work Unit\Play_Outside" GUID="{6E49D72B-6E7E-4B5A-92B9-D1EA0838B16F}" DurationType="Infinite">
+				<Event Id="1095021605" Name="Play_Footstep_Enemy" ObjectPath="\Events\SFX\Enemies\Play_Footstep_Enemy" GUID="{16CA14E9-ABE0-4B9C-A261-703C844C3AF7}" DurationType="OneShot" DurationMin="0" DurationMax="1.1818514">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4050929301" Id="2637588553" GUID="{E8149D30-1FA3-4149-9D41-710150DC386C}"/>
+							<MediaRefs>
+								<MediaRef Id="159901596"/>
+								<MediaRef Id="190250882"/>
+								<MediaRef Id="273775820"/>
+								<MediaRef Id="314035865"/>
+								<MediaRef Id="548260550"/>
+								<MediaRef Id="604086085"/>
+								<MediaRef Id="764656285"/>
+								<MediaRef Id="831596660"/>
+								<MediaRef Id="929578660"/>
+								<MediaRef Id="1017406152"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4050929301" Id="4248645337" GUID="{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"/>
+							<MediaRefs>
+								<MediaRef Id="285422653"/>
+								<MediaRef Id="688127468"/>
+								<MediaRef Id="900721683"/>
+								<MediaRef Id="908738018"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4050929301" Id="1216965916" GUID="{0DA7F6CF-E32D-410A-B986-195A12189456}"/>
+							<MediaRefs>
+								<MediaRef Id="11324990"/>
+								<MediaRef Id="65402954"/>
+								<MediaRef Id="470773186"/>
+								<MediaRef Id="548223565"/>
+								<MediaRef Id="797834416"/>
+								<MediaRef Id="822069161"/>
+								<MediaRef Id="906609901"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="4050929301" Id="2195636714" GUID="{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="40854654"/>
+								<MediaRef Id="346434020"/>
+								<MediaRef Id="795461115"/>
+								<MediaRef Id="816504299"/>
+								<MediaRef Id="829219745"/>
+								<MediaRef Id="1021673391"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="473294595" Name="Play_Outside" ObjectPath="\Events\Ambiance\Play_Outside" GUID="{6E49D72B-6E7E-4B5A-92B9-D1EA0838B16F}" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="610247601"/>
 						<MediaRef Id="710763542"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1564978696" Name="Play_Water_Loop" ObjectPath="\Events\Default Work Unit\Play_Water_Loop" GUID="{C45EE1FB-1D55-4BE7-9841-C70CB590F7E1}" DurationType="Infinite">
+				<Event Id="1564978696" Name="Play_Water_Loop" ObjectPath="\Events\Ambiance\Play_Water_Loop" GUID="{C45EE1FB-1D55-4BE7-9841-C70CB590F7E1}" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="640707114"/>
 					</MediaRefs>
@@ -306,5 +526,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B5FBDF36-0742-D22C-B846-FD3270328FD8}</FileHash>
+	<FileHash>{44AB83A7-7BEB-B662-7BF5-8ACDDF42E60E}</FileHash>
 </SoundBanksInfo>

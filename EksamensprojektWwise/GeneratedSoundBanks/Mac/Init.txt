@@ -5,15 +5,15 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2954846929	Reverb Audio Bus			\Default Work Unit\Reverb Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	230976631	ParkeringRev_003_Klap1			\Default Work Unit\Reverb Audio Bus\ParkeringRev_003_Klap1	
-	288340792	ParkeringRev_001_Baelte1			\Default Work Unit\Reverb Audio Bus\ParkeringRev_001_Baelte1	
-	484890516	Church_Small_Wood			\Default Work Unit\Reverb Audio Bus\Church_Small_Wood	
-	903063735	ParkeringRev_005_Klap3			\Default Work Unit\Reverb Audio Bus\ParkeringRev_005_Klap3	
-	1020492676	ParkeringRev_002_Baelte2			\Default Work Unit\Reverb Audio Bus\ParkeringRev_002_Baelte2	
-	2665109655	ParkeringRev_006_Klap4			\Default Work Unit\Reverb Audio Bus\ParkeringRev_006_Klap4	
-	2767839671	ParkeringRev_007_Klap5			\Default Work Unit\Reverb Audio Bus\ParkeringRev_007_Klap5	
-	3813691439	ParkeringRev_008_Klap6			\Default Work Unit\Reverb Audio Bus\ParkeringRev_008_Klap6	
-	3950004767	ParkeringRev_004_Klap2			\Default Work Unit\Reverb Audio Bus\ParkeringRev_004_Klap2	
+	230976631	ParkeringRev_003_Klap1			\Default Work Unit\Main Audio Bus\ParkeringRev_003_Klap1	
+	288340792	ParkeringRev_001_Baelte1			\Default Work Unit\Main Audio Bus\ParkeringRev_001_Baelte1	
+	484890516	Church_Small_Wood			\Default Work Unit\Main Audio Bus\Church_Small_Wood	
+	903063735	ParkeringRev_005_Klap3			\Default Work Unit\Main Audio Bus\ParkeringRev_005_Klap3	
+	1020492676	ParkeringRev_002_Baelte2			\Default Work Unit\Main Audio Bus\ParkeringRev_002_Baelte2	
+	2665109655	ParkeringRev_006_Klap4			\Default Work Unit\Main Audio Bus\ParkeringRev_006_Klap4	
+	2767839671	ParkeringRev_007_Klap5			\Default Work Unit\Main Audio Bus\ParkeringRev_007_Klap5	
+	3813691439	ParkeringRev_008_Klap6			\Default Work Unit\Main Audio Bus\ParkeringRev_008_Klap6	
+	3950004767	ParkeringRev_004_Klap2			\Default Work Unit\Main Audio Bus\ParkeringRev_004_Klap2	
 
 Effect plug-ins	ID	Name	Type				Notes
 	484890516	Church_Small_Wood	Wwise RoomVerb			

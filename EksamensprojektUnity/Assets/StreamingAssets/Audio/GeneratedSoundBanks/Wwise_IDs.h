@@ -18,7 +18,10 @@ namespace AK
         static const AkUniqueID ATTACK_HITTERRAIN = 1224938770U;
         static const AkUniqueID DRINK_POTION = 2541729425U;
         static const AkUniqueID PLAY_CAVE = 3602995889U;
+        static const AkUniqueID PLAY_DEATH_CREATURE = 795377228U;
+        static const AkUniqueID PLAY_DEATH_CULTIST = 3622272533U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
+        static const AkUniqueID PLAY_FOOTSTEP_ENEMY = 1095021605U;
         static const AkUniqueID PLAY_OUTSIDE = 473294595U;
         static const AkUniqueID PLAY_WATER_LOOP = 1564978696U;
     } // namespace EVENTS
