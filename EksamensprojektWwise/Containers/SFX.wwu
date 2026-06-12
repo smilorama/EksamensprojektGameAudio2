@@ -393,6 +393,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
@@ -1731,6 +1732,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2468,6 +2470,7 @@
 						</SwitchContainer>
 						<SwitchContainer Name="Footsteps_Enemy" ID="{3FF9A848-7FDB-44B6-92CE-12A54E0B44D9}" ShortID="821680943">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -2481,8 +2484,12 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
@@ -2499,6 +2506,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Stone_Footsteps" ID="{D5F5EC4F-7FE5-4198-B1BE-F05A6EE1B9A7}" ShortID="335845371">
 									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>2</Value>
@@ -2671,6 +2679,9 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Dirt_Footsteps" ID="{8219AF44-251E-4D39-B330-96C10614CC73}" ShortID="54985127">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -2821,6 +2832,7 @@
 												<Value>38</Value>
 											</ValueList>
 										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2922,6 +2934,9 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Water_Footsteps" ID="{7B0678C1-E3DF-4BB1-A9FF-BCD879A09223}" ShortID="49205490">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -2932,6 +2947,9 @@
 									</ReferenceList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Tile_Footsteps" ID="{25C89AA9-3E4E-4210-8C95-F307B3B37E2E}" ShortID="790806907">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
