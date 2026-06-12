@@ -7,17 +7,19 @@
 | `PlayerHealth` | Player | HP, heal, damage, death events |
 | `AudioMaterial` | Objekter i scenen | Definerer overflade type til footsteps |
 | `TerrainAudioMaterial` | Terrain | Sampler painted terrain layers til overflade type |
-| `Footsteps` | Player | Timer-baseret footstep lyd via Wwise |
-| `Enemy` | Enemy | NavMesh, blend tree, aggro, angreb |
+| `Footsteps` | Player | Timer-baseret footstep lyd via Wwise; poster på separat emitter |
+| `EnemyFootsteps` | Enemy | Animation event-drevet footstep lyd via Wwise med raycast |
+| `Enemy` | Enemy | NavMesh, blend tree, aggro, angreb, death |
 | `EnemyResetOnEmpty` | Enemy Animator (Empty state) | Frigiver attack lock når animation er færdig |
-| `DamageZone` | Enemy hånd/våben child + Player WeaponHolder | Trigger collider der giver skade; bruges af både Enemy og WeaponBob |
+| `DamageZone` | Enemy hånd/våben child | Trigger collider der giver skade til Player |
+| `PlayerDamageZone` | WeaponHolder child | Trigger collider der giver skade til Enemy; aktiveres af WeaponBob; poster hit-lyd |
+| `EnemyHealthBar` | Enemy | Fast UI i højre hjørne med nameplate; vises ved aggro eller efter hit |
+| `WeaponBob` | WeaponHolder (child af Camera) | Svævende hånd: bob, sway, keyframe-baseret melee angreb, swing-lyd |
+| `GradientImage` | UI (runtime) | Horisontal/vertikal gradient MaskableGraphic til brug i UI |
 | `Item` | Pickup objekt | Consumable (heal) eller EventTrigger ved pickup |
 | `DialogueUI` | Canvas | Singleton, viser tekst, flag-system |
 | `DialogueTrigger` | NPC | Trigger zone, viser linjer, left click for næste |
 | `PlayerHealthBar` | Canvas | Slider der viser spillerens HP |
-| `WeaponBob` | WeaponHolder (child af Camera) | Lunacid-stil svævende hånd: bob, sway, melee angreb |
-| `PlayerDamageZone` | WeaponHolder child | Trigger collider der giver skade til Enemy; aktiveres af WeaponBob |
-| `EnemyHealthBar` | Enemy | Svævende HP-bar over enemies hoved; vises ved aggro eller efter hit |
 
 ---
 
@@ -31,21 +33,33 @@ PlayerHealth
 
 WeaponBob
   → CharacterController.velocity (læses fra Player root)
-  → PlayerDamageZone.Activate() / Deactivate() (på WeaponHolder child)
+  → StarterAssetsInputs.look (sway)
+  → PlayerDamageZone.Activate() / Deactivate()
+  → Wwise: PostEvent(_swingEvent) ved angreb start
 
 PlayerDamageZone
   → Enemy.TakeDamage()
-  ← WeaponBob.Activate() / Deactivate()
+  → Wwise: PostEvent(_hitEvent) ved kollision med Enemy
+
+EnemyHealthBar
+  → Enemy.CurrentHealth / MaxHealth / IsAggro
+
+EnemyFootsteps
+  → AudioMaterial (på objekter)
+  → TerrainAudioMaterial (på Terrain)
+  → Wwise: SetSwitch("Materials", ...) + PostEvent(_footstepEvent)
+  ← Animation Events: Step()
 
 Footsteps
   → AudioMaterial (på objekter)
   → TerrainAudioMaterial (på Terrain)
-  → Wwise: SetSwitch("Surface", ...) + PostEvent("Play_Footstep")
+  → Wwise: SetSwitch("Materials", ...) + PostEvent(_footstepEvent) på _footstepEmitter
 
 Enemy
   → EnemyResetOnEmpty (StateMachineBehaviour på Empty state i Action Override layer)
-  → Animator: Vertical, Horizontal, isMoving, Attack
-  → NavMeshAgent: desiredVelocity driver blend tree
+  → Animator: Vertical, Horizontal, isMoving, Attack, Death
+  → NavMeshAgent: updatePosition=true, desiredVelocity driver blend tree
+  → Wwise: PostEvent(_deathEvent) ved death
 
 DamageZone
   → PlayerHealth.TakeDamage()
@@ -72,7 +86,11 @@ DialogueUI
 
 | Script | Switch Group | Event |
 |---|---|---|
-| `Footsteps` | `Surface` (Grass / Stone / Dirt) | `Play_Footstep` |
+| `Footsteps` | `Materials` (Grass / Stone / Dirt / Tile) | Inspector: `_footstepEvent` |
+| `EnemyFootsteps` | `Materials` (Grass / Stone / Dirt / Tile) | Inspector: `_footstepEvent` |
+| `WeaponBob` | — | Inspector: `_swingEvent`, `_hitEvent` |
+| `PlayerDamageZone` | — | Inspector: `_hitEvent` |
+| `Enemy` | — | Inspector: `_deathEvent` |
 
 ---
 
@@ -80,6 +98,7 @@ DialogueUI
 
 **Player**
 - `PlayerHealth`, `Footsteps`, `CharacterController` — tag: `Player`
+- `Footsteps`: assign `_footstepEmitter` (GameObject med AkGameObj)
 - Hierarki under Camera:
   ```
   Camera
@@ -87,18 +106,20 @@ DialogueUI
           └── HandMesh        (visuelt asset: hånd + våben)
                 └── DamageZoneChild   (PlayerDamageZone.cs + trigger collider + kinematic Rigidbody)
   ```
-  - `DamageZoneChild` følger HandMesh automatisk — collider'en svinger med våbnet
   - Træk `DamageZoneChild` ind i `WeaponBob`'s Damage Zone-slot i Inspector
   - Enemy-objekter skal have tag `Enemy`
 
 **Enemy**
-- `Enemy`, `NavMeshAgent`, `CharacterController`, `Animator`
-- Animator: `Vertical` (Float), `Horizontal` (Float), `isMoving` (Bool), `Attack` (Trigger)
+- `Enemy`, `NavMeshAgent`, `Animator`, `EnemyFootsteps`, `EnemyHealthBar`
+- Animator: `Vertical` (Float), `Horizontal` (Float), `isMoving` (Bool), `Attack` (Trigger), `Death` (Trigger)
 - Action Override layer: Empty state → `EnemyResetOnEmpty` StateMachineBehaviour
+- Action Override layer: Death state spilles via `Animator.Play("Death", 1, 0f)`
 - Child objekt på hånd/våben: `DamageZone` + trigger collider + Rigidbody (Is Kinematic)
+- Animation events på walk/run: kald `Step()` på `EnemyFootsteps`
+- `EnemyHealthBar`: sæt `_enemyName` i Inspector
 
 **Terrain**
-- `TerrainAudioMaterial` — map layer indeks til Grass/Stone/Dirt
+- `TerrainAudioMaterial` — map layer indeks til Grass/Stone/Dirt/Tile
 
 **Objekter i scenen**
 - `AudioMaterial` — vælg type i Inspector
