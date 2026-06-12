@@ -9986,6 +9986,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoomAwareObject
   m_Collider: {fileID: 0}
+--- !u!114 &657799183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657799172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bc03377dc4c4428b791849e56ab56d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FootstepEmitter
+  rayLength: 3
+  excludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  rayOrigin: {fileID: 657799179}
 --- !u!1001 &657808983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16151,6 +16168,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4135013735270702863, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       insertIndex: -1
       addedObject: {fileID: 657799180}
+    - targetCorrespondingSourceObject: {fileID: 4135013735270702863, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 657799183}
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
 --- !u!1001 &1127219298
 PrefabInstance:
@@ -25323,6 +25343,7 @@ MonoBehaviour:
   excludeLayers:
     serializedVersion: 2
     m_Bits: 4
+  _footstepEmitter: {fileID: 657799172}
 --- !u!114 &1734744608 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5420857361349278248, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}

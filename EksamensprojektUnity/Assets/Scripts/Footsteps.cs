@@ -9,6 +9,7 @@ public class Footsteps : MonoBehaviour
     [SerializeField] private float moveThreshold = 0.1f;
     [SerializeField] private float rayLength = 2f;
     [SerializeField] private LayerMask excludeLayers;
+    [SerializeField] private GameObject _footstepEmitter;
 
     private CharacterController _controller;
     private float _timer;
@@ -45,8 +46,9 @@ public class Footsteps : MonoBehaviour
         int surfaceIndex = GetSurfaceIndex();
         string switchValue = _materialSwitches[surfaceIndex];
 
-        AkSoundEngine.SetSwitch("Materials", switchValue, gameObject);
-        AkSoundEngine.PostEvent("Play_Footstep", gameObject);
+        GameObject emitter = _footstepEmitter != null ? _footstepEmitter : gameObject;
+        AkSoundEngine.SetSwitch("Materials", switchValue, emitter);
+        AkSoundEngine.PostEvent("Play_Footstep", emitter);
     }
 
     private int GetSurfaceIndex()
