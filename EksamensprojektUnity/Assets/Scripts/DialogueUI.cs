@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueUI : MonoBehaviour
 {
     public static DialogueUI Instance { get; private set; }
+    public static bool IsActive { get; private set; }
 
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private GameObject dialoguePanel;
@@ -21,11 +22,13 @@ public class DialogueUI : MonoBehaviour
     {
         dialogueText.text = text;
         dialoguePanel.SetActive(true);
+        IsActive = true;
     }
 
     public void Hide()
     {
         dialoguePanel.SetActive(false);
+        IsActive = false;
     }
 
     public void SetFlag(string key) => _flags.Add(key);

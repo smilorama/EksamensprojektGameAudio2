@@ -118,7 +118,7 @@ public class WeaponBob : MonoBehaviour
     {
         _attackCooldownTimer -= Time.deltaTime;
 
-        if (Mouse.current.leftButton.wasPressedThisFrame && _attackCooldownTimer <= 0f && _segment == AttackSegment.Idle)
+        if (Mouse.current.leftButton.wasPressedThisFrame && _attackCooldownTimer <= 0f && _segment == AttackSegment.Idle && !DialogueUI.IsActive)
             BeginAttack();
 
         TickAttack();
