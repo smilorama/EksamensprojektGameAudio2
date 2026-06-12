@@ -256,6 +256,9 @@
 										</ReferenceList>
 									</EffectSlot>
 									<EffectSlot Name="" ID="{CF30CA9D-ACFF-4AB8-8F05-9562D337034B}" ShortID="16508177">
+										<PropertyList>
+											<Property Name="Bypass" Type="bool" Value="True"/>
+										</PropertyList>
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 												<ObjectRef Name="ParkeringsKaelderRev_007_POS2_Klap5" ID="{4DBBD2C0-24DE-4E60-915F-8C095F14E7D8}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>

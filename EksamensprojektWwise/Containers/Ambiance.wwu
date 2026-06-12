@@ -511,6 +511,11 @@
 								<Sound Name="Bird_Loop" ID="{700DCC38-B20E-4C0D-A97F-5E59864B1295}" ShortID="763643661">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">

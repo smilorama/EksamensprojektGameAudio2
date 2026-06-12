@@ -3,111 +3,152 @@
 	<Events>
 		<WorkUnit Name="SFX" ID="{258506C8-9C45-41F6-98A0-132D0B7B814C}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Footstep" ID="{5006E459-F2A4-4044-8B85-DAC82A1B3B8A}">
+				<Folder Name="Player" ID="{FEF52588-7808-4760-A915-45AB1F8066DA}" ShortID="1012906699">
 					<ChildrenList>
-						<Action Name="" ID="{40571B99-33D6-4209-B945-7CB18F0C01E4}" ShortID="567268365">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{9FD65A87-34BD-4AFE-B590-4ACD68EF3239}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Attack_HitEnemy" ID="{67F41537-AACD-4300-9B8D-D865207DAE9F}">
+							<ChildrenList>
+								<Action Name="" ID="{10395673-CFF9-44DC-99D5-430E4C1DD40A}" ShortID="1037933936">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{94DB9C72-309D-414D-89A9-8D05C408ECC0}" ShortID="440409829">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Impact_Enemy" ID="{6B2274EC-7740-4A7D-993E-38A4A683474D}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Attack_HitNothing" ID="{EF7344E1-E86D-45A6-BDC7-028CDB821CE0}">
+							<ChildrenList>
+								<Action Name="" ID="{9B864431-D8AD-4B61-B073-7CB484EDEAD1}" ShortID="768358837">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Attack_HitTerrain" ID="{01CD9D53-DAF2-4ACE-B947-C93E7C89666B}">
+							<ChildrenList>
+								<Action Name="" ID="{8A6411E3-8B50-41B1-B610-3D53FF540621}" ShortID="967089626">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7A74F525-C3FD-427D-AFAB-9FA15A152D62}" ShortID="1017548145">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Impact_Terrain" ID="{1C2E722E-8C72-43BE-A548-F26F61C8DD9E}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Footstep" ID="{5006E459-F2A4-4044-8B85-DAC82A1B3B8A}">
+							<ChildrenList>
+								<Action Name="" ID="{40571B99-33D6-4209-B945-7CB18F0C01E4}" ShortID="567268365">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps_Player" ID="{9FD65A87-34BD-4AFE-B590-4ACD68EF3239}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Drink_Potion" ID="{BB610E01-F23E-4C0F-888E-1F7FB89B5681}">
+							<ChildrenList>
+								<Action Name="" ID="{93036ED5-1DE4-44D9-A08B-CDD466BF4274}" ShortID="335746677">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Slurp" ID="{BC8911B7-5484-467F-BE0A-852738B2C6C2}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E933E956-AF69-4F64-A31F-EC22CE276B04}" ShortID="666930657">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Liquid" ID="{A85669CB-EB51-4312-AADA-37224A824664}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{45DE0E10-C308-4209-9527-D9478176D9A9}" ShortID="512974710">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Refreshed" ID="{AC881A77-B716-4A81-9C38-581F0678DFDF}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DDE3E9B0-F1A2-4139-B737-4CBB83A55EC0}" ShortID="774682390">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Glass" ID="{C08C0D86-39AB-4238-B85A-6CC4E8143036}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Drink_Potion" ID="{BB610E01-F23E-4C0F-888E-1F7FB89B5681}">
+				</Folder>
+				<Folder Name="Enemies" ID="{B2170859-BD58-45E0-8C2F-16367D029B5C}" ShortID="890319596">
 					<ChildrenList>
-						<Action Name="" ID="{93036ED5-1DE4-44D9-A08B-CDD466BF4274}" ShortID="335746677">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Slurp" ID="{BC8911B7-5484-467F-BE0A-852738B2C6C2}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{E933E956-AF69-4F64-A31F-EC22CE276B04}" ShortID="666930657">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="0.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Liquid" ID="{A85669CB-EB51-4312-AADA-37224A824664}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{45DE0E10-C308-4209-9527-D9478176D9A9}" ShortID="512974710">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Refreshed" ID="{AC881A77-B716-4A81-9C38-581F0678DFDF}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{DDE3E9B0-F1A2-4139-B737-4CBB83A55EC0}" ShortID="774682390">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="3"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Glass" ID="{C08C0D86-39AB-4238-B85A-6CC4E8143036}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_Footstep_Enemy" ID="{16CA14E9-ABE0-4B9C-A261-703C844C3AF7}">
+							<ChildrenList>
+								<Action Name="" ID="{88A3FF7D-3548-4EE9-967B-6350FA17FDFA}" ShortID="933201484">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps_Player" ID="{9FD65A87-34BD-4AFE-B590-4ACD68EF3239}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Death_Cultist" ID="{AF4D5430-F88E-4EA7-9A45-3C4FDE39098D}">
+							<ChildrenList>
+								<Action Name="" ID="{66C16970-0936-4F74-945E-7AA0453BA753}" ShortID="540005504">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Death_Cultist" ID="{5CF757B0-9F43-4F79-8E9A-517E64FD67C7}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Death_Creature" ID="{F7AB6EF1-1A4B-4432-8F51-4F216D9FF259}">
+							<ChildrenList>
+								<Action Name="" ID="{CF1E64A2-25F3-4D38-BA11-EC237351385B}" ShortID="693081199">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Death_Creature" ID="{CAEC49A2-C67D-4CAA-898F-E324EE14CB52}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Attack_HitEnemy" ID="{67F41537-AACD-4300-9B8D-D865207DAE9F}">
-					<ChildrenList>
-						<Action Name="" ID="{10395673-CFF9-44DC-99D5-430E4C1DD40A}" ShortID="1037933936">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{94DB9C72-309D-414D-89A9-8D05C408ECC0}" ShortID="440409829">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="0.1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Impact_Enemy" ID="{6B2274EC-7740-4A7D-993E-38A4A683474D}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Attack_HitTerrain" ID="{01CD9D53-DAF2-4ACE-B947-C93E7C89666B}">
-					<ChildrenList>
-						<Action Name="" ID="{8A6411E3-8B50-41B1-B610-3D53FF540621}" ShortID="967089626">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{7A74F525-C3FD-427D-AFAB-9FA15A152D62}" ShortID="1017548145">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="0.1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Impact_Terrain" ID="{1C2E722E-8C72-43BE-A548-F26F61C8DD9E}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Attack_HitNothing" ID="{EF7344E1-E86D-45A6-BDC7-028CDB821CE0}">
-					<ChildrenList>
-						<Action Name="" ID="{9B864431-D8AD-4B61-B073-7CB484EDEAD1}" ShortID="768358837">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

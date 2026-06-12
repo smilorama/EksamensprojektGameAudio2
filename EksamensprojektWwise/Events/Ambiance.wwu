@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6191EE2C-776A-4305-959E-1680F075F0D8}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Ambiance" ID="{6191EE2C-776A-4305-959E-1680F075F0D8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Ambiance" ID="{6191EE2C-776A-4305-959E-1680F075F0D8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Cave" ID="{92B5D3DC-9E85-4BBE-8DB5-768242C5F2D7}">
+					<ChildrenList>
+						<Action Name="" ID="{F609700A-FA8E-4236-BEB8-DDE2006654A5}" ShortID="356003649">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cave" ID="{40B9E19A-B387-4D4D-829D-714C0ED19078}" WorkUnitID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Outside" ID="{6E49D72B-6E7E-4B5A-92B9-D1EA0838B16F}">
+					<ChildrenList>
+						<Action Name="" ID="{1953CD0B-09B1-43D7-92AD-2AF94523332F}" ShortID="655894977">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Outside" ID="{1F1EA5DF-8A56-44F8-BD2B-BCDC33F01178}" WorkUnitID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Water_Loop" ID="{C45EE1FB-1D55-4BE7-9841-C70CB590F7E1}">
+					<ChildrenList>
+						<Action Name="" ID="{16F920D6-7052-49AA-85AF-3B397718EAF7}" ShortID="494535299">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Water_Loop" ID="{323817F7-2ED1-4CCF-95F4-DBE7E40C49C0}" WorkUnitID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
