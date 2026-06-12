@@ -32580,6 +32580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cultist
       objectReference: {fileID: 0}
+    - target: {fileID: 2542490292468299633, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: _excludeLayers.m_Bits
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.865
@@ -32619,6 +32623,18 @@ PrefabInstance:
     - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851551630007516871, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_Height
+      value: 2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851551630007516871, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851551630007516871, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_Center.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 7346016694637104977}
   - component: {fileID: 4795564424263718417}
   - component: {fileID: 8851551630007516871}
-  - component: {fileID: 2135871719496982738}
+  - component: {fileID: 2542490292468299633}
   m_Layer: 7
   m_Name: Cultist
   m_TagString: Enemy
@@ -575,7 +575,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2135871719496982738
+--- !u!114 &2542490292468299633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -584,19 +584,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2016968571159028590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc8fb954c143b4ef7bfb4b82ca94eec5, type: 3}
+  m_Script: {fileID: 11500000, guid: 807cb18c23b52434e9cf18deedd597ef, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Footsteps
-  walkInterval: 0.5
-  sprintInterval: 0.3
-  sprintSpeedThreshold: 5
-  moveThreshold: 0.1
-  rayLength: 2
-  excludeLayers:
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyFootsteps
+  _footstepEvent: Play_Footstep_Enemy
+  _audioEmitter: {fileID: 2016968571159028590}
+  _rayLength: 2
+  _excludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  _footstepEvent: Play_Footstep_Enemy
-  _footstepEmitter: {fileID: 2016968571159028590}
 --- !u!1 &2197525685876503169
 GameObject:
   m_ObjectHideFlags: 0
