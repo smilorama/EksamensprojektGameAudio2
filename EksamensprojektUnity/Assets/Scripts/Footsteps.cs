@@ -13,7 +13,7 @@ public class Footsteps : MonoBehaviour
     private CharacterController _controller;
     private float _timer;
 
-    private static readonly string[] _surfaceSwitches = { "Grass", "Stone", "Dirt" };
+    private static readonly string[] _materialSwitches = { "Grass", "Stone", "Dirt", "Tile" };
 
     private void Awake()
     {
@@ -43,9 +43,9 @@ public class Footsteps : MonoBehaviour
     private void PlayFootstep()
     {
         int surfaceIndex = GetSurfaceIndex();
-        string switchValue = _surfaceSwitches[surfaceIndex];
+        string switchValue = _materialSwitches[surfaceIndex];
 
-        AkSoundEngine.SetSwitch("Material", switchValue, gameObject);
+        AkSoundEngine.SetSwitch("Materials", switchValue, gameObject);
         AkSoundEngine.PostEvent("Play_Footstep", gameObject);
     }
 
@@ -68,7 +68,7 @@ public class Footsteps : MonoBehaviour
         {
             TerrainAudioMaterial terrainAudio = terrain.GetComponent<TerrainAudioMaterial>();
             if (terrainAudio != null)
-                return Mathf.Clamp((int)terrainAudio.GetMaterialAtPosition(hit.point), 0, _surfaceSwitches.Length - 1);
+                return Mathf.Clamp((int)terrainAudio.GetMaterialAtPosition(hit.point), 0, _materialSwitches.Length - 1);
         }
 
         return 0;
