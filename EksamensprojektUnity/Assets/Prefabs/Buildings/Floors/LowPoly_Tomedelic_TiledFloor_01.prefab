@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29aed3dcdb4064240b49f5489f58f254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioMaterial
-  audioMaterialType: 1
+  audioMaterialType: 3
