@@ -12,7 +12,10 @@ public class DamageZone : MonoBehaviour
     public void Deactivate() => _active = false;
     public void deactivate() => _active = false;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) => TryHit(other);
+    private void OnTriggerStay(Collider other) => TryHit(other);
+
+    private void TryHit(Collider other)
     {
         if (!_active) return;
         if (!other.CompareTag("Player")) return;

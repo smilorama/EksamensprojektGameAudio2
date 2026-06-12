@@ -3,6 +3,7 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(CharacterController))]
 public class Enemy : MonoBehaviour
 {
     [Header("Detection")]
@@ -26,8 +27,8 @@ public class Enemy : MonoBehaviour
 
     private NavMeshAgent _agent;
     private Animator _animator;
+    private CharacterController _controller;
     private Transform _player;
-
 
     private enum State { Idle, Aggro }
     private State _state = State.Idle;
@@ -37,12 +38,16 @@ public class Enemy : MonoBehaviour
     private float _attackTimer;
     private bool _isPerformingAction;
 
+    private float _verticalVelocity;
+    private const float Gravity = -20f;
+
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
+        _controller = GetComponent<CharacterController>();
 
-        _agent.updatePosition = true;
+        _agent.updatePosition = false;
         _agent.updateRotation = false;
         _agent.speed = moveSpeed;
 
@@ -66,7 +71,22 @@ public class Enemy : MonoBehaviour
             TryAttack();
         }
 
+        ApplyMovement();
     }
+
+    private void ApplyMovement()
+    {
+        if (!_agent.enabled) return;
+
+        if (_controller.isGrounded)
+            _verticalVelocity = -2f;
+        else
+            _verticalVelocity += Gravity * Time.deltaTime;
+
+        _controller.Move(new Vector3(0f, _verticalVelocity, 0f) * Time.deltaTime);
+        _agent.nextPosition = transform.position;
+    }
+
 
     private void DetectPlayer()
     {
@@ -89,7 +109,6 @@ public class Enemy : MonoBehaviour
     {
         if (_player == null) return;
 
-        // never move or update blend tree while attacking
         if (_isPerformingAction)
         {
             _agent.isStopped = true;
@@ -108,14 +127,28 @@ public class Enemy : MonoBehaviour
             _agent.SetDestination(_player.position);
             _agent.isStopped = false;
 
-            desiredDir = _agent.desiredVelocity;
-            desiredDir.y = 0f;
-            Vector3 localDesired = transform.InverseTransformDirection(desiredDir);
-            float vertical   = Mathf.Clamp(localDesired.z / moveSpeed, -1f, 1f);
-            float horizontal = Mathf.Clamp(localDesired.x / moveSpeed, -1f, 1f);
-            _animator.SetFloat("Vertical",   vertical);
-            _animator.SetFloat("Horizontal", horizontal);
-            _animator.SetBool("isMoving",    vertical > 0.1f);
+            // Only drive blend tree if agent is actually moving on NavMesh
+            bool agentMoving = _agent.isOnNavMesh && !_agent.pathPending
+                               && _agent.remainingDistance > _agent.stoppingDistance
+                               && _agent.velocity.sqrMagnitude > 0.01f;
+
+            if (agentMoving)
+            {
+                desiredDir = _agent.desiredVelocity;
+                desiredDir.y = 0f;
+                Vector3 localDesired = transform.InverseTransformDirection(desiredDir);
+                float vertical   = Mathf.Clamp(localDesired.z / moveSpeed, -1f, 1f);
+                float horizontal = Mathf.Clamp(localDesired.x / moveSpeed, -1f, 1f);
+                _animator.SetFloat("Vertical",   vertical);
+                _animator.SetFloat("Horizontal", horizontal);
+                _animator.SetBool("isMoving",    vertical > 0.1f);
+            }
+            else
+            {
+                _animator.SetFloat("Vertical",   0f);
+                _animator.SetFloat("Horizontal", 0f);
+                _animator.SetBool("isMoving",    false);
+            }
         }
         else
         {
@@ -167,18 +200,16 @@ public class Enemy : MonoBehaviour
     {
         _dead = true;
 
-        // stop all movement and AI immediately
         _agent.isStopped = true;
         _agent.enabled   = false;
+        _controller.enabled = false;
         _isPerformingAction = false;
 
-        // reset all animator params so nothing can interrupt Death
         _animator.SetFloat("Vertical",   0f);
         _animator.SetFloat("Horizontal", 0f);
         _animator.SetBool("isMoving",    false);
         _animator.ResetTrigger("Attack");
 
-        // force Death on Action Override layer (index 1) at time 0
         _animator.SetLayerWeight(1, 1f);
         _animator.Play("Death", 1, 0f);
 

@@ -54,13 +54,10 @@ namespace AK
     {
         static const AkUniqueID BITCRUSH = 1974573347U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
-        static const AkUniqueID REVERB_AUDIO_BUS = 2954846929U;
-        static const AkUniqueID REVERB_STEREO = 1715656151U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID CHURCH_SMALL_WOOD = 484890516U;
         static const AkUniqueID PARKERINGREV_001_BAELTE1 = 288340792U;
         static const AkUniqueID PARKERINGREV_002_BAELTE2 = 1020492676U;
         static const AkUniqueID PARKERINGREV_003_KLAP1 = 230976631U;

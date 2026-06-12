@@ -13546,7 +13546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0.30588236}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24558,8 +24558,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 5.0000024, y: 0}
-  m_SizeDelta: {x: 19.999996, y: 0}
+  m_AnchoredPosition: {x: 5.000005, y: 0}
+  m_SizeDelta: {x: 19.99999, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677509002
 MonoBehaviour:
@@ -31970,7 +31970,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b0f4b17be1cc44289928b92d1900e13d, type: 2}
-  reverbLevel: 1
+  reverbLevel: 0.254
   transmissionLoss: 1
   distanceBehavior: 0
   roomToneEvent:
@@ -32092,8 +32092,8 @@ MonoBehaviour:
   reverbAuxBus:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ffb396f539a0249a4b564d9effc8dbd5, type: 2}
-  reverbLevel: 0.55
+    WwiseObjectReference: {fileID: 11400000, guid: b0f4b17be1cc44289928b92d1900e13d, type: 2}
+  reverbLevel: 0.129
   transmissionLoss: 1
   distanceBehavior: 0
   roomToneEvent:
