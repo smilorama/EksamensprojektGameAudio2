@@ -5,10 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Cave" ID="{E4F86BA9-7DED-49D6-99F4-905CC349AA36}" ShortID="455470142">
 					<ChildrenList>
-						<Sound Name="Cave_loop" ID="{B142F949-97AF-4B6B-9DD2-7D4F625BB058}" ShortID="777864748">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
+						<BlendContainer Name="Cave" ID="{40B9E19A-B387-4D4D-829D-714C0ED19078}" ShortID="2469468">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -16,34 +13,451 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Church_Small_Wood" ID="{376928F4-B70A-4B38-A6F3-3E6B5526058B}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Ambience, Underground, Cave, Deep, Wind 01 SND46579" ID="{7D6FCAE3-24A5-4AAB-AAA1-55A6CDB922AB}">
+								<Sound Name="Cave_loop" ID="{B142F949-97AF-4B6B-9DD2-7D4F625BB058}" ShortID="777864748">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="12187.5"/>
-										<Property Name="LoopBegin" Type="Real64" Value="18.79004"/>
-										<Property Name="LoopEnd" Type="Real64" Value="102.91815"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Originals\SFX\Ambience, Underground, Cave, Deep, Wind 01 SND46579.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="799234239"/>
-									</MediaIDList>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Underground, Cave, Deep, Wind 01 SND46579" ID="{7D6FCAE3-24A5-4AAB-AAA1-55A6CDB922AB}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="12187.5"/>
+												<Property Name="LoopBegin" Type="Real64" Value="18.79004"/>
+												<Property Name="LoopEnd" Type="Real64" Value="102.91815"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Ambience, Underground, Cave, Deep, Wind 01 SND46579.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="799234239"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience, Underground, Cave, Deep, Wind 01 SND46579" ID="{7D6FCAE3-24A5-4AAB-AAA1-55A6CDB922AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Drips" ID="{C8219430-4CBD-4FCD-B57F-90C319049313}" ShortID="241282832">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{69B97861-2FA1-4E2D-89C1-C00CEF185077}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B9C85283-78C1-4A3E-A528-2523C62B0D81}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1000"/>
+															<Property Name="Min" Type="Real64" Value="-1000"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{55AC0127-1B73-4D75-989F-4AD2BDE1C725}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="8"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Church_Small_Wood" ID="{376928F4-B70A-4B38-A6F3-3E6B5526058B}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Cave Drip 1_L" ID="{A6C26E27-E622-4082-84D4-B740C4E43C59}" ShortID="369426714">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9D2A480F-F14D-46F0-A072-82E40B081872}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1000"/>
+																	<Property Name="Min" Type="Real64" Value="-1000"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 1_L" ID="{E2FCF0A8-C46F-475F-95FC-1DCDCEE5EC41}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 1_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="531713444"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 1_L" ID="{E2FCF0A8-C46F-475F-95FC-1DCDCEE5EC41}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 2_L" ID="{F24EDC0A-01A3-4805-93A5-D9DFA86ADD6E}" ShortID="1047276979">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 2_L" ID="{EBE39564-658E-42D7-B2F1-CF3DE741BFBB}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 2_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="248010114"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 2_L" ID="{EBE39564-658E-42D7-B2F1-CF3DE741BFBB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 3_L" ID="{E1AE0AB4-EE8F-45F9-9860-CC50792D26C2}" ShortID="248469539">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 3_L" ID="{A333045F-9461-4F0B-B6DD-3EC607081811}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 3_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="950148688"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 3_L" ID="{A333045F-9461-4F0B-B6DD-3EC607081811}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 4_L" ID="{3D674767-CEAF-4A96-BE4E-707CAC490EA3}" ShortID="573642646">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 4_L" ID="{FF1C6DD2-E762-40CB-BD0A-876AAF982C7F}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 4_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1054966768"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 4_L" ID="{FF1C6DD2-E762-40CB-BD0A-876AAF982C7F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 5_L" ID="{663F597E-B26C-42D7-A33C-D1C25257939A}" ShortID="413288576">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 5_L" ID="{9D7E0C94-556E-409A-AD2B-4536EF40BB9C}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 5_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="84267646"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 5_L" ID="{9D7E0C94-556E-409A-AD2B-4536EF40BB9C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 6_L" ID="{BD8844EC-140A-4C38-BB55-E975D5309A85}" ShortID="34504087">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 6_L" ID="{9A7BBC55-1687-4965-9CC7-80D63BEEC8C8}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 6_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="247521029"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 6_L" ID="{9A7BBC55-1687-4965-9CC7-80D63BEEC8C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 7_L" ID="{E151AE8E-56E6-4017-A698-9BFE08237F5F}" ShortID="961076997">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 7_L" ID="{C2848CC6-1AF4-4D8C-B1A7-ADC6F08C2EEB}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 7_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="809035489"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 7_L" ID="{C2848CC6-1AF4-4D8C-B1A7-ADC6F08C2EEB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 8_L" ID="{06686EC9-4B8A-410E-9FE8-76B81B622ECC}" ShortID="1028344194">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 8_L" ID="{521823EB-E994-4539-BD52-41ABF0F2793C}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 8_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="710290391"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 8_L" ID="{521823EB-E994-4539-BD52-41ABF0F2793C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 9_L" ID="{EDF22695-9123-49CE-AA7B-BCF58576BC49}" ShortID="1028007200">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 9_L" ID="{9918F572-74C7-488E-879E-597C0A16EB59}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 9_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="299777249"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 9_L" ID="{9918F572-74C7-488E-879E-597C0A16EB59}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 10_L" ID="{2CD2B44A-8938-4EAB-8490-263A5315349C}" ShortID="560812672">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 10_L" ID="{8D5CB24F-DF4A-44BC-82D3-2D5766E71EAD}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 10_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="365491036"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 10_L" ID="{8D5CB24F-DF4A-44BC-82D3-2D5766E71EAD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 11_L" ID="{CD98A064-50DA-4AE4-9F4B-C1623F941D63}" ShortID="450524216">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 11_L" ID="{56CCE86B-3319-4187-903F-83BE9B547072}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 11_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="343147211"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 11_L" ID="{56CCE86B-3319-4187-903F-83BE9B547072}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 12_L" ID="{3CA0163B-C5E5-4CF4-94EE-4115241CC75F}" ShortID="1008373466">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 12_L" ID="{892B3A70-38B1-4604-BEA3-8F654F62A320}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 12_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="379604598"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 12_L" ID="{892B3A70-38B1-4604-BEA3-8F654F62A320}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 13_L" ID="{9B31A1E4-915B-4FD4-9418-A0A9F63B7075}" ShortID="144098729">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 13_L" ID="{9CACFCE3-BCDF-455F-9DC2-D69FB7D2CE97}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 13_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="801940484"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 13_L" ID="{9CACFCE3-BCDF-455F-9DC2-D69FB7D2CE97}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 14_L" ID="{5A3DBA8F-2D85-4805-908C-7D4F6C8A0783}" ShortID="349318664">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 14_L" ID="{A48B09A6-EE12-4FEE-BFCE-50C675FB10A3}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 14_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="759909297"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 14_L" ID="{A48B09A6-EE12-4FEE-BFCE-50C675FB10A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cave Drip 15_L" ID="{EFF7AB94-969C-40F1-A29F-A43CDF7BE400}" ShortID="543966982">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cave Drip 15_L" ID="{617D35E8-1844-4A5E-BE18-5AAD85828573}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Cave Drip 15_L.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="799013277"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cave Drip 15_L" ID="{617D35E8-1844-4A5E-BE18-5AAD85828573}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{4E68D0C9-5D91-4633-B7EB-42CA6E537B93}"/>
+									</PositioningInfo>
+								</RandomSequenceContainer>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Ambience, Underground, Cave, Deep, Wind 01 SND46579" ID="{7D6FCAE3-24A5-4AAB-AAA1-55A6CDB922AB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Outside" ID="{52DCB440-A719-4A68-A4BE-14F5D7AA4372}" ShortID="254607049">
 					<ChildrenList>
-						<Sound Name="Bird_Loop" ID="{700DCC38-B20E-4C0D-A97F-5E59864B1295}" ShortID="763643661">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
+						<BlendContainer Name="Outside" ID="{1F1EA5DF-8A56-44F8-BD2B-BCDC33F01178}" ShortID="11157032">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -53,29 +467,110 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698" ID="{64331A5E-0C19-48C6-A931-1F06102E6453}">
+								<Sound Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{5A1850BB-1535-40B4-A4F1-7C6E570EB77C}" ShortID="132155382">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="12098.49"/>
-										<Property Name="LoopBegin" Type="Real64" Value="9.06658"/>
-										<Property Name="LoopEnd" Type="Real64" Value="142.39857"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>34</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Originals\SFX\Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="710763542"/>
-									</MediaIDList>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{98F22349-9312-4161-8121-B1114BD9BC5F}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="23437.493"/>
+												<Property Name="LoopBegin" Type="Real64" Value="16.76659"/>
+												<Property Name="LoopEnd" Type="Real64" Value="161.11344"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="610247601"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{98F22349-9312-4161-8121-B1114BD9BC5F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Bird_Loop" ID="{700DCC38-B20E-4C0D-A97F-5E59864B1295}" ShortID="763643661">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698" ID="{64331A5E-0C19-48C6-A931-1F06102E6453}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="12098.49"/>
+												<Property Name="LoopBegin" Type="Real64" Value="9.06658"/>
+												<Property Name="LoopEnd" Type="Real64" Value="142.39857"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="710763542"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698" ID="{64331A5E-0C19-48C6-A931-1F06102E6453}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698" ID="{64331A5E-0C19-48C6-A931-1F06102E6453}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Temple" ID="{1422E93A-0FCF-4852-96AC-A8F3FFFC7BBD}" ShortID="187392344"/>
 				<Folder Name="Tunnel" ID="{E7A3226A-4878-490F-8A3C-81303DF89D80}" ShortID="35098144"/>
-				<Folder Name="TheWeird" ID="{93CADD4D-100B-4FD9-9086-8DEEB007C9DC}" ShortID="168240851"/>
+				<Folder Name="TheWeird" ID="{93CADD4D-100B-4FD9-9086-8DEEB007C9DC}" ShortID="168240851">
+					<ChildrenList>
+						<Sound Name="Ambience, Scifi, Otherworldly, Wind, Soft SND123187" ID="{4283DB93-EC69-4620-9F50-15765E68E62F}" ShortID="327902032">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Scifi, Otherworldly, Wind, Soft SND123187" ID="{07DCCAC7-1299-45E3-95F4-519352CDFCFA}">
+									<Language>SFX</Language>
+									<AudioFile>Originals\SFX\Ambience, Scifi, Otherworldly, Wind, Soft SND123187.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="581579051"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Scifi, Otherworldly, Wind, Soft SND123187" ID="{07DCCAC7-1299-45E3-95F4-519352CDFCFA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="Running Water" ID="{60EDB17B-64FE-46BC-9846-59F39B0D2E43}" ShortID="881171529">
 					<ChildrenList>
 						<Sound Name="Water_Loop" ID="{323817F7-2ED1-4CCF-95F4-DBE7E40C49C0}" ShortID="878780088">

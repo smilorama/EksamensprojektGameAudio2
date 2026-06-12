@@ -15,9 +15,6 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="ParkeringRev_001_Baelte1" ID="{1C819525-A377-47E8-AA30-AE1F2AC1DC10}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310" ID="{73D17544-ED73-49EE-8C51-95BD44AA878F}" ShortID="396523200">
@@ -111,6 +108,11 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Liquid" ID="{A85669CB-EB51-4312-AADA-37224A824664}" ShortID="329804548">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -165,6 +167,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Water, Drip, Drip, Glugs SND138199 3" ID="{305A989D-15BC-4428-ADD4-8868BE0E69E7}" ShortID="807234870">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -187,8 +196,56 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{CFA93173-F0A8-408B-B00F-4DC24BD3754A}">
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<RTPC Name="" ID="{9FCB0F20-7B7C-45BD-A2CE-5D447DA186EF}" ShortID="693633650">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="PanX"/>
+														</PropertyList>
+														<ReferenceList/>
+													</RTPC>
+													<RTPC Name="" ID="{70DCBC88-9304-4C33-9BE5-BF1BD9FB6AE4}" ShortID="46769776">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="PanY"/>
+														</PropertyList>
+														<ReferenceList/>
+													</RTPC>
+													<RTPC Name="" ID="{42006541-DD4A-42CA-8A3E-C5732B40C998}" ShortID="685018192">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="PanZ"/>
+														</PropertyList>
+														<ReferenceList/>
+													</RTPC>
+												</ObjectList>
+											</ObjectLists>
+										</Panner>
+									</PositioningInfo>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Refreshed" ID="{AC881A77-B716-4A81-9C38-581F0678DFDF}" ShortID="795865353">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>21</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-70</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-28</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -280,12 +337,66 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Quest Items" ID="{7C3D0793-596F-4F58-BCF3-E60687594FB8}" ShortID="277899097"/>
+						<Folder Name="Quest Items" ID="{7C3D0793-596F-4F58-BCF3-E60687594FB8}" ShortID="277899097">
+							<ChildrenList>
+								<Folder Name="Tome" ID="{41966FE9-A642-4CAA-839E-F784C76AF90A}" ShortID="55752510">
+									<ChildrenList>
+										<Sound Name="Tome Pickup" ID="{B25E889E-0917-4DDE-BE9E-91F6A19814A1}" ShortID="130358774">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tome Pickup" ID="{2572C569-97EA-4A89-8226-377C820E0EC6}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Tome Pickup.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="233529554"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tome Pickup" ID="{2572C569-97EA-4A89-8226-377C820E0EC6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Weapon" ID="{0C5B5ED8-3317-4193-BFA0-A5ABBECF80AA}" ShortID="430754052">
 					<ChildrenList>
 						<RandomSequenceContainer Name="Impact_Enemy" ID="{6B2274EC-7740-4A7D-993E-38A4A683474D}" ShortID="897851011">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>23</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>24</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F65B2D8E-33F6-4B60-9D02-1A0468AD3DFB}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1000"/>
+													<Property Name="Min" Type="Real64" Value="-1000"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -430,6 +541,26 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Impact_Terrain" ID="{1C2E722E-8C72-43BE-A548-F26F61C8DD9E}" ShortID="212379544">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{906313B0-C191-46A3-B687-15B23BA76F37}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1000"/>
+													<Property Name="Min" Type="Real64" Value="-1000"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -508,6 +639,21 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" ShortID="354051291">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0604A1F7-C27B-4BAD-843E-F05758396EC3}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1000"/>
+													<Property Name="Min" Type="Real64" Value="-1000"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1262,15 +1408,33 @@
 					</ChildrenList>
 				</Folder>
 				<SwitchContainer Name="Footsteps" ID="{9FD65A87-34BD-4AFE-B590-4ACD68EF3239}" ShortID="285858122">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B0EAE2C7-EC8D-40D6-887D-6384D2B76B0F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1000"/>
+											<Property Name="Min" Type="Real64" Value="-1000"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Dirt" ID="{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}" WorkUnitID="{49D8EB33-CC07-4F34-815A-3E0614A43C8A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="Surface" ID="{0DAB6914-6D47-450C-9BA0-1482A41A4A1D}" WorkUnitID="{49D8EB33-CC07-4F34-815A-3E0614A43C8A}"/>
+							<ObjectRef Name="Materials" ID="{0DAB6914-6D47-450C-9BA0-1482A41A4A1D}" WorkUnitID="{49D8EB33-CC07-4F34-815A-3E0614A43C8A}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1640,9 +1804,35 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Water_Footsteps" ID="{E26E6314-E901-41FC-B117-BF20956B777C}" ShortID="244705466">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Tile_Footsteps" ID="{7469541E-96F5-44C1-8B2E-5FFDA421F352}" ShortID="1005882325">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Water_Footsteps" ID="{E26E6314-E901-41FC-B117-BF20956B777C}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Tile_Footsteps" ID="{7469541E-96F5-44C1-8B2E-5FFDA421F352}"/>
+							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Grass_Footsteps" ID="{6107AF91-6B6B-4F2B-8955-40AD77C466AF}"/>
 							</GroupingBehavior>
@@ -1654,6 +1844,18 @@
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Tile" ID="{E8149D30-1FA3-4149-9D41-710150DC386C}"/>
+								<ItemList>
+									<ItemRef Name="Tile_Footsteps" ID="{7469541E-96F5-44C1-8B2E-5FFDA421F352}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Water" ID="{7BA9EC96-D7B9-4838-B425-F1454DDD5181}"/>
+								<ItemList>
+									<ItemRef Name="Water_Footsteps" ID="{E26E6314-E901-41FC-B117-BF20956B777C}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="Grass" ID="{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"/>
 								<ItemList>
