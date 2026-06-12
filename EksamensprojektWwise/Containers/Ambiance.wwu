@@ -9,11 +9,9 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
-								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
@@ -25,6 +23,7 @@
 								<Sound Name="Cave_loop" ID="{B142F949-97AF-4B6B-9DD2-7D4F625BB058}" ShortID="777864748">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -49,12 +48,18 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{E713DAF9-51F5-429E-B7E8-519B66A81CEB}"/>
+									</PositioningInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Ambience, Underground, Cave, Deep, Wind 01 SND46579" ID="{7D6FCAE3-24A5-4AAB-AAA1-55A6CDB922AB}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<RandomSequenceContainer Name="Drips" ID="{C8219430-4CBD-4FCD-B57F-90C319049313}" ShortID="241282832">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.5"/>
 										<Property Name="InitialDelay" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
@@ -63,6 +68,7 @@
 											</ModifierList>
 										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -94,6 +100,104 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{811B952D-C5B8-45B8-AC93-1DF9604121D2}" ShortID="778097317">
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{0DF6FDCE-EAC6-4F32-AB37-80A7022E8A38}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>100</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<DualShelfUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</DualShelfUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<ObstructionDSFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionDSFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<OcclusionDSFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionDSFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<DiffractionDSFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionDSFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+														<TransmissionDSFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionDSFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 										</Reference>
@@ -450,9 +554,156 @@
 									</ChildrenList>
 									<PositioningInfo>
 										<Panner Name="" ID="{4E68D0C9-5D91-4633-B7EB-42CA6E537B93}"/>
+										<Position Name="" ID="{D129C6E6-21B7-4FAE-B2BB-88AB0555DA6E}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Drips_Path" ID="{77AC2AA2-331E-41AC-BCC3-19CE97C19004}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="70"/>
+														<Property Name="RandomY" Type="Real64" Value="70"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>29.44162</XPos>
+															<YPos>77.11864</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Drips_Path_01" ID="{D250A5C1-A0AA-4C72-8690-5BFED645018C}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="45"/>
+														<Property Name="RandomY" Type="Real64" Value="52"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-82.74112</XPos>
+															<YPos>67.51412</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Drips_Path_02" ID="{970D7884-0FBB-40ED-8639-249D1B12DF0C}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+														<Property Name="RandomY" Type="Real64" Value="49"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>52.28426</XPos>
+															<YPos>38.70056</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Drips_Path_03" ID="{B9C073B9-BBC7-47FB-8706-6B19B0E92262}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="48"/>
+														<Property Name="RandomY" Type="Real64" Value="44"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-44.16244</XPos>
+															<YPos>-30.22599</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Drips_Path_04" ID="{1D33D623-C5D6-42AA-A55B-1A679B299543}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="44"/>
+														<Property Name="RandomY" Type="Real64" Value="46"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>56.85279</XPos>
+															<YPos>-38.13559</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Drips_Path_05" ID="{C39288BE-1EE8-4514-A07E-81EA7DE540A7}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="44"/>
+														<Property Name="RandomY" Type="Real64" Value="43"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-60.91371</XPos>
+															<YPos>20.62147</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Drips_Path_06" ID="{804CFC91-7B4F-41C5-8448-B67EDAB5F21D}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="47"/>
+														<Property Name="RandomY" Type="Real64" Value="42"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>35.02538</XPos>
+															<YPos>74.85876</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Drips_Path_07" ID="{BEC94FA8-F106-473A-8D7D-72B04DAB4EC5}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="45"/>
+														<Property Name="RandomY" Type="Real64" Value="51"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-45.68528</XPos>
+															<YPos>-38.13559</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
 									</PositioningInfo>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{B0FB0D25-DAD0-43BB-9197-339052AFA1E2}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Cave_Path" ID="{6E243CEB-9859-4E43-A4BA-92DFF73CD1AC}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 						</BlendContainer>
 					</ChildrenList>
 				</Folder>

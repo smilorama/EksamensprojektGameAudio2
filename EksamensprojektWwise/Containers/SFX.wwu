@@ -339,6 +339,9 @@
 								<Folder Name="Tome" ID="{41966FE9-A642-4CAA-839E-F784C76AF90A}" ShortID="55752510">
 									<ChildrenList>
 										<Sound Name="Tome Pickup" ID="{B25E889E-0917-4DDE-BE9E-91F6A19814A1}" ShortID="130358774">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -592,6 +595,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -685,6 +689,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -797,6 +802,7 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="Attack_Cultist" ID="{20CACA59-F0D2-4AD6-BA2D-C0354E0D2182}" ShortID="692624172">
 													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
 														<Property Name="Lowpass" Type="int16">
 															<ValueList>
 																<Value>26</Value>
@@ -815,8 +821,12 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 														</Reference>
@@ -921,6 +931,7 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="Death_Cultist" ID="{5CF757B0-9F43-4F79-8E9A-517E64FD67C7}" ShortID="273734682">
 													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
 																<Value>16</Value>
@@ -945,6 +956,7 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-2</Value>
@@ -952,6 +964,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 														</Reference>
@@ -1043,7 +1058,14 @@
 										<Folder Name="Take_Damage" ID="{4063F6F1-7663-4A3B-AA40-2AB8B2FFA900}" ShortID="79876721">
 											<ChildrenList>
 												<RandomSequenceContainer Name="TakeDamage_Cultist" ID="{36861591-22C9-4134-B003-8551D53671AB}" ShortID="615489986">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 														</Reference>
@@ -1062,6 +1084,8 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="Death_Creature" ID="{CAEC49A2-C67D-4CAA-898F-E324EE14CB52}" ShortID="621117846">
 													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-3</Value>
@@ -1214,7 +1238,14 @@
 										<Folder Name="Attack" ID="{34DB8244-D63F-40BF-ACB2-EB5C9808B872}" ShortID="871337253">
 											<ChildrenList>
 												<RandomSequenceContainer Name="Attack_Creature" ID="{E9594D7D-065E-4FA3-8D72-DF0C77EA150D}" ShortID="593723935">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 														</Reference>
@@ -1264,6 +1295,7 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-5</Value>
@@ -1374,6 +1406,9 @@
 								<Folder Name="Attack" ID="{28528613-E3AB-4BC7-8786-A6A612863858}" ShortID="635539184">
 									<ChildrenList>
 										<RandomSequenceContainer Name="Attack_Player" ID="{7D0955E3-E122-4A22-A995-2E0D12A811BA}" ShortID="976653647">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1479,6 +1514,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Jump" ID="{952DF04E-0624-47E1-A85C-0358D21C6CEF}" ShortID="333905390">
 											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -1492,6 +1528,7 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-13</Value>
@@ -1620,6 +1657,9 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Land" ID="{E60325AD-AF56-4B2C-A1C3-0F694C6DB8F2}" ShortID="552222958">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1634,6 +1674,9 @@
 								<Folder Name="Death" ID="{3DFF653C-C5F1-4322-A4F3-4DB21F30A0A1}" ShortID="132978722">
 									<ChildrenList>
 										<RandomSequenceContainer Name="Death_Player" ID="{D9081C31-235B-4C18-A91A-53711D8C8AA6}" ShortID="154747110">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
