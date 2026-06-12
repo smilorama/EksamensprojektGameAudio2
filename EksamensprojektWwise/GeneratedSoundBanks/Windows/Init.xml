@@ -38,15 +38,17 @@
 				<AuxBus Id="3950004767" Name="ParkeringRev_004_Klap2" ObjectPath="\Busses\Default Work Unit\Reverb Audio Bus\ParkeringRev_004_Klap2" GUID="{F434E6BB-BB9D-4559-9D3D-341BB01FD648}"/>
 			</AuxBusses>
 			<SwitchGroups>
-				<SwitchGroup Id="1834394558" Name="Surface" ObjectPath="\Switches\Default Work Unit\Surface" GUID="{0DAB6914-6D47-450C-9BA0-1482A41A4A1D}">
+				<SwitchGroup Id="4050929301" Name="Materials" ObjectPath="\Switches\Default Work Unit\Materials" GUID="{0DAB6914-6D47-450C-9BA0-1482A41A4A1D}">
 					<Switches>
-						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Surface\Stone" GUID="{0DA7F6CF-E32D-410A-B986-195A12189456}"/>
-						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\Surface\Dirt" GUID="{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"/>
-						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\Surface\Grass" GUID="{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"/>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Materials\Stone" GUID="{0DA7F6CF-E32D-410A-B986-195A12189456}"/>
+						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\Materials\Dirt" GUID="{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"/>
+						<Switch Id="2637588553" Name="Tile" ObjectPath="\Switches\Default Work Unit\Materials\Tile" GUID="{E8149D30-1FA3-4149-9D41-710150DC386C}"/>
+						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\Materials\Water" GUID="{7BA9EC96-D7B9-4838-B425-F1454DDD5181}"/>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\Materials\Grass" GUID="{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8D154547-373D-3112-ACD7-422E2509AF39}</FileHash>
+	<FileHash>{691C9B10-D62B-3840-78CC-BBA1EDC925F9}</FileHash>
 </SoundBanksInfo>
