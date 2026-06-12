@@ -6,6 +6,10 @@
 				<Folder Name="Cave" ID="{E4F86BA9-7DED-49D6-99F4-905CC349AA36}" ShortID="455470142">
 					<ChildrenList>
 						<BlendContainer Name="Cave" ID="{40B9E19A-B387-4D4D-829D-714C0ED19078}" ShortID="2469468">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
