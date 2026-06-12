@@ -204,19 +204,16 @@
 														<PropertyList>
 															<Property Name="PropertyName" Type="string" Value="PanX"/>
 														</PropertyList>
-														<ReferenceList/>
 													</RTPC>
 													<RTPC Name="" ID="{70DCBC88-9304-4C33-9BE5-BF1BD9FB6AE4}" ShortID="46769776">
 														<PropertyList>
 															<Property Name="PropertyName" Type="string" Value="PanY"/>
 														</PropertyList>
-														<ReferenceList/>
 													</RTPC>
 													<RTPC Name="" ID="{42006541-DD4A-42CA-8A3E-C5732B40C998}" ShortID="685018192">
 														<PropertyList>
 															<Property Name="PropertyName" Type="string" Value="PanZ"/>
 														</PropertyList>
-														<ReferenceList/>
 													</RTPC>
 												</ObjectList>
 											</ObjectLists>
@@ -396,6 +393,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -417,6 +419,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334" ID="{A3933E46-BB66-43F1-A087-1BA59FA9DFA3}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.01488"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.01383"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334.wav</AudioFile>
 											<MediaIDList>
@@ -439,6 +446,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1" ID="{0DEB1B65-0472-4F03-BDAC-2C3B1E7181EF}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.05402"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.05308"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1.wav</AudioFile>
 											<MediaIDList>
@@ -461,6 +473,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2" ID="{D90DBBAA-0039-4C51-868B-AA230760FA36}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.05527"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2.wav</AudioFile>
 											<MediaIDList>
@@ -483,6 +499,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3" ID="{1618BCFC-A0C3-4153-A47D-117176903DB2}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.05896"/>
+												<Property Name="LoopEnd" Type="Real64" Value="1.19583"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.05892"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3.wav</AudioFile>
 											<MediaIDList>
@@ -505,6 +527,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4" ID="{8FF22DEF-0C8C-45B5-9C10-14604B6F9D5C}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.07662"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4.wav</AudioFile>
 											<MediaIDList>
@@ -527,6 +553,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5" ID="{12350118-687A-44C8-9EA4-FC36A68DD880}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.10119"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.1"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Originals\SFX\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5.wav</AudioFile>
 											<MediaIDList>
@@ -1426,9 +1457,6 @@
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-						</Reference>
-						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="Dirt" ID="{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}" WorkUnitID="{49D8EB33-CC07-4F34-815A-3E0614A43C8A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>

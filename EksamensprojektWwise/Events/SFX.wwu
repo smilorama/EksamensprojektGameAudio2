@@ -57,12 +57,44 @@
 				</Event>
 				<Event Name="Attack_HitEnemy" ID="{67F41537-AACD-4300-9B8D-D865207DAE9F}">
 					<ChildrenList>
-						<Action Name="" ID="{1E879667-EA07-416B-8824-1512599862ED}" ShortID="916619108"/>
+						<Action Name="" ID="{10395673-CFF9-44DC-99D5-430E4C1DD40A}" ShortID="1037933936">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{94DB9C72-309D-414D-89A9-8D05C408ECC0}" ShortID="440409829">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Impact_Enemy" ID="{6B2274EC-7740-4A7D-993E-38A4A683474D}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Attack_HitTerrain" ID="{01CD9D53-DAF2-4ACE-B947-C93E7C89666B}">
 					<ChildrenList>
-						<Action Name="" ID="{B8C105E8-CD29-457D-A572-BA2FB2233949}" ShortID="7536907"/>
+						<Action Name="" ID="{8A6411E3-8B50-41B1-B610-3D53FF540621}" ShortID="967089626">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7A74F525-C3FD-427D-AFAB-9FA15A152D62}" ShortID="1017548145">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Impact_Terrain" ID="{1C2E722E-8C72-43BE-A548-F26F61C8DD9E}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Attack_HitNothing" ID="{EF7344E1-E86D-45A6-BDC7-028CDB821CE0}">
