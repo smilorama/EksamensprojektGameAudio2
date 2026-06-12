@@ -1743,9 +1743,6 @@
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Materials" ID="{0DAB6914-6D47-450C-9BA0-1482A41A4A1D}" WorkUnitID="{49D8EB33-CC07-4F34-815A-3E0614A43C8A}"/>
 								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="ParkeringRev_007_Klap5" ID="{EB63EECC-E99E-4021-855B-5F7FE0DB6B52}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Stone_Footsteps" ID="{AAEFBF95-C62B-40A7-801D-1D5BE1632E56}" ShortID="607463344">
