@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{C3DA7EA2-0DD0-F32F-257B-98197B99FD9B}",
+    "Hash": "{5DEF2740-6B26-B916-68ED-CACB66DC29EF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -32,6 +32,22 @@
       "CachePath": "54/{54621A52-D54B-A3FD-AD35-C4FF1A3C5227}.wem"
      },
      {
+      "Id": "83300568",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 3.wav",
+      "CachePath": "F1/{F13A1831-79F8-E7D3-7F95-1AB2A21BFF8D}.wem"
+     },
+     {
+      "Id": "84267646",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 5_L.wav",
+      "CachePath": "A1/{A12B55E8-D824-6E28-DF43-49694D4B7A76}.wem"
+     },
+     {
       "Id": "93540194",
       "Language": "SFX",
       "Streaming": "false",
@@ -48,12 +64,60 @@
       "CachePath": "F3/{F3D3BE6D-82CB-B2B2-E12A-D85994FB96A0}.wem"
      },
      {
+      "Id": "179104024",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Water, Drip, Drip, Glugs SND138199 1.wav",
+      "CachePath": "B7/{B7771BAA-384A-4D39-7D2E-B453147D79A1}.wem"
+     },
+     {
+      "Id": "195421402",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Food & Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943 1.wav",
+      "CachePath": "54/{544C8A26-9DF7-EE63-8DE0-E41DD6618F28}.wem"
+     },
+     {
+      "Id": "211184319",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Food & Drink, Drinking, Human, Drink, Slurp Water Followed By Refreshed Ahh SND22913.wav",
+      "CachePath": "B2/{B23B4F3A-CF62-BA4C-F830-4C225879AFB8}.wem"
+     },
+     {
       "Id": "241482612",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Originals\\SFX\\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2.wav",
       "CachePath": "04/{04289718-11F7-2D3C-1CCC-D94AEBF13F2F}.wem"
+     },
+     {
+      "Id": "247521029",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 6_L.wav",
+      "CachePath": "05/{057E1E08-4240-3727-92D5-D0326B6E3863}.wem"
+     },
+     {
+      "Id": "248010114",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 2_L.wav",
+      "CachePath": "7C/{7C61732E-5935-CEA1-8CAA-F5501A5F023B}.wem"
+     },
+     {
+      "Id": "269890350",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Food & Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943.wav",
+      "CachePath": "FA/{FA5D4A80-06D2-4E1B-AB17-F6A14DF5BB6E}.wem"
      },
      {
       "Id": "285422653",
@@ -64,12 +128,44 @@
       "CachePath": "D3/{D3758535-B5FB-BBE4-33CD-170DD69985A0}.wem"
      },
      {
+      "Id": "299777249",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 9_L.wav",
+      "CachePath": "27/{27A40A0A-B41D-3F6A-AF66-F28AD862493B}.wem"
+     },
+     {
+      "Id": "343147211",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 11_L.wav",
+      "CachePath": "3B/{3B080D0C-55C7-330C-7BC6-23CBBBDE8805}.wem"
+     },
+     {
       "Id": "346434020",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footstep_Dirt_03.wav",
       "CachePath": "C6/{C6078ED9-B2C4-5EA2-D0AC-0CA1DE9DB223}.wem"
+     },
+     {
+      "Id": "365491036",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 10_L.wav",
+      "CachePath": "80/{8084AF65-B7F8-8A75-454E-A4EAA77A0A33}.wem"
+     },
+     {
+      "Id": "379604598",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 12_L.wav",
+      "CachePath": "C2/{C2031738-8759-B910-1451-5145E22232E8}.wem"
      },
      {
       "Id": "403657178",
@@ -88,6 +184,54 @@
       "CachePath": "55/{556AD53B-8A74-2CC2-287E-6A2948E2BA27}.wem"
      },
      {
+      "Id": "531713444",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 1_L.wav",
+      "CachePath": "E0/{E0996158-DEBF-D355-556C-A4DC36CFEF18}.wem"
+     },
+     {
+      "Id": "532906210",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 1.wav",
+      "CachePath": "39/{3984A409-0F8B-69BD-99E3-BDEE99B85E38}.wem"
+     },
+     {
+      "Id": "534031158",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 2.wav",
+      "CachePath": "63/{63DCD947-D7FC-77D8-47A0-1F80F21A2DB5}.wem"
+     },
+     {
+      "Id": "604110561",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Swooshes, Swish, Sword Swing, Heavy Slow SND59349.wav",
+      "CachePath": "96/{9634A6DA-6E7B-DACF-4510-1A797728A52F}.wem"
+     },
+     {
+      "Id": "610247601",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616.wav",
+      "CachePath": "BB/{BBCE4FE8-C64A-6015-BFF0-875FE9DA788D}.wem"
+     },
+     {
+      "Id": "640707114",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Water, Flow, Water Flowing, Small Stream 01 SND65495.wav",
+      "CachePath": "47/{47D19F9D-AA12-1A8E-20D6-9CB8FC9C2922}.wem"
+     },
+     {
       "Id": "645500148",
       "Language": "SFX",
       "Streaming": "false",
@@ -104,12 +248,76 @@
       "CachePath": "37/{37E4D688-2158-74B6-11A1-A08D97693417}.wem"
      },
      {
+      "Id": "710290391",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 8_L.wav",
+      "CachePath": "9B/{9BF68724-8D96-C291-3D82-FBDA16E91DB8}.wem"
+     },
+     {
+      "Id": "710763542",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698.wav",
+      "CachePath": "A2/{A21FE95B-0498-0380-5AEA-32F77569674B}.wem"
+     },
+     {
+      "Id": "756680328",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Water, Drip, Drip, Glugs SND138199 3.wav",
+      "CachePath": "EA/{EA3853A3-61BC-DF60-642F-D96BB1413E12}.wem"
+     },
+     {
+      "Id": "759909297",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 14_L.wav",
+      "CachePath": "7D/{7DFCC32D-52BA-F594-A9D0-D917DB009105}.wem"
+     },
+     {
       "Id": "795461115",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footstep_Dirt_01.wav",
       "CachePath": "AA/{AAD40C20-60D7-3CE6-F7A9-1606399A2AEE}.wem"
+     },
+     {
+      "Id": "799013277",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 15_L.wav",
+      "CachePath": "38/{38AC8CDF-854B-809B-D415-91CDC170A893}.wem"
+     },
+     {
+      "Id": "799234239",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Ambience, Underground, Cave, Deep, Wind 01 SND46579.wav",
+      "CachePath": "36/{36ECCA96-1F51-8608-96EB-360CB9616083}.wem"
+     },
+     {
+      "Id": "801940484",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 13_L.wav",
+      "CachePath": "8E/{8E2C72E0-09A3-BC08-A484-0EB6BD7F3BD3}.wem"
+     },
+     {
+      "Id": "809035489",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 7_L.wav",
+      "CachePath": "80/{800B9278-B023-86ED-61CA-1DD055655A4C}.wem"
      },
      {
       "Id": "816504299",
@@ -160,28 +368,201 @@
       "CachePath": "28/{2817771D-A7DD-A407-EDF0-ABE6B7072D1E}.wem"
      },
      {
+      "Id": "950148688",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 3_L.wav",
+      "CachePath": "71/{717D974F-0BBB-57B6-83B6-1F5C6DB16752}.wem"
+     },
+     {
       "Id": "1021673391",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Footstep_Dirt_05.wav",
       "CachePath": "A6/{A6CD3C34-0750-1CF8-F810-0097EF544391}.wem"
+     },
+     {
+      "Id": "1046621383",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Water, Drip, Drip, Glugs SND138199 2.wav",
+      "CachePath": "A2/{A2EDF82C-2360-2AB8-9077-10021C2A4E1B}.wem"
+     },
+     {
+      "Id": "1054966768",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Originals\\SFX\\Cave Drip 4_L.wav",
+      "CachePath": "28/{289CB703-46E3-90FC-D9F1-1560B61CF6B4}.wem"
      }
     ],
     "Events": [
      {
-      "Id": "3854155799",
-      "Name": "Play_Footsteps",
-      "ObjectPath": "\\Events\\SFX\\Play_Footsteps",
+      "Id": "3927008369",
+      "Name": "Attack_HitEnemy",
+      "ObjectPath": "\\Events\\SFX\\Attack_HitEnemy",
+      "GUID": "{67F41537-AACD-4300-9B8D-D865207DAE9F}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "726189174",
+      "Name": "Attack_HitNothing",
+      "ObjectPath": "\\Events\\SFX\\Attack_HitNothing",
+      "GUID": "{EF7344E1-E86D-45A6-BDC7-028CDB821CE0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2161558",
+      "DurationMax": "0.8163973",
+      "MediaRefs": [
+       {
+        "Id": "83300568"
+       },
+       {
+        "Id": "532906210"
+       },
+       {
+        "Id": "534031158"
+       },
+       {
+        "Id": "604110561"
+       }
+      ]
+     },
+     {
+      "Id": "1224938770",
+      "Name": "Attack_HitTerrain",
+      "ObjectPath": "\\Events\\SFX\\Attack_HitTerrain",
+      "GUID": "{01CD9D53-DAF2-4ACE-B947-C93E7C89666B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2541729425",
+      "Name": "Drink_Potion",
+      "ObjectPath": "\\Events\\SFX\\Drink_Potion",
+      "GUID": "{BB610E01-F23E-4C0F-888E-1F7FB89B5681}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.3365035",
+      "DurationMax": "3.3544064",
+      "MediaRefs": [
+       {
+        "Id": "76714845"
+       },
+       {
+        "Id": "93540194"
+       },
+       {
+        "Id": "179104024"
+       },
+       {
+        "Id": "195421402"
+       },
+       {
+        "Id": "211184319"
+       },
+       {
+        "Id": "241482612"
+       },
+       {
+        "Id": "269890350"
+       },
+       {
+        "Id": "756680328"
+       },
+       {
+        "Id": "924424003"
+       },
+       {
+        "Id": "1046621383"
+       }
+      ]
+     },
+     {
+      "Id": "3602995889",
+      "Name": "Play_Cave",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Cave",
+      "GUID": "{92B5D3DC-9E85-4BBE-8DB5-768242C5F2D7}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "84267646"
+       },
+       {
+        "Id": "247521029"
+       },
+       {
+        "Id": "248010114"
+       },
+       {
+        "Id": "299777249"
+       },
+       {
+        "Id": "343147211"
+       },
+       {
+        "Id": "365491036"
+       },
+       {
+        "Id": "379604598"
+       },
+       {
+        "Id": "531713444"
+       },
+       {
+        "Id": "710290391"
+       },
+       {
+        "Id": "759909297"
+       },
+       {
+        "Id": "799013277"
+       },
+       {
+        "Id": "799234239"
+       },
+       {
+        "Id": "801940484"
+       },
+       {
+        "Id": "809035489"
+       },
+       {
+        "Id": "950148688"
+       },
+       {
+        "Id": "1054966768"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "484890516",
+        "Name": "Church_Small_Wood",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Reverb Audio Bus\\Church_Small_Wood",
+        "GUID": "{376928F4-B70A-4B38-A6F3-3E6B5526058B}"
+       }
+      ]
+     },
+     {
+      "Id": "1602358412",
+      "Name": "Play_Footstep",
+      "ObjectPath": "\\Events\\SFX\\Play_Footstep",
       "GUID": "{5006E459-F2A4-4044-8B85-DAC82A1B3B8A}",
       "DurationType": "OneShot",
-      "DurationMin": "0.22152083",
-      "DurationMax": "0.5843958",
+      "DurationMin": "0",
+      "DurationMax": "1.041275",
       "SwitchContainers": [
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "1834394558",
+         "GroupId": "4050929301",
          "Id": "4248645337",
          "GUID": "{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"
         },
@@ -203,7 +584,7 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "1834394558",
+         "GroupId": "4050929301",
          "Id": "1216965916",
          "GUID": "{0DA7F6CF-E32D-410A-B986-195A12189456}"
         },
@@ -228,9 +609,10 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "1834394558",
+         "GroupId": "4050929301",
          "Id": "2195636714",
-         "GUID": "{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"
+         "GUID": "{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}",
+         "Default": "true"
         },
         "MediaRefs": [
          {
@@ -256,60 +638,68 @@
       ]
      },
      {
-      "Id": "3819089238",
-      "Name": "Play_Glass",
-      "ObjectPath": "\\Events\\SFX\\Play_Glass",
-      "GUID": "{03D1CF50-10BA-4F5C-A160-CBFE1A5B8450}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.19585417",
-      "DurationMax": "0.35440624",
+      "Id": "473294595",
+      "Name": "Play_Outside",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Outside",
+      "GUID": "{6E49D72B-6E7E-4B5A-92B9-D1EA0838B16F}",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "76714845"
+        "Id": "610247601"
        },
        {
-        "Id": "93540194"
-       },
-       {
-        "Id": "241482612"
-       },
-       {
-        "Id": "924424003"
+        "Id": "710763542"
        }
-      ],
-      "AuxBusRefs": [
+      ]
+     },
+     {
+      "Id": "1564978696",
+      "Name": "Play_Water_Loop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Water_Loop",
+      "GUID": "{C45EE1FB-1D55-4BE7-9841-C70CB590F7E1}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
        {
-        "Id": "288340792",
-        "Name": "ParkeringRev_001_Baelte1",
-        "ObjectPath": "\\Busses\\Default Work Unit\\Reverb Audio Bus\\ParkeringRev_001_Baelte1",
-        "GUID": "{1C819525-A377-47E8-AA30-AE1F2AC1DC10}"
+        "Id": "640707114"
        }
       ]
      }
     ],
     "SwitchGroups": [
      {
-      "Id": "1834394558",
-      "Name": "Surface",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Surface",
+      "Id": "4050929301",
+      "Name": "Materials",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Materials",
       "GUID": "{0DAB6914-6D47-450C-9BA0-1482A41A4A1D}",
       "Switches": [
        {
         "Id": "1216965916",
         "Name": "Stone",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Stone",
         "GUID": "{0DA7F6CF-E32D-410A-B986-195A12189456}"
        },
        {
         "Id": "2195636714",
         "Name": "Dirt",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Dirt",
         "GUID": "{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"
+       },
+       {
+        "Id": "2637588553",
+        "Name": "Tile",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Tile",
+        "GUID": "{E8149D30-1FA3-4149-9D41-710150DC386C}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Water",
+        "GUID": "{7BA9EC96-D7B9-4838-B425-F1454DDD5181}"
        },
        {
         "Id": "4248645337",
         "Name": "Grass",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Grass",
         "GUID": "{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"
        }
       ]
@@ -317,6 +707,6 @@
     ]
    }
   ],
-  "FileHash": "{3B00A174-E7BD-6E0F-FF19-CF3A94589B2D}"
+  "FileHash": "{496E8C04-5D70-4D78-9331-9E1AAFE643E9}"
  }
 }

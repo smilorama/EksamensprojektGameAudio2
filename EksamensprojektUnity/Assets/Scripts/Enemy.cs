@@ -26,8 +26,6 @@ public class Enemy : MonoBehaviour
     private CharacterController _controller;
     private Transform _player;
 
-    private float _verticalVelocity;
-    private const float Gravity = -15f;
 
     private enum State { Idle, Aggro }
     private State _state = State.Idle;
@@ -43,7 +41,7 @@ public class Enemy : MonoBehaviour
         _animator = GetComponent<Animator>();
         _controller = GetComponent<CharacterController>();
 
-        _agent.updatePosition = false;
+        _agent.updatePosition = true;
         _agent.updateRotation = false;
         _agent.speed = moveSpeed;
 
@@ -52,6 +50,8 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        if (_dead) return;
+
         _detectionTimer += Time.deltaTime;
         if (_detectionTimer >= 1f)
         {
@@ -65,18 +65,6 @@ public class Enemy : MonoBehaviour
             TryAttack();
         }
 
-        ApplyGravity();
-        _agent.nextPosition = transform.position;
-    }
-
-    private void ApplyGravity()
-    {
-        if (_controller.isGrounded)
-            _verticalVelocity = -2f;
-        else
-            _verticalVelocity += Gravity * Time.deltaTime;
-
-        _controller.Move(new Vector3(0f, _verticalVelocity, 0f) * Time.deltaTime);
     }
 
     private void DetectPlayer()
@@ -100,6 +88,16 @@ public class Enemy : MonoBehaviour
     {
         if (_player == null) return;
 
+        // never move or update blend tree while attacking
+        if (_isPerformingAction)
+        {
+            _agent.isStopped = true;
+            _animator.SetFloat("Vertical",   0f);
+            _animator.SetFloat("Horizontal", 0f);
+            _animator.SetBool("isMoving",    false);
+            return;
+        }
+
         float dist = Vector3.Distance(transform.position, _player.position);
 
         Vector3 desiredDir = Vector3.zero;
@@ -112,17 +110,18 @@ public class Enemy : MonoBehaviour
             desiredDir = _agent.desiredVelocity;
             desiredDir.y = 0f;
             Vector3 localDesired = transform.InverseTransformDirection(desiredDir);
-            float vertical = Mathf.Clamp(localDesired.z / moveSpeed, -1f, 1f);
+            float vertical   = Mathf.Clamp(localDesired.z / moveSpeed, -1f, 1f);
             float horizontal = Mathf.Clamp(localDesired.x / moveSpeed, -1f, 1f);
-            _animator.SetFloat("Vertical", vertical);
+            _animator.SetFloat("Vertical",   vertical);
             _animator.SetFloat("Horizontal", horizontal);
-            _animator.SetBool("isMoving", vertical > 0.1f);
+            _animator.SetBool("isMoving",    vertical > 0.1f);
         }
         else
         {
             _agent.isStopped = true;
-            _animator.SetFloat("Vertical", 0f);
-            _animator.SetBool("isMoving", false);
+            _animator.SetFloat("Vertical",   0f);
+            _animator.SetFloat("Horizontal", 0f);
+            _animator.SetBool("isMoving",    false);
         }
 
         Vector3 rotDir = desiredDir.sqrMagnitude > 0.1f ? desiredDir : (_player.position - transform.position);

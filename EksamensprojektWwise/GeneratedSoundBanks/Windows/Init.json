@@ -135,27 +135,39 @@
     ],
     "SwitchGroups": [
      {
-      "Id": "1834394558",
-      "Name": "Surface",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Surface",
+      "Id": "4050929301",
+      "Name": "Materials",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Materials",
       "GUID": "{0DAB6914-6D47-450C-9BA0-1482A41A4A1D}",
       "Switches": [
        {
         "Id": "1216965916",
         "Name": "Stone",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Stone",
         "GUID": "{0DA7F6CF-E32D-410A-B986-195A12189456}"
        },
        {
         "Id": "2195636714",
         "Name": "Dirt",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Dirt",
         "GUID": "{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"
+       },
+       {
+        "Id": "2637588553",
+        "Name": "Tile",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Tile",
+        "GUID": "{E8149D30-1FA3-4149-9D41-710150DC386C}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Water",
+        "GUID": "{7BA9EC96-D7B9-4838-B425-F1454DDD5181}"
        },
        {
         "Id": "4248645337",
         "Name": "Grass",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Grass",
         "GUID": "{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"
        }
       ]
@@ -163,6 +175,6 @@
     ]
    }
   ],
-  "FileHash": "{BEF349CA-8F80-C64A-2B73-B032CADBB7A5}"
+  "FileHash": "{4B524AC9-2B3C-AEF3-72F6-436B5FAF6F3B}"
  }
 }

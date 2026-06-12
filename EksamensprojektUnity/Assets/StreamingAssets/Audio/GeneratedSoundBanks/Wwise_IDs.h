@@ -13,23 +13,31 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
-        static const AkUniqueID PLAY_GLASS = 3819089238U;
+        static const AkUniqueID ATTACK_HITENEMY = 3927008369U;
+        static const AkUniqueID ATTACK_HITNOTHING = 726189174U;
+        static const AkUniqueID ATTACK_HITTERRAIN = 1224938770U;
+        static const AkUniqueID DRINK_POTION = 2541729425U;
+        static const AkUniqueID PLAY_CAVE = 3602995889U;
+        static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
+        static const AkUniqueID PLAY_OUTSIDE = 473294595U;
+        static const AkUniqueID PLAY_WATER_LOOP = 1564978696U;
     } // namespace EVENTS
 
     namespace SWITCHES
     {
-        namespace SURFACE
+        namespace MATERIALS
         {
-            static const AkUniqueID GROUP = 1834394558U;
+            static const AkUniqueID GROUP = 4050929301U;
 
             namespace SWITCH
             {
                 static const AkUniqueID DIRT = 2195636714U;
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID TILE = 2637588553U;
+                static const AkUniqueID WATER = 2654748154U;
             } // namespace SWITCH
-        } // namespace SURFACE
+        } // namespace MATERIALS
 
     } // namespace SWITCHES
 
