@@ -6,7 +6,8 @@ public class AudioMaterial : MonoBehaviour
     {
         Grass,
         Stone,
-        Dirt
+        Dirt,
+        Tile
     }
 
     public AudioMaterialType audioMaterialType;

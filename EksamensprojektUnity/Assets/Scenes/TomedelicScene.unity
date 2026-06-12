@@ -24964,7 +24964,7 @@ MonoBehaviour:
   rayLength: 2
   excludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4
 --- !u!114 &1734744608 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5420857361349278248, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
@@ -29275,7 +29275,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.7
+  m_Radius: 2.78
   m_Height: 2.86
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0.38, z: -0.00000008940697}
@@ -35775,7 +35775,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0.1
+  m_StoppingDistance: 0.4
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -36428,10 +36428,10 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1126987958}
   - {fileID: 1516820524}
   - {fileID: 1174288196}
   - {fileID: 356554140}
-  - {fileID: 1126987958}
   - {fileID: 1859940402}
   - {fileID: 1351380918}
   - {fileID: 504120286}
