@@ -102,11 +102,14 @@ public class TomeInteract : MonoBehaviour
     {
         _triggered = true;
 
-        // 1 — change Global Volume profile
+        // Sker samtidig: Global Volume, level swap og bog-svæve starter
         if (_globalVolume != null && _postTomeProfile != null)
             _globalVolume.profile = _postTomeProfile;
 
-        // 2 — rise book into the air
+        if (_preTomeLevelDesign != null) _preTomeLevelDesign.SetActive(false);
+        if (_postTomeLevelDesign != null) _postTomeLevelDesign.SetActive(true);
+
+        // rise book into the air
         Vector3 startPos = transform.position;
         Vector3 riseTarget = startPos + Vector3.up * _riseHeight;
 
@@ -137,22 +140,14 @@ public class TomeInteract : MonoBehaviour
             yield return null;
         }
 
-        // 3 — activate left hand with tome, hide the floating book
-        yield return new WaitForSeconds(Mathf.Max(0f, _handActivateDelay - _riseHoldDuration));
-        gameObject.SetActive(false);
+        // 3 — tome forsvinder
+        if (_tomeRenderer != null) _tomeRenderer.enabled = false;
+
+        // 4 — hånd aktiveres efter delay
+        yield return new WaitForSeconds(_handActivateDelay);
         if (_leftHandWithTome != null) _leftHandWithTome.SetActive(true);
 
-        // 4+5 — swap level design
-        yield return new WaitForSeconds(Mathf.Max(0f, _levelSwapDelay - _handActivateDelay));
-        if (_preTomeLevelDesign != null) _preTomeLevelDesign.SetActive(false);
-        if (_postTomeLevelDesign != null) _postTomeLevelDesign.SetActive(true);
-
-        // 6 — play voiceline
-        if (!string.IsNullOrEmpty(_voicelineEvent))
-        {
-            GameObject emitter = _audioEmitter != null ? _audioEmitter : gameObject;
-            AkSoundEngine.PostEvent(_voicelineEvent, emitter);
-        }
+        gameObject.SetActive(false);
     }
 
 #if UNITY_EDITOR
