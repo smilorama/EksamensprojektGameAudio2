@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}" SchemaVersion="133">
 	<Containers>
 		<WorkUnit Name="Music" ID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<MusicSegment Name="AmbienceMusicSegment" ID="{73235DB9-06B1-46D0-B91B-10794782CF86}" ShortID="502370250">
 					<PropertyList>

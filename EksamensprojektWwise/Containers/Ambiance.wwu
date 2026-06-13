@@ -2,16 +2,24 @@
 <WwiseDocument Type="WorkUnit" ID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}" SchemaVersion="133">
 	<Containers>
 		<WorkUnit Name="Ambiance" ID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Folder Name="Cave" ID="{E4F86BA9-7DED-49D6-99F4-905CC349AA36}" ShortID="455470142">
 					<ChildrenList>
 						<BlendContainer Name="Cave" ID="{40B9E19A-B387-4D4D-829D-714C0ED19078}" ShortID="2469468">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.25"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
@@ -22,8 +30,23 @@
 							<ChildrenList>
 								<Sound Name="Cave_loop" ID="{B142F949-97AF-4B6B-9DD2-7D4F625BB058}" ShortID="777864748">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>55</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -60,12 +83,22 @@
 										<Property Name="3DPosition" Type="int16" Value="2"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.5"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
 										<Property Name="InitialDelay" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{69B97861-2FA1-4E2D-89C1-C00CEF185077}"/>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>49</Value>
+											</ValueList>
 										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -75,15 +108,14 @@
 													<Modifier Name="" ID="{B9C85283-78C1-4A3E-A528-2523C62B0D81}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="1000"/>
-															<Property Name="Min" Type="Real64" Value="-1000"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 											<ModifierList>
@@ -98,15 +130,20 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
 											<Custom>
-												<Attenuation Name="Attenuation (Custom)" ID="{811B952D-C5B8-45B8-AC93-1DF9604121D2}" ShortID="778097317">
+												<Attenuation Name="Attenuation (Custom)" ID="{62E2F4BB-1AC5-4F9C-A157-4ABAA745E373}" ShortID="499938405">
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
 															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="VolumeDry" ID="{0DF6FDCE-EAC6-4F32-AB37-80A7022E8A38}">
+																<Curve Name="VolumeDry" ID="{FCA4B0CA-48C8-4B96-921A-8F9A46E7CDCD}">
 																	<PropertyList>
 																		<Property Name="Flags" Type="int32" Value="3"/>
 																	</PropertyList>
@@ -232,6 +269,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 1_L" ID="{E2FCF0A8-C46F-475F-95FC-1DCDCEE5EC41}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.07695"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 1_L.wav</AudioFile>
 													<MediaIDList>
@@ -254,6 +296,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 2_L" ID="{EBE39564-658E-42D7-B2F1-CF3DE741BFBB}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.17795"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 2_L.wav</AudioFile>
 													<MediaIDList>
@@ -276,6 +323,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 3_L" ID="{A333045F-9461-4F0B-B6DD-3EC607081811}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.10058"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 3_L.wav</AudioFile>
 													<MediaIDList>
@@ -298,6 +350,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 4_L" ID="{FF1C6DD2-E762-40CB-BD0A-876AAF982C7F}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.1711"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 4_L.wav</AudioFile>
 													<MediaIDList>
@@ -320,6 +377,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 5_L" ID="{9D7E0C94-556E-409A-AD2B-4536EF40BB9C}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.18274"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 5_L.wav</AudioFile>
 													<MediaIDList>
@@ -342,6 +404,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 6_L" ID="{9A7BBC55-1687-4965-9CC7-80D63BEEC8C8}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.1803"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 6_L.wav</AudioFile>
 													<MediaIDList>
@@ -364,6 +431,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 7_L" ID="{C2848CC6-1AF4-4D8C-B1A7-ADC6F08C2EEB}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.13026"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 7_L.wav</AudioFile>
 													<MediaIDList>
@@ -386,6 +458,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 8_L" ID="{521823EB-E994-4539-BD52-41ABF0F2793C}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.10698"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 8_L.wav</AudioFile>
 													<MediaIDList>
@@ -408,6 +485,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 9_L" ID="{9918F572-74C7-488E-879E-597C0A16EB59}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.11177"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 9_L.wav</AudioFile>
 													<MediaIDList>
@@ -430,6 +512,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 10_L" ID="{8D5CB24F-DF4A-44BC-82D3-2D5766E71EAD}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.16149"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 10_L.wav</AudioFile>
 													<MediaIDList>
@@ -452,6 +539,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 11_L" ID="{56CCE86B-3319-4187-903F-83BE9B547072}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.19315"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 11_L.wav</AudioFile>
 													<MediaIDList>
@@ -474,6 +566,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 12_L" ID="{892B3A70-38B1-4604-BEA3-8F654F62A320}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.19154"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 12_L.wav</AudioFile>
 													<MediaIDList>
@@ -496,6 +593,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 13_L" ID="{9CACFCE3-BCDF-455F-9DC2-D69FB7D2CE97}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.20556"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 13_L.wav</AudioFile>
 													<MediaIDList>
@@ -518,6 +620,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 14_L" ID="{A48B09A6-EE12-4FEE-BFCE-50C675FB10A3}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.14589"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 14_L.wav</AudioFile>
 													<MediaIDList>
@@ -540,6 +647,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Cave Drip 15_L" ID="{617D35E8-1844-4A5E-BE18-5AAD85828573}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.18995"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Originals\SFX\Cave Drip 15_L.wav</AudioFile>
 													<MediaIDList>
@@ -553,7 +665,12 @@
 										</Sound>
 									</ChildrenList>
 									<PositioningInfo>
-										<Panner Name="" ID="{4E68D0C9-5D91-4633-B7EB-42CA6E537B93}"/>
+										<Panner Name="" ID="{4E68D0C9-5D91-4633-B7EB-42CA6E537B93}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-100"/>
+												<Property Name="PanY" Type="Real64" Value="10.7485604606526"/>
+											</PropertyList>
+										</Panner>
 										<Position Name="" ID="{D129C6E6-21B7-4FAE-B2BB-88AB0555DA6E}">
 											<PropertyList>
 												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
@@ -583,8 +700,8 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-82.74112</XPos>
-															<YPos>67.51412</YPos>
+															<XPos>-76.64975</XPos>
+															<YPos>60.73446</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
@@ -613,8 +730,8 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-44.16244</XPos>
-															<YPos>-30.22599</YPos>
+															<XPos>-79.69543</XPos>
+															<YPos>5.36723</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
@@ -628,8 +745,8 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>56.85279</XPos>
-															<YPos>-38.13559</YPos>
+															<XPos>73.60406</XPos>
+															<YPos>5.93221</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
@@ -643,8 +760,8 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-60.91371</XPos>
-															<YPos>20.62147</YPos>
+															<XPos>-65.98985</XPos>
+															<YPos>44.91526</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
@@ -673,8 +790,8 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-45.68528</XPos>
-															<YPos>-38.13559</YPos>
+															<XPos>-95.43147</XPos>
+															<YPos>27.9661</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
@@ -710,7 +827,16 @@
 				<Folder Name="Outside" ID="{52DCB440-A719-4A68-A4BE-14F5D7AA4372}" ShortID="254607049">
 					<ChildrenList>
 						<BlendContainer Name="Outside" ID="{1F1EA5DF-8A56-44F8-BD2B-BCDC33F01178}" ShortID="11157032">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.25"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>

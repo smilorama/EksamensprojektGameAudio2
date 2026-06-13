@@ -4,6 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
@@ -18,7 +22,9 @@
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<PositioningInfo>
@@ -51,7 +57,9 @@
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<PositioningInfo>
@@ -84,8 +92,10 @@
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -120,7 +130,9 @@
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<PositioningInfo>
@@ -153,7 +165,9 @@
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<PositioningInfo>
@@ -186,8 +200,10 @@
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<PositioningInfo>
@@ -220,8 +236,10 @@
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -262,8 +280,10 @@
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -294,13 +314,6 @@
 							</ObjectLists>
 						</AuxBus>
 					</ChildrenList>
-				</Bus>
-				<Bus Name="Bitcrush" ID="{C62A92EF-AD30-426E-9F6D-FAE78730F558}">
-					<ReferenceList>
-						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
-						</Reference>
-					</ReferenceList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

@@ -2,8 +2,16 @@
 <WwiseDocument Type="WorkUnit" ID="{258506C8-9C45-41F6-98A0-132D0B7B814C}" SchemaVersion="133">
 	<Events>
 		<WorkUnit Name="SFX" ID="{258506C8-9C45-41F6-98A0-132D0B7B814C}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Folder Name="Player" ID="{FEF52588-7808-4760-A915-45AB1F8066DA}" ShortID="1012906699">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="Attack_HitEnemy" ID="{67F41537-AACD-4300-9B8D-D865207DAE9F}">
 							<ChildrenList>
@@ -113,6 +121,10 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{B2170859-BD58-45E0-8C2F-16367D029B5C}" ShortID="890319596">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="Play_Footstep_Enemy" ID="{16CA14E9-ABE0-4B9C-A261-703C844C3AF7}">
 							<ChildrenList>
@@ -125,28 +137,88 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Death_Cultist" ID="{AF4D5430-F88E-4EA7-9A45-3C4FDE39098D}">
+						<Folder Name="Death_Enemy" ID="{DFE853E5-DD81-409B-A408-A83EA88225B2}" ShortID="300898873">
 							<ChildrenList>
-								<Action Name="" ID="{66C16970-0936-4F74-945E-7AA0453BA753}" ShortID="540005504">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Death_Cultist" ID="{5CF757B0-9F43-4F79-8E9A-517E64FD67C7}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Play_Death_Cultist" ID="{AF4D5430-F88E-4EA7-9A45-3C4FDE39098D}">
+									<ChildrenList>
+										<Action Name="" ID="{66C16970-0936-4F74-945E-7AA0453BA753}" ShortID="540005504">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Death_Cultist" ID="{5CF757B0-9F43-4F79-8E9A-517E64FD67C7}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F716F5A4-22D0-4E96-975D-1626A79AF6DF}" ShortID="415959522">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FallToGround2_Cultist" ID="{F1F495F7-EDC6-472B-810B-1804D5293D9E}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F6312AD4-2460-4358-BB4A-0EB66FDA4517}" ShortID="967637952">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FallToGround1_Cultist" ID="{85C9AEA8-7CD4-4C84-B614-A2FEAAC0F5DD}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Death_Creature" ID="{F7AB6EF1-1A4B-4432-8F51-4F216D9FF259}">
+									<ChildrenList>
+										<Action Name="" ID="{CF1E64A2-25F3-4D38-BA11-EC237351385B}" ShortID="693081199">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Death_Creature" ID="{CAEC49A2-C67D-4CAA-898F-E324EE14CB52}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Play_Death_Creature" ID="{F7AB6EF1-1A4B-4432-8F51-4F216D9FF259}">
+						</Folder>
+						<Folder Name="Attack_Enemy" ID="{1BC9DC24-B849-4F0E-B7F1-7FDA162257B7}" ShortID="871562138">
 							<ChildrenList>
-								<Action Name="" ID="{CF1E64A2-25F3-4D38-BA11-EC237351385B}" ShortID="693081199">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Death_Creature" ID="{CAEC49A2-C67D-4CAA-898F-E324EE14CB52}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Play_Attack_Enemy_Miss" ID="{39901608-9180-48F4-9155-DAEED02B025B}">
+									<ChildrenList>
+										<Action Name="" ID="{397B40B1-B7AF-4B23-88E7-B0CBE0389C3F}" ShortID="438809493">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Swoosh" ID="{1DFDE4A9-596C-47D3-BA2B-7EF13E8C469E}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Attack_Enemy_Hit" ID="{C9CECABF-BA49-4BED-ACA0-6CFC487B699C}">
+									<ChildrenList>
+										<Action Name="" ID="{BD2B33EA-0376-4BB3-83F2-5EA8747EA11B}" ShortID="169725614">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Swoosh" ID="{1DFDE4A9-596C-47D3-BA2B-7EF13E8C469E}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9E655227-1462-426C-8EE3-DE281B6D6311}" ShortID="188412087">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.07"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Attack_Cultist" ID="{20CACA59-F0D2-4AD6-BA2D-C0354E0D2182}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
