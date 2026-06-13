@@ -26,6 +26,9 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="ParkeringRev_007_Klap5" ID="{EB63EECC-E99E-4021-855B-5F7FE0DB6B52}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Cave_loop" ID="{B142F949-97AF-4B6B-9DD2-7D4F625BB058}" ShortID="777864748">
@@ -41,7 +44,6 @@
 												<Value>55</Value>
 											</ValueList>
 										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-10</Value>
@@ -801,6 +803,276 @@
 										</Position>
 									</PositioningInfo>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="DebrisFalling_Small" ID="{669F9AB7-C7C0-4B00-8D78-3B777B5EEAA1}" ShortID="32766285">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.5"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>48</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8656E1B0-8720-4F71-BA44-EEE3C3D5D3E3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-400"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F8F14768-0F5C-47A9-AA7E-AFB40B87BD83}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-23</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593" ID="{37B8E7FA-1581-4362-A6C6-367EFAEF5103}" ShortID="545743663">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593" ID="{9D96D465-C044-4F6A-9622-8AB176E267C4}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.30171"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="985370320"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593" ID="{9D96D465-C044-4F6A-9622-8AB176E267C4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 1" ID="{9975941B-B045-49AC-A8A6-FCD5B45B514F}" ShortID="626881198">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 1" ID="{CD8FD7A5-D8EF-49F3-9342-051CB326569A}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.27545"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="718460086"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 1" ID="{CD8FD7A5-D8EF-49F3-9342-051CB326569A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 2" ID="{672832AD-42AD-4260-A732-FF56205A9C80}" ShortID="327542578">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 2" ID="{8839D5B5-19FB-4A69-BC49-266CCE3314DE}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.42193"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="486738875"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 2" ID="{8839D5B5-19FB-4A69-BC49-266CCE3314DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{B9CE12DD-D03C-4EE0-8142-0DB119901C22}"/>
+										<Position Name="" ID="{BE8154E3-5436-4267-9F9D-0D27BFB7C81A}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="DebrisFalling_Small_Path_01" ID="{D0DD0C22-99EB-454E-8AD9-85099B4EDD20}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-55.32995</XPos>
+															<YPos>57.34463</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="DebrisFalling_Small_Path_02" ID="{FE63A330-5962-47D5-8EF4-89365EA34271}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-88.83248</XPos>
+															<YPos>8.1921</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="DebrisFalling_Small_Path_03" ID="{13D62C6F-1B51-4B24-9D20-4E74EF3886E3}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>62.43655</XPos>
+															<YPos>69.20904</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="DebrisFalling_Small_Path_04" ID="{7C5CB318-5D95-472E-828F-542607631BA7}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>65.98984</XPos>
+															<YPos>17.23164</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="DebrisFalling_Small_Path_05" ID="{54B27144-F0FD-48B2-BF79-60B87AF8AEED}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-33.50254</XPos>
+															<YPos>87.85311</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="DebrisFalling_Small_Path_06" ID="{A9957E6B-1399-4C3B-A52F-9D62519D807A}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>31.47208</XPos>
+															<YPos>87.28814</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="DebrisFalling_Small_Path_07" ID="{A66AA98A-BE60-48BF-A850-0884929E2D5D}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-60.40609</XPos>
+															<YPos>55.64972</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="DebrisFalling_Small_Path_08" ID="{37C8ACBA-4D9B-4722-8C4C-83AAE9D4EC19}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="1"/>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>52.79188</XPos>
+															<YPos>55.08475</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<PositioningInfo>
 								<Position Name="" ID="{B0FB0D25-DAD0-43BB-9197-339052AFA1E2}">
@@ -831,7 +1103,17 @@
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.25"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>24</Value>
+									</ValueList>
+								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -850,12 +1132,17 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>34</Value>
+												<Value>41</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-330</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -891,7 +1178,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-16</Value>
+												<Value>-37</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -922,15 +1209,108 @@
 										<ActiveSource Name="Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698" ID="{64331A5E-0C19-48C6-A931-1F06102E6453}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 2" ID="{B6804176-7824-4DDB-BCA7-A7FC39F0F3E6}" ShortID="14480913">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>630</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 3" ID="{BFF28777-7FF6-412B-BF9E-DAEB446B9BC1}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="31545.062"/>
+												<Property Name="LoopBegin" Type="Real64" Value="23.57235"/>
+												<Property Name="LoopEnd" Type="Real64" Value="160.70272"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Originals\SFX\Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="798939857"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 3" ID="{BFF28777-7FF6-412B-BF9E-DAEB446B9BC1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Temple" ID="{1422E93A-0FCF-4852-96AC-A8F3FFFC7BBD}" ShortID="187392344"/>
+				<Folder Name="Temple" ID="{1422E93A-0FCF-4852-96AC-A8F3FFFC7BBD}" ShortID="187392344">
+					<ChildrenList>
+						<Sound Name="Roomtone_Temple" ID="{4A952994-0DD8-4468-AA42-F0B701CFA56A}" ShortID="208304549">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>50</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Room Tone, Sound Studio 01 SND43224" ID="{DC08C4DC-8CC9-49DE-8819-E23B86388682}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="25312.5"/>
+										<Property Name="LoopBegin" Type="Real64" Value="15.1284"/>
+										<Property Name="LoopEnd" Type="Real64" Value="97.96109"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Originals\SFX\Ambience, Room Tone, Sound Studio 01 SND43224.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="890687662"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Room Tone, Sound Studio 01 SND43224" ID="{DC08C4DC-8CC9-49DE-8819-E23B86388682}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="Tunnel" ID="{E7A3226A-4878-490F-8A3C-81303DF89D80}" ShortID="35098144"/>
 				<Folder Name="TheWeird" ID="{93CADD4D-100B-4FD9-9086-8DEEB007C9DC}" ShortID="168240851">
 					<ChildrenList>
-						<Sound Name="Ambience, Scifi, Otherworldly, Wind, Soft SND123187" ID="{4283DB93-EC69-4620-9F50-15765E68E62F}" ShortID="327902032">
+						<Sound Name="Weird_Roomtone" ID="{4283DB93-EC69-4620-9F50-15765E68E62F}" ShortID="327902032">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -958,7 +1338,25 @@
 					<ChildrenList>
 						<Sound Name="Water_Loop" ID="{323817F7-2ED1-4CCF-95F4-DBE7E40C49C0}" ShortID="878780088">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>19</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

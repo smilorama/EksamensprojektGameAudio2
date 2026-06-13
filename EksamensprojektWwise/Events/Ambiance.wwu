@@ -7,28 +7,6 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="Play_Cave" ID="{92B5D3DC-9E85-4BBE-8DB5-768242C5F2D7}">
-					<ChildrenList>
-						<Action Name="" ID="{F609700A-FA8E-4236-BEB8-DDE2006654A5}" ShortID="356003649">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Cave" ID="{40B9E19A-B387-4D4D-829D-714C0ED19078}" WorkUnitID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Outside" ID="{6E49D72B-6E7E-4B5A-92B9-D1EA0838B16F}">
-					<ChildrenList>
-						<Action Name="" ID="{1953CD0B-09B1-43D7-92AD-2AF94523332F}" ShortID="655894977">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Outside" ID="{1F1EA5DF-8A56-44F8-BD2B-BCDC33F01178}" WorkUnitID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Water_Loop" ID="{C45EE1FB-1D55-4BE7-9841-C70CB590F7E1}">
 					<ChildrenList>
 						<Action Name="" ID="{16F920D6-7052-49AA-85AF-3B397718EAF7}" ShortID="494535299">
@@ -40,6 +18,54 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Sættes Ind i roomtone i unity" ID="{9C281284-089A-4741-B3AA-B6D738E32BF2}" ShortID="321392209">
+					<ChildrenList>
+						<Event Name="Play_Cave" ID="{92B5D3DC-9E85-4BBE-8DB5-768242C5F2D7}">
+							<ChildrenList>
+								<Action Name="" ID="{F609700A-FA8E-4236-BEB8-DDE2006654A5}" ShortID="356003649">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cave" ID="{40B9E19A-B387-4D4D-829D-714C0ED19078}" WorkUnitID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Outside" ID="{6E49D72B-6E7E-4B5A-92B9-D1EA0838B16F}">
+							<ChildrenList>
+								<Action Name="" ID="{1953CD0B-09B1-43D7-92AD-2AF94523332F}" ShortID="655894977">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Outside" ID="{1F1EA5DF-8A56-44F8-BD2B-BCDC33F01178}" WorkUnitID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Roomtone_Temple" ID="{8E391E6D-93AA-4166-BEAB-7B49AFBE734B}">
+							<ChildrenList>
+								<Action Name="" ID="{9344FBAE-50E2-4EDC-AE74-4C5F2FEFC948}" ShortID="139656616">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Roomtone_Temple" ID="{4A952994-0DD8-4468-AA42-F0B701CFA56A}" WorkUnitID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Weird_Roomtone" ID="{5C4C893E-A626-40AC-9FC1-F1E121B62945}">
+							<ChildrenList>
+								<Action Name="" ID="{D7FCD2E1-CEFC-4443-92DE-5E903551AC40}" ShortID="273419768">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Weird_Roomtone" ID="{4283DB93-EC69-4620-9F50-15765E68E62F}" WorkUnitID="{4724D18E-87C7-405C-9DB0-AEA7C7073C69}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
