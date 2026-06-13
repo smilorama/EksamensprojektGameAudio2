@@ -21035,6 +21035,7 @@ GameObject:
   - component: {fileID: 1402810326}
   - component: {fileID: 1402810328}
   - component: {fileID: 1402810327}
+  - component: {fileID: 1402810329}
   m_Layer: 0
   m_Name: TomeInteractPromptText
   m_TagString: Untagged
@@ -21058,7 +21059,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -70}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1402810327
@@ -21081,7 +21082,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Take Book [F]'
+  m_text: '[F] Take Tome'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21092,7 +21093,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
+  m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -21108,14 +21109,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -21161,6 +21162,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402810325}
   m_CullTransparentMesh: 1
+--- !u!114 &1402810329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402810325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d314ff9756b724cbdbbf0838f274526e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextGradient
+  _topColor: {r: 0.41960785, g: 1, b: 0.9137255, a: 1}
+  _bottomColor: {r: 0.4117647, g: 0.6627451, b: 1, a: 1}
+  _loopColors: 1
+  _loopColor1: {r: 0.4117647, g: 0.6627451, b: 1, a: 1}
+  _loopColor2: {r: 0.9716981, g: 0.90263224, b: 0, a: 1}
+  _loopColor3: {r: 0.5990566, g: 1, b: 0.6442066, a: 1}
+  _loopDuration: 2
 --- !u!1001 &1406831564
 PrefabInstance:
   m_ObjectHideFlags: 0
