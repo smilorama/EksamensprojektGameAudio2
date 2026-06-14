@@ -17,7 +17,9 @@ PluginImporter:
     Editor:
       enabled: 0
       settings:
+        CPU: AnyCPU
         DefaultValueInitialized: true
+        OS: OSX
     OSXUniversal:
       enabled: 1
       settings:
