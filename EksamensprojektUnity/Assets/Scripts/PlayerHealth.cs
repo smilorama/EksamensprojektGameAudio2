@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using AK.Wwise;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerHealth : MonoBehaviour
     private void Awake()
     {
         CurrentHealth = maxHealth;
+        onHealthChanged.AddListener((current, max) =>
+            AkUnitySoundEngine.SetRTPCValue("PlayerHealthPara", max - current, gameObject));
     }
 
     public void Heal(int amount)

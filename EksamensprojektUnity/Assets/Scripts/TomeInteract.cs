@@ -109,7 +109,7 @@ public class TomeInteract : MonoBehaviour
         if (!string.IsNullOrEmpty(_voicelineEvent))
         {
             GameObject emitter = _audioEmitter != null ? _audioEmitter : gameObject;
-            AkSoundEngine.PostEvent(_voicelineEvent, emitter);
+            AkUnitySoundEngine.PostEvent(_voicelineEvent, emitter);
         }
 
         if (_preTomeLevelDesign != null) _preTomeLevelDesign.SetActive(false);
