@@ -4,7 +4,7 @@
 		<UserProjectSettings Name="" ID="{32286640-6FF3-4AFD-ABFA-F55A5691F156}">
 			<PropertyList>
 				<Property Name="AudioFileImporter\x64_FilesToImport" Type="string" Value="AAAAAAAAAAA="/>
-				<Property Name="AudioFilesImporter\DestinationFolder" Type="string" Value="Z:\Volumes\Sonic_College\Game Audio\Eksamenprojekt Wwise\EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Originals\SFX\"/>
+				<Property Name="AudioFilesImporter\DestinationFolder" Type="string" Value="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Originals\SFX\Originals\SFX\"/>
 				<Property Name="EffectsView\MeteringObject\{0524C14E-7C90-4FC0-8FA1-0724664069D4}" Type="string" Value="{F434E6BB-BB9D-4559-9D3D-341BB01FD648}"/>
 				<Property Name="EffectsView\MeteringObject\{7043005D-1530-4DF2-ADA8-8C9023C81B77}" Type="string" Value="{A8EA3155-BB37-49B2-B903-A8A4503DFB59}"/>
 				<Property Name="EffectsView\MeteringObject\{7DC28D83-50E2-4861-AC70-332BA027B678}" Type="string" Value="{1C819525-A377-47E8-AA30-AE1F2AC1DC10}"/>
