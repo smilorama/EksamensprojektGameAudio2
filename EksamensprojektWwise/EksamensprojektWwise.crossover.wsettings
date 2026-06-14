@@ -16,6 +16,7 @@
 				<Property Name="Event Action List\{01CD9D53-DAF2-4ACE-B947-C93E7C89666B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4E61DA24-6F36-4098-A304-755A4FF3E9A5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5006E459-F2A4-4044-8B85-DAC82A1B3B8A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{62E63D97-2139-4CDC-A64D-C86D6896F7ED}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{67F41537-AACD-4300-9B8D-D865207DAE9F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6E49D72B-6E7E-4B5A-92B9-D1EA0838B16F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{72AFD7A3-5DA4-450D-9326-288FC4349D6F}\x64_Expand States" Type="string" Value=""/>
@@ -64,8 +65,8 @@
 				<Property Name="PluginUserAcknowledge\ConvolutionReverb" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Audio_FocusedObject" Type="string" Value="{C30C7C69-0679-4D64-AA5B-6B970D24F8BE}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentSearch" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentTab" Type="int32" Value="1"/>
-				<Property Name="ProjectExplorer\SelectionChannel_1\Events_FocusedObject" Type="string" Value="{72AFD7A3-5DA4-450D-9326-288FC4349D6F}"/>
+				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentTab" Type="int32" Value="2"/>
+				<Property Name="ProjectExplorer\SelectionChannel_1\Events_FocusedObject" Type="string" Value="{D240DD4C-96CA-41CA-A1A3-F552DB1D69AA}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Game Syncs_FocusedObject" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Queries_FocusedObject" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Sessions_FocusedObject" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>

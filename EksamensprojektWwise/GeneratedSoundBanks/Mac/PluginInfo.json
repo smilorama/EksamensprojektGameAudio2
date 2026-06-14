@@ -4,11 +4,11 @@
   "BasePlatform": "Mac",
   "PluginLibs": [
    {
-    "LibName": "Wwise RoomVerb",
-    "LibId": "7733251",
+    "LibName": "Wwise Convolution Reverb",
+    "LibId": "8323075",
     "Type": "Effect",
-    "DLL": "AkRoomVerb",
-    "StaticLib": "AkRoomVerbFX"
+    "DLL": "AkConvolutionReverb",
+    "StaticLib": "AkConvolutionReverbFX"
    },
    {
     "LibName": "System",
@@ -21,6 +21,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{CDABBA92-D3E9-4E2C-1B2C-E19823AC10F7}"
+  "FileHash": "{E6E6273C-A62C-A0D4-752C-8D39BA7E229B}"
  }
 }

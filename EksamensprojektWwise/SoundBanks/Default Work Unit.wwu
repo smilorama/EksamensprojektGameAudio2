@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ParkeringsKaelderReverb" ID="{3EE4A07D-40A0-4B68-8A18-8445CD83E462}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

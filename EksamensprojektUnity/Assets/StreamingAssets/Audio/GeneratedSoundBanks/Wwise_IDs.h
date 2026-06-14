@@ -17,13 +17,23 @@ namespace AK
         static const AkUniqueID ATTACK_HITNOTHING = 726189174U;
         static const AkUniqueID ATTACK_HITTERRAIN = 1224938770U;
         static const AkUniqueID DRINK_POTION = 2541729425U;
+        static const AkUniqueID PLAY_ATTACK_ENEMY_HIT = 486256373U;
+        static const AkUniqueID PLAY_ATTACK_ENEMY_MISS = 1284475082U;
+        static const AkUniqueID PLAY_BRAZIER = 2521551685U;
         static const AkUniqueID PLAY_CAVE = 3602995889U;
         static const AkUniqueID PLAY_DEATH_CREATURE = 795377228U;
         static const AkUniqueID PLAY_DEATH_CULTIST = 3622272533U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
         static const AkUniqueID PLAY_FOOTSTEP_ENEMY = 1095021605U;
+        static const AkUniqueID PLAY_IDLE_CULTIST = 1329754913U;
+        static const AkUniqueID PLAY_LINJE1 = 743624797U;
+        static const AkUniqueID PLAY_LINJE2 = 743624798U;
+        static const AkUniqueID PLAY_LOWHEALTH = 1279037710U;
         static const AkUniqueID PLAY_OUTSIDE = 473294595U;
+        static const AkUniqueID PLAY_ROOMTONE_TEMPLE = 3699433833U;
         static const AkUniqueID PLAY_WATER_LOOP = 1564978696U;
+        static const AkUniqueID PLAY_WEIRD_ROOMTONE = 2387658637U;
+        static const AkUniqueID STOP_IDLE_CULTIST = 1199249995U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -44,6 +54,11 @@ namespace AK
 
     } // namespace SWITCHES
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PLAYERHEALTH_PARAM = 2337577746U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -52,7 +67,6 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID BITCRUSH = 1974573347U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
     } // namespace BUSSES
 
