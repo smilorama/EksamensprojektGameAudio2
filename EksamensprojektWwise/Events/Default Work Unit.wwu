@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Brazier" ID="{8EE55CA6-6D3D-4EFF-AD47-83FD888AFAE4}">
+					<ChildrenList>
+						<Action Name="" ID="{B032F22A-D9B8-4448-8CF6-56735DE877D5}" ShortID="168330935">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire_Brazier" ID="{12BB81FB-BABB-4F00-84A3-3C5EEF30C709}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
