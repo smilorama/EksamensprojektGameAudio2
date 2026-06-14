@@ -118,6 +118,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_LowHealth" ID="{8C504526-B21E-46D7-96FA-21B2A287AB50}">
+							<ChildrenList>
+								<Action Name="" ID="{BBDD3BBA-C5EE-4B79-9B50-639CBDC8DE9B}" ShortID="371510829">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LowHealth" ID="{F6755B30-5FFC-40BE-BAD4-E409FFFC232E}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{B2170859-BD58-45E0-8C2F-16367D029B5C}" ShortID="890319596">
