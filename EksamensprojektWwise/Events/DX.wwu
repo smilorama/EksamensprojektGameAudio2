@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{176980FF-CD76-45A4-A074-9B48B8E28D2B}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="DX" ID="{176980FF-CD76-45A4-A074-9B48B8E28D2B}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="9"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Det_Forst_elige_Line_01_AnneSofie_Take_002_L" ID="{72AFD7A3-5DA4-450D-9326-288FC4349D6F}">
+					<ChildrenList>
+						<Action Name="" ID="{81ECE4D4-0A1D-4EEF-9263-02BAA0AF5E86}" ShortID="444892290">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Det_Forståelige_Line_01_AnneSofie_Take_002_L" ID="{C30C7C69-0679-4D64-AA5B-6B970D24F8BE}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

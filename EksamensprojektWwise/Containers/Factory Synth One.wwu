@@ -2,6 +2,13 @@
 <WwiseDocument Type="WorkUnit" ID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}" SchemaVersion="133">
 	<Containers>
 		<WorkUnit Name="Factory Synth One" ID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Inclusion" Type="bool">
+					<ValueList>
+						<Value>False</Value>
+					</ValueList>
+				</Property>
+			</PropertyList>
 			<ChildrenList>
 				<Folder Name="UI Sounds" ID="{33795F66-78E1-4A95-A3DB-B51C25D4CCAC}" ShortID="869167239">
 					<ChildrenList>
@@ -11,10 +18,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -120,10 +127,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -230,10 +237,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -340,10 +347,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -453,10 +460,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -565,7 +572,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -628,10 +634,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -782,7 +788,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -845,10 +850,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -956,10 +961,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1108,10 +1113,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1221,10 +1226,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1334,10 +1339,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1489,10 +1494,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1673,10 +1678,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1857,10 +1862,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2009,10 +2014,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2233,10 +2238,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2347,7 +2352,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -2456,10 +2460,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2570,7 +2574,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -2633,10 +2636,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2775,10 +2778,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2933,7 +2936,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="FrequencyBand2" Type="Real32" Value="792"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -2997,10 +2999,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -3210,10 +3212,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -3431,10 +3433,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -3954,10 +3956,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -4394,10 +4396,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -4548,7 +4550,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -4654,10 +4655,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -4847,7 +4848,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="2"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -4953,10 +4953,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -5188,7 +5188,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="FrequencyBand2" Type="Real32" Value="806"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 															<Property Name="QFactorBand2" Type="Real32" Value="62.8"/>
 														</PropertyList>
 														<ObjectLists>
@@ -5250,7 +5249,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="2"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -5311,10 +5309,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -5469,7 +5467,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="FrequencyBand2" Type="Real32" Value="792"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -5532,10 +5529,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -5777,7 +5774,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="FrequencyBand2" Type="Real32" Value="792"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -5976,10 +5972,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -6207,7 +6203,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand3" Type="int32" Value="2"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -6270,10 +6265,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -6625,7 +6620,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand3" Type="int32" Value="2"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -6688,10 +6682,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -6841,10 +6835,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -7083,10 +7077,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -7283,10 +7277,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -7615,10 +7609,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -7814,10 +7808,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -8264,7 +8258,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="1000"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -8328,10 +8321,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -8444,7 +8437,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="FrequencyBand2" Type="Real32" Value="8392"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 															<Property Name="OutputLevel" Type="Real32" Value="7"/>
 															<Property Name="QFactorBand1" Type="Real32" Value="8.9"/>
 															<Property Name="QFactorBand2" Type="Real32" Value="34.5"/>
@@ -8601,10 +8593,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -8751,10 +8743,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -8859,10 +8851,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -9079,10 +9071,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -9187,10 +9179,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -9300,7 +9292,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -9364,10 +9355,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -9475,7 +9466,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -9538,10 +9528,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -9736,10 +9726,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -9932,7 +9922,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -9996,10 +9985,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -10108,7 +10097,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -10172,10 +10160,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -10285,7 +10273,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -10349,10 +10336,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -10460,7 +10447,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -10524,10 +10510,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -10635,7 +10621,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -10699,10 +10684,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -10898,10 +10883,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -11011,7 +10996,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -11075,10 +11059,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -11271,7 +11255,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -11335,10 +11318,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -11446,7 +11429,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -11509,10 +11491,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -11704,7 +11686,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="5000"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -11767,10 +11748,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -12002,7 +11983,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="5000"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -12065,10 +12045,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -12180,7 +12160,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -12244,10 +12223,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -12356,7 +12335,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="FrequencyBand2" Type="Real32" Value="792"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -12420,10 +12398,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -12531,7 +12509,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -12677,10 +12654,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -12793,7 +12770,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="FrequencyBand2" Type="Real32" Value="792"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -12858,10 +12834,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -12971,7 +12947,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -13034,10 +13009,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -13145,7 +13120,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -13208,10 +13182,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -13322,7 +13296,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="5000"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -13386,10 +13359,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -13500,7 +13473,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="2"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="2794"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -13564,10 +13536,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -13639,7 +13611,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="FrequencyBand2" Type="Real32" Value="792"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -13703,10 +13674,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -13820,7 +13791,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="FrequencyBand2" Type="Real32" Value="792"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 														<ObjectLists>
 															<ObjectList Name="RTPC">
@@ -13885,10 +13855,10 @@ Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
 							<ReferenceList>
 								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB3A0F0F-2450-440E-933E-B9BF945DF4D1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 								</Reference>
 								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{15D810DF-6509-41EC-A32F-A44074BAC475}"/>
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -13998,7 +13968,6 @@ Content provided by Vincent Gagnon
 															<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
 															<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
 															<Property Name="OnOffBand2" Type="bool" Value="False"/>
-															<Property Name="OnOffBand3" Type="bool" Value="False"/>
 														</PropertyList>
 													</Effect>
 												</Custom>

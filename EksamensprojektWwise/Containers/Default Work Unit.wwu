@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F7C6A426-0DF4-4169-A83C-07E64B2AE38A}" SchemaVersion="133">
 	<Containers>
-		<WorkUnit Name="Default Work Unit" ID="{F7C6A426-0DF4-4169-A83C-07E64B2AE38A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F7C6A426-0DF4-4169-A83C-07E64B2AE38A}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Inclusion" Type="bool">
+					<ValueList>
+						<Value>False</Value>
+					</ValueList>
+				</Property>
+			</PropertyList>
+		</WorkUnit>
 	</Containers>
 </WwiseDocument>
