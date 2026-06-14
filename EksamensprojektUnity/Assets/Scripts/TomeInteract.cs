@@ -102,9 +102,15 @@ public class TomeInteract : MonoBehaviour
     {
         _triggered = true;
 
-        // Sker samtidig: Global Volume, level swap og bog-svæve starter
+        // Sker samtidig: Global Volume, level swap, voiceline og bog-svæve starter
         if (_globalVolume != null && _postTomeProfile != null)
             _globalVolume.profile = _postTomeProfile;
+
+        if (!string.IsNullOrEmpty(_voicelineEvent))
+        {
+            GameObject emitter = _audioEmitter != null ? _audioEmitter : gameObject;
+            AkSoundEngine.PostEvent(_voicelineEvent, emitter);
+        }
 
         if (_preTomeLevelDesign != null) _preTomeLevelDesign.SetActive(false);
         if (_postTomeLevelDesign != null) _postTomeLevelDesign.SetActive(true);
