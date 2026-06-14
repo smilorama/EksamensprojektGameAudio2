@@ -3377,6 +3377,7 @@
 						<SwitchContainer Name="Footsteps_Enemy" ID="{3FF9A848-7FDB-44B6-92CE-12A54E0B44D9}" ShortID="821680943">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.25"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>

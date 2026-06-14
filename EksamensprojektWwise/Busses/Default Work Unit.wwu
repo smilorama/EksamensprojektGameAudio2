@@ -236,6 +236,11 @@
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-18</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
