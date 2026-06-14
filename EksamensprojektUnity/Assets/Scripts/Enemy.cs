@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] private string _deathEvent = "Play_EnemyDeath";
+    [SerializeField] private string _stopEvent = "Stop_Idle_Cultist";
     [SerializeField] private GameObject _audioEmitter;
 
     private NavMeshAgent _agent;
@@ -213,11 +214,11 @@ public class Enemy : MonoBehaviour
         _animator.SetLayerWeight(1, 1f);
         _animator.Play("Death", 1, 0f);
 
+        GameObject emitter = _audioEmitter != null ? _audioEmitter : gameObject;
+        if (!string.IsNullOrEmpty(_stopEvent))
+            AkUnitySoundEngine.PostEvent(_stopEvent, emitter);
         if (!string.IsNullOrEmpty(_deathEvent))
-        {
-            GameObject emitter = _audioEmitter != null ? _audioEmitter : gameObject;
-            AkSoundEngine.PostEvent(_deathEvent, emitter);
-        }
+            AkUnitySoundEngine.PostEvent(_deathEvent, emitter);
 
         Destroy(gameObject, 3f);
     }
