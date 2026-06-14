@@ -231,8 +231,36 @@
 							</ChildrenList>
 						</Folder>
 						<Event Name="Play_Idle_Cultist" ID="{B40667DC-1F56-4830-A327-49E426116024}">
+							<PropertyList>
+								<Property Name="LimitScope" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{C77BFCC9-5F11-43D6-8B82-C5B27F3A50BF}" ShortID="406058524">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Idle_Cultist" ID="{D4246607-D8DF-4139-B95B-BA75999C0DA6}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Idle_Cultist" ID="{F245601A-4A8F-4741-8443-A22E3EC9BD8F}">
+							<PropertyList>
+								<Property Name="LimitScope" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{21C73CEE-679E-4C09-AD15-A9B6BC62943D}" ShortID="523820970">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Idle_Cultist" ID="{D4246607-D8DF-4139-B95B-BA75999C0DA6}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
