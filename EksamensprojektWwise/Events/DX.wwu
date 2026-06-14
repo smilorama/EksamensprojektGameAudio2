@@ -21,6 +21,9 @@
 				<Event Name="Play_linje2" ID="{62E63D97-2139-4CDC-A64D-C86D6896F7ED}">
 					<ChildrenList>
 						<Action Name="" ID="{F3CF8DB3-1BE8-4BD0-9393-144F7899D0A9}" ShortID="248033634">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="4"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Det_Forståelige_Line_02_AnneSofie_Take_002_L" ID="{8DA8512C-B7B8-4937-9A58-59FCC02DC687}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
