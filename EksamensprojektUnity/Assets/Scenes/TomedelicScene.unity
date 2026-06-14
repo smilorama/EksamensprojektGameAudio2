@@ -31627,7 +31627,7 @@ MonoBehaviour:
   roomToneEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 0ce309bf80388442e94e78d9fd373aca, type: 2}
   roomToneAuxSend: 0
   isStatic: 0
 --- !u!65 &1798092311
@@ -39674,7 +39674,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8609e73dbf8d74916a4d3dd6d486daef, type: 2}
-  roomToneAuxSend: 0
+  roomToneAuxSend: 0.162
   isStatic: 0
 --- !u!54 &3469287837884451373
 Rigidbody:
@@ -39924,8 +39924,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.518558, y: 2.4807603, z: 1.85049}
-  m_Center: {x: -0.23108724, y: -0.14169697, z: 0.46913645}
+  m_Size: {x: 7.07, y: 2.4807603, z: 1.85049}
+  m_Center: {x: -0.15, y: -0.14169697, z: 0.46913645}
 --- !u!1001 &3469366293634753371
 PrefabInstance:
   m_ObjectHideFlags: 0
