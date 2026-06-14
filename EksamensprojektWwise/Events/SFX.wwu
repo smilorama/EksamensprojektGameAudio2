@@ -230,6 +230,36 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Play_Idle_Cultist" ID="{B40667DC-1F56-4830-A327-49E426116024}">
+							<ChildrenList>
+								<Action Name="" ID="{C77BFCC9-5F11-43D6-8B82-C5B27F3A50BF}" ShortID="406058524">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Idle_Cultist" ID="{D4246607-D8DF-4139-B95B-BA75999C0DA6}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Environment" ID="{267393C9-AE08-4BBF-BF24-BE6BBDB70CD7}" ShortID="1031602026">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="13"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_Brazier" ID="{8EE55CA6-6D3D-4EFF-AD47-83FD888AFAE4}">
+							<ChildrenList>
+								<Action Name="" ID="{B032F22A-D9B8-4448-8CF6-56735DE877D5}" ShortID="168330935">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fire_Brazier" ID="{12BB81FB-BABB-4F00-84A3-3C5EEF30C709}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
