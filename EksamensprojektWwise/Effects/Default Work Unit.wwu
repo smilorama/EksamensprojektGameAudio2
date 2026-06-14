@@ -968,7 +968,24 @@
 						<Effect Name="ParkeringsKaelderRev_007_POS1_Klap5" ID="{147D2327-6036-4322-BBF1-89CF834419F1}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<PropertyList>
 								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="HardwareAcceleration" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="66"/>
 								<Property Name="IRConvolutionStop" Type="Real64" Value="4.849"/>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="InputThreshold" Type="Real32">
+									<ValueList>
+										<Value>-30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SoundEngineBlockSize" Type="int32">
+									<ValueList>
+										<Value>512</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_007_POS1_Klap5" ID="{235BD95E-1B9F-4D93-B7D6-079A64AF9827}">
@@ -1011,7 +1028,7 @@
 					<PointList>
 						<Point>
 							<XPos>0</XPos>
-							<YPos>20000</YPos>
+							<YPos>8325.93438</YPos>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
@@ -1048,7 +1065,24 @@
 						<Effect Name="ParkeringsKaelderRev_007_POS2_Klap5" ID="{4DBBD2C0-24DE-4E60-915F-8C095F14E7D8}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<PropertyList>
 								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="66"/>
 								<Property Name="IRConvolutionStop" Type="Real64" Value="4.849"/>
+								<Property Name="IRConvolutionThreshold" Type="Real32">
+									<ValueList>
+										<Value>-69</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-12.4"/>
+								<Property Name="InputThreshold" Type="Real32">
+									<ValueList>
+										<Value>-49.3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SoundEngineBlockSize" Type="int32">
+									<ValueList>
+										<Value>512</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_007_POS2_Klap5" ID="{5A6A1E02-E5E9-4992-94DC-22EB4F1A462A}">
