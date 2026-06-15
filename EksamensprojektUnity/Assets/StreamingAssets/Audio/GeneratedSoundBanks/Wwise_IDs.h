@@ -65,6 +65,7 @@ namespace AK
                 static const AkUniqueID PLAYERDEATH = 1656947812U;
                 static const AkUniqueID TOMEBRAENDING = 1119949180U;
                 static const AkUniqueID TOMEOUTSIDE = 1776398501U;
+                static const AkUniqueID TOMEPICKUP = 2158032164U;
                 static const AkUniqueID TOMEPOSSESSION = 1212775290U;
             } // namespace STATE
         } // namespace ENDGAMEMUSICSTATES

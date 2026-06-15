@@ -800,6 +800,14 @@
 								<CustomState Name="" ID="{5A583DCD-35F0-4991-895D-2FC9F21EDD99}" ShortID="86657486"/>
 							</CustomState>
 							<CustomState>
+								<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+								<CustomState Name="" ID="{04540A14-2B08-4B84-9B68-F809652BF14C}" ShortID="718269323">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-5"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
 								<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
 								<CustomState Name="" ID="{C1DFA5DD-7E9D-4E47-B664-6063DEC48B79}" ShortID="565529476"/>
 							</CustomState>

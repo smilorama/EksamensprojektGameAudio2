@@ -97,6 +97,7 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 						</State>
+						<State Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
