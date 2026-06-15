@@ -17,12 +17,16 @@ namespace AK
         static const AkUniqueID ATTACK_HITNOTHING = 726189174U;
         static const AkUniqueID ATTACK_HITTERRAIN = 1224938770U;
         static const AkUniqueID DRINK_POTION = 2541729425U;
+        static const AkUniqueID PLAY_1_INTROSTINGER = 618226038U;
+        static const AkUniqueID PLAY_2_GROTTE_OG_3_DUNGEON = 3932489860U;
+        static const AkUniqueID PLAY_4_TOMEAURA_3D_LOOP = 2272618794U;
         static const AkUniqueID PLAY_ATTACK_ENEMY_HIT = 486256373U;
         static const AkUniqueID PLAY_ATTACK_ENEMY_MISS = 1284475082U;
         static const AkUniqueID PLAY_BRAZIER = 2521551685U;
         static const AkUniqueID PLAY_CAVE = 3602995889U;
         static const AkUniqueID PLAY_DEATH_CREATURE = 795377228U;
         static const AkUniqueID PLAY_DEATH_CULTIST = 3622272533U;
+        static const AkUniqueID PLAY_ENDGAMEMUSICSWITCHCONTAINER = 3311667097U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
         static const AkUniqueID PLAY_FOOTSTEP_ENEMY = 1095021605U;
         static const AkUniqueID PLAY_IDLE_CULTIST = 1329754913U;
@@ -35,6 +39,50 @@ namespace AK
         static const AkUniqueID PLAY_WEIRD_ROOMTONE = 2387658637U;
         static const AkUniqueID STOP_IDLE_CULTIST = 1199249995U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace BEGINNINGMUSICSTATES
+        {
+            static const AkUniqueID GROUP = 3082081149U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DUNGEONBEGINNING = 4167468798U;
+                static const AkUniqueID GROTTEBEGINNING = 87758831U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace BEGINNINGMUSICSTATES
+
+        namespace ENDGAMEMUSICSTATES
+        {
+            static const AkUniqueID GROUP = 538938061U;
+
+            namespace STATE
+            {
+                static const AkUniqueID HAPPYENDNING = 376991726U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PLAYERDEATH = 1656947812U;
+                static const AkUniqueID TOMEBRAENDING = 1119949180U;
+                static const AkUniqueID TOMEOUTSIDE = 1776398501U;
+                static const AkUniqueID TOMEPOSSESSION = 1212775290U;
+            } // namespace STATE
+        } // namespace ENDGAMEMUSICSTATES
+
+        namespace TOMEAURASTATES
+        {
+            static const AkUniqueID GROUP = 3042705799U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TOMEFORESHADOWING = 1866109078U;
+                static const AkUniqueID TOMEPICKUP = 2158032164U;
+                static const AkUniqueID TOMESPIRITUALROOM = 1167319226U;
+            } // namespace STATE
+        } // namespace TOMEAURASTATES
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -57,6 +105,9 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID PLAYERHEALTH_PARAM = 2337577746U;
+        static const AkUniqueID TOMEPOSSESSIONDELAY = 3059304411U;
+        static const AkUniqueID TOMEPOSSESSIONMODULATION = 614263488U;
+        static const AkUniqueID TOMEPOSSESSIONTIMESTRETCH = 828022604U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -68,6 +119,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
+        static const AkUniqueID MUSIC_BUS = 3127962312U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

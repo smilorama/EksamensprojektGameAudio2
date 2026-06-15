@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}" SchemaVersion="133">
+	<Effects>
+		<WorkUnit Name="Music Effects" ID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Effect Name="TomePossessionTimeStretchPreset" ID="{7A86C6D5-DDA9-4CF7-94CF-C7CEC90B2618}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{281D0F4D-A9A3-4A82-BB2A-7D1A261440D3}" ShortID="755410952">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="TimeStretch"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="TomePossessionTimeStretch" ID="{B85ACA72-B1AE-4AF3-9CC5-10C0C43C96DC}" WorkUnitID="{E732188B-92A3-4896-A159-048E86C7350E}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{85A4ABAC-0E94-47E2-8A34-2ADBA5D08661}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>800</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

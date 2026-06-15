@@ -21,7 +21,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+							<ObjectRef Name="Music Bus" ID="{25A3E203-2A4D-4AB6-8D0D-CDEB29754592}" WorkUnitID="{596F31C6-30D4-418B-9BA0-883D2FC54994}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -191,11 +191,773 @@
 						</ObjectList>
 					</ObjectLists>
 				</MusicSegment>
-				<Folder Name="1_Grotte" ID="{8F10858A-D0F3-49BC-8A70-082E4A7879AC}" ShortID="495561329">
+				<MusicSwitchContainer Name="5_6_7_EndGameMusicSwitchContainer" ID="{A2EE1626-CEBF-48E8-8084-4F3E3312B07B}" ShortID="400732226">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="150"/>
+						<Property Name="TimeSignatureUpper" Type="int16" Value="7"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music Bus" ID="{25A3E203-2A4D-4AB6-8D0D-CDEB29754592}" WorkUnitID="{596F31C6-30D4-418B-9BA0-883D2FC54994}"/>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{839572FF-3DC3-4964-B8E7-4AB9FCD46D76}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{8D0BAD29-33C9-4E32-8F59-CE164AF6CB0A}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
-						<MusicSegment Name="1_Grotte_MonochordBas_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0" ID="{E22C1E67-0315-499D-9A88-8C2F72F3047D}" ShortID="718411333">
+						<MusicPlaylistContainer Name="5_TomePossession_Playlist" ID="{4E58524A-A98E-4BC3-AE74-8DD2DC4DD8B5}" ShortID="525723522">
+							<PropertyList>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="150"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{EA47C6FF-84CE-4A90-B280-15385B3894E4}" ShortID="983761713">
+											<PropertyList>
+												<Property Name="PlayMode" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{0F328850-C84F-4591-8B71-5A5D4F104CDD}" ShortID="718890688">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="5_1_TomePickup" ID="{89AD719E-375B-4F90-9291-F7D750E29BC4}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{F4A23B05-250E-47DF-9AE4-D84F0C34830E}" ShortID="451714367">
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{64F87B27-7BE8-47DC-BB72-5D5C44CB4D6F}" ShortID="101268526">
+															<PropertyList>
+																<Property Name="LoopCount" Type="int16" Value="0"/>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="5_2_TomePossession_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{89E90EEF-EA69-45EB-A6E3-65562174DC88}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{4911A1CE-7879-46F5-A0D1-EDEDB11ABDA9}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{744EA69E-555C-4AB2-B5D3-272F207E9CC2}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="5_2_TomePossession_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{89E90EEF-EA69-45EB-A6E3-65562174DC88}" ShortID="494903215">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="26200"/>
+										<Property Name="GridFrequencyPreset" Type="int16" Value="51"/>
+										<Property Name="Tempo" Type="Real64" Value="150"/>
+										<Property Name="TimeSignatureUpper" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{A6FDB9CC-AD81-4A31-B1D4-380724235004}" ShortID="229709476">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{6506A6EF-385A-4A76-ADFB-3D12D45652AA}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1" ID="{41D977A6-E4C5-4421-84CF-0F0BA012935A}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="512591444"/>
+													</MediaIDList>
+													<ObjectLists>
+														<ObjectList Name="Markers">
+															<Marker Name="" ID="{7D974698-D9F9-431D-9C1C-565E90BCAB96}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="1 Grotte"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{3F3B3796-8039-4591-9FBC-C105198076E2}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="7 Spirituel"/>
+																</PropertyList>
+															</Marker>
+														</ObjectList>
+													</ObjectLists>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var2" ID="{4D96937D-A565-4A32-9EA4-02D60E4041E8}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="270506416"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var3" ID="{FAA5543E-E3DD-4C01-9E16-2CD201569D9C}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="290408846"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var4" ID="{C9A86FA8-DE0C-4BE2-A022-90640A97EEBB}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="942148514"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var5" ID="{C3CDD6C3-3CA8-496D-81CF-3A1E2E27489E}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="812842953"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var6" ID="{807F66F9-2589-4700-B11A-5AE7F359CE67}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="626884774"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var7" ID="{AAA52EC9-9B06-493D-953F-9B589505C6CA}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="276440775"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var8" ID="{D640D2F2-25CB-451F-AC59-E0796A8D9B66}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="427415409"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{C480B9B6-778E-43A9-8405-0756183373E5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1" ID="{8A1D5D94-B93D-429C-9855-783DF543338B}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1" ID="{41D977A6-E4C5-4421-84CF-0F0BA012935A}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{7D210665-AFB2-4187-A3A6-37BBF0B5F5AE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var2" ID="{722DC00F-286E-48CC-89EC-0C556587EE1C}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var2" ID="{4D96937D-A565-4A32-9EA4-02D60E4041E8}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{88B3C73D-4295-405A-A4A7-74451CD72266}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var3" ID="{8AF99C73-DD20-4A39-837D-E756B57196F3}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var3" ID="{FAA5543E-E3DD-4C01-9E16-2CD201569D9C}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{9463F0F0-A841-4B3E-B127-762957127787}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var4" ID="{02E0D144-E99F-4DCD-9A05-4C91CF0EA1CF}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var4" ID="{C9A86FA8-DE0C-4BE2-A022-90640A97EEBB}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{A3C8C547-FE32-4DF8-9921-527210330AA4}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var5" ID="{5AA1C214-29A7-48BD-96DC-0F67C8A59380}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var5" ID="{C3CDD6C3-3CA8-496D-81CF-3A1E2E27489E}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{D727679E-964D-41D3-8CF0-8180D1562505}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var6" ID="{F3D2E289-6C25-40CE-A56B-3DA3405AB21A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var6" ID="{807F66F9-2589-4700-B11A-5AE7F359CE67}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{93E3694F-D31D-42BB-BA2E-4A6169F6B163}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var7" ID="{AF1C9818-6C10-42BF-A148-232BAE66E008}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var7" ID="{AAA52EC9-9B06-493D-953F-9B589505C6CA}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{60D0B223-98D9-49D6-8922-9E54E5538D23}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var8" ID="{B2055969-5489-4894-9B27-EB182BF3B0F5}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var8" ID="{D640D2F2-25CB-451F-AC59-E0796A8D9B66}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{087B1524-EE94-4D9D-A1C8-1BAB8DE5CABF}"/>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{7B54C0B1-3902-48E0-B922-594A1DCBB22A}" ShortID="424717972">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{A7D2059A-6178-432D-BC39-4D589F36DF30}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="5_TomePossession_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{75FDC747-E5FD-4215-A31D-82141FEFB338}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1057941921"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P1" ID="{9F18BAE2-89E8-41DE-A097-4C4E0E078890}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="980368009"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_StreichfettStringStabs_var3_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{0823C353-C882-42EA-80A0-161F3AEC7C77}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_StreichfettStringStabs_var3_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="144249384"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_StreichfettStringStabs_var4_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{1AECE3FD-D5BC-43B4-84F8-39DAB3C6942C}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_StreichfettStringStabs_var4_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="969157123"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="5_TomePossession_StreichfettStringStabs_var5_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{F9E2D20B-CB78-48CF-867A-238794A81BD6}">
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_StreichfettStringStabs_var5_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="869563295"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{4D30BAB6-CD1E-416A-A886-E1E2A63DA3E1}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{03E271A6-5DF0-4143-B179-F3C85BB4E1E0}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{75FDC747-E5FD-4215-A31D-82141FEFB338}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{635EACD5-3388-4B54-BE02-975F001FC9A0}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P1" ID="{1BD2FE74-7B81-4685-AFD3-17B74A140B9D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P1" ID="{9F18BAE2-89E8-41DE-A097-4C4E0E078890}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{AC0161BC-41D3-444B-B613-9E1A5394E80F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_StreichfettStringStabs_var3_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{14A257E9-C1A2-4565-9B08-3CB4FAF9EB35}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_StreichfettStringStabs_var3_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{0823C353-C882-42EA-80A0-161F3AEC7C77}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{7E498B13-37E3-4F11-9731-9E7EA58C5F1B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_StreichfettStringStabs_var4_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{9237B23D-2FAC-4C26-A323-522B3131E80D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_StreichfettStringStabs_var4_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{1AECE3FD-D5BC-43B4-84F8-39DAB3C6942C}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{95ED08EF-522D-4045-BD84-A3FA444BAB66}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="5_TomePossession_StreichfettStringStabs_var5_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{1BA3E9BE-0061-4DB2-818E-7B6143D3C0A3}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="5_TomePossession_StreichfettStringStabs_var5_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{F9E2D20B-CB78-48CF-867A-238794A81BD6}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<MusicCue Name="Entry Cue" ID="{F3A5E625-4855-41D8-84AB-1474CF4F195E}"/>
+											<MusicCue Name="Exit Cue" ID="{6AB5EDE9-7E96-4A64-AFAC-7FEEED45BCA2}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="16800"/>
+												</PropertyList>
+											</MusicCue>
+										</ObjectList>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{97006FB6-D7B6-4A68-9391-E0C09A92FCA5}" ShortID="260791023">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+														<ObjectRef Name="Deep" ID="{76753DA8-3DCF-4812-A726-2745812F6C1B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+											<EffectSlot Name="" ID="{59FDFC7B-CCDF-4CF7-BEA4-4E86690D8055}" ShortID="458315516">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+														<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+											<EffectSlot Name="" ID="{78B8964C-F207-45BB-8CD6-798C0626FED9}" ShortID="298203060">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+														<ObjectRef Name="One_Tap_One_Second" ID="{5B5883FA-85A1-45CA-8A52-9DBBCF3B0A03}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+											<EffectSlot Name="" ID="{4064F1D6-8F29-422E-A764-A3A8A948041B}" ShortID="322319070">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+														<ObjectRef Name="TomePossessionTimeStretchPreset" ID="{7A86C6D5-DDA9-4CF7-94CF-C7CEC90B2618}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="5_1_TomePickup" ID="{89AD719E-375B-4F90-9291-F7D750E29BC4}" ShortID="758330845">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<MusicCue Name="Entry Cue" ID="{F920FE1E-5D1E-432E-B8AF-82E0BED97016}"/>
+											<MusicCue Name="Exit Cue" ID="{98052E24-F5B2-477E-B2D8-F9FBA18EB1D7}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+												</PropertyList>
+											</MusicCue>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="6_TomeBraending_Playlist" ID="{56B34FC6-9625-4C8E-9A97-A7BD254E0AE1}" ShortID="1015724534">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{7A940902-5910-447C-8813-C20DEF4D9B4F}" ShortID="364282988"/>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{4001FACA-75C6-4929-B729-555BFDA153BA}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{A5847631-E2B8-4363-B5B2-A25F1E28DEE3}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="7_HappyEnding_Playlist" ID="{9831C157-921E-4602-8B0F-F8CE82A16555}" ShortID="115392707">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{51C5F1F6-F1F4-495F-A2D8-86D92CD91EC0}" ShortID="665336503"/>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{67DA33C4-6295-42DC-8A8A-A92E05A7AEA5}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{EFD84988-DD50-4AB1-8C49-E72F015D38C3}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<PluginInnerObject Name="" ID="{91C57273-D1E6-47D8-ACC8-979F442FE8C9}" PluginName="MusicArgumentsSlot" CompanyID="0" PluginID="89">
+								<ReferenceList>
+									<Reference Name="Argument">
+										<ObjectRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}" WorkUnitID="{535A3FFB-9A7B-4495-846C-ACF40509EA46}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<MultiSwitchEntry Name="" ID="{68D80E8A-6ABB-4D76-AB3B-05EE8285A20C}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="5_TomePossession_Playlist" ID="{4E58524A-A98E-4BC3-AE74-8DD2DC4DD8B5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{0D0D1B8E-8F65-4A90-849E-7A4D90A33977}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}" WorkUnitID="{535A3FFB-9A7B-4495-846C-ACF40509EA46}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{E75F82C6-9C81-4643-B1C2-B423E6668143}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="6_TomeBraending_Playlist" ID="{56B34FC6-9625-4C8E-9A97-A7BD254E0AE1}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{F23DBCC1-D344-45E9-A420-C8FD4044B22E}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="TomeBraending" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}" WorkUnitID="{535A3FFB-9A7B-4495-846C-ACF40509EA46}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{29D7F6E7-919A-4206-B8B7-3871561AC764}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="7_HappyEnding_Playlist" ID="{9831C157-921E-4602-8B0F-F8CE82A16555}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{0DFDEE0C-DAED-48E8-9B82-CF8527EA73B2}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}" WorkUnitID="{535A3FFB-9A7B-4495-846C-ACF40509EA46}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSwitchContainer>
+				<Sound Name="1_IntroStinger" ID="{72010CD2-E237-49CD-BDB9-ECACC2B0A329}" ShortID="997009656">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music Bus" ID="{25A3E203-2A4D-4AB6-8D0D-CDEB29754592}" WorkUnitID="{596F31C6-30D4-418B-9BA0-883D2FC54994}"/>
+						</Reference>
+					</ReferenceList>
+				</Sound>
+				<MusicSegment Name="4_TomeAura_3D_Loop" ID="{B58BBF87-86F7-4668-9054-E903EABB2F2E}" ShortID="661736774">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="150"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music Bus" ID="{25A3E203-2A4D-4AB6-8D0D-CDEB29754592}" WorkUnitID="{596F31C6-30D4-418B-9BA0-883D2FC54994}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<MusicCue Name="Entry Cue" ID="{EEC54E43-1E0F-4D7A-AFCF-3D6BEC351C35}"/>
+							<MusicCue Name="Exit Cue" ID="{458F4796-ACF2-461C-8E0A-A5A78A334B86}">
+								<PropertyList>
+									<Property Name="CueType" Type="int16" Value="1"/>
+									<Property Name="TimeMs" Type="Real64" Value="1000"/>
+								</PropertyList>
+							</MusicCue>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicPlaylistContainer Name="2_Grotte_og_3_Dungeon_Playlist" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" ShortID="735240797">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="150"/>
+						<Property Name="TimeSignatureUpper" Type="int16" Value="5"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music Bus" ID="{25A3E203-2A4D-4AB6-8D0D-CDEB29754592}" WorkUnitID="{596F31C6-30D4-418B-9BA0-883D2FC54994}"/>
+						</Reference>
+						<Reference Name="PlaylistRoot">
+							<Custom>
+								<MusicPlaylistItem Name="" ID="{FEB5962A-7AAF-4E39-8185-61CD06EA0B09}" ShortID="54462284">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{BAFD570B-38B6-4269-8A61-A38E85DE38F8}" ShortID="1038634209">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="2_Grotte_og_3_Dungeon_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0" ID="{E22C1E67-0315-499D-9A88-8C2F72F3047D}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Custom>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{3125ADC0-10E2-4784-89A9-67EE2EB79286}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{E4102BC0-7A9D-4EDF-9F3B-4685C573DDCF}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="2_Grotte_og_3_Dungeon_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0" ID="{E22C1E67-0315-499D-9A88-8C2F72F3047D}" ShortID="718411333">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="16000"/>
+								<Property Name="Tempo" Type="Real64" Value="150"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -206,7 +968,10 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq1-4" ID="{8EFC5FAE-0B06-44F3-8A20-5C6A0D09D216}" ShortID="424786380">
+								<MusicTrack Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5" ID="{8EFC5FAE-0B06-44F3-8A20-5C6A0D09D216}" ShortID="424786380">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="2"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
@@ -223,139 +988,40 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq1-4" ID="{02FDC5C0-D1E7-462C-B078-06F9B9E6E080}">
+										<AudioFileSource Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq1-4" ID="{02FDC5C0-D1E7-462C-B078-06F9B9E6E080}">
+											<PropertyList>
+												<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Originals\SFX\Originals\SFX\1_Grotte\1_Grotte_MonochordBas_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0\1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq1-4.wav</AudioFile>
 											<MediaIDList>
 												<MediaID ID="1044879323"/>
 											</MediaIDList>
+											<ObjectLists>
+												<ObjectList Name="Markers">
+													<Marker Name="" ID="{7B0FF6C1-E67E-406E-B6F8-450C9A951116}">
+														<PropertyList>
+															<Property Name="Label" Type="string" Value="1 Grotte"/>
+														</PropertyList>
+													</Marker>
+												</ObjectList>
+											</ObjectLists>
 										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{E9E4C760-1802-4517-8E23-943DEAB03655}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq1-4" ID="{01A6245D-D18A-4AC7-A627-409A44C44F27}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq1-4" ID="{02FDC5C0-D1E7-462C-B078-06F9B9E6E080}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq2-4" ID="{2950CE23-1F3A-4F72-97F9-CF67D4D85F29}" ShortID="440435994">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{581ACCA8-A4E7-4277-953E-C354D8E9351C}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq2-4" ID="{C59175AB-37F3-463E-BFA7-2B8E3E7C119F}">
+										<AudioFileSource Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq2-4" ID="{C59175AB-37F3-463E-BFA7-2B8E3E7C119F}">
 											<Language>SFX</Language>
 											<AudioFile>Originals\SFX\Originals\SFX\1_Grotte\1_Grotte_MonochordBas_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0\1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq2-4.wav</AudioFile>
 											<MediaIDList>
 												<MediaID ID="819683052"/>
 											</MediaIDList>
 										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{2DE8D565-AF99-45A6-BCAE-CF143711D028}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq2-4" ID="{DD920479-A851-43F9-82A2-BC99687653A0}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq2-4" ID="{C59175AB-37F3-463E-BFA7-2B8E3E7C119F}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq3-4" ID="{347F922D-8972-429A-876E-2395E4D8EEAE}" ShortID="500957654">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{72FA1D2E-C30B-4CB7-879D-08362E307A27}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq3-4" ID="{5B8E30F2-E235-4774-B8AE-0250F377AC8E}">
+										<AudioFileSource Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq3-4" ID="{5B8E30F2-E235-4774-B8AE-0250F377AC8E}">
 											<Language>SFX</Language>
 											<AudioFile>Originals\SFX\Originals\SFX\1_Grotte\1_Grotte_MonochordBas_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0\1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq3-4.wav</AudioFile>
 											<MediaIDList>
 												<MediaID ID="705136175"/>
 											</MediaIDList>
 										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{5D7652F2-020D-4DAD-A7FC-FE577F558A53}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq3-4" ID="{55229E82-7A6B-43B2-8C45-1184E2B65B2E}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq3-4" ID="{5B8E30F2-E235-4774-B8AE-0250F377AC8E}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq4-4" ID="{A41ECFF7-C1A5-4981-B6D2-3B8ADCC82B2E}" ShortID="383531975">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{87C81BE2-4C4C-4AD7-9158-35B52CF63043}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq4-4" ID="{3D1DB5DF-100D-4741-B6CA-1670409F6D9C}">
+										<AudioFileSource Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq4-4" ID="{3D1DB5DF-100D-4741-B6CA-1670409F6D9C}">
 											<Language>SFX</Language>
 											<AudioFile>Originals\SFX\Originals\SFX\1_Grotte\1_Grotte_MonochordBas_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0\1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq4-4.wav</AudioFile>
 											<MediaIDList>
@@ -363,18 +1029,94 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BeginningMusicStates" ID="{865D8293-A9DA-4438-8BD2-46EE721BC036}"/>
+												<StateGroupInfo Name="" ID="{06EC6EE3-EFC6-44AF-B512-1160933671CE}" ShortID="248846821">
+													<PropertyList>
+														<Property Name="MusicSyncType" Type="int32" Value="2"/>
+													</PropertyList>
+												</StateGroupInfo>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="GrotteBeginning" ID="{C9D8A735-F710-45D8-ACD8-F5346D7253C5}"/>
+												<CustomState Name="" ID="{1836B1AB-1260-48CC-9DBA-1B327B62016C}" ShortID="46825278">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-4"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="DungeonBeginning" ID="{A1DD3F3C-5578-48BF-92E1-3DE026EC20E0}"/>
+												<CustomState Name="" ID="{5D1521A4-C6F5-42F8-869E-F6F8EBE6F0DC}" ShortID="393256373"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="None" ID="{5D6C8137-E92D-4BA1-BDD8-C0AFEE537DBC}"/>
+												<CustomState Name="" ID="{BF65E4A0-6A9E-40EA-AD39-B6F04812A169}" ShortID="524379764">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ObjectLists>
 										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{0E6A7FBA-9919-4B1F-98C5-66FC97FC3BB7}">
+											<MusicTrackSequence Name="" ID="{E9E4C760-1802-4517-8E23-943DEAB03655}">
 												<ObjectLists>
 													<ObjectList Name="Clips">
-														<MusicClip Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq4-4" ID="{72DD8CBC-2176-4513-B46B-5C03715D3482}">
+														<MusicClip Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq1-4" ID="{01A6245D-D18A-4AC7-A627-409A44C44F27}">
 															<PropertyList>
 																<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="1_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq4-4" ID="{3D1DB5DF-100D-4741-B6CA-1670409F6D9C}"/>
+															<AudioSourceRef Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq1-4" ID="{02FDC5C0-D1E7-462C-B078-06F9B9E6E080}"/>
+														</MusicClip>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+											<MusicTrackSequence Name="" ID="{CBA8B469-0E9B-41E8-ADE4-E2E822DF6941}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<MusicClip Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq2-4" ID="{DD920479-A851-43F9-82A2-BC99687653A0}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq2-4" ID="{C59175AB-37F3-463E-BFA7-2B8E3E7C119F}"/>
+														</MusicClip>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+											<MusicTrackSequence Name="" ID="{15176962-B1EA-45E3-A81B-39EB3CB9ED71}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<MusicClip Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq3-4" ID="{55229E82-7A6B-43B2-8C45-1184E2B65B2E}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq3-4" ID="{5B8E30F2-E235-4774-B8AE-0250F377AC8E}"/>
+														</MusicClip>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+											<MusicTrackSequence Name="" ID="{3246123A-81B7-498D-BD06-DBB79D4830A0}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<MusicClip Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq4-4" ID="{72DD8CBC-2176-4513-B46B-5C03715D3482}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="2_Grotte_MonochordBas_DroneDegraded_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0_var5_seq4-4" ID="{3D1DB5DF-100D-4741-B6CA-1670409F6D9C}"/>
 														</MusicClip>
 													</ObjectList>
 												</ObjectLists>
@@ -383,6 +1125,32 @@
 									</ObjectLists>
 								</MusicTrack>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="BeginningMusicStates" ID="{865D8293-A9DA-4438-8BD2-46EE721BC036}"/>
+										<StateGroupInfo Name="" ID="{D018B0B0-C4AA-42DD-BCAC-D39FD76F1883}" ShortID="887576436"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="GrotteBeginning" ID="{C9D8A735-F710-45D8-ACD8-F5346D7253C5}"/>
+										<CustomState Name="" ID="{8D633054-2616-45DE-BCBE-AB81ABE421A0}" ShortID="920772053"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="DungeonBeginning" ID="{A1DD3F3C-5578-48BF-92E1-3DE026EC20E0}"/>
+										<CustomState Name="" ID="{E40186F6-A040-4045-AD8F-79E064082A3F}" ShortID="209062689"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{5D6C8137-E92D-4BA1-BDD8-C0AFEE537DBC}"/>
+										<CustomState Name="" ID="{1F0BBC14-7CB4-4BFD-8666-04C509D18265}" ShortID="372144906">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="Cues">
 									<MusicCue Name="Entry Cue" ID="{1428C055-9F1D-4645-B406-9E933A40A97E}"/>
@@ -396,635 +1164,7 @@
 							</ObjectLists>
 						</MusicSegment>
 					</ChildrenList>
-				</Folder>
-				<Folder Name="5_Spirituel" ID="{EBEE07D5-F649-4809-8820-98D926CC9426}" ShortID="515401063">
-					<ChildrenList>
-						<MusicSegment Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{89E90EEF-EA69-45EB-A6E3-65562174DC88}" ShortID="494903215">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="25200"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1" ID="{A6FDB9CC-AD81-4A31-B1D4-380724235004}" ShortID="229709476">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{6506A6EF-385A-4A76-ADFB-3D12D45652AA}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1" ID="{41D977A6-E4C5-4421-84CF-0F0BA012935A}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="512591444"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{C480B9B6-778E-43A9-8405-0756183373E5}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1" ID="{8A1D5D94-B93D-429C-9855-783DF543338B}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1" ID="{41D977A6-E4C5-4421-84CF-0F0BA012935A}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var2" ID="{7205E1C9-ECB2-4C2E-9BB5-A0963C51C87E}" ShortID="187460764">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{0794C606-0B60-42DA-8D4B-944FAC728162}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var2" ID="{4D96937D-A565-4A32-9EA4-02D60E4041E8}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="270506416"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{D7AE63F9-9104-499B-8CDB-41A416AC9A1F}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var2" ID="{722DC00F-286E-48CC-89EC-0C556587EE1C}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var2" ID="{4D96937D-A565-4A32-9EA4-02D60E4041E8}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var3" ID="{D662A434-3B61-48F6-AB85-B08E84D5886A}" ShortID="204514399">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{52A5857B-E581-409F-BAEA-DABA8A0A1493}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var3" ID="{FAA5543E-E3DD-4C01-9E16-2CD201569D9C}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="290408846"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{811F1855-F557-489A-8C0C-536DC4924728}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var3" ID="{8AF99C73-DD20-4A39-837D-E756B57196F3}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var3" ID="{FAA5543E-E3DD-4C01-9E16-2CD201569D9C}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var4" ID="{E8C30335-7943-4386-A076-54D44146CB67}" ShortID="214109255">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{ED59ACDC-6574-47A0-B4E4-8FE540F8BF10}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var4" ID="{C9A86FA8-DE0C-4BE2-A022-90640A97EEBB}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="942148514"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{892838C8-4C3E-4077-8544-17870F17E660}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var4" ID="{02E0D144-E99F-4DCD-9A05-4C91CF0EA1CF}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var4" ID="{C9A86FA8-DE0C-4BE2-A022-90640A97EEBB}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var5" ID="{DB7D8E95-2111-4886-A99B-243CEA4FC99B}" ShortID="558626313">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{64A7ADD8-0E5B-4D59-ADEA-20AD92B38F2B}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var5" ID="{C3CDD6C3-3CA8-496D-81CF-3A1E2E27489E}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="812842953"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{4903A23C-748B-405C-B6F9-03536924E8E1}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var5" ID="{5AA1C214-29A7-48BD-96DC-0F67C8A59380}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var5" ID="{C3CDD6C3-3CA8-496D-81CF-3A1E2E27489E}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var6" ID="{2C7F4E10-F3B2-4074-B8A8-38E6E6E4FD85}" ShortID="578022673">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{340F7A1C-CC75-42B6-B38A-F6D47F36237B}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var6" ID="{807F66F9-2589-4700-B11A-5AE7F359CE67}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var6.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="626884774"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{E4C845CD-D201-4794-8AA7-AF84F3AE24DA}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var6" ID="{F3D2E289-6C25-40CE-A56B-3DA3405AB21A}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var6" ID="{807F66F9-2589-4700-B11A-5AE7F359CE67}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var7" ID="{FA32BDC7-8621-436B-987E-AAE14F6C8CBD}" ShortID="65596217">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{DEFE8DDA-D5F7-4DE3-87C2-C53931B2D761}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var7" ID="{AAA52EC9-9B06-493D-953F-9B589505C6CA}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var7.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="276440775"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{AF6759B3-DA59-4269-AD80-75B1750BA6E1}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var7" ID="{AF1C9818-6C10-42BF-A148-232BAE66E008}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var7" ID="{AAA52EC9-9B06-493D-953F-9B589505C6CA}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var8" ID="{96C4C66D-1493-4EE4-8206-07D940EAE77C}" ShortID="543643439">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{9273A5ED-98FA-4640-92A4-D41A0D3634F2}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var8" ID="{D640D2F2-25CB-451F-AC59-E0796A8D9B66}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var8.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="427415409"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{4F34BB52-BFEC-43F7-AD77-D92AC3EC126E}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var8" ID="{B2055969-5489-4894-9B27-EB182BF3B0F5}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var8" ID="{D640D2F2-25CB-451F-AC59-E0796A8D9B66}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Cues">
-									<MusicCue Name="Entry Cue" ID="{F3A5E625-4855-41D8-84AB-1474CF4F195E}"/>
-									<MusicCue Name="Exit Cue" ID="{6AB5EDE9-7E96-4A64-AFAC-7FEEED45BCA2}">
-										<PropertyList>
-											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="25200"/>
-										</PropertyList>
-									</MusicCue>
-								</ObjectList>
-							</ObjectLists>
-						</MusicSegment>
-						<MusicSegment Name="5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{F00AD451-ED29-45EF-B9BD-E0F296768E42}" ShortID="979722839">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="25200"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{7B54C0B1-3902-48E0-B922-594A1DCBB22A}" ShortID="424717972">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{A7D2059A-6178-432D-BC39-4D589F36DF30}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{75FDC747-E5FD-4215-A31D-82141FEFB338}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1057941921"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{4D30BAB6-CD1E-416A-A886-E1E2A63DA3E1}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{03E271A6-5DF0-4143-B179-F3C85BB4E1E0}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{75FDC747-E5FD-4215-A31D-82141FEFB338}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P1" ID="{F40D9618-3968-4D53-914F-08CF17B2A6C1}" ShortID="24151046">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{C9D2EC94-5243-4E99-B2B4-3FDB34BA5225}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P1" ID="{9F18BAE2-89E8-41DE-A097-4C4E0E078890}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="980368009"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{9E72567A-0353-4684-BB30-9F7CE2355486}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P1" ID="{1BD2FE74-7B81-4685-AFD3-17B74A140B9D}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_StreichfettStringStabs_var1_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P1" ID="{9F18BAE2-89E8-41DE-A097-4C4E0E078890}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_StreichfettStringStabs_var3_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{6BC630C8-20B9-4B02-8214-3142CE58B19F}" ShortID="263656784">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{5A5886E5-0A1D-4FDC-B597-BDB93E28E50D}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_StreichfettStringStabs_var3_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{0823C353-C882-42EA-80A0-161F3AEC7C77}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_StreichfettStringStabs_var3_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="144249384"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{C3981DCC-0984-4CF3-8486-9AD780278516}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_StreichfettStringStabs_var3_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{14A257E9-C1A2-4565-9B08-3CB4FAF9EB35}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_StreichfettStringStabs_var3_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{0823C353-C882-42EA-80A0-161F3AEC7C77}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_StreichfettStringStabs_var4_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{5741E4C3-2577-46AB-BD8E-BCB559F36557}" ShortID="439622441">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{2F896F95-C2B4-435F-8C74-39DDDDC36820}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_StreichfettStringStabs_var4_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{1AECE3FD-D5BC-43B4-84F8-39DAB3C6942C}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_StreichfettStringStabs_var4_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="969157123"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{1A880ED8-A520-472A-BDC7-D9A3D1CAAA41}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_StreichfettStringStabs_var4_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{9237B23D-2FAC-4C26-A323-522B3131E80D}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_StreichfettStringStabs_var4_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{1AECE3FD-D5BC-43B4-84F8-39DAB3C6942C}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="5_Spirituel_StreichfettStringStabs_var5_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{11E902A1-B72A-4EA8-BF57-99C96006B08B}" ShortID="954819465">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{6C6832CF-FC41-41CE-B4FB-175B3CA2A1F1}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="5_Spirituel_StreichfettStringStabs_var5_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{F9E2D20B-CB78-48CF-867A-238794A81BD6}">
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Originals\SFX\5_Spirituel\5_Spirituel_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0\5_Spirituel_StreichfettStringStabs_var5_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="869563295"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<MusicTrackSequence Name="" ID="{8996A529-9321-4EB0-B497-468140FAE432}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<MusicClip Name="5_Spirituel_StreichfettStringStabs_var5_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{1BA3E9BE-0061-4DB2-818E-7B6143D3C0A3}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="5_Spirituel_StreichfettStringStabs_var5_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{F9E2D20B-CB78-48CF-867A-238794A81BD6}"/>
-														</MusicClip>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Cues">
-									<MusicCue Name="Entry Cue" ID="{E5D2215E-CCCD-4A5B-ABBF-28C26C16DBF2}"/>
-									<MusicCue Name="Exit Cue" ID="{04726031-C787-47EF-87E5-6FBA6F1162DA}">
-										<PropertyList>
-											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="25200"/>
-										</PropertyList>
-									</MusicCue>
-								</ObjectList>
-							</ObjectLists>
-						</MusicSegment>
-					</ChildrenList>
-				</Folder>
+				</MusicPlaylistContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

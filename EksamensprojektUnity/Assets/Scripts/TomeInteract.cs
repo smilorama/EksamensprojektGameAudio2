@@ -43,6 +43,10 @@ public class TomeInteract : MonoBehaviour
     [SerializeField] private float _promptRange = 2f;
     [SerializeField] private GameObject _interactPromptPanel;
 
+    [Header("Tome Musical Aura Pickup State")]
+    [SerializeField] private string tomeAuraStateGroup;
+    [SerializeField] private string tomePickupStateValue;
+    
     private Transform _player;
     private bool _triggered;
 
@@ -95,6 +99,8 @@ public class TomeInteract : MonoBehaviour
             if (_interactPromptPanel != null) _interactPromptPanel.SetActive(false);
             StartCoroutine(FadeEmission(_emissionStartIntensity, _emissionIntensity, _emissionFadeDuration));
             StartCoroutine(TomeSequence());
+            MusicManager.Instance.StartEndGameMusicEvent();
+            MusicGameProgressManager.TomePickedUp = true;
         }
     }
 
@@ -114,6 +120,8 @@ public class TomeInteract : MonoBehaviour
 
         if (_preTomeLevelDesign != null) _preTomeLevelDesign.SetActive(false);
         if (_postTomeLevelDesign != null) _postTomeLevelDesign.SetActive(true);
+        
+        AkUnitySoundEngine.SetState(tomeAuraStateGroup, tomePickupStateValue);
 
         // rise book into the air
         Vector3 startPos = transform.position;

@@ -44,35 +44,38 @@
 	<ValidationCacheItem File="Y:\Documents\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Switches\Default Work Unit.wwu" DateLow="1781256003" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Triggers\Default Work Unit.wwu" DateLow="1780409356" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Virtual Acoustics\Default Work Unit.wwu" DateLow="1780409356" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Attenuations\Default Work Unit.wwu" DateLow="1781277009" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Attenuations\Default Work Unit.wwu" DateLow="1781495951" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Attenuations\Factory Attenuations.wwu" DateLow="1779932331" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Busses\Default Work Unit.wwu" DateLow="1781435827" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Ambiance.wwu" DateLow="1781435827" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Busses\Default Work Unit.wwu" DateLow="1781495649" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Busses\Music Busses Work Unit.wwu" DateLow="1781495951" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Ambiance.wwu" DateLow="1781496079" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Default Work Unit.wwu" DateLow="1781435827" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Factory Synth One.wwu" DateLow="1781435827" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Music.wwu" DateLow="1781435827" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Music.wwu" DateLow="1781497452" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\SFX.wwu" DateLow="1781450611" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Conversion Settings\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1779932331" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Devices\Default Work Unit.wwu" DateLow="1781200476" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Devices\Default Work Unit.wwu" DateLow="1781496780" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Default Work Unit.wwu" DateLow="1781435827" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Default Work Unit.wwu" DateLow="1781495951" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory AK Convolution Reverb Effects Ambisonics.wwu" DateLow="1779933539" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory AK Convolution Reverb Effects Stereo.wwu" DateLow="1779933538" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory AK Custom Panner.wwu" DateLow="1779937188" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory Effects.wwu" DateLow="1781197510" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory Effects.wwu" DateLow="1781484848" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory Mastering Suite.wwu" DateLow="1779932425" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory Reflect Physically-Based.wwu" DateLow="1779932427" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory Reflect.wwu" DateLow="1779932427" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\EksamensprojektWwise.crossover.wsettings" DateLow="1781457840" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\EksamensprojektWwise.wproj" DateLow="1781453300" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Music Effects.wwu" DateLow="1781495951" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\EksamensprojektWwise.crossover.wsettings" DateLow="1781497454" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\EksamensprojektWwise.wproj" DateLow="1781474479" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Ambiance.wwu" DateLow="1781435827" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Default Work Unit.wwu" DateLow="1781198445" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Default Work Unit.wwu" DateLow="1781491661" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Events\DX.wwu" DateLow="1781435827" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Music.wwu" DateLow="1781435827" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Music.wwu" DateLow="1781496940" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Events\SFX.wwu" DateLow="1781450611" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Game Parameters\Default Work Unit.wwu" DateLow="1781435827" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Game Parameters\Default Work Unit.wwu" DateLow="1781485094" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Game Parameters\Music RTPC Work Unit.wwu" DateLow="1781495951" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Metadata\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Mixing Sessions\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Modulators\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
@@ -83,11 +86,14 @@
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Queries\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Queries\Factory Queries.wwu" DateLow="1779932331" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Sidechain Mixes\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\SoundBanks\Default Work Unit.wwu" DateLow="1781453767" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\SoundBanks\Default Work Unit.wwu" DateLow="1781471528" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\States\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\States\Music States Work Unit.wwu" DateLow="1781495951" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Switches\Default Work Unit.wwu" DateLow="1781265046" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Switches\Music Switches Work Unit.wwu" DateLow="1781495951" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Triggers\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Triggers\Music Triggers Work Unit.wwu" DateLow="1781483089" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unity projekter\EksamensprojektGameAudio2\EksamensprojektWwise\Virtual Acoustics\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\WwiseProjects\EksamensprojektWwise\Attenuations\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\WwiseProjects\EksamensprojektWwise\Attenuations\Factory Attenuations.wwu" DateLow="1779932331" DateHigh="0"/>
@@ -126,7 +132,8 @@
 	<ValidationCacheItem File="Y:\Documents\WwiseProjects\EksamensprojektWwise\Switches\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\WwiseProjects\EksamensprojektWwise\Triggers\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\WwiseProjects\EksamensprojektWwise\Virtual Acoustics\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Library\Application Support\Audiokinetic\MediaPool\2\MediaPoolQuery.wsettings" DateLow="1781457840" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Library\Application Support\Audiokinetic\MediaPool\2\MediaPoolDatabases.wsettings" DateLow="1781497076" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Library\Application Support\Audiokinetic\MediaPool\2\MediaPoolQuery.wsettings" DateLow="1781497454" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Tordensvinet SSD\Backup SSD\Unity Projekter\EksamensprojektGameAudio2\EksamensprojektGameAudio2\EksamensprojektWwise\Attenuations\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Tordensvinet SSD\Backup SSD\Unity Projekter\EksamensprojektGameAudio2\EksamensprojektGameAudio2\EksamensprojektWwise\Attenuations\Factory Attenuations.wwu" DateLow="1779932331" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Volumes\Tordensvinet SSD\Backup SSD\Unity Projekter\EksamensprojektGameAudio2\EksamensprojektGameAudio2\EksamensprojektWwise\Busses\Default Work Unit.wwu" DateLow="1780059863" DateHigh="0"/>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{535A3FFB-9A7B-4495-846C-ACF40509EA46}" SchemaVersion="133">
+	<States>
+		<WorkUnit Name="Music States Work Unit" ID="{535A3FFB-9A7B-4495-846C-ACF40509EA46}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="BeginningMusicStates" ID="{865D8293-A9DA-4438-8BD2-46EE721BC036}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{5D6C8137-E92D-4BA1-BDD8-C0AFEE537DBC}"/>
+						<State Name="GrotteBeginning" ID="{C9D8A735-F710-45D8-ACD8-F5346D7253C5}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="DungeonBeginning" ID="{A1DD3F3C-5578-48BF-92E1-3DE026EC20E0}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{5D6C8137-E92D-4BA1-BDD8-C0AFEE537DBC}"/>
+							<EndState Name="GrotteBeginning" ID="{C9D8A735-F710-45D8-ACD8-F5346D7253C5}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="GrotteBeginning" ID="{C9D8A735-F710-45D8-ACD8-F5346D7253C5}"/>
+							<EndState Name="DungeonBeginning" ID="{A1DD3F3C-5578-48BF-92E1-3DE026EC20E0}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="DungeonBeginning" ID="{A1DD3F3C-5578-48BF-92E1-3DE026EC20E0}"/>
+							<EndState Name="GrotteBeginning" ID="{C9D8A735-F710-45D8-ACD8-F5346D7253C5}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="DungeonBeginning" ID="{A1DD3F3C-5578-48BF-92E1-3DE026EC20E0}"/>
+							<EndState Name="None" ID="{5D6C8137-E92D-4BA1-BDD8-C0AFEE537DBC}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{5D6C8137-E92D-4BA1-BDD8-C0AFEE537DBC}"/>
+							<EndState Name="DungeonBeginning" ID="{A1DD3F3C-5578-48BF-92E1-3DE026EC20E0}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+						<State Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="TomeBraending" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="TomeAuraStates" ID="{2D2B7D6A-E6F6-4BC5-BF5E-168881C4C683}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{CC3F7E07-D1F4-4C50-93BC-0732C39AB196}"/>
+						<State Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="TomeSpiritualRoom" ID="{93BAEDA8-D275-44BD-9905-F2A401EDBD37}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

@@ -27,6 +27,11 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+							</ReferenceList>
 							<PositioningInfo>
 								<Position Name="" ID="{FAA97529-587C-402C-A66B-E322AD80EF8A}"/>
 							</PositioningInfo>
@@ -40,6 +45,9 @@
 										</ReferenceList>
 									</EffectSlot>
 									<EffectSlot Name="" ID="{AD5B74D2-644B-477E-B9C0-A8F29F9B3C79}" ShortID="600130937">
+										<PropertyList>
+											<Property Name="Bypass" Type="bool" Value="True"/>
+										</PropertyList>
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 												<ObjectRef Name="ParkeringsKaelderRev_004_POS2_Klap2" ID="{FBDB7643-14B2-406F-8A24-4795EBC0F0A1}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
@@ -62,6 +70,11 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+							</ReferenceList>
 							<PositioningInfo>
 								<Position Name="" ID="{E411F9A2-9628-46CD-B0C8-D5FC7A8BB33C}"/>
 							</PositioningInfo>
@@ -75,6 +88,9 @@
 										</ReferenceList>
 									</EffectSlot>
 									<EffectSlot Name="" ID="{77D32062-21E6-4B55-A1A6-ED3E31471BC5}" ShortID="168589720">
+										<PropertyList>
+											<Property Name="Bypass" Type="bool" Value="True"/>
+										</PropertyList>
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 												<ObjectRef Name="ParkeringsKaelderRev_003_POS2_Klap1" ID="{F37AA737-9386-4F56-BC7A-B0676BFB24DD}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
@@ -100,12 +116,15 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
 								</Reference>
 							</ReferenceList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<EffectSlot Name="" ID="{02D82677-12DC-4A27-83C7-272F875725BA}" ShortID="586782788">
+										<PropertyList>
+											<Property Name="Bypass" Type="bool" Value="True"/>
+										</PropertyList>
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 												<ObjectRef Name="ParkeringsKaelderRev_001_POS1_Baelte1" ID="{7DC28D83-50E2-4861-AC70-332BA027B678}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
@@ -135,6 +154,11 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+							</ReferenceList>
 							<PositioningInfo>
 								<Position Name="" ID="{1576BFA7-006A-4D9E-A7F7-25A340117EAA}"/>
 							</PositioningInfo>
@@ -148,6 +172,9 @@
 										</ReferenceList>
 									</EffectSlot>
 									<EffectSlot Name="" ID="{59C3F287-FE24-450F-8B9C-0479738C7863}" ShortID="21075288">
+										<PropertyList>
+											<Property Name="Bypass" Type="bool" Value="True"/>
+										</PropertyList>
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 												<ObjectRef Name="ParkeringsKaelderRev_002_POS2_Baelte2" ID="{7043005D-1530-4DF2-ADA8-8C9023C81B77}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
@@ -170,12 +197,20 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+							</ReferenceList>
 							<PositioningInfo>
 								<Position Name="" ID="{61FC4F65-3CCF-4EAF-9915-50966C75EAB3}"/>
 							</PositioningInfo>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<EffectSlot Name="" ID="{BBC2363F-93F7-4193-B6CE-A4C7033E5AAF}" ShortID="757200533">
+										<PropertyList>
+											<Property Name="Bypass" Type="bool" Value="True"/>
+										</PropertyList>
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 												<ObjectRef Name="ParkeringsKaelderRev_005_POS1_Klap3" ID="{82AFE6A9-2514-4A00-800D-9647162F1C09}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
@@ -206,6 +241,11 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+							</ReferenceList>
 							<PositioningInfo>
 								<Position Name="" ID="{34F7D404-E010-4FF9-BA48-ED4F2B5524BF}"/>
 							</PositioningInfo>
@@ -219,6 +259,9 @@
 										</ReferenceList>
 									</EffectSlot>
 									<EffectSlot Name="" ID="{73BAA21D-FE38-4304-96BA-40256B8E6057}" ShortID="588098119">
+										<PropertyList>
+											<Property Name="Bypass" Type="bool" Value="True"/>
+										</PropertyList>
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 												<ObjectRef Name="ParkeringsKaelderRev_006_POS2_Klap4" ID="{B0F75007-F0C4-463C-9C0D-3B428C44A55B}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>
@@ -249,7 +292,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
 								</Reference>
 							</ReferenceList>
 							<PositioningInfo>
@@ -293,7 +336,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
 								</Reference>
 							</ReferenceList>
 							<PositioningInfo>
@@ -309,6 +352,9 @@
 										</ReferenceList>
 									</EffectSlot>
 									<EffectSlot Name="" ID="{C6BF6877-CAC8-4FA1-ADA6-DE69C241F71E}" ShortID="951920772">
+										<PropertyList>
+											<Property Name="Bypass" Type="bool" Value="True"/>
+										</PropertyList>
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 												<ObjectRef Name="ParkeringsKaelderRev_008_POS2_Klap6" ID="{6DE92323-B6E3-4B88-8EC3-6F73B1A1B22A}" WorkUnitID="{E1D235C5-0C40-4AAF-9C2E-9C3322CAC2EE}"/>

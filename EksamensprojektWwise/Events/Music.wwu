@@ -6,6 +6,65 @@
 				<Property Name="Color" Type="int16" Value="2"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_2_Grotte_og_3_Dungeon" ID="{B3A36605-3403-49B8-84BA-6308F765C3B9}">
+					<ChildrenList>
+						<Action Name="" ID="{16B19664-97B9-45CB-A91D-DED7AB205D89}" ShortID="588737353">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="2_Grotte_og_3_Dungeon_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0" ID="{E22C1E67-0315-499D-9A88-8C2F72F3047D}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_1_IntroStinger" ID="{8E414BD0-527C-4B71-83F5-03558CE9FDD2}">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool" Value="False"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{33B2ABDD-4C70-4D0B-B094-DC6B69AF30ED}" ShortID="447271710">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="1_IntroStinger" ID="{72010CD2-E237-49CD-BDB9-ECACC2B0A329}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EndGameMusicSwitchContainer" ID="{C62E126F-85CF-4236-BD12-DECA7E2F0CCB}">
+					<ChildrenList>
+						<Action Name="" ID="{91CE629A-98AC-460E-8FE8-3B87CE20433D}" ShortID="343822454">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="5_6_7_EndGameMusicSwitchContainer" ID="{A2EE1626-CEBF-48E8-8084-4F3E3312B07B}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{50E7020E-D09A-418C-BE60-C5276E5D8380}" ShortID="756615754">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="2_Grotte_og_3_Dungeon_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0" ID="{E22C1E67-0315-499D-9A88-8C2F72F3047D}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_4_TomeAura_3D_Loop" ID="{A7C21030-09BF-43CE-9E1E-F0D85BD5C356}">
+					<ChildrenList>
+						<Action Name="" ID="{6094F59C-2B39-4096-88AC-E3EAB94C8776}" ShortID="581817054">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="4_TomeAura_3D_Loop" ID="{B58BBF87-86F7-4668-9054-E903EABB2F2E}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>
