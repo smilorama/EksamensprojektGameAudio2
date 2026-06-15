@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID DRINK_POTION = 2541729425U;
         static const AkUniqueID PLAY_2_GROTTE_OG_3_DUNGEON = 3932489860U;
         static const AkUniqueID PLAY_4_TOMEAURA_3D_LOOP = 2272618794U;
+        static const AkUniqueID PLAY_5_TOMEPOSSESSION = 2427931389U;
         static const AkUniqueID PLAY_ATTACK_ENEMY_HIT = 486256373U;
         static const AkUniqueID PLAY_ATTACK_ENEMY_MISS = 1284475082U;
         static const AkUniqueID PLAY_BRAZIER = 2521551685U;
@@ -41,9 +42,9 @@ namespace AK
 
     namespace STATES
     {
-        namespace BEGINNINGMUSICSTATES
+        namespace BEGINNINGMUSICROOMSTATES
         {
-            static const AkUniqueID GROUP = 3082081149U;
+            static const AkUniqueID GROUP = 831006884U;
 
             namespace STATE
             {
@@ -51,7 +52,7 @@ namespace AK
                 static const AkUniqueID GROTTEBEGINNING = 87758831U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
-        } // namespace BEGINNINGMUSICSTATES
+        } // namespace BEGINNINGMUSICROOMSTATES
 
         namespace ENDGAMEMUSICSTATES
         {

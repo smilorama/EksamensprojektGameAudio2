@@ -7,7 +7,7 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<StateGroup Name="BeginningMusicStates" ID="{865D8293-A9DA-4438-8BD2-46EE721BC036}">
+				<StateGroup Name="BeginningMusicRoomStates" ID="{865D8293-A9DA-4438-8BD2-46EE721BC036}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -98,6 +98,38 @@
 							</PropertyList>
 						</State>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+							<EndState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+							<EndState Name="TomeBraending" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+							<EndState Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+							<EndState Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomeBraending" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+							<EndState Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="TomeAuraStates" ID="{2D2B7D6A-E6F6-4BC5-BF5E-168881C4C683}">
 					<PropertyList>
@@ -125,6 +157,32 @@
 							</PropertyList>
 						</State>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{CC3F7E07-D1F4-4C50-93BC-0732C39AB196}"/>
+							<EndState Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
+							<EndState Name="TomeSpiritualRoom" ID="{93BAEDA8-D275-44BD-9905-F2A401EDBD37}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomeSpiritualRoom" ID="{93BAEDA8-D275-44BD-9905-F2A401EDBD37}"/>
+							<EndState Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}"/>
+							<EndState Name="None" ID="{CC3F7E07-D1F4-4C50-93BC-0732C39AB196}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

@@ -7462,8 +7462,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MusicRoomTrigger
   stateGroup: BeginningMusicRoomStates
   stateValue: DungeonBeginning
-  tomeAuraStateGroup: 
-  tomeAuraSpiritualRoomStateValue: 
 --- !u!65 &390468709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29217,8 +29215,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MusicRoomTrigger
   stateGroup: BeginningMusicRoomStates
   stateValue: None
-  tomeAuraStateGroup: 
-  tomeAuraSpiritualRoomStateValue: 
 --- !u!65 &1573370311
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31756,6 +31752,7 @@ GameObject:
   - component: {fileID: 1682763005}
   - component: {fileID: 1682763004}
   - component: {fileID: 1682763003}
+  - component: {fileID: 1682763008}
   - component: {fileID: 1682763007}
   m_Layer: 0
   m_Name: 2_GrotteBeginning
@@ -31793,8 +31790,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MusicRoomTrigger
   stateGroup: BeginningMusicRoomStates
   stateValue: GrotteBeginning
-  tomeAuraStateGroup: TomeAuraStates
-  tomeAuraSpiritualRoomStateValue: TomePickup
 --- !u!65 &1682763004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31885,6 +31880,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ee5e0f7c8f95482ea5c4971fff92a6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!114 &1682763008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682763001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90917fdee077b47e5b62113fb856f97e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  tomeAuraStateGroup: TomeAuraStates
+  tomeAuraStateValue: TomeForeshadowing
 --- !u!1001 &1683757669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33620,6 +33629,7 @@ GameObject:
   - component: {fileID: 1829992559}
   - component: {fileID: 1829992562}
   - component: {fileID: 1829992561}
+  - component: {fileID: 1829992564}
   - component: {fileID: 1829992563}
   m_Layer: 0
   m_Name: VillageOutsideRoom
@@ -33827,8 +33837,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MusicRoomTrigger
   stateGroup: BeginningMusicRoomStates
   stateValue: None
-  tomeAuraStateGroup: 
-  tomeAuraSpiritualRoomStateValue: 
+--- !u!114 &1829992564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829992554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90917fdee077b47e5b62113fb856f97e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TomeAuraStateTrigger
+  tomeAuraStateGroup: TomeAuraStates
+  tomeAuraStateValue: None
 --- !u!1001 &1830125007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34048,7 +34070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   tomeAuraStateGroup: TomeAuraStates
-  tomeAuraSpiritualRoomStateValue: TomeSpiritualRoom
+  tomeAuraStateValue: TomeSpiritualRoom
 --- !u!65 &1839201646
 BoxCollider:
   m_ObjectHideFlags: 0

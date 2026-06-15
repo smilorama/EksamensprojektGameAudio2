@@ -22,6 +22,7 @@
 				<Property Name="Event Action List\{6E49D72B-6E7E-4B5A-92B9-D1EA0838B16F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{72AFD7A3-5DA4-450D-9326-288FC4349D6F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8E414BD0-527C-4B71-83F5-03558CE9FDD2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{97F0BE11-6BAE-4042-AB02-48F0B3F66355}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A7C21030-09BF-43CE-9E1E-F0D85BD5C356}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B3A36605-3403-49B8-84BA-6308F765C3B9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BB610E01-F23E-4C0F-888E-1F7FB89B5681}\x64_Expand States" Type="string" Value=""/>
@@ -50,7 +51,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="xHrAabAqekGpstwUzOEt4A=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="Interactive Music\x64_{0A08CCE3-2031-49D2-AC4A-C388451B47D2} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAeENAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
-				<Property Name="Interactive Music\x64_{5C09F62F-50C5-466B-8C76-0D1000818B0B} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA+EVAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{5C09F62F-50C5-466B-8C76-0D1000818B0B} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA+EVAAAAAAAAA8D8AAAAAAAAAAAAAAAAAADtA"/>
 				<Property Name="Interactive Music\x64_{60E94346-061C-4402-B3C1-2BC0C4F4871B} - SegmentEditorZoomInfo" Type="string" Value="/BXu9n1u1j8AAAAAAADwPxDbvLgwTERAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{6F2A6C8C-0901-4923-8CF4-B646D4BB6C9A} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP1AdOkuW5TtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{73235DB9-06B1-46D0-B91B-10794782CF86} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP6OLLrroIiNAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>

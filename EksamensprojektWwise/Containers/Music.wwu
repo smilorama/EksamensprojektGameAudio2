@@ -1057,7 +1057,7 @@
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
-												<StateGroupRef Name="BeginningMusicStates" ID="{865D8293-A9DA-4438-8BD2-46EE721BC036}"/>
+												<StateGroupRef Name="BeginningMusicRoomStates" ID="{865D8293-A9DA-4438-8BD2-46EE721BC036}"/>
 												<StateGroupInfo Name="" ID="{DCB48045-A36B-4879-B8B8-8854FB5D5BD1}" ShortID="949506440">
 													<PropertyList>
 														<Property Name="MusicSyncType" Type="int32" Value="2"/>
