@@ -17,7 +17,6 @@ namespace AK
         static const AkUniqueID ATTACK_HITNOTHING = 726189174U;
         static const AkUniqueID ATTACK_HITTERRAIN = 1224938770U;
         static const AkUniqueID DRINK_POTION = 2541729425U;
-        static const AkUniqueID PLAY_1_INTROSTINGER = 618226038U;
         static const AkUniqueID PLAY_2_GROTTE_OG_3_DUNGEON = 3932489860U;
         static const AkUniqueID PLAY_4_TOMEAURA_3D_LOOP = 2272618794U;
         static const AkUniqueID PLAY_ATTACK_ENEMY_HIT = 486256373U;

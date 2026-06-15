@@ -4,11 +4,39 @@
   "BasePlatform": "Mac",
   "PluginLibs": [
    {
+    "LibName": "Wwise Delay",
+    "LibId": "6946819",
+    "Type": "Effect",
+    "DLL": "AkDelay",
+    "StaticLib": "AkDelayFX"
+   },
+   {
+    "LibName": "Wwise Flanger",
+    "LibId": "8192003",
+    "Type": "Effect",
+    "DLL": "AkFlanger",
+    "StaticLib": "AkFlangerFX"
+   },
+   {
     "LibName": "Wwise Convolution Reverb",
     "LibId": "8323075",
     "Type": "Effect",
     "DLL": "AkConvolutionReverb",
     "StaticLib": "AkConvolutionReverbFX"
+   },
+   {
+    "LibName": "Wwise Time Stretch",
+    "LibId": "8519683",
+    "Type": "Effect",
+    "DLL": "AkTimeStretch",
+    "StaticLib": "AkTimeStretchFX"
+   },
+   {
+    "LibName": "Wwise Pitch Shifter",
+    "LibId": "8912899",
+    "Type": "Effect",
+    "DLL": "AkPitchShifter",
+    "StaticLib": "AkPitchShifterFX"
    },
    {
     "LibName": "System",
@@ -21,6 +49,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{E6E6273C-A62C-A0D4-752C-8D39BA7E229B}"
+  "FileHash": "{16F82CEB-05B4-925D-A4B0-84FA2FD77DB3}"
  }
 }

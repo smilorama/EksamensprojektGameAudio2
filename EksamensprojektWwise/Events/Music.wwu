@@ -12,7 +12,7 @@
 						<Action Name="" ID="{16B19664-97B9-45CB-A91D-DED7AB205D89}" ShortID="588737353">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="2_Grotte_og_3_Dungeon_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0" ID="{E22C1E67-0315-499D-9A88-8C2F72F3047D}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -47,7 +47,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="2_Grotte_og_3_Dungeon_E-dobbelt-harmonisk-dur_150BPM_5-4_L8M-P0" ID="{E22C1E67-0315-499D-9A88-8C2F72F3047D}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
