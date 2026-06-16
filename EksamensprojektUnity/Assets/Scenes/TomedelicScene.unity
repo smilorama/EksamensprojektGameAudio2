@@ -25709,7 +25709,7 @@ MonoBehaviour:
   reverbAuxBus:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a0ec013a479824ccc85c0685496e9425, type: 2}
   reverbLevel: 1
   transmissionLoss: 1
   distanceBehavior: 0
@@ -33751,7 +33751,7 @@ MonoBehaviour:
   reverbAuxBus:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 734eb571fcfa6443eb02516db4c123bc, type: 2}
   reverbLevel: 1
   transmissionLoss: 1
   distanceBehavior: 0
@@ -42798,7 +42798,7 @@ MonoBehaviour:
   reverbAuxBus:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b0f4b17be1cc44289928b92d1900e13d, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: c2d2a79eb50a94f0586004c3fbdaff65, type: 2}
   reverbLevel: 0.14
   transmissionLoss: 1
   distanceBehavior: 0

@@ -19,7 +19,6 @@ namespace AK
         static const AkUniqueID DRINK_POTION = 2541729425U;
         static const AkUniqueID PLAY_2_GROTTE_OG_3_DUNGEON = 3932489860U;
         static const AkUniqueID PLAY_4_TOMEAURA_3D_LOOP = 2272618794U;
-        static const AkUniqueID PLAY_5_TOMEPOSSESSION = 2427931389U;
         static const AkUniqueID PLAY_ATTACK_ENEMY_HIT = 486256373U;
         static const AkUniqueID PLAY_ATTACK_ENEMY_MISS = 1284475082U;
         static const AkUniqueID PLAY_BRAZIER = 2521551685U;
@@ -125,6 +124,8 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID LILLERUM_REV = 2986432809U;
+        static const AkUniqueID MEDIUMRUM_REV = 3454183034U;
         static const AkUniqueID PARKERINGREV_001_BAELTE1 = 288340792U;
         static const AkUniqueID PARKERINGREV_002_BAELTE2 = 1020492676U;
         static const AkUniqueID PARKERINGREV_003_KLAP1 = 230976631U;
@@ -133,6 +134,8 @@ namespace AK
         static const AkUniqueID PARKERINGREV_006_KLAP4 = 2665109655U;
         static const AkUniqueID PARKERINGREV_007_KLAP5 = 2767839671U;
         static const AkUniqueID PARKERINGREV_008_KLAP6 = 3813691439U;
+        static const AkUniqueID STORTRUM1_REV = 3943616538U;
+        static const AkUniqueID STORTRUM2_REV = 2730326357U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
