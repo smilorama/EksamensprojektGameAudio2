@@ -15,7 +15,6 @@ public class Footsteps : MonoBehaviour
     private CharacterController _controller;
     private float _timer;
 
-    private static readonly string[] _materialSwitches = { "Grass", "Stone", "Dirt", "Tile" };
 
     private void Awake()
     {
@@ -44,26 +43,25 @@ public class Footsteps : MonoBehaviour
 
     private void PlayFootstep()
     {
-        int surfaceIndex = GetSurfaceIndex();
-        string switchValue = _materialSwitches[surfaceIndex];
+        AudioMaterial.AudioMaterialType surface = GetSurface();
 
         GameObject emitter = _footstepEmitter != null ? _footstepEmitter : gameObject;
-        AkSoundEngine.SetSwitch("Materials", switchValue, emitter);
-        AkSoundEngine.PostEvent(_footstepEvent, emitter);
+        AkUnitySoundEngine.SetSwitch("Materials", surface.ToString(), emitter);
+        AkUnitySoundEngine.PostEvent(_footstepEvent, emitter);
     }
 
-    private int GetSurfaceIndex()
+    private AudioMaterial.AudioMaterialType GetSurface()
     {
         Vector3 origin = transform.position + Vector3.up * 0.1f;
         int layerMask = ~excludeLayers;
 
         if (!Physics.Raycast(origin, Vector3.down, out RaycastHit hit, rayLength, layerMask))
-            return 0;
+            return AudioMaterial.AudioMaterialType.Grass;
 
         AudioMaterial audioMaterial = hit.collider.GetComponent<AudioMaterial>()
             ?? hit.collider.GetComponentInParent<AudioMaterial>();
         if (audioMaterial != null)
-            return (int)audioMaterial.audioMaterialType;
+            return audioMaterial.audioMaterialType;
 
         Terrain terrain = hit.collider.GetComponent<Terrain>()
             ?? hit.collider.GetComponentInParent<Terrain>();
@@ -71,9 +69,9 @@ public class Footsteps : MonoBehaviour
         {
             TerrainAudioMaterial terrainAudio = terrain.GetComponent<TerrainAudioMaterial>();
             if (terrainAudio != null)
-                return Mathf.Clamp((int)terrainAudio.GetMaterialAtPosition(hit.point), 0, _materialSwitches.Length - 1);
+                return (AudioMaterial.AudioMaterialType)terrainAudio.GetMaterialAtPosition(hit.point);
         }
 
-        return 0;
+        return AudioMaterial.AudioMaterialType.Grass;
     }
 }
