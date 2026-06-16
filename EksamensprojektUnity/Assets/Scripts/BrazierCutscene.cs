@@ -136,6 +136,11 @@ public class BrazierCutscene : MonoBehaviour
             yield return new WaitForSeconds(_volumeHoldAfterBurning);
             yield return StartCoroutine(FadeVolume(1f, 0f, _volumeFadeOutDuration));
         }
+        else
+            yield return new WaitForSeconds(_volumeHoldAfterBurning);
+
+        if (_npcFireEffect != null) _npcFireEffect.SetActive(false);
+        if (_npc != null) _npc.gameObject.SetActive(false);
     }
 
     private IEnumerator FadeMushroomEmission(float duration)

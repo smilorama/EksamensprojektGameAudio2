@@ -8,6 +8,7 @@ public class TomeInteract : MonoBehaviour
     [Header("References")]
     [SerializeField] private Volume _globalVolume;
     [SerializeField] private VolumeProfile _postTomeProfile;
+    [SerializeField] private GameObject _cutsceneNpc;
     [SerializeField] private GameObject _leftHandWithTome;
     [SerializeField] private GameObject _preTomeLevelDesign;
     [SerializeField] private GameObject _postTomeLevelDesign;
@@ -108,7 +109,7 @@ public class TomeInteract : MonoBehaviour
     {
         _triggered = true;
 
-        // Sker samtidig: Global Volume, level swap, voiceline og bog-svæve starter
+        // Sker samtidig: Global Volume, level swap, voiceline og Tome Hover starter
         if (_globalVolume != null && _postTomeProfile != null)
             _globalVolume.profile = _postTomeProfile;
 
@@ -120,6 +121,7 @@ public class TomeInteract : MonoBehaviour
 
         if (_preTomeLevelDesign != null) _preTomeLevelDesign.SetActive(false);
         if (_postTomeLevelDesign != null) _postTomeLevelDesign.SetActive(true);
+        if (_cutsceneNpc != null) _cutsceneNpc.SetActive(false);
         
         AkUnitySoundEngine.SetState(tomeAuraStateGroup, tomePickupStateValue);
 
@@ -135,7 +137,7 @@ public class TomeInteract : MonoBehaviour
             yield return null;
         }
 
-        // Hold at top — rotate and bob
+        // Hold at top rotate and bob
         bool peakTriggered = false;
         float hoverTimer = 0f;
         while (hoverTimer < _riseHoldDuration)
