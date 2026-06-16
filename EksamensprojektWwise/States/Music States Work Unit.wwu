@@ -10,6 +10,7 @@
 				<StateGroup Name="BeginningMusicRoomStates" ID="{865D8293-A9DA-4438-8BD2-46EE721BC036}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="2"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
