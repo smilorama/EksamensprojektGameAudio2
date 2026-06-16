@@ -364,6 +364,415 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
+						<AuxBus Name="LilleRum_Rev" ID="{23A00AD6-AA0A-47D5-BED5-FF50FF39D115}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{5D95EAD1-E40A-439F-8D4C-ABB7FBBEEC20}" ShortID="289489184">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="AK Convolution Reverb (Custom)" ID="{D8E5C015-5DD7-4B60-B00B-8DDA791FB8E5}" ShortID="828059804" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<PropertyList>
+															<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+															<Property Name="IRConvolutionStart" Type="Real64" Value="0.00200813356164388"/>
+															<Property Name="IRConvolutionStop" Type="Real64" Value="0.885586900684931"/>
+														</PropertyList>
+														<ChildrenList>
+															<PluginMediaSource Name="LilleRum_IR" ID="{2B5143E4-50A1-4E78-8CFB-B37A2CDEC341}">
+																<ParentPluginID>8323075</ParentPluginID>
+																<PropertyList>
+																	<Property Name="DataFileName" Type="string" Value="LilleRum_IR.wav"/>
+																</PropertyList>
+																<MediaIDList>
+																	<MediaID ID="246152441"/>
+																</MediaIDList>
+															</PluginMediaSource>
+														</ChildrenList>
+														<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.4659375</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.4659375</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="MediumRum_Rev" ID="{9297FD44-D123-4EE5-BEE4-AE4DE3E663EB}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{1229D218-5B33-4BCB-94C8-3E5A33378490}" ShortID="514353627">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="AK Convolution Reverb (Custom)" ID="{EA0027CD-6483-4BC7-8B0A-2B168AA83813}" ShortID="608376853" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<PropertyList>
+															<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+															<Property Name="IRConvolutionStart" Type="Real64" Value="0.25626642809147"/>
+															<Property Name="IRConvolutionStop" Type="Real64" Value="1.49331535388128"/>
+														</PropertyList>
+														<ChildrenList>
+															<PluginMediaSource Name="MediumRum_IR" ID="{DF09863D-E24F-40AE-91A8-71F58E0B8B89}">
+																<ParentPluginID>8323075</ParentPluginID>
+																<PropertyList>
+																	<Property Name="DataFileName" Type="string" Value="MediumRum_IR.wav"/>
+																</PropertyList>
+																<MediaIDList>
+																	<MediaID ID="554353145"/>
+																</MediaIDList>
+															</PluginMediaSource>
+														</ChildrenList>
+														<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.44970833333333</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.44970833333333</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="StortRum1_Rev" ID="{AFF70ED8-8A36-4FF9-BAE7-11B9C96B02AF}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{D09E7C03-3BB3-4798-9DB4-2F86D995542D}" ShortID="177129781">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="AK Convolution Reverb (Custom)" ID="{BBA44736-3891-4226-B00B-9285D263273D}" ShortID="1002684216" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<PropertyList>
+															<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+															<Property Name="IRConvolutionStart" Type="Real64" Value="0.0844811358447488"/>
+															<Property Name="IRConvolutionStop" Type="Real64" Value="2.17427765410959"/>
+														</PropertyList>
+														<ChildrenList>
+															<PluginMediaSource Name="StortRum1_IR" ID="{C8A411E6-82D4-4B5D-99DF-F3DC7F69832A}">
+																<ParentPluginID>8323075</ParentPluginID>
+																<PropertyList>
+																	<Property Name="DataFileName" Type="string" Value="StortRum1_IR.wav"/>
+																</PropertyList>
+																<MediaIDList>
+																	<MediaID ID="35171273"/>
+																</MediaIDList>
+															</PluginMediaSource>
+														</ChildrenList>
+														<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.24585416666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.24585416666667</XPos>
+							<YPos>-0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="StortRum2_Rev" ID="{F1F42EDF-4281-44FF-AD07-C06FED455278}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{F43C93DF-05E5-45BE-8696-B75478D98EAB}" ShortID="558317560">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="AK Convolution Reverb (Custom)" ID="{CA1D2B05-6EE9-49F4-8511-CC60E03F6F4E}" ShortID="585755507" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<PropertyList>
+															<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+															<Property Name="IRConvolutionStart" Type="Real64" Value="0.0721749143835617"/>
+															<Property Name="IRConvolutionStop" Type="Real64" Value="2.12056772260274"/>
+														</PropertyList>
+														<ChildrenList>
+															<PluginMediaSource Name="StortRum2_IR" ID="{4DDDBB33-0642-4ADD-848C-85669B71AD6C}">
+																<ParentPluginID>8323075</ParentPluginID>
+																<PropertyList>
+																	<Property Name="DataFileName" Type="string" Value="StortRum2_IR.wav"/>
+																</PropertyList>
+																<MediaIDList>
+																	<MediaID ID="35864990"/>
+																</MediaIDList>
+															</PluginMediaSource>
+														</ChildrenList>
+														<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.5089375</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.5089375</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
