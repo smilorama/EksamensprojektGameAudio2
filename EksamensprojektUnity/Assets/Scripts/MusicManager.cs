@@ -67,7 +67,7 @@ public class MusicManager : MonoBehaviour
             return;
         
         AkUnitySoundEngine.PostEvent(
-            "Play_5_TomePossession",
+            "Play_EndGameMusicSwitchContainer",
             gameObject
         );
         

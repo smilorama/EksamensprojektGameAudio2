@@ -10,9 +10,13 @@
 				<Event Name="Play_2_Grotte_og_3_Dungeon" ID="{B3A36605-3403-49B8-84BA-6308F765C3B9}">
 					<ChildrenList>
 						<Action Name="" ID="{16B19664-97B9-45CB-A91D-DED7AB205D89}" ShortID="588737353">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist" ID="{FE8C9CD6-0F81-4A61-B70D-69B11D5522F5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -35,6 +39,9 @@
 				<Event Name="Play_EndGameMusicSwitchContainer" ID="{C62E126F-85CF-4236-BD12-DECA7E2F0CCB}">
 					<ChildrenList>
 						<Action Name="" ID="{91CE629A-98AC-460E-8FE8-3B87CE20433D}" ShortID="343822454">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="5_6_7_EndGameMusicSwitchContainer" ID="{A2EE1626-CEBF-48E8-8084-4F3E3312B07B}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
@@ -47,7 +54,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist_8BARGAMMEL" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -56,6 +63,9 @@
 				<Event Name="Play_4_TomeAura_3D_Loop" ID="{A7C21030-09BF-43CE-9E1E-F0D85BD5C356}">
 					<ChildrenList>
 						<Action Name="" ID="{6094F59C-2B39-4096-88AC-E3EAB94C8776}" ShortID="581817054">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="4_TomeAura_3D_Loop" ID="{B58BBF87-86F7-4668-9054-E903EABB2F2E}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
@@ -65,8 +75,14 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_5_TomePossession" ID="{97F0BE11-6BAE-4042-AB02-48F0B3F66355}">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool" Value="False"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{49A1C2B3-6ABF-4F81-A831-24820F4A2208}" ShortID="757829481">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="5_TomePossession_Playlist" ID="{4E58524A-A98E-4BC3-AE74-8DD2DC4DD8B5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
@@ -79,7 +95,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist_8BARGAMMEL" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
