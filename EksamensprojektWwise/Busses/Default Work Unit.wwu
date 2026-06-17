@@ -366,13 +366,26 @@
 						</AuxBus>
 						<AuxBus Name="LilleRum_Rev" ID="{23A00AD6-AA0A-47D5-BED5-FF50FF39D115}">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="BusChannelConfig" Type="int32">
 									<ValueList>
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<EffectSlot Name="" ID="{5D95EAD1-E40A-439F-8D4C-ABB7FBBEEC20}" ShortID="289489184">
@@ -469,12 +482,26 @@
 						</AuxBus>
 						<AuxBus Name="MediumRum_Rev" ID="{9297FD44-D123-4EE5-BEE4-AE4DE3E663EB}">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="BusChannelConfig" Type="int32">
 									<ValueList>
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<EffectSlot Name="" ID="{1229D218-5B33-4BCB-94C8-3E5A33378490}" ShortID="514353627">
@@ -571,12 +598,26 @@
 						</AuxBus>
 						<AuxBus Name="StortRum1_Rev" ID="{AFF70ED8-8A36-4FF9-BAE7-11B9C96B02AF}">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="BusChannelConfig" Type="int32">
 									<ValueList>
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<EffectSlot Name="" ID="{D09E7C03-3BB3-4798-9DB4-2F86D995542D}" ShortID="177129781">
@@ -654,7 +695,7 @@
 						</Point>
 						<Point>
 							<XPos>3.24585416666667</XPos>
-							<YPos>-0</YPos>
+							<YPos>0</YPos>
 							<Flags>37</Flags>
 						</Point>
 					</PointList>
@@ -673,12 +714,26 @@
 						</AuxBus>
 						<AuxBus Name="StortRum2_Rev" ID="{F1F42EDF-4281-44FF-AD07-C06FED455278}">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="BusChannelConfig" Type="int32">
 									<ValueList>
 										<Value>516</Value>
 									</ValueList>
 								</Property>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<EffectSlot Name="" ID="{F43C93DF-05E5-45BE-8696-B75478D98EAB}" ShortID="558317560">
