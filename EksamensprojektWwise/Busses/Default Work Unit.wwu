@@ -362,6 +362,39 @@
 										</ReferenceList>
 									</EffectSlot>
 								</ObjectList>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{67D9D908-76BF-4FD6-A854-A40B70D21DE2}" ShortID="29472351">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Scaling_Parameter" ID="{D89BCF8E-A3E9-46DD-9A8A-C6EA9215AD91}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{386243FE-CEE4-44F0-A04F-58F7E9FB1B20}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
 						<AuxBus Name="LilleRum_Rev" ID="{23A00AD6-AA0A-47D5-BED5-FF50FF39D115}">

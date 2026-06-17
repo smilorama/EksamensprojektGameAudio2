@@ -151,6 +151,27 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Death_Fire" ID="{1713E9CE-FC58-447C-8B00-8B2663CE5635}">
+							<ChildrenList>
+								<Action Name="" ID="{B9BF8ADC-63E9-4CF9-805C-344B37DBC727}" ShortID="231441660">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Death_Fire" ID="{66C96CD3-5A8A-48E2-952E-A191DCC1DF28}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B4AC6BB9-A20B-4858-8CE4-E518776849DC}" ShortID="86554081">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voices, Scream, Pained Scream Male, Scream SND63772" ID="{81704D1E-D3F4-4B57-90D2-E48AE7785501}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{B2170859-BD58-45E0-8C2F-16367D029B5C}" ShortID="890319596">
