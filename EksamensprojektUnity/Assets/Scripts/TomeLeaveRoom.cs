@@ -41,6 +41,7 @@ public class TomeLeaveRoom : MonoBehaviour
         {
             if (_tomeInPlayerHand != null) _tomeInPlayerHand.SetActive(false);
             MusicGameProgressManager.TomePickedUp = false;
+            DialogueUI.Instance.SetFlag("Goddess Freed");
 
             if (!string.IsNullOrEmpty(_dialogueSoundEvent))
             {

@@ -62,10 +62,17 @@ public class DialogueTrigger : MonoBehaviour
 
     private void StartDialogue()
     {
+        bool anyFlagSet = false;
+        foreach (DialogueLine line in lines)
+            if (!string.IsNullOrEmpty(line.requiresFlag) && DialogueUI.Instance.HasFlag(line.requiresFlag))
+                anyFlagSet = true;
+
         _activeLines.Clear();
         foreach (DialogueLine line in lines)
         {
-            if (string.IsNullOrEmpty(line.requiresFlag) || DialogueUI.Instance.HasFlag(line.requiresFlag))
+            if (!string.IsNullOrEmpty(line.requiresFlag) && DialogueUI.Instance.HasFlag(line.requiresFlag))
+                _activeLines.Add(line);
+            else if (!anyFlagSet && string.IsNullOrEmpty(line.requiresFlag))
                 _activeLines.Add(line);
         }
 

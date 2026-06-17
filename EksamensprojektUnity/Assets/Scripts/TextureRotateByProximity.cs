@@ -23,6 +23,7 @@ public class TextureRotateByProximity : MonoBehaviour
     private void Update()
     {
         if (_player == null || _targetPoint == null || _renderer == null) return;
+        if (DialogueUI.Instance != null && DialogueUI.Instance.HasFlag("Tome Burned")) return;
 
         float dist = Vector3.Distance(_player.position, _targetPoint.position);
         float distDelta = dist - _lastDist;

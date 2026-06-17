@@ -18,8 +18,12 @@ public class BrazierTomeOffer : MonoBehaviour
     [SerializeField] private float _emissionFadeDuration = 1.5f;
 
     [Header("Post Processing")]
-    [SerializeField] private Volume _tomeVolume;
-    [SerializeField] private float _volumeFadeDuration = 2f;
+    [SerializeField] private Volume _globalVolume;
+    [SerializeField] private VolumeProfile _preTomeProfile;
+
+    [Header("After Burn")]
+    [SerializeField] private Material _postBurnSkybox;
+    [SerializeField] private float _postBurnFogDensity = 0.01f;
 
     [Header("Audio")]
     [SerializeField] private string _burnEvent = "";
@@ -103,10 +107,6 @@ public class BrazierTomeOffer : MonoBehaviour
 
         if (_brazierTomeRenderer != null) _brazierTomeRenderer.SetActive(false);
 
-        // Fade tome volume back to 0 (restores normal global volume underneath)
-        if (_tomeVolume != null)
-            yield return StartCoroutine(FadeVolume(1f, 0f, _volumeFadeDuration));
-
         if (!string.IsNullOrEmpty(_restoreEvent))
         {
             GameObject emitter = _audioEmitter != null ? _audioEmitter : gameObject;
@@ -114,17 +114,13 @@ public class BrazierTomeOffer : MonoBehaviour
         }
 
         MusicGameProgressManager.TomePickedUp = false;
-    }
+        DialogueUI.Instance.SetFlag("Tome Burned");
 
-    private IEnumerator FadeVolume(float from, float to, float duration)
-    {
-        float t = 0f;
-        while (t < 1f)
-        {
-            t += Time.deltaTime / duration;
-            _tomeVolume.weight = Mathf.Lerp(from, to, t);
-            yield return null;
-        }
-        _tomeVolume.weight = to;
+        if (_globalVolume != null && _preTomeProfile != null)
+            _globalVolume.profile = _preTomeProfile;
+
+        if (_postBurnSkybox != null)
+            RenderSettings.skybox = _postBurnSkybox;
+        RenderSettings.fogDensity = _postBurnFogDensity;
     }
 }
