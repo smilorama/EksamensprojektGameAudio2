@@ -76,6 +76,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Goddes_Scream" ID="{53F278CA-D0C7-4804-98B9-417541C5DB4D}">
+					<ChildrenList>
+						<Action Name="" ID="{BE5BF4A5-5B9F-431F-85F9-10C0814833D8}" ShortID="838695982">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Goddes_Scream" ID="{85D2B713-442C-4B4A-96D0-22E304614D0F}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
