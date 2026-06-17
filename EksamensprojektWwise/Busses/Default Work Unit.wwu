@@ -832,6 +832,19 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
+						<AuxBus Name="Reverb_basic" ID="{8FDA5C0C-3CD3-4556-A79A-93C11C7B243C}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{F24358ED-1F29-47E3-8438-ACC04EBFF5F1}" ShortID="527461748">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="StKatharinen_Org_Stereo" ID="{9C3A1E3A-5E83-45E6-BF99-418C5ACCE6FE}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
