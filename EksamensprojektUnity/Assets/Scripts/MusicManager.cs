@@ -71,9 +71,9 @@ public class MusicManager : MonoBehaviour
         AkUnitySoundEngine.SetState("EndGameMusicStates", "TomePossession");
     }
 
-    public void SetStateTomeBraending()
+    public void SetStateTomeFire()
     {
-        AkUnitySoundEngine.SetState("EndGameMusicStates", "TomeBraending");
+        AkUnitySoundEngine.SetState("EndGameMusicStates", "TomeFire");
     }
 
     public void SetStateTomeOutside(bool tomeBurned)

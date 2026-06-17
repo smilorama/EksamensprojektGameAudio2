@@ -277,7 +277,7 @@ Styrer musikken efter tomen er picked up. Alle states sendes via `MusicManager`.
 |---|---|---|
 | `TomePickup` | `TomeInteract` | Spilleren interacter med tomen ([F] tryk) |
 | `TomePossession` | `MusicManager.SetStateTomePossession()` | Hånden med tomen aktiveres tomen er nu i spillerens besiddelse |
-| `TomeBraending` | `MusicManager.SetStateTomeBraending()` | Tomen brændes i brazieren |
+| `TomeFire` | `MusicManager.SetStateTomeFire()` | Tomen brændes i brazieren |
 | `TomeOutside` | `MusicManager.SetStateTomeOutside()` | Spilleren forlader rummet **uden** at have brændt tomen dårlig ending |
 | `HappyEndning` | `MusicManager.SetStateTomeOutside()` | Spilleren forlader rummet **efter** at have brændt tomen god ending |
 | `PlayerDeath` | `MusicManager.SetStatePlayerDeath()` | Spillerens HP når 0 |

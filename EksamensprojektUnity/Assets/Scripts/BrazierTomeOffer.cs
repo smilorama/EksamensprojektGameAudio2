@@ -116,7 +116,7 @@ public class BrazierTomeOffer : MonoBehaviour
 
         MusicGameProgressManager.TomePickedUp = false;
         DialogueUI.Instance.SetFlag("Tome Burned");
-        MusicManager.Instance.SetStateTomeBraending();
+        MusicManager.Instance.SetStateTomeFire();
 
         if (_globalVolume != null && _preTomeProfile != null)
             _globalVolume.profile = _preTomeProfile;
