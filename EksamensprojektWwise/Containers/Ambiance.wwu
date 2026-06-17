@@ -998,6 +998,41 @@
 									</ChildrenList>
 								</Position>
 							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{EE2AC63B-83FB-4AA4-A65D-11C764D94EC8}" ShortID="569801147">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Scaling_Parameter" ID="{D89BCF8E-A3E9-46DD-9A8A-C6EA9215AD91}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{9F026671-5933-4EB8-9A71-42A4F6D3AAB6}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>956</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
 						</BlendContainer>
 					</ChildrenList>
 				</Folder>
