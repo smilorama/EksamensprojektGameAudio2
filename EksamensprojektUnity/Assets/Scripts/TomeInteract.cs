@@ -13,6 +13,7 @@ public class TomeInteract : MonoBehaviour
     [SerializeField] private GameObject _preTomeLevelDesign;
     [SerializeField] private GameObject _postTomeLevelDesign;
     [SerializeField] private Renderer _tomeRenderer;
+    [SerializeField] private BrazierCutscene _brazierCutscene;
 
     [Header("Emission")]
     [SerializeField] private float _emissionStartIntensity = 0f;
@@ -122,6 +123,7 @@ public class TomeInteract : MonoBehaviour
         if (_preTomeLevelDesign != null) _preTomeLevelDesign.SetActive(false);
         if (_postTomeLevelDesign != null) _postTomeLevelDesign.SetActive(true);
         if (_cutsceneNpc != null) _cutsceneNpc.SetActive(false);
+        if (_brazierCutscene != null) _brazierCutscene.GetComponent<Collider>().enabled = false;
         
         AkUnitySoundEngine.SetState(tomeAuraStateGroup, tomePickupStateValue);
 
