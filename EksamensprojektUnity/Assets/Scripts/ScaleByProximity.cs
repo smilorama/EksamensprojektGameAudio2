@@ -39,10 +39,11 @@ public class ScaleByProximity : MonoBehaviour
         if (_closestInstance == null || _currentDist <= _closestInstance._currentDist)
             _closestInstance = this;
 
-        if (_closestInstance == this && scale != _lastScale)
+        float proximity = 1f - Mathf.InverseLerp(_minScaleDistance, _fullScaleDistance, _currentDist);
+        if (_closestInstance == this && proximity != _lastScale)
         {
-            AkUnitySoundEngine.SetRTPCValue(RtpcName, scale * 100f);
-            _lastScale = scale;
+            AkUnitySoundEngine.SetRTPCValue(RtpcName, proximity * 100f);
+            _lastScale = proximity;
         }
     }
 
