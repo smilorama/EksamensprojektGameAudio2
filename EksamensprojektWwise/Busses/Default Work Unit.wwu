@@ -374,7 +374,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-17</Value>
 									</ValueList>
 								</Property>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -395,8 +395,9 @@
 													<Effect Name="AK Convolution Reverb (Custom)" ID="{D8E5C015-5DD7-4B60-B00B-8DDA791FB8E5}" ShortID="828059804" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 														<PropertyList>
 															<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+															<Property Name="IRConvolutionSmooth" Type="Real32" Value="65"/>
 															<Property Name="IRConvolutionStart" Type="Real64" Value="0.00200813356164388"/>
-															<Property Name="IRConvolutionStop" Type="Real64" Value="0.885586900684931"/>
+															<Property Name="IRConvolutionStop" Type="Real64" Value="1.00406678082192"/>
 														</PropertyList>
 														<ChildrenList>
 															<PluginMediaSource Name="LilleRum_IR" ID="{2B5143E4-50A1-4E78-8CFB-B37A2CDEC341}">
@@ -490,7 +491,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-17</Value>
 									</ValueList>
 								</Property>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -511,6 +512,7 @@
 													<Effect Name="AK Convolution Reverb (Custom)" ID="{EA0027CD-6483-4BC7-8B0A-2B168AA83813}" ShortID="608376853" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 														<PropertyList>
 															<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+															<Property Name="IRConvolutionSmooth" Type="Real32" Value="65"/>
 															<Property Name="IRConvolutionStart" Type="Real64" Value="0.25626642809147"/>
 															<Property Name="IRConvolutionStop" Type="Real64" Value="1.49331535388128"/>
 														</PropertyList>
@@ -606,7 +608,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-17</Value>
 									</ValueList>
 								</Property>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -627,6 +629,7 @@
 													<Effect Name="AK Convolution Reverb (Custom)" ID="{BBA44736-3891-4226-B00B-9285D263273D}" ShortID="1002684216" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 														<PropertyList>
 															<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+															<Property Name="IRConvolutionSmooth" Type="Real32" Value="66"/>
 															<Property Name="IRConvolutionStart" Type="Real64" Value="0.0844811358447488"/>
 															<Property Name="IRConvolutionStop" Type="Real64" Value="2.17427765410959"/>
 														</PropertyList>
@@ -722,7 +725,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-18</Value>
 									</ValueList>
 								</Property>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -743,6 +746,7 @@
 													<Effect Name="AK Convolution Reverb (Custom)" ID="{CA1D2B05-6EE9-49F4-8511-CC60E03F6F4E}" ShortID="585755507" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 														<PropertyList>
 															<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+															<Property Name="IRConvolutionSmooth" Type="Real32" Value="67"/>
 															<Property Name="IRConvolutionStart" Type="Real64" Value="0.0721749143835617"/>
 															<Property Name="IRConvolutionStop" Type="Real64" Value="2.12056772260274"/>
 														</PropertyList>

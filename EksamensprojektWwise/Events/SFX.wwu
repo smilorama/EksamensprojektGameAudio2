@@ -129,6 +129,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Jump" ID="{1A9BDBBE-3501-403F-A7A4-51A186E83904}">
+							<ChildrenList>
+								<Action Name="" ID="{E8C84A97-1467-4EF2-A020-99BA2510D288}" ShortID="170339515">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{952DF04E-0624-47E1-A85C-0358D21C6CEF}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Land" ID="{FEE9CA52-17E1-4732-B441-82A86F1C023A}">
+							<ChildrenList>
+								<Action Name="" ID="{76D7C2B1-1753-4A84-8A78-41051F56662D}" ShortID="895908740">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Land" ID="{E60325AD-AF56-4B2C-A1C3-0F694C6DB8F2}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{B2170859-BD58-45E0-8C2F-16367D029B5C}" ShortID="890319596">
