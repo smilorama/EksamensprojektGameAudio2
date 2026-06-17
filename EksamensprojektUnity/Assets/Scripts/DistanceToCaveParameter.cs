@@ -18,6 +18,6 @@ public class DistanceToCaveParameter : MonoBehaviour
 
         float dist = Vector3.Distance(transform.position, _player.position);
         float value = (1f - Mathf.Clamp01(dist / _maxDistance)) * 100f;
-        AkUnitySoundEngine.SetRTPCValue("Distance_to_Cave", value);
+        AkUnitySoundEngine.SetRTPCValue("DistanceToCave", value);
     }
 }
