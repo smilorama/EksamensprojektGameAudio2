@@ -74,7 +74,7 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 						</State>
-						<State Name="TomeBraending" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}">
+						<State Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -109,7 +109,7 @@
 						</Transition>
 						<Transition>
 							<StartState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
-							<EndState Name="TomeBraending" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+							<EndState Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
 							<Time>1</Time>
 							<IsShared>false</IsShared>
 						</Transition>
@@ -126,7 +126,7 @@
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
-							<StartState Name="TomeBraending" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+							<StartState Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
 							<EndState Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
 							<Time>1</Time>
 							<IsShared>false</IsShared>
