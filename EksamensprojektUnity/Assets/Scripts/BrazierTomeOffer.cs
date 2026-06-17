@@ -30,6 +30,7 @@ public class BrazierTomeOffer : MonoBehaviour
     [SerializeField] private string _restoreEvent = "";
     [SerializeField] private GameObject _audioEmitter;
 
+
     private Transform _player;
     private bool _used;
 
@@ -115,6 +116,7 @@ public class BrazierTomeOffer : MonoBehaviour
 
         MusicGameProgressManager.TomePickedUp = false;
         DialogueUI.Instance.SetFlag("Tome Burned");
+        MusicManager.Instance.SetStateTomeBraending();
 
         if (_globalVolume != null && _preTomeProfile != null)
             _globalVolume.profile = _preTomeProfile;

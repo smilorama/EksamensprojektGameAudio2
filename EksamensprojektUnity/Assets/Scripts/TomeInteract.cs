@@ -45,10 +45,6 @@ public class TomeInteract : MonoBehaviour
     [SerializeField] private float _promptRange = 2f;
     [SerializeField] private GameObject _interactPromptPanel;
 
-    [Header("Tome Musical Aura Pickup State")]
-    [SerializeField] private string tomeAuraStateGroup;
-    [SerializeField] private string tomePickupStateValue;
-    
     private Transform _player;
     private bool _triggered;
 
@@ -103,6 +99,7 @@ public class TomeInteract : MonoBehaviour
             StartCoroutine(TomeSequence());
             MusicManager.Instance.StartEndGameMusicEvent();
             MusicGameProgressManager.TomePickedUp = true;
+            AkUnitySoundEngine.SetState("TomeAuraStates", "TomePickup");
         }
     }
 
@@ -124,8 +121,6 @@ public class TomeInteract : MonoBehaviour
         if (_postTomeLevelDesign != null) _postTomeLevelDesign.SetActive(true);
         if (_cutsceneNpc != null) _cutsceneNpc.SetActive(false);
         if (_brazierCutscene != null) _brazierCutscene.GetComponent<Collider>().enabled = false;
-        
-        AkUnitySoundEngine.SetState(tomeAuraStateGroup, tomePickupStateValue);
 
         // rise book into the air
         Vector3 startPos = transform.position;
@@ -164,6 +159,7 @@ public class TomeInteract : MonoBehaviour
         // 4 — hånd aktiveres efter delay
         yield return new WaitForSeconds(_handActivateDelay);
         if (_leftHandWithTome != null) _leftHandWithTome.SetActive(true);
+        MusicManager.Instance.SetStateTomePossession();
 
         gameObject.SetActive(false);
     }

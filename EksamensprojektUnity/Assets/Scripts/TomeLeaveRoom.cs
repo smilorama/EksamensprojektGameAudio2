@@ -17,6 +17,7 @@ public class TomeLeaveRoom : MonoBehaviour
     [SerializeField] private string _dialogueSoundEvent = "";
     [SerializeField] private GameObject _audioEmitter;
 
+
     private bool _triggered;
 
     private void Awake()
@@ -42,6 +43,7 @@ public class TomeLeaveRoom : MonoBehaviour
             if (_tomeInPlayerHand != null) _tomeInPlayerHand.SetActive(false);
             MusicGameProgressManager.TomePickedUp = false;
             DialogueUI.Instance.SetFlag("Goddess Freed");
+            MusicManager.Instance.SetStateTomeOutside(DialogueUI.Instance != null && DialogueUI.Instance.HasFlag("Tome Burned"));
 
             if (!string.IsNullOrEmpty(_dialogueSoundEvent) && (DialogueUI.Instance == null || !DialogueUI.Instance.HasFlag("Tome Burned")))
             {

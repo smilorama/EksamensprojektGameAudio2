@@ -60,7 +60,7 @@ TomeInteract
   → Volume.profile (skifter til _postTomeProfile)
   → _leftHandWithTome.SetActive(true) ved pickup
   → _preTomeLevelDesign.SetActive(false) / _postTomeLevelDesign.SetActive(true)
-  → Wwise: PostEvent(_voicelineEvent) ved sequence slut
+  → Wwise: PostEvent(_voicelineEvent) ved sequence start (samtidig med hover)
   → Renderer._EmissionColor fader 0→3 ved F-tryk, derefter 3→6 i sidste sekund af hover
 
 Enemy
@@ -155,3 +155,140 @@ DialogueUI
   - `Audio Emitter` + `Voiceline Event` — Wwise
 - Tryk **F** inden for `_promptRange` (default 2u) for at trigge sekvensen
 - Emission: 0→3 over 1.5s ved F-tryk, 3→6 i sidste `_emissionPeakFadeDuration` sekund af hover
+
+---
+
+## Tome States & Music System
+
+### Scripts
+
+| Script | Placering | Ansvar |
+|---|---|---|
+| `MusicGameProgressManager` | Statisk klasse | Global boolean `TomePickedUp` |
+| `MusicManager` | Scene GameObject (Singleton) | Poster musik events, holder MusicPhase og TomeAuraPhase |
+| `MusicBeginningRoomStateTrigger` | Trigger collider i scenen | Sætter Wwise State ved rumingang — kun hvis tomen ikke er picked up |
+| `TomeAuraStateTrigger` | Trigger collider i scenen | Sætter Wwise State for tome aura — kun hvis tomen ikke er picked up |
+| `TomeInteract` | Tome pickup objekt | Starter endgame musik, sætter PickedUp state, disabler BrazierCutscene |
+| `BrazierTomeOffer` | Brazier objekt | Brændingssekvens, sætter "Tome Burned" flag, resetter post processing |
+| `TomeLeaveRoom` | Trigger collider ved udgang | Blocker eller outside trigger — sætter "Goddess Freed" flag |
+| `BrazierCutscene` | Trigger collider ved brazier | NPC gang/brændings cutscene — disables af TomeInteract ved pickup |
+
+---
+
+### MusicPhase (enum i MusicManager)
+
+| Fase | Hvornår | Wwise Event |
+|---|---|---|
+| `None` | Start | — |
+| `Beginning` | Spilleren går ind i grotterum | `Play_2_Grotte_og_3_Dungeon` + `Play_4_TomeAura_3D_Loop` |
+| `Endgame` | Spilleren interacter med tomen | `Play_EndGameMusicSwitchContainer` |
+
+### TomeAuraPhase (enum i MusicManager)
+
+| Fase | Hvornår | Wwise |
+|---|---|---|
+| `None` | Start | — |
+| `Foreshadowing` | Samme tidspunkt som Beginning | `Play_4_TomeAura_3D_Loop` starter |
+| `SpiritualRoom` | Via `TomeAuraStateTrigger` | Wwise State sættes fra Inspector |
+| `PickedUp` | Via `TomeInteract` | Wwise State sættes fra Inspector (`tomeAuraStateGroup` / `tomePickupStateValue`) |
+
+---
+
+### State Flow
+
+```
+[Start]
+    |
+[Spilleren går ind i grotterum]
+    | MusicBeginningRoomStateTrigger → Wwise State (rum-specifik)
+    | MusicManager.StartGrotteOgDungeonMusikEvent()
+    | → Play_2_Grotte_og_3_Dungeon
+    | → Play_4_TomeAura_3D_Loop
+    | → MusicPhase: Beginning, TomeAuraPhase: Foreshadowing
+    |
+[Spilleren nærmer sig tome]
+    | TomeAuraStateTrigger(s) → Wwise State: SpiritualRoom (eller andre)
+    |
+[Spilleren trykker F på tomen]
+    | TomeInteract
+    | → GlobalVolume.profile = _postTomeProfile
+    | → Play_TomePickup_Voice
+    | → Wwise State: PickedUp
+    | → Play_EndGameMusicSwitchContainer
+    | → TomePickedUp = true
+    | → BrazierCutscene.collider disabled
+    |
+         ↙                    ↘
+[Brænder tomen]        [Forlader rummet]
+BrazierTomeOffer       TomeLeaveRoom (OutsideTrigger)
+→ TomePickedUp = false → TomePickedUp = false
+→ Flag: "Tome Burned"  → Flag: "Goddess Freed"
+→ Post processing reset→ Dialogue audio (kun hvis IKKE brændt)
+→ Skybox skifter
+→ Fog density sænkes
+```
+
+---
+
+### DialogueUI Flags
+
+| Flag | Sat af | Bruges til |
+|---|---|---|
+| `"Tome Burned"` | `BrazierTomeOffer` | DialogueTrigger (specifikke linjer), ScaleByProximity stop, TextureRotateByProximity stop, GoddessVoiceTrigger silence |
+| `"Goddess Freed"` | `TomeLeaveRoom` | DialogueTrigger (specifikke linjer), GoddessVoiceTrigger kræver dette flag |
+
+---
+
+### Wwise Events fra Tome-systemet
+
+| Event | Script | Tidspunkt |
+|---|---|---|
+| `Play_2_Grotte_og_3_Dungeon` | MusicManager | Første gang spilleren går ind i grotterum |
+| `Play_4_TomeAura_3D_Loop` | MusicManager | Samme tidspunkt |
+| `Play_TomePickup_Voice` | TomeInteract | Når tomen interactes |
+| `Play_EndGameMusicSwitchContainer` | MusicManager | Når tomen interactes |
+| `_burnEvent` (Inspector) | BrazierTomeOffer | Brændingssekvens starter |
+| `_restoreEvent` (Inspector) | BrazierTomeOffer | Brændingssekvens slutter |
+| `_dialogueSoundEvent` (Inspector) | TomeLeaveRoom | Spilleren forlader med tome — kun hvis IKKE brændt |
+| `_burnEvent` (Inspector) | BrazierCutscene | NPC antændes i cutscene |
+
+---
+
+## Wwise States — Oversigt
+
+Tre state groups bruges i projektet. States sendes fra scripts via `AkUnitySoundEngine.SetState()`.
+
+---
+
+### BeginningMusicRoomStates
+Styrer musikken i starten af spillet afhængigt af hvilket rum spilleren er i. Sættes via `MusicBeginningRoomStateTrigger` — state group og value konfigureres i Inspector. Ignoreres hvis `TomePickedUp = true`.
+
+| State | Hvornår |
+|---|---|
+| `GrotteBeginning` | Spilleren går ind i grotterummet |
+| `DungeonBeginning` | Spilleren går ind i dungeonrummet |
+
+---
+
+### EndGameMusicStates
+Styrer musikken efter tomen er picked up. Alle states sendes via `MusicManager`.
+
+| State | Sendt fra | Hvornår |
+|---|---|---|
+| `TomePickup` | `TomeInteract` | Spilleren interacter med tomen ([F] tryk) |
+| `TomePossession` | `MusicManager.SetStateTomePossession()` | Hånden med tomen aktiveres tomen er nu i spillerens besiddelse |
+| `TomeBraending` | `MusicManager.SetStateTomeBraending()` | Tomen brændes i brazieren |
+| `TomeOutside` | `MusicManager.SetStateTomeOutside()` | Spilleren forlader rummet **uden** at have brændt tomen dårlig ending |
+| `HappyEndning` | `MusicManager.SetStateTomeOutside()` | Spilleren forlader rummet **efter** at have brændt tomen god ending |
+| `PlayerDeath` | `MusicManager.SetStatePlayerDeath()` | Spillerens HP når 0 |
+
+---
+
+### TomeAuraStates
+Styrer musikken knyttet til tomens tilstedeværelse i verdenen. Sættes via `TomeAuraStateTrigger` i scenen (state group og value konfigureres i Inspector) dog kun så længe tomen ikke er picked up. Ved pickup overtager `MusicManager` og sætter `TomePickup`.
+
+| State | Sendt fra | Hvornår |
+|---|---|---|
+| `TomeForeshadowing` | `TomeAuraStateTrigger` | Spilleren nærmer sig tomens område auraen anes |
+| `TomeSpiritualRoom` | `TomeAuraStateTrigger` | Spilleren er i det spirituelle rum direkte ved tomen |
+| `TomePickup` | `MusicManager.SetStateTomePossession()` | Hånden med tomen aktiveres auraen går fra verden til spiller |

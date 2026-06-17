@@ -50,14 +50,6 @@ public class MusicManager : MonoBehaviour
         );
         
         currentPhase = MusicPhase.Beginning;
-        
-        if (tomePhase != TomeAuraPhase.None)
-            return;
-
-        AkUnitySoundEngine.PostEvent(
-            "Play_4_TomeAura_3D_Loop",
-            gameObject
-        );
         tomePhase = TomeAuraPhase.Foreshadowing;
     }
     
@@ -65,12 +57,35 @@ public class MusicManager : MonoBehaviour
     {
         if (currentPhase == MusicPhase.Endgame)
             return;
-        
+
         AkUnitySoundEngine.PostEvent(
             "Play_EndGameMusicSwitchContainer",
             gameObject
         );
-        
+
         currentPhase = MusicPhase.Endgame;
+    }
+
+    public void SetStateTomePossession()
+    {
+        AkUnitySoundEngine.SetState("EndGameMusicStates", "TomePossession");
+    }
+
+    public void SetStateTomeBraending()
+    {
+        AkUnitySoundEngine.SetState("EndGameMusicStates", "TomeBraending");
+    }
+
+    public void SetStateTomeOutside(bool tomeBurned)
+    {
+        if (tomeBurned)
+            AkUnitySoundEngine.SetState("EndGameMusicStates", "HappyEndning");
+        else
+            AkUnitySoundEngine.SetState("EndGameMusicStates", "TomeOutside");
+    }
+
+    public void SetStatePlayerDeath()
+    {
+        AkUnitySoundEngine.SetState("EndGameMusicStates", "PlayerDeath");
     }
 }

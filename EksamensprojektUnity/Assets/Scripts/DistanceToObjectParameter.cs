@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class DistanceToCaveParameter : MonoBehaviour
+public class DistanceToObjectParameter : MonoBehaviour
 {
+    [SerializeField] private string _rtpcName = "";
     [SerializeField] private float _maxDistance = 40f;
 
     private Transform _player;
@@ -14,10 +15,10 @@ public class DistanceToCaveParameter : MonoBehaviour
 
     private void Update()
     {
-        if (_player == null) return;
+        if (_player == null || string.IsNullOrEmpty(_rtpcName)) return;
 
         float dist = Vector3.Distance(transform.position, _player.position);
         float value = (1f - Mathf.Clamp01(dist / _maxDistance)) * 100f;
-        AkUnitySoundEngine.SetRTPCValue("DistanceToCave", value);
+        AkUnitySoundEngine.SetRTPCValue(_rtpcName, value);
     }
 }
