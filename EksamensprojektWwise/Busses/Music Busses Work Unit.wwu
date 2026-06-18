@@ -22,49 +22,7 @@
 					</ReferenceList>
 					<ObjectLists>
 						<ObjectList Name="RTPC">
-							<RTPC Name="" ID="{68BCC29F-34FB-442B-AA74-F63B138661D1}" ShortID="117413822">
-								<PropertyList>
-									<Property Name="PropertyName" Type="string" Value="Volume"/>
-								</PropertyList>
-								<ReferenceList>
-									<Reference Name="ControlInput">
-										<ObjectRef Name="RTPC_Music_Ducking" ID="{E62BEB49-F50B-492C-B2B7-2C6EDBC0B055}" WorkUnitID="{59D72B9F-E2FB-441C-A53E-F253ACC78708}"/>
-									</Reference>
-									<Reference Name="Curve">
-										<Custom>
-											<Curve Name="" ID="{25C5D8E6-9B74-4CFC-8A39-7DA458C96F49}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>-48</XPos>
-														<YPos>0</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>-35.001</XPos>
-														<YPos>0</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Log1</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>-25.07693</XPos>
-														<YPos>-6.19593</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-6.32302</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</Custom>
-									</Reference>
-								</ReferenceList>
-							</RTPC>
-							<RTPC Name="" ID="{D11B427F-A191-42D1-8952-99C3BFB79226}" ShortID="1038246854">
+							<RTPC Name="" ID="{222B6EEA-14C8-4614-9460-8CCFE56888AA}" ShortID="707015788">
 								<PropertyList>
 									<Property Name="PropertyName" Type="string" Value="Lowpass"/>
 								</PropertyList>
@@ -74,7 +32,7 @@
 									</Reference>
 									<Reference Name="Curve">
 										<Custom>
-											<Curve Name="" ID="{F29A72E7-5B9E-48C4-8348-62CC85D75495}">
+											<Curve Name="" ID="{59542071-DFD6-4A62-888B-4951868119F6}">
 												<PropertyList>
 													<Property Name="Flags" Type="int32" Value="65537"/>
 												</PropertyList>
@@ -91,13 +49,55 @@
 														<SegmentShape>Log2</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-24.84706</XPos>
-														<YPos>40</YPos>
+														<XPos>-25</XPos>
+														<YPos>24</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>42</YPos>
+														<YPos>26</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+							<RTPC Name="" ID="{A0086657-CFDF-4E07-AA69-FF677848B002}" ShortID="717892986">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="Volume"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="RTPC_Music_Ducking" ID="{E62BEB49-F50B-492C-B2B7-2C6EDBC0B055}" WorkUnitID="{59D72B9F-E2FB-441C-A53E-F253ACC78708}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{2A43D7BC-A2D1-4376-9A78-5B3169C86E61}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-35.001</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-25</XPos>
+														<YPos>-3.87</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-3.87</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
