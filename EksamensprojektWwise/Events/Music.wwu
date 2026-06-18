@@ -84,33 +84,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_5_TomePossession" ID="{97F0BE11-6BAE-4042-AB02-48F0B3F66355}">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool" Value="False"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{49A1C2B3-6ABF-4F81-A831-24820F4A2208}" ShortID="757829481">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="5_TomePossession_Playlist" ID="{4E58524A-A98E-4BC3-AE74-8DD2DC4DD8B5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{47C52361-6B28-4447-9D82-EFA6AB2E25B8}" ShortID="226737661">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist" ID="{FE8C9CD6-0F81-4A61-B70D-69B11D5522F5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_7_HappyEnding_Playlist" ID="{CE227BB7-CD03-42C2-9024-8A292630FD74}">
 					<ChildrenList>
 						<Action Name="" ID="{9C8A99F3-0C09-463B-A178-7574A7D72F4D}" ShortID="443464381">
@@ -139,6 +112,33 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="4_2_TomeAura_STEREO" ID="{E3D0C4A8-D001-47AD-9385-5A8930AA49DE}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DrumsVolumeUpCaveScaling" ID="{AEEADF1D-06D5-43D9-916D-0DFC23B356BD}">
+					<ChildrenList>
+						<Action Name="" ID="{C19708CB-D694-4E95-BDE9-CC8A37C52768}" ShortID="691375705">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="5_TomePossession_AddDrums_Intensity1_150BPM_7-4_L6M-P0" ID="{9BBBAB4B-069C-42AE-B7D1-30146B320D2D}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{80CDA0D1-727E-4203-B289-B0F4D784B646}" ShortID="257134538">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="5_TomePossession_AddDrums_Intensity2_150BPM_7-4_L6M-P0" ID="{59534B92-3DA4-490E-8988-BBFAA25C4161}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

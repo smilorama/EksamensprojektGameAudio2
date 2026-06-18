@@ -7,47 +7,701 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Effect Name="TomePossessionTimeStretchPreset" ID="{7A86C6D5-DDA9-4CF7-94CF-C7CEC90B2618}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="2"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ObjectLists>
-						<ObjectList Name="RTPC">
-							<RTPC Name="" ID="{281D0F4D-A9A3-4A82-BB2A-7D1A261440D3}" ShortID="755410952">
-								<PropertyList>
-									<Property Name="PropertyName" Type="string" Value="TimeStretch"/>
-								</PropertyList>
-								<ReferenceList>
-									<Reference Name="ControlInput">
-										<ObjectRef Name="TomePossessionTimeStretch" ID="{B85ACA72-B1AE-4AF3-9CC5-10C0C43C96DC}" WorkUnitID="{E732188B-92A3-4896-A159-048E86C7350E}"/>
-									</Reference>
-									<Reference Name="Curve">
-										<Custom>
-											<Curve Name="" ID="{85A4ABAC-0E94-47E2-8A34-2ADBA5D08661}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="1"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>100</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>800</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</Custom>
-									</Reference>
-								</ReferenceList>
-							</RTPC>
-						</ObjectList>
-					</ObjectLists>
-				</Effect>
+				<Folder Name="RotateFloor_Effects" ID="{A2141BC2-4270-4887-96DA-757596B33D1A}" ShortID="809545144">
+					<ChildrenList>
+						<Effect Name="Delay0_3sec_RotateFloor" ID="{108B0D27-9065-4DC7-8B7D-3EFD1254109F}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.3"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{1467E9AD-E453-47AB-ABE8-C70C511EDB0A}" ShortID="177691512">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetDryMix"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B4C0DFE7-CDD9-4B0E-9644-BEDF47C5F9BC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>11.97604</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{72C0A717-137A-4F81-919B-63720FD06D43}" ShortID="799784338">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Feedback"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{3E0750AD-4D6F-450C-A88C-462A7838302E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>41.91617</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="FlangerChillWobbleAtMax_RotateFloor" ID="{33923753-7616-4FAA-A34F-F608A1F09EBA}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{76C5CBE9-EA7A-40BA-A982-A7896F16B59F}" ShortID="569033741">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="FeedBackLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B68BCE10-1113-4917-B0D1-BC8F60114748}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-2</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10.06712</XPos>
+																<YPos>-1.26909</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-0.05934</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{D9067471-3FB8-4B7E-8F07-6EAA7E4F7236}" ShortID="978319938">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetDryMix"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{51BFCC89-BB7C-4E70-941E-AFBE14CF1A4E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>50.90294</XPos>
+																<YPos>-68.40329</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-40.00002</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{7B718030-9CDA-43D8-BDDE-4277723734F7}" ShortID="240549873">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="ModFrequency"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{BAFF5A94-6A83-4019-A242-9451D2F9818B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0.17462</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>1.13758</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{3B02C997-0471-4F99-89DC-62E7C6CAAAC1}" ShortID="1027952250">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="ModDepth"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{F9E66EE6-1DBF-4797-B345-957F4E9712EA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-72.63158</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>12.15312</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="Delay0_4sec_RotateFloor" ID="{9D908348-9004-42A5-8966-0B1485F20313}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.4"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{2EE76158-CD48-4AF2-97EA-532EC1E8FFF1}" ShortID="42906883">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetDryMix"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B27B3161-D0E7-44ED-B549-91ADDE3A3A0A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-2.39522</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{95C8BF6D-CA5C-4B14-874C-46A3E4359A08}" ShortID="448636955">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Feedback"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B67E964C-5867-4D24-A68D-0AE7F49CDDF4}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>41.91617</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="GainDown2db_LFEDown6db_RotateFloor" ID="{BA056A17-DDFD-42C0-840D-5F00A8776F2F}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{053376B3-EA26-4361-B0FD-6D5316932BC5}" ShortID="777642969">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="FullBandGain"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{2FCAFD92-349A-406C-9C14-191853A41CFC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-2</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{48277AEF-6387-45E7-9770-AB59F39049AB}" ShortID="860788210">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="LFEGain"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{4625E6D9-45ED-4931-B56B-8F42F99F9C20}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-6</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ScaleCaveTunnel_Effects" ID="{86CB5362-CC80-47C8-84E7-067AE303F483}" ShortID="247594958">
+					<ChildrenList>
+						<Effect Name="Matrix_Reverb_Big_ScaleCaveTunnel" ID="{A107A926-C096-4990-AEE5-820090E6DCFB}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-7.3"/>
+								<Property Name="PreDelay" Type="Real32" Value="0.05"/>
+								<Property Name="WetLevel" Type="Real32" Value="-20"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{7D6C2B14-0087-4914-9674-BF823E83DE3B}" ShortID="563431684">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="ReverbTime"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B9A05700-A0B2-4679-8D65-0EB8D9FDADB5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1.03884</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>3.39195</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{8C27DC2D-155D-43DC-B25F-F9FDDE239E09}" ShortID="79044504">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B46D0500-06F1-4BD8-9CF6-EB62E07B1560}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96.3000030517578</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>19.84522</XPos>
+																<YPos>-10.8446</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-7.72911</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{4D78AB12-D1A8-478F-84A5-7CC44AC515AE}" ShortID="509293589">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="DryLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E53F2DEE-3D93-454D-B4FD-39D7270D2DAA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0.07783</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-11.73621</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="Matrix_Reverb_Big_Drums_ScaleCaveTunnel" ID="{13F0D7D3-28CF-41DD-A867-A5E557855390}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+								<Property Name="HFRatio" Type="Real32" Value="3"/>
+								<Property Name="WetLevel" Type="Real32" Value="-20"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{B8A39949-0325-4F11-A40D-BA6707CE2F1F}" ShortID="239400319">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="DryLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{57488396-3918-4F25-A62E-74AD28FC11CE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0.0778300000000058</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-6.96656</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{6DB49F7E-3597-4215-9D79-00A7AC58BD42}" ShortID="498717690">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B1930512-02E8-462C-AB67-5CC19C2C8514}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96.3000030517578</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>20.00001</XPos>
+																<YPos>-17.10489</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-11.58929</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{DAE162A4-417D-4AC5-B4AB-2093684109CA}" ShortID="983053195">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="ReverbTime"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{944F0438-E007-421E-ADD3-6CA074519A6E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1.03884</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>3.49616</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="Pitch_Shift_Down_ScaleCaveTunnel" ID="{BFDD4042-7D02-4148-B9A3-3428131119C0}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{BBEC6F2B-5660-449E-B45F-A4F5060330B6}" ShortID="1054771208">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{882BFF06-B36B-40B3-B320-0138AF4BD716}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-1566.3158</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ScaleMushroom" ID="{15CD42EC-265B-41AD-B185-DC646BBE0E1B}" ShortID="785815934">
+					<ChildrenList>
+						<Effect Name="TimeStretch_ScaleMushroom" ID="{7A86C6D5-DDA9-4CF7-94CF-C7CEC90B2618}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{281D0F4D-A9A3-4A82-BB2A-7D1A261440D3}" ShortID="755410952">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="TimeStretch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleMushroom" ID="{AE3DF993-E330-4DD7-AC5F-0B4AE08524B9}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{85A4ABAC-0E94-47E2-8A34-2ADBA5D08661}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>800</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="Pitch_Shift_Up_ScaleMushroom" ID="{D5BA0AFD-4840-4FCD-8322-A066899E8B3B}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{5E7130D2-5C60-4BA7-A4ED-898DAB93787E}" ShortID="16182822">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleMushroom" ID="{AE3DF993-E330-4DD7-AC5F-0B4AE08524B9}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{5DA228CF-2867-4F26-8060-48527F6B129E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>1200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

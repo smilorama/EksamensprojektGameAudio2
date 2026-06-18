@@ -40,13 +40,9 @@
 							<PropertyList>
 								<Property Name="GridFrequencyPreset" Type="int16" Value="51"/>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="150"/>
 								<Property Name="TimeSignatureUpper" Type="int16" Value="7"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -121,7 +117,7 @@
 								</MusicSegment>
 								<MusicSegment Name="5_TomePossession" ID="{60E94346-061C-4402-B3C1-2BC0C4F4871B}" ShortID="874811518">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="25421.7008864775"/>
+										<Property Name="EndPosition" Type="Real64" Value="25290.7373835239"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -135,6 +131,11 @@
 									<ChildrenList>
 										<MusicTrack Name="5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{C206B7FE-4F83-47DE-8619-4B93B6620717}" ShortID="1026515783">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -401,6 +402,11 @@
 										</MusicTrack>
 										<MusicTrack Name="5_TomePossession_AddDrums_Intensity1_150BPM_7-4_L6M-P0" ID="{9BBBAB4B-069C-42AE-B7D1-30146B320D2D}" ShortID="651979453">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="MusicTrackType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
@@ -455,7 +461,11 @@
 												<StateGroupList>
 													<StateGroupInfo>
 														<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-														<StateGroupInfo Name="" ID="{23D351F1-D887-41A4-82AB-E315F7EE8BA1}" ShortID="689991910"/>
+														<StateGroupInfo Name="" ID="{23D351F1-D887-41A4-82AB-E315F7EE8BA1}" ShortID="689991910">
+															<PropertyList>
+																<Property Name="MusicSyncType" Type="int32" Value="1"/>
+															</PropertyList>
+														</StateGroupInfo>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -495,7 +505,8 @@
 														<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
 														<CustomState Name="" ID="{FFE490A2-C645-4ACD-87B2-07640F033DDB}" ShortID="769748072">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-8"/>
+																<Property Name="Lowpass" Type="int16" Value="39"/>
+																<Property Name="Volume" Type="Real64" Value="-10"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -589,6 +600,7 @@
 										<MusicTrack Name="5_TomePossession_AddDrums_Intensity2_150BPM_7-4_L6M-P0" ID="{59534B92-3DA4-490E-8988-BBFAA25C4161}" ShortID="17843022">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="2"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -713,6 +725,274 @@
 												</CustomStateList>
 											</StateInfo>
 											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{A31EAC83-4B83-4CE7-B608-676EDC570646}" ShortID="731548400">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+																<ObjectRef Name="Delay0_4sec_RotateFloor" ID="{9D908348-9004-42A5-8966-0B1485F20313}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{D51CA8D7-B4E6-46E5-A4AB-5F8DA6B13322}" ShortID="1055153549"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{F1B815CE-E692-4D8B-876A-04337F423521}" ShortID="1055336857"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{FCD171BD-139E-451E-B57B-B345FD0F12B0}" ShortID="44484216"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{1E55E615-704D-4AE6-9F44-4E650F7FF647}" ShortID="1043877242"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{7D96C3B5-5DDA-48AE-A37C-B25AE8918F94}" ShortID="894120961"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{7C7D06BD-6482-4BD7-BD43-44C5DC2F5AE0}" ShortID="131741085"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{13018D1B-1E6A-4CCE-8832-298E058DBCC4}" ShortID="1073349456"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{202C5CBA-3DAD-4A74-93C6-4A59662D04E3}" ShortID="289819008"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{D7CC51CC-447D-4EF6-9767-3BE208C3610F}" ShortID="988054682">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+																<ObjectRef Name="FlangerChillWobbleAtMax_RotateFloor" ID="{33923753-7616-4FAA-A34F-F608A1F09EBA}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{53A14958-350D-475C-8D01-DB25100F067D}" ShortID="668680231"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{FA7AB85A-5FB5-48C9-9353-2FFE79D07271}" ShortID="207575657"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{39BDFEF2-0F98-4104-868E-762E34588054}" ShortID="399960666"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{FD1DF094-B845-459C-9049-CC1A636F166F}" ShortID="161023513"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{DBCC9172-A4F1-4229-A7A2-A9FA742A6552}" ShortID="937062308"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{F39335FB-BFF0-4499-8E9A-BC123EFCAB49}" ShortID="1012633191"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{80FAD8F8-4AB7-4EB7-973D-88640A8E7FB5}" ShortID="824464781"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{C959CFAF-B0CF-49DB-9E50-3DB002B1753E}" ShortID="814884485"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{09A5539B-83F7-441B-8FF0-F9B066D3302B}" ShortID="897244894">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Matrix_Reverb_Big_Drums_ScaleCaveTunnel" ID="{13F0D7D3-28CF-41DD-A867-A5E557855390}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{D9A12A1D-0FAE-43A8-8AF7-3B35CBA8446F}" ShortID="146130045"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{BB2221AA-362C-477D-A260-99D96D366826}" ShortID="750137270"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{33F3AC0F-BAE6-43D9-8627-0E134AFBAF5C}" ShortID="692471610"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{34BC6F5C-F702-44DF-9B2C-32EBFEAA65EF}" ShortID="1006185508"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{95CE48A7-E466-4DCA-94F9-11F8530C6C1C}" ShortID="361688265"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{296BA98B-4B81-4541-8CFF-53018F486698}" ShortID="543854746"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{99A10CD4-3A57-47E5-B5CD-BF3A6A8B25D4}" ShortID="856664920"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{E94A0A9C-9B00-4EBB-8F96-A3481F4F02AC}" ShortID="992686953"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{E2DC5250-BE90-4B11-9D21-7864593A3C11}" ShortID="27085973">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+																<ObjectRef Name="GainDown2db_LFEDown6db_RotateFloor" ID="{BA056A17-DDFD-42C0-840D-5F00A8776F2F}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{EF8B020F-EA93-40DE-94C3-B967CABA731A}" ShortID="363056833"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{E14575A4-90ED-4A33-9D63-4E7FAF6E3FFD}" ShortID="514657827"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{DFA3A59A-15F2-46E2-9BA8-4FD837A99608}" ShortID="844332541"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{00C7FF26-68F6-42FE-A7F5-F7EA036E5B82}" ShortID="242177031"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{BB0D1E8C-88D5-413A-A7DA-ABA0DEA4856F}" ShortID="305513985"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{D75EEF96-4110-49FC-988D-13D713B91DD2}" ShortID="837179097"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{B7AEB9A1-2444-4771-84F9-E992AA56A963}" ShortID="428535634"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{7993C021-DBD9-4D1E-8006-0752179E532F}" ShortID="340658554"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{B26F3DD2-5EDE-4BAC-82E0-7603A2187530}" ShortID="464840551">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<ObjectRef Name="Cut_3dB_100Hz" ID="{67423B74-4F0A-4719-92FE-343347C717C7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{077371CC-9DB0-447D-B884-913BA9A96D2F}" ShortID="1064988211"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{A63B5604-07FD-460B-9078-5862E380EB06}" ShortID="143028190"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{4A37778C-D800-477B-B931-F1394BAFDF5A}" ShortID="90882448"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{EAADA4BA-2FB1-49C5-8C1C-F4000C4580CE}" ShortID="45264213"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{3A94F1C4-A17F-437F-AF79-4A5DF6F1E67F}" ShortID="716261160"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{A2FC47EA-9CEC-4065-8274-82AC69D34376}" ShortID="132603127"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{1102E12E-B466-4D32-84BE-76DC6D694141}" ShortID="237318094"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{8B3619ED-47A0-46DD-BE6D-4FA2607E117B}" ShortID="746031140"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{A151D32D-B166-4EA9-ACB2-7714752F764D}" ShortID="100115146">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+																<ObjectRef Name="Pitch_Shift_Up_ScaleMushroom" ID="{D5BA0AFD-4840-4FCD-8322-A066899E8B3B}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{583CA8FA-5FA5-4B51-AC69-A5B073EACFB2}" ShortID="306043910"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{D0C4D223-E0B0-444B-87EE-24814340D70B}" ShortID="692960484"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{37894722-CA5C-41EE-83BF-65244727956B}" ShortID="23887677"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{7370FCBB-FEF8-4DFF-9E2A-33268749B82B}" ShortID="45248509"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{FAD704B2-18C1-4847-8D74-D8494A126D39}" ShortID="537190799"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{785F485E-5A6C-48F1-A58A-665408DFE0CD}" ShortID="299937428"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{51706513-2E96-4CA7-A58E-77FC2EA68512}" ShortID="143731376"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{7C757578-62F1-43B9-891C-4E01DF31B8F2}" ShortID="365475896"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+												</ObjectList>
+												<ObjectList Name="RTPC">
+													<RTPC Name="" ID="{9D01EEFE-C0B1-4AA6-A011-0B5D5FF334F3}" ShortID="479256835">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList/>
+													</RTPC>
+												</ObjectList>
 												<ObjectList Name="Sequences">
 													<MusicTrackSequence Name="" ID="{8F012BD1-D43B-46C6-9818-D92663CBAAA3}">
 														<ObjectLists>
@@ -830,7 +1110,18 @@
 										</MusicTrack>
 										<MusicTrack Name="5_TomePossession_AddDrums_Intensity3_150BPM_7-4_L6M-P0" ID="{BD0F1761-FD56-463A-AC8D-3860455BA555}" ShortID="823537856">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="MusicTrackType" Type="int16" Value="2"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -955,6 +1246,137 @@
 												</CustomStateList>
 											</StateInfo>
 											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{F28C0BBF-C410-4D86-B6F4-F7F56DA4F853}" ShortID="205238157">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+																<ObjectRef Name="Delay0_4sec_RotateFloor" ID="{9D908348-9004-42A5-8966-0B1485F20313}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{010216E5-C7EA-4391-9382-BF90D899FE9F}" ShortID="79812157"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{1145729E-7955-46AD-8331-D059B116807E}" ShortID="812897620"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{A30031EA-26A6-4019-AE87-3A46FA773EC1}" ShortID="527563390"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{C822C31E-732B-4A10-A127-F15645F40FE3}" ShortID="108594678"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{9D767DD6-76E5-48EC-BB01-A4B048DB5E83}" ShortID="333742096"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{4CB10EFC-CF5E-47E4-B7EA-B4F5954ACCB0}" ShortID="371154124"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{76C7A3B9-A3D1-4181-8387-FE97E245D271}" ShortID="230534897"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{A0A6B388-AEFB-4BEA-AED7-861074C630C0}" ShortID="407287626"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{D8829C8D-7035-401D-AE0B-4CAE20A95B3F}" ShortID="417458500">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+																<ObjectRef Name="FlangerChillWobbleAtMax_RotateFloor" ID="{33923753-7616-4FAA-A34F-F608A1F09EBA}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{DFDE227A-D17E-4B85-80FA-E08315F505CD}" ShortID="173090542"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{E7989797-6DA4-43D6-90D2-871764663764}" ShortID="6943332"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{7E803EFF-2265-42D6-8D86-FA688921B03F}" ShortID="575661568"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{400323B8-EF18-43FC-B6EB-AB74E17AA60E}" ShortID="578463794"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{798FD630-BAE2-4965-B040-049197220153}" ShortID="759337879"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{702F758D-0AEA-4DF5-ADE8-55D762D16EEE}" ShortID="800477632"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{D786B889-997B-4157-A02D-979D6DE7046C}" ShortID="453239036"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{D8FF8DA1-9EDA-4BB7-A156-2077358DA3BB}" ShortID="211517888"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{6A962A31-D858-4182-855D-59033BA8F554}" ShortID="818402745">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Matrix_Reverb_Big_Drums_ScaleCaveTunnel" ID="{13F0D7D3-28CF-41DD-A867-A5E557855390}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{EE2A8A61-F844-4114-8307-88DDBEDC67BE}" ShortID="597306797"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{453988BF-3321-4622-B9EC-80788BD7F294}" ShortID="1067203449"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{254A3C8E-08A4-4D0F-8FA5-8684F466C59A}" ShortID="165967990"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{221429BA-4E82-4F48-93E7-CF1E06CA9CA3}" ShortID="560977144"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{27915B14-80D1-49CA-AA9D-470EF15B5FD4}" ShortID="613466102"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{D3AB0D17-01CF-448E-A404-49AD88BDDBAF}" ShortID="457796778"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{66902642-2AF2-4D72-879B-DF00495D7CA0}" ShortID="1070808119"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{C9803A38-F5D2-43BA-A784-6C0DA9A32B05}" ShortID="554807208"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+												</ObjectList>
 												<ObjectList Name="Sequences">
 													<MusicTrackSequence Name="" ID="{BB9A6E8E-01A6-4A69-A6DF-7F9E021F0D21}">
 														<ObjectLists>
@@ -1017,6 +1439,11 @@
 										</MusicTrack>
 										<MusicTrack Name="5_TomePossession_AddDrums_Intensity4_150BPM_7-4_L6M-P0" ID="{61C1B567-407A-44CC-A794-D714DF4D0E18}" ShortID="599060365">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="MusicTrackType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1205,9 +1632,10 @@
 										<MusicTrack Name="5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0" ID="{76F285A1-8764-4784-80D6-A2B165AB08B8}" ShortID="810694231">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1284,7 +1712,11 @@
 												<StateGroupList>
 													<StateGroupInfo>
 														<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-														<StateGroupInfo Name="" ID="{25A518E8-ABCE-47A0-97BF-64BA6929164D}" ShortID="497227403"/>
+														<StateGroupInfo Name="" ID="{25A518E8-ABCE-47A0-97BF-64BA6929164D}" ShortID="497227403">
+															<PropertyList>
+																<Property Name="MusicSyncType" Type="int32" Value="3"/>
+															</PropertyList>
+														</StateGroupInfo>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -1347,6 +1779,137 @@
 												</CustomStateList>
 											</StateInfo>
 											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{ACEE8A8C-5A7F-4FBE-BB6D-E372F67E3B73}" ShortID="235066488">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+																<ObjectRef Name="Delay0_3sec_RotateFloor" ID="{108B0D27-9065-4DC7-8B7D-3EFD1254109F}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{C019C86F-7225-485F-95F1-F6C970FE3DED}" ShortID="606188712"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{031A2865-0E7C-4C54-B979-063F7E6C2E9A}" ShortID="569358106"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{3297B8A7-DBAF-4BE1-A874-5E783D136EA2}" ShortID="24423122"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{4543CE44-CB08-4ED9-B3AA-E49942291C1F}" ShortID="266184662"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{7886114B-D4ED-4FFF-AF0C-DCB1E560507F}" ShortID="262031063"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{90DFD694-4BDC-44C8-9F50-612A3E51FFFD}" ShortID="171239929"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{B1FC81DD-0B79-426F-8D92-EE583E9BEC52}" ShortID="1053559011"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{637074E2-838E-4527-90EA-C365121DD4B3}" ShortID="567936115"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{50B17F50-599E-434C-841C-A62C1FA4F389}" ShortID="543725959">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+																<ObjectRef Name="FlangerChillWobbleAtMax_RotateFloor" ID="{33923753-7616-4FAA-A34F-F608A1F09EBA}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{D87159BA-9C4A-49B4-8952-61846CEA3256}" ShortID="766492999"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{F7BB4D50-5C34-4EE7-B6FF-A71F2BA595F2}" ShortID="968379931"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{43CB7E09-3265-42B1-AD88-D402E15D32DF}" ShortID="971238603"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{CF265261-950A-49AA-9862-AA28FC2608B3}" ShortID="340042767"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{3CFCDA6E-716A-4525-816F-967CA54154E1}" ShortID="408575170"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{A8DFEA90-7841-4515-88CB-E8A5927AC4F9}" ShortID="424007975"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{770470F6-812A-4DD2-891E-4CC77B975A7D}" ShortID="488943045"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{E11B22A4-781C-4999-A113-547D8360E2D7}" ShortID="412557320"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{9E19B02D-1F62-43AB-9175-A5163578F8DD}" ShortID="392942212">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+																<ObjectRef Name="Pitch_Shift_Down_ScaleCaveTunnel" ID="{BFDD4042-7D02-4148-B9A3-3428131119C0}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{849309D2-8F29-4679-95B5-1F7F9523AD3A}" ShortID="917632450"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{5E3E0043-F8E7-4E11-B458-01BDA09FBBFE}" ShortID="759716919"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{CBA5367D-3FC3-4B65-B307-CF4CDECF82AF}" ShortID="440620266"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{0A00FF81-8A76-4755-A602-9B3C6EB5B634}" ShortID="534012131"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{D238EC78-13BB-4086-A8F3-CBF7E6B8DBAD}" ShortID="474647704"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{1B2C2FC8-F96A-4DAC-B64D-CEB89D5A661A}" ShortID="894754818"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{742B12A6-6534-45D2-B70E-274553C73494}" ShortID="452860171"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{FE618ACC-6BE8-4832-B7B2-97F7CD48FB27}" ShortID="464881138"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+												</ObjectList>
 												<ObjectList Name="Sequences">
 													<MusicTrackSequence Name="" ID="{273E430C-955C-4197-B9B2-4D955136BAFD}">
 														<ObjectLists>
@@ -1454,6 +2017,12 @@
 										<MusicTrack Name="5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0" ID="{35523C83-E143-4593-B15F-200E736FBB1D}" ShortID="354122947">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1514,7 +2083,11 @@
 												<StateGroupList>
 													<StateGroupInfo>
 														<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-														<StateGroupInfo Name="" ID="{1657BD25-C628-4D90-86BA-277144665677}" ShortID="403926346"/>
+														<StateGroupInfo Name="" ID="{1657BD25-C628-4D90-86BA-277144665677}" ShortID="403926346">
+															<PropertyList>
+																<Property Name="MusicSyncType" Type="int32" Value="3"/>
+															</PropertyList>
+														</StateGroupInfo>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -1581,6 +2154,94 @@
 												</CustomStateList>
 											</StateInfo>
 											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{17EFB798-30EC-4913-8F6C-39DEB0F395CF}" ShortID="745925698">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+																<ObjectRef Name="FlangerChillWobbleAtMax_RotateFloor" ID="{33923753-7616-4FAA-A34F-F608A1F09EBA}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{19326B94-2A74-4BE9-817A-63D825997BC2}" ShortID="319649946"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{5FB2EDEC-3445-4F25-AEBC-FCE07503043E}" ShortID="455688744"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{406C9422-0D57-40A2-8F21-9353A89EEC32}" ShortID="399717172"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{3C732863-B958-417A-AF48-9D08A7E76936}" ShortID="304371426"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{A9C8F9C0-2F99-43C7-88D2-5004CDA338A4}" ShortID="557589323"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{6CEDA8A6-E6D9-4780-8A9D-168230A752C3}" ShortID="966830469"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{B6D6BDC8-9904-41C1-8683-BF54E2BB7EF2}" ShortID="306935956"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{F6AED5CB-F345-4B52-A661-22331FD91D4D}" ShortID="1010338159"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{A2B9C626-41D9-4763-81FC-E94B17169E14}" ShortID="119928566">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Matrix_Reverb_Big_ScaleCaveTunnel" ID="{A107A926-C096-4990-AEE5-820090E6DCFB}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{495D6223-23C5-4201-8A9A-9A59DD071EF4}" ShortID="104218427"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{648AE768-84B0-4499-9C42-B3FAD7FA4587}" ShortID="816721635"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{B7AF9D23-C2EC-4923-AD66-4666876FA8A1}" ShortID="1014003276"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{EE82111F-7004-4D9E-AF35-98942B528875}" ShortID="325573075"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{B3FE0DCB-5A67-4249-AD5E-0A22EE52C7D5}" ShortID="760974519"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{F560FD19-EFB6-42EE-90EC-523A22A05BE9}" ShortID="259191094"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{B9EBA79C-F955-46CE-A4DA-EBAB07E142E5}" ShortID="475592859"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{5330BF83-362C-4491-BA8C-3A241E01D06A}" ShortID="82726149"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+												</ObjectList>
 												<ObjectList Name="RTPC">
 													<RTPC Name="" ID="{C1CBFBDE-09BB-40BB-8785-3B581A22C974}" ShortID="78555912">
 														<PropertyList>
@@ -1923,22 +2584,22 @@
 																					</Point>
 																					<Point>
 																						<XPos>0.001</XPos>
-																						<YPos>-1.89353</YPos>
+																						<YPos>-11.4512</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
 																						<XPos>8.50413</XPos>
-																						<YPos>-0.89526</YPos>
+																						<YPos>-3.95057</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>16.65684</XPos>
-																						<YPos>-1.89352</YPos>
+																						<XPos>16.84886</XPos>
+																						<YPos>-8.91546</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
 																						<XPos>25.2</XPos>
-																						<YPos>-3.02159</YPos>
+																						<YPos>-6.31626</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -1954,9 +2615,11 @@
 															<ObjectList Name="Clips">
 																<MusicClip Name="5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1" ID="{34BF58FD-8865-4A05-A906-30D44203E22B}">
 																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="4.44089209850063E-13"/>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="25200"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-4.44089209850063E-13"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0_var1" ID="{E33883D3-B979-4C50-BB0E-3F473B5BC26C}"/>
 																	<PropertyCurveList>
@@ -1977,8 +2640,13 @@
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>16.79741</XPos>
-																						<YPos>0.21995</YPos>
+																						<XPos>15.74278</XPos>
+																						<YPos>26.32517</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>16.87884</XPos>
+																						<YPos>15.59558</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -2001,8 +2669,8 @@
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>8.64469</XPos>
-																						<YPos>45.70403</YPos>
+																						<XPos>8.53346</XPos>
+																						<YPos>51.85429</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -2026,27 +2694,27 @@
 																					</Point>
 																					<Point>
 																						<XPos>0.001</XPos>
-																						<YPos>-4.31835</YPos>
+																						<YPos>-12.23078</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>4.21692</XPos>
-																						<YPos>-6.41746</YPos>
+																						<XPos>4.09476</XPos>
+																						<YPos>-15.81833</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>8.57441</XPos>
-																						<YPos>-4.6833</YPos>
+																						<XPos>8.50025</XPos>
+																						<YPos>-9.56211</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>12.9319</XPos>
-																						<YPos>-6.26454</YPos>
+																						<XPos>12.89482</XPos>
+																						<YPos>-14.31286</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>16.72712</XPos>
-																						<YPos>-4.47513</YPos>
+																						<XPos>16.77512</XPos>
+																						<YPos>-7.79769</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -2123,7 +2791,13 @@
 										</MusicTrack>
 										<MusicTrack Name="5_TomePossession_GuitSG_ChordsStabs_EDobHarDur_150BPM_7-4_L6M-P0" ID="{226B8950-7866-4095-9966-133924F00CED}" ShortID="1032957147">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2170,7 +2844,11 @@
 												<StateGroupList>
 													<StateGroupInfo>
 														<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-														<StateGroupInfo Name="" ID="{F1E66060-24D0-4A15-91ED-BC5EAEAE4930}" ShortID="90018800"/>
+														<StateGroupInfo Name="" ID="{F1E66060-24D0-4A15-91ED-BC5EAEAE4930}" ShortID="90018800">
+															<PropertyList>
+																<Property Name="MusicSyncType" Type="int32" Value="3"/>
+															</PropertyList>
+														</StateGroupInfo>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -2237,6 +2915,51 @@
 												</CustomStateList>
 											</StateInfo>
 											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{81D435CC-7364-45C2-950C-CF1E8053233E}" ShortID="649995063">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Matrix_Reverb_Big_ScaleCaveTunnel" ID="{A107A926-C096-4990-AEE5-820090E6DCFB}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+																	<CustomState Name="" ID="{AF0749EE-6962-4851-BB59-299F58B4B073}" ShortID="306039969"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+																	<CustomState Name="" ID="{FFD2C1AE-298F-4C3D-950E-D6C90033BCA0}" ShortID="722918369"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+																	<CustomState Name="" ID="{D2471C12-1DEC-4568-8E5E-2757DFF84C35}" ShortID="93850170"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+																	<CustomState Name="" ID="{D1B880C0-BD30-4733-BE4D-6ECFDAE77495}" ShortID="990709108"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+																	<CustomState Name="" ID="{F52D6F99-FA18-4D6A-AB48-3DC595614B3F}" ShortID="684909136"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+																	<CustomState Name="" ID="{63140CEB-53FD-48A3-9C97-F6CA66E83ED4}" ShortID="440060079"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+																	<CustomState Name="" ID="{0FC58C59-46D6-48C7-9876-FE5C584BE55E}" ShortID="169248512"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+																	<CustomState Name="" ID="{CC967BF4-5F63-4548-9B35-4F075B635FDA}" ShortID="816050809"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+												</ObjectList>
 												<ObjectList Name="RTPC">
 													<RTPC Name="" ID="{8D9F6C23-C34B-4CF7-8BC7-331632CE3F42}" ShortID="519945235">
 														<PropertyList>
@@ -2712,6 +3435,11 @@
 										</MusicTrack>
 										<MusicTrack Name="5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0" ID="{590A96D4-DC2B-47A8-B28A-12D093BA6B31}" ShortID="67845968">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -3141,13 +3869,6 @@
 											</MusicCue>
 										</ObjectList>
 										<ObjectList Name="Effects">
-											<EffectSlot Name="" ID="{69AFE5A3-71CF-4A5F-9492-7BF9FAE04629}" ShortID="47003108">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
-														<ObjectRef Name="Deep" ID="{76753DA8-3DCF-4812-A726-2745812F6C1B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
 											<EffectSlot Name="" ID="{FAD26288-3183-4437-B881-0C1F440C1388}" ShortID="31960702">
 												<ReferenceList>
 													<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
@@ -3155,17 +3876,10 @@
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
-											<EffectSlot Name="" ID="{20476A8A-B5EC-4117-BC67-D1A1FA5B6A12}" ShortID="135214639">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
-														<ObjectRef Name="One_Tap_One_Second" ID="{5B5883FA-85A1-45CA-8A52-9DBBCF3B0A03}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
 											<EffectSlot Name="" ID="{13F17951-2610-4ECF-BAE5-7908E4DFECEC}" ShortID="13778595">
 												<ReferenceList>
 													<Reference Name="Effect" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
-														<ObjectRef Name="TomePossessionTimeStretchPreset" ID="{7A86C6D5-DDA9-4CF7-94CF-C7CEC90B2618}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
+														<ObjectRef Name="TimeStretch_ScaleMushroom" ID="{7A86C6D5-DDA9-4CF7-94CF-C7CEC90B2618}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -5954,7 +6668,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -5973,6 +6687,11 @@
 						<Sound Name="Aura1_Ab5_SGGuit_MONO" ID="{35A1C60B-1A5C-4015-9BBA-C7A53AF4D5F5}" ShortID="226473713">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -6010,7 +6729,7 @@
 										<StateRef Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}"/>
 										<CustomState Name="" ID="{36A55C76-0DC4-4A5F-BC47-4BEDEC6C1372}" ShortID="419568154">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
+												<Property Name="Volume" Type="Real64" Value="-15"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -6020,7 +6739,11 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
-										<CustomState Name="" ID="{F07726D1-C117-4963-B31C-47982B3392A7}" ShortID="711516354"/>
+										<CustomState Name="" ID="{F07726D1-C117-4963-B31C-47982B3392A7}" ShortID="711516354">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="2"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="None" ID="{CC3F7E07-D1F4-4C50-93BC-0732C39AB196}"/>
@@ -6039,6 +6762,11 @@
 						<Sound Name="Aura1_Ab5_VocoderCarr_MONO" ID="{BE0E8202-4FC7-4322-8575-4C6373641DF3}" ShortID="978340693">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -6076,7 +6804,7 @@
 										<StateRef Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}"/>
 										<CustomState Name="" ID="{58B9C296-408B-47A8-8D53-3CF37B4BE48B}" ShortID="73857439">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
+												<Property Name="Volume" Type="Real64" Value="-20"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -6086,7 +6814,11 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
-										<CustomState Name="" ID="{2CC5907D-6397-44C9-B49C-4C60D2A77A49}" ShortID="13746335"/>
+										<CustomState Name="" ID="{2CC5907D-6397-44C9-B49C-4C60D2A77A49}" ShortID="13746335">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="3"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="None" ID="{CC3F7E07-D1F4-4C50-93BC-0732C39AB196}"/>
@@ -6105,6 +6837,11 @@
 						<Sound Name="Aura2_C_SGGuit_MONO" ID="{BDE440EE-C3C9-42DC-AD3D-6393C332D72E}" ShortID="636736505">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -6142,13 +6879,17 @@
 										<StateRef Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}"/>
 										<CustomState Name="" ID="{B1F1EE16-3CD5-447A-8668-A1C320FDF88B}" ShortID="941260599">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-60"/>
+												<Property Name="Volume" Type="Real64" Value="-28"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomeSpiritualRoom" ID="{93BAEDA8-D275-44BD-9905-F2A401EDBD37}"/>
-										<CustomState Name="" ID="{A41AE218-D1A5-4A8E-9618-5CB1FBBACE70}" ShortID="806042387"/>
+										<CustomState Name="" ID="{A41AE218-D1A5-4A8E-9618-5CB1FBBACE70}" ShortID="806042387">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-4"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
@@ -6175,6 +6916,11 @@
 						<Sound Name="Aura2_C_VocoderCarr_MONO" ID="{D421328F-DBBD-4612-A9DF-4A44A1A50D22}" ShortID="840523789">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -6212,13 +6958,17 @@
 										<StateRef Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}"/>
 										<CustomState Name="" ID="{45543366-9C14-4DC7-8CBF-E8729F6F0F87}" ShortID="871383740">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-40"/>
+												<Property Name="Volume" Type="Real64" Value="-38"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomeSpiritualRoom" ID="{93BAEDA8-D275-44BD-9905-F2A401EDBD37}"/>
-										<CustomState Name="" ID="{4FEC64D2-E41B-42F7-8D87-A9E3C5FB3D54}" ShortID="197799404"/>
+										<CustomState Name="" ID="{4FEC64D2-E41B-42F7-8D87-A9E3C5FB3D54}" ShortID="197799404">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-2"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
@@ -6245,6 +6995,11 @@
 						<Sound Name="Aura3_C-oktav_SGGuit_MONO" ID="{E8372BC5-A2C0-428E-A76B-161D1B9DEE89}" ShortID="1043394528">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -6273,10 +7028,6 @@
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
-										<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-										<StateGroupInfo Name="" ID="{84DE57D0-39D0-4664-9771-80E976D2BAD9}" ShortID="345983043"/>
-									</StateGroupInfo>
-									<StateGroupInfo>
 										<StateGroupRef Name="TomeAuraStates" ID="{2D2B7D6A-E6F6-4BC5-BF5E-168881C4C683}"/>
 										<StateGroupInfo Name="" ID="{A4E768C2-99EA-4B0B-8713-A9EEA0EF2D0F}" ShortID="216206448"/>
 									</StateGroupInfo>
@@ -6294,43 +7045,7 @@
 										<StateRef Name="TomeSpiritualRoom" ID="{93BAEDA8-D275-44BD-9905-F2A401EDBD37}"/>
 										<CustomState Name="" ID="{76163D06-1F2C-44F1-804B-9BA822F52AD8}" ShortID="479075795">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-40"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
-										<CustomState Name="" ID="{18BCEA99-6D15-493E-A218-A87FDD2BA9A6}" ShortID="236729610">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
-										<CustomState Name="" ID="{E04C96E4-2118-4ABB-A87F-32D4BAF542CC}" ShortID="806578532">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
-										<CustomState Name="" ID="{5BDE9B0D-FB1C-4F8E-9E47-63C035EFA905}" ShortID="840732298"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
-										<CustomState Name="" ID="{51F1CD7D-FB44-4F79-B676-8C58D343ECB5}" ShortID="531139865">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
-										<CustomState Name="" ID="{5BA87398-A4FF-493D-82CF-E42856421A11}" ShortID="252875731">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-73"/>
+												<Property Name="Volume" Type="Real64" Value="-31"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -6350,30 +7065,6 @@
 											</PropertyList>
 										</CustomState>
 									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
-										<CustomState Name="" ID="{937215E2-B61B-40BB-AF0C-25AE886D6923}" ShortID="112993482">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
-										<CustomState Name="" ID="{9A48D36D-7163-47EC-B1E8-9024B8F4D02F}" ShortID="520242981">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
-										<CustomState Name="" ID="{7386B23C-C5C8-411B-858A-BE0212801263}" ShortID="324130250">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
 								</CustomStateList>
 							</StateInfo>
 							<ActiveSourceList>
@@ -6383,6 +7074,11 @@
 						<Sound Name="Aura3_C-oktav_VocoderCarr_MONO" ID="{1C7800A6-6BCD-4ED6-87C5-E78F9CEAE50B}" ShortID="263272907">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -6411,10 +7107,6 @@
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
-										<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-										<StateGroupInfo Name="" ID="{1983F157-E9EC-4872-8B3C-17D8E2CBAB5B}" ShortID="628448281"/>
-									</StateGroupInfo>
-									<StateGroupInfo>
 										<StateGroupRef Name="TomeAuraStates" ID="{2D2B7D6A-E6F6-4BC5-BF5E-168881C4C683}"/>
 										<StateGroupInfo Name="" ID="{5DE2C371-56C7-4551-8BA4-A114A940B09B}" ShortID="196685837"/>
 									</StateGroupInfo>
@@ -6424,7 +7116,7 @@
 										<StateRef Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}"/>
 										<CustomState Name="" ID="{AEDFAD88-721D-4AE1-8E95-130DCEEF696F}" ShortID="909532459">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-50"/>
+												<Property Name="Volume" Type="Real64" Value="-40"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -6432,43 +7124,7 @@
 										<StateRef Name="TomeSpiritualRoom" ID="{93BAEDA8-D275-44BD-9905-F2A401EDBD37}"/>
 										<CustomState Name="" ID="{BE3E6E44-316F-44A5-8E64-5A3FE75252F2}" ShortID="976202989">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-40"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
-										<CustomState Name="" ID="{191BBE88-3EF7-49A3-A983-85EB49306AE9}" ShortID="776361167">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
-										<CustomState Name="" ID="{EED4DE21-3338-4BE1-90CD-EDA151DD3242}" ShortID="1003296565">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
-										<CustomState Name="" ID="{8AF72BF5-4CD9-4142-A83A-F2BA9E8FC92C}" ShortID="103564209"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
-										<CustomState Name="" ID="{60EDAAAF-ADC8-4834-9002-F13765F3FA01}" ShortID="413144638">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
-										<CustomState Name="" ID="{950142A5-96D7-4071-889C-38FEF98AD184}" ShortID="498204129">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-73"/>
+												<Property Name="Volume" Type="Real64" Value="-25"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -6488,30 +7144,6 @@
 											</PropertyList>
 										</CustomState>
 									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
-										<CustomState Name="" ID="{5664DFEE-4939-4672-B344-51AB42AB7C92}" ShortID="592140463">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
-										<CustomState Name="" ID="{597E5BF9-48D5-4014-BBC6-CCDF58C614AD}" ShortID="839428810">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
-										<CustomState Name="" ID="{ED00CF59-56BC-45C9-A5BD-25FFD2FDF4CC}" ShortID="1011029125">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
 								</CustomStateList>
 							</StateInfo>
 							<ActiveSourceList>
@@ -6520,12 +7152,12 @@
 						</Sound>
 						<Sound Name="Aura4_H_SGGuit_MONO" ID="{F9FC992B-2153-4626-9307-626A2569F447}" ShortID="440920228">
 							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>False</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -6551,18 +7183,60 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="TomeAuraStates" ID="{2D2B7D6A-E6F6-4BC5-BF5E-168881C4C683}"/>
+										<StateGroupInfo Name="" ID="{4A987400-6F74-4EE4-87B1-CC699A3804D1}" ShortID="426808713"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}"/>
+										<CustomState Name="" ID="{EB846DEE-F3E7-4524-A1F3-6643BAB1C281}" ShortID="259814908">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-20"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomeSpiritualRoom" ID="{93BAEDA8-D275-44BD-9905-F2A401EDBD37}"/>
+										<CustomState Name="" ID="{9B4273ED-8BA0-4527-892E-A1024E88FF0D}" ShortID="506568374">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
+										<CustomState Name="" ID="{D0E08D08-43D8-46E0-B08F-E462EBC04198}" ShortID="763909784">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{CC3F7E07-D1F4-4C50-93BC-0732C39AB196}"/>
+										<CustomState Name="" ID="{8DEA196A-D4A6-49B7-BAC2-D2CDD4483EFE}" ShortID="840377194">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="Aura4_H_SGGuit_MONO" ID="{FDD69028-5E24-4822-A053-0C9B983323F1}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Aura4_H_VocoderCarr_MONO" ID="{DCE6FA42-697B-472A-8860-B9BBDDD12D59}" ShortID="167465277">
 							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>False</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -6588,6 +7262,48 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="TomeAuraStates" ID="{2D2B7D6A-E6F6-4BC5-BF5E-168881C4C683}"/>
+										<StateGroupInfo Name="" ID="{A21506CE-5C07-4307-B263-BBD373D87423}" ShortID="634747323"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}"/>
+										<CustomState Name="" ID="{EA2047B5-EA96-4600-B093-8DE139D34BD0}" ShortID="906099392">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-25"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomeSpiritualRoom" ID="{93BAEDA8-D275-44BD-9905-F2A401EDBD37}"/>
+										<CustomState Name="" ID="{77322A0A-0932-4D77-820F-37BE246386C4}" ShortID="189732867">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
+										<CustomState Name="" ID="{8667B8E7-A80B-4058-8388-0F35A155B23D}" ShortID="781050205">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{CC3F7E07-D1F4-4C50-93BC-0732C39AB196}"/>
+										<CustomState Name="" ID="{4B2BEE09-F0FD-417A-A574-57401750D950}" ShortID="669892596">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="Aura4_H_VocoderCarr_MONO" ID="{751BDB3D-5DA1-4C6D-B6C4-1C4DA1ED9003}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -6600,6 +7316,11 @@
 									</ValueList>
 								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -6637,6 +7358,11 @@
 									</ValueList>
 								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -6666,225 +7392,13 @@
 								<ActiveSource Name="Aura5_H-oktav_VocoderCarr_MONO" ID="{AFFC5393-C40A-4559-AC97-9E0223210F81}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Aura6_AbDurComp_MONO" ID="{F98308E5-4B6F-4DD6-9AFF-90EF321EAEB9}" ShortID="975291580">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Aura6_AbDurComp_MONO" ID="{A73140AE-3F90-4AE8-8CF1-3FB8080460B4}">
-									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
-										<Property Name="CrossfadeShape" Type="int16" Value="0"/>
-										<Property Name="LoopBegin" Type="Real64" Value="1"/>
-										<Property Name="LoopEnd" Type="Real64" Value="64"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>4_1_TomeAura_MONO\Aura6_AbDurComp_MONO.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="564761307"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-										<StateGroupInfo Name="" ID="{555E9A24-A060-4530-853A-D52A9B12CF2D}" ShortID="254448487"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
-										<CustomState Name="" ID="{A3F4616F-4220-4D96-8914-2DAEDAAAE1A6}" ShortID="681467877">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
-										<CustomState Name="" ID="{71020CB7-4DBD-413D-9ADA-43672D3F3F0C}" ShortID="130246997">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
-										<CustomState Name="" ID="{F58D3FE6-5D7A-48FA-8BFF-7FA3713CAC6F}" ShortID="596736078">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
-										<CustomState Name="" ID="{18408A6A-772D-4D96-AA3F-5C0664BF088A}" ShortID="532185291">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-41"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
-										<CustomState Name="" ID="{48B5EC55-F500-4F25-8D46-DB97D78F09DC}" ShortID="1027079806">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
-										<CustomState Name="" ID="{BB613A79-48D4-4712-BD2B-776CA6112098}" ShortID="379409854">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
-										<CustomState Name="" ID="{8C8930C4-75BA-4252-BF65-74E55D565990}" ShortID="1061720860">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
-										<CustomState Name="" ID="{03DDDA4C-AD9E-40B7-8405-9FA1D3765448}" ShortID="627072588">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
-							<ActiveSourceList>
-								<ActiveSource Name="Aura6_AbDurComp_MONO" ID="{A73140AE-3F90-4AE8-8CF1-3FB8080460B4}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Aura6_AbDurComp_VocoderCarr_MONO" ID="{5B2BEDB4-9DD6-415C-9D9A-B30CE7EB5744}" ShortID="230804359">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Aura6_AbDurComp_VocoderCarr_MONO" ID="{EE3093AA-2FF3-4C9B-9766-27554C079A47}">
-									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
-										<Property Name="CrossfadeShape" Type="int16" Value="0"/>
-										<Property Name="LoopBegin" Type="Real64" Value="1"/>
-										<Property Name="LoopEnd" Type="Real64" Value="64"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>4_1_TomeAura_MONO\Aura6_AbDurComp_VocoderCarr_MONO.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="742240364"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-										<StateGroupInfo Name="" ID="{C45F83A4-4AF3-4C40-A20D-A69EB5D59683}" ShortID="1057871011"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
-										<CustomState Name="" ID="{44BB8E86-AAF2-4FB1-B327-E62DC09571B0}" ShortID="446453869">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
-										<CustomState Name="" ID="{090516A9-521F-453F-9BFA-7726C9234B7A}" ShortID="341324202">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
-										<CustomState Name="" ID="{880E280A-CE0A-464A-A9D4-34C3D1E83980}" ShortID="225147287">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
-										<CustomState Name="" ID="{FD95899D-4F49-431A-97AF-EB5096493263}" ShortID="609793080">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-5"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
-										<CustomState Name="" ID="{A7156C11-39AB-4F7D-9D91-116FE7474312}" ShortID="298329523">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
-										<CustomState Name="" ID="{A4BB0119-C06A-4DD0-9BA6-2C6C69EDE998}" ShortID="294038700">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
-										<CustomState Name="" ID="{D02739B0-C9FF-48E5-8802-2F4D8A1FD943}" ShortID="750083563">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
-										<CustomState Name="" ID="{EDCC132F-82A3-4823-98DB-CF43968E55C1}" ShortID="564100453">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
-							<ActiveSourceList>
-								<ActiveSource Name="Aura6_AbDurComp_VocoderCarr_MONO" ID="{EE3093AA-2FF3-4C9B-9766-27554C079A47}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 				</BlendContainer>
 				<BlendContainer Name="4_2_TomeAura_STEREO" ID="{E3D0C4A8-D001-47AD-9385-5A8930AA49DE}" ShortID="371559841">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -6900,6 +7414,11 @@
 						<Sound Name="Aura1_Ab5_SGGuit_STEREO" ID="{744E2804-3E73-4AAE-BEF8-EF69C0F93E42}" ShortID="170870263">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7002,6 +7521,11 @@
 						<Sound Name="Aura1_Ab5_VocoderCarr_STEREO" ID="{6A198CFF-C361-4964-8AD3-4B16FDD2C91B}" ShortID="693398388">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7104,6 +7628,11 @@
 						<Sound Name="Aura2_C_SGGuit_STEREO" ID="{87CB1E95-C371-46EC-8CF1-0ABB5CEEFF64}" ShortID="127388779">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7206,6 +7735,11 @@
 						<Sound Name="Aura2_C_VocoderCarr_STEREO" ID="{74CD938A-B9EB-4EFA-A518-577CB27FAF2B}" ShortID="11049952">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7308,6 +7842,11 @@
 						<Sound Name="Aura3_C-oktav_SGGuit_STEREO" ID="{B5E4C69E-E081-43A7-AF7C-B720648B7226}" ShortID="497259236">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7414,6 +7953,11 @@
 						<Sound Name="Aura3_C-oktav_VocoderCarr_STEREO" ID="{1EB1280F-EDB5-4510-A9AB-79655E3D22F6}" ShortID="725212826">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7520,6 +8064,11 @@
 						<Sound Name="Aura4_H_SGGuit_STEREO" ID="{44F229CD-7333-4630-9DCA-EB88D2D949D2}" ShortID="725495387">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7622,6 +8171,11 @@
 						<Sound Name="Aura4_H_VocoderCarr_STEREO" ID="{33C2A5AF-C13B-45A8-BC6C-1726262C6EA6}" ShortID="678518347">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7724,6 +8278,11 @@
 						<Sound Name="Aura5_H-oktav_SGGuit_STEREO" ID="{1CC0AC31-B614-4E3E-BF9A-996436AA4457}" ShortID="657945239">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7826,6 +8385,11 @@
 						<Sound Name="Aura5_H-oktav_VocoderCarr_STEREO" ID="{2F26AC8C-BC70-4BC3-8ABE-EA8BF75405AD}" ShortID="1058535615">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7928,6 +8492,12 @@
 						<Sound Name="Aura6_AbDurComp_STEREO" ID="{9C401A82-5F6B-4C80-A41C-9B10FA6809BE}" ShortID="523708293">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -7943,7 +8513,7 @@
 										<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
 										<Property Name="CrossfadeShape" Type="int16" Value="0"/>
 										<Property Name="LoopBegin" Type="Real64" Value="1"/>
-										<Property Name="LoopEnd" Type="Real64" Value="64"/>
+										<Property Name="LoopEnd" Type="Real64" Value="64.13068"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -7989,7 +8559,7 @@
 										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
 										<CustomState Name="" ID="{72AB72C1-45BD-45DA-AFE2-67FF73D09D85}" ShortID="173387085">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-40"/>
+												<Property Name="Volume" Type="Real64" Value="-15"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -8034,6 +8604,11 @@
 						<Sound Name="Aura6_AbDurComp_VocoderCarr_STEREO" ID="{58F3227C-A5AA-4392-8843-F027B2D363A1}" ShortID="477472887">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -8049,7 +8624,7 @@
 										<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
 										<Property Name="CrossfadeShape" Type="int16" Value="0"/>
 										<Property Name="LoopBegin" Type="Real64" Value="1"/>
-										<Property Name="LoopEnd" Type="Real64" Value="64"/>
+										<Property Name="LoopEnd" Type="Real64" Value="64.13068"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -8131,6 +8706,238 @@
 							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="Aura6_AbDurComp_VocoderCarr_STEREO" ID="{316F25A3-FD7E-4774-A8BB-E6168F74DC7E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aura6_AbDurComp_MONO" ID="{F98308E5-4B6F-4DD6-9AFF-90EF321EAEB9}" ShortID="975291580">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music Bus" ID="{25A3E203-2A4D-4AB6-8D0D-CDEB29754592}" WorkUnitID="{596F31C6-30D4-418B-9BA0-883D2FC54994}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aura6_AbDurComp_MONO" ID="{A73140AE-3F90-4AE8-8CF1-3FB8080460B4}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1850"/>
+										<Property Name="CrossfadeShape" Type="int16" Value="0"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1"/>
+										<Property Name="LoopEnd" Type="Real64" Value="64.13068"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>4_1_TomeAura_MONO\Aura6_AbDurComp_MONO.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="564761307"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
+										<StateGroupInfo Name="" ID="{555E9A24-A060-4530-853A-D52A9B12CF2D}" ShortID="254448487"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+										<CustomState Name="" ID="{A3F4616F-4220-4D96-8914-2DAEDAAAE1A6}" ShortID="681467877">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+										<CustomState Name="" ID="{71020CB7-4DBD-413D-9ADA-43672D3F3F0C}" ShortID="130246997">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+										<CustomState Name="" ID="{F58D3FE6-5D7A-48FA-8BFF-7FA3713CAC6F}" ShortID="596736078">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+										<CustomState Name="" ID="{18408A6A-772D-4D96-AA3F-5C0664BF088A}" ShortID="532185291">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+										<CustomState Name="" ID="{48B5EC55-F500-4F25-8D46-DB97D78F09DC}" ShortID="1027079806">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+										<CustomState Name="" ID="{BB613A79-48D4-4712-BD2B-776CA6112098}" ShortID="379409854">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+										<CustomState Name="" ID="{8C8930C4-75BA-4252-BF65-74E55D565990}" ShortID="1061720860">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+										<CustomState Name="" ID="{03DDDA4C-AD9E-40B7-8405-9FA1D3765448}" ShortID="627072588">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Aura6_AbDurComp_MONO" ID="{A73140AE-3F90-4AE8-8CF1-3FB8080460B4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Aura6_AbDurComp_VocoderCarr_MONO" ID="{5B2BEDB4-9DD6-415C-9D9A-B30CE7EB5744}" ShortID="230804359">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music Bus" ID="{25A3E203-2A4D-4AB6-8D0D-CDEB29754592}" WorkUnitID="{596F31C6-30D4-418B-9BA0-883D2FC54994}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aura6_AbDurComp_VocoderCarr_MONO" ID="{EE3093AA-2FF3-4C9B-9766-27554C079A47}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
+										<Property Name="CrossfadeShape" Type="int16" Value="0"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1"/>
+										<Property Name="LoopEnd" Type="Real64" Value="64.13068"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>4_1_TomeAura_MONO\Aura6_AbDurComp_VocoderCarr_MONO.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="742240364"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
+										<StateGroupInfo Name="" ID="{C45F83A4-4AF3-4C40-A20D-A69EB5D59683}" ShortID="1057871011"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+										<CustomState Name="" ID="{44BB8E86-AAF2-4FB1-B327-E62DC09571B0}" ShortID="446453869">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+										<CustomState Name="" ID="{090516A9-521F-453F-9BFA-7726C9234B7A}" ShortID="341324202">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+										<CustomState Name="" ID="{880E280A-CE0A-464A-A9D4-34C3D1E83980}" ShortID="225147287">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+										<CustomState Name="" ID="{FD95899D-4F49-431A-97AF-EB5096493263}" ShortID="609793080">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-2"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+										<CustomState Name="" ID="{A7156C11-39AB-4F7D-9D91-116FE7474312}" ShortID="298329523">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+										<CustomState Name="" ID="{A4BB0119-C06A-4DD0-9BA6-2C6C69EDE998}" ShortID="294038700">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+										<CustomState Name="" ID="{D02739B0-C9FF-48E5-8802-2F4D8A1FD943}" ShortID="750083563">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+										<CustomState Name="" ID="{EDCC132F-82A3-4823-98DB-CF43968E55C1}" ShortID="564100453">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Aura6_AbDurComp_VocoderCarr_MONO" ID="{EE3093AA-2FF3-4C9B-9766-27554C079A47}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -8263,6 +9070,13 @@
 					</StateInfo>
 				</MusicPlaylistContainer>
 				<Sound Name="2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream" ID="{8A823BAC-BD7D-4FAF-BFD0-3977D630DD46}" ShortID="994220108">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>

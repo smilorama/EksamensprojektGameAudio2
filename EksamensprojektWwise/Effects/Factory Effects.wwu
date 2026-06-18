@@ -125,7 +125,9 @@
 					<ChildrenList>
 						<Effect Name="One_Tap_One_Second" ID="{5B5883FA-85A1-45CA-8A52-9DBBCF3B0A03}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
-								<Property Name="DelayTime" Type="Real32" Value="1"/>
+								<Property Name="DelayTime" Type="Real32" Value="0.3"/>
+								<Property Name="Feedback" Type="Real32" Value="28"/>
+								<Property Name="WetDryMix" Type="Real32" Value="38"/>
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
@@ -151,7 +153,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>59.88024</YPos>
+																<YPos>11.97604</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -182,7 +184,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>40.71856</YPos>
+																<YPos>41.91617</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1609,7 +1611,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="TomePossessionModulation" ID="{A1F7AA47-3155-4100-912F-59C6D8F6CB1F}" WorkUnitID="{E732188B-92A3-4896-A159-048E86C7350E}"/>
+														<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -1624,13 +1626,13 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>50</XPos>
-																		<YPos>21.07038</YPos>
+																		<XPos>50.90294</XPos>
+																		<YPos>-68.40329</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>60</YPos>
+																		<YPos>-40.00002</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -1645,7 +1647,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="TomePossessionModulation" ID="{A1F7AA47-3155-4100-912F-59C6D8F6CB1F}" WorkUnitID="{E732188B-92A3-4896-A159-048E86C7350E}"/>
+														<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -1656,12 +1658,12 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>0</YPos>
+																		<YPos>-72.63158</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>56.36364</YPos>
+																		<YPos>12.15312</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -1676,7 +1678,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="TomePossessionModulation" ID="{A1F7AA47-3155-4100-912F-59C6D8F6CB1F}" WorkUnitID="{E732188B-92A3-4896-A159-048E86C7350E}"/>
+														<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -1687,12 +1689,12 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>1</YPos>
+																		<YPos>0.17462</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>7.00577</YPos>
+																		<YPos>1.13758</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -1707,7 +1709,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="TomePossessionModulation" ID="{A1F7AA47-3155-4100-912F-59C6D8F6CB1F}" WorkUnitID="{E732188B-92A3-4896-A159-048E86C7350E}"/>
+														<ObjectRef Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -1718,12 +1720,17 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>0</YPos>
+																		<YPos>-2</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
+																		<XPos>10.06712</XPos>
+																		<YPos>-1.26909</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>0.90909</YPos>
+																		<YPos>-0.77513</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>

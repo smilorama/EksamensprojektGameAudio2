@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="PsychedelicRTPCs Work Unit" ID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ScaleMushroom" ID="{AE3DF993-E330-4DD7-AC5F-0B4AE08524B9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RotateFloor" ID="{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Fighting Effects Work Unit" ID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="9"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="FightingCultist" ID="{DD9F19E2-5152-4F50-AE0B-0F504515AA36}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
