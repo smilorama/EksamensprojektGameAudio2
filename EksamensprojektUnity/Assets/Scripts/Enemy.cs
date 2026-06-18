@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -27,6 +28,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private AK.Wwise.Event _attackEvent;
     [SerializeField] private AK.Wwise.RTPC _aggroRTPC;
     [SerializeField] private float _aggroRTPCValue = 100f;
+    [SerializeField] private float _aggroRTPCFadeDuration = 1f;
     [SerializeField] private GameObject _audioEmitter;
 
     private NavMeshAgent _agent;
@@ -99,13 +101,13 @@ public class Enemy : MonoBehaviour
         {
             _player = hits[0].transform;
             if (_state != State.Aggro && _aggroRTPC.IsValid())
-                _aggroRTPC.SetValue(_audioEmitter != null ? _audioEmitter : gameObject, _aggroRTPCValue);
+                StartCoroutine(FadeAggroRTPC(0f, _aggroRTPCValue, _aggroRTPCFadeDuration));
             _state = State.Aggro;
         }
         else
         {
             if (_state == State.Aggro && _aggroRTPC.IsValid())
-                _aggroRTPC.SetValue(_audioEmitter != null ? _audioEmitter : gameObject, 0f);
+                StartCoroutine(FadeAggroRTPC(_aggroRTPCValue, 0f, _aggroRTPCFadeDuration));
             _player = null;
             _state = State.Idle;
             _animator.SetFloat("Vertical", 0f);
@@ -211,7 +213,7 @@ public class Enemy : MonoBehaviour
         _dead = true;
 
         if (_aggroRTPC.IsValid())
-            _aggroRTPC.SetValue(_audioEmitter != null ? _audioEmitter : gameObject, 0f);
+            StartCoroutine(FadeAggroRTPC(_aggroRTPCValue, 0f, _aggroRTPCFadeDuration));
 
         _agent.isStopped = true;
         _agent.enabled   = false;
@@ -238,6 +240,18 @@ public class Enemy : MonoBehaviour
     public void OnActionComplete()
     {
         _isPerformingAction = false;
+    }
+
+    private IEnumerator FadeAggroRTPC(float from, float to, float duration)
+    {
+        float t = 0f;
+        while (t < 1f)
+        {
+            t += Time.deltaTime / duration;
+            _aggroRTPC.SetGlobalValue(Mathf.Lerp(from, to, t));
+            yield return null;
+        }
+        _aggroRTPC.SetGlobalValue(to);
     }
 
 #if UNITY_EDITOR
