@@ -242,6 +242,9 @@
 								<Event Name="Play_Attack_Enemy_Miss" ID="{39901608-9180-48F4-9155-DAEED02B025B}">
 									<ChildrenList>
 										<Action Name="" ID="{397B40B1-B7AF-4B23-88E7-B0CBE0389C3F}" ShortID="438809493">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Swoosh" ID="{1DFDE4A9-596C-47D3-BA2B-7EF13E8C469E}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>

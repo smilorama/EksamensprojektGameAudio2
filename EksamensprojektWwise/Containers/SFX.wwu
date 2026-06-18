@@ -1033,8 +1033,16 @@
 																<Value>38</Value>
 															</ValueList>
 														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>38</Value>
+															</ValueList>
+														</Property>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-850</Value>
+															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{E9B096D7-5AD9-4119-B5B0-3DAC1605218B}">
@@ -2975,16 +2983,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Line1(3)" ID="{0DD1C62F-B5EB-4589-AB7F-94D855302E69}">
+												<AudioFileSource Name="Line1 - Line1 færdig" ID="{E5A71148-8EA7-46A8-B685-9D603692E127}">
 													<Language>SFX</Language>
-													<AudioFile>Line1(3).wav</AudioFile>
+													<AudioFile>Line1 - Line1 færdig.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="243726505"/>
+														<MediaID ID="491001604"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Line1(3)" ID="{0DD1C62F-B5EB-4589-AB7F-94D855302E69}" Platform="Linked"/>
+												<ActiveSource Name="Line1 - Line1 færdig" ID="{E5A71148-8EA7-46A8-B685-9D603692E127}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Line2" ID="{66A82793-C0ED-48FF-A18B-EC47F31F421C}" ShortID="982562322">
@@ -3000,16 +3008,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Line2" ID="{226B33F1-5B96-414F-B52E-A206FE1A7414}">
+												<AudioFileSource Name="Line2 - Line2 Færdig" ID="{34AEB22A-04EF-4650-A058-319B7F2AE5E5}">
 													<Language>SFX</Language>
-													<AudioFile>Line2.wav</AudioFile>
+													<AudioFile>Line2 - Line2 Færdig.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="720624411"/>
+														<MediaID ID="432152112"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Line2" ID="{226B33F1-5B96-414F-B52E-A206FE1A7414}" Platform="Linked"/>
+												<ActiveSource Name="Line2 - Line2 Færdig" ID="{34AEB22A-04EF-4650-A058-319B7F2AE5E5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Line3" ID="{908275A7-5E13-4F8B-A0D5-C2F959B49B58}" ShortID="336892119">
@@ -3025,16 +3033,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Line3" ID="{0DE3FFED-E501-409A-9A84-AC37DDB924D6}">
+												<AudioFileSource Name="Line3 - Line3 Færdig" ID="{4379144A-8821-4B1E-B1F6-CDDC0629446B}">
 													<Language>SFX</Language>
-													<AudioFile>Line3.wav</AudioFile>
+													<AudioFile>Line3 - Line3 Færdig.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="601180141"/>
+														<MediaID ID="670183538"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Line3" ID="{0DE3FFED-E501-409A-9A84-AC37DDB924D6}" Platform="Linked"/>
+												<ActiveSource Name="Line3 - Line3 Færdig" ID="{4379144A-8821-4B1E-B1F6-CDDC0629446B}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Why You" ID="{939D60DD-23AD-4188-ACB9-9C8FF48134A7}" ShortID="444290852">
@@ -3050,16 +3058,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Line4" ID="{C54C6E03-9BFD-4D82-89D1-742C0459DECB}">
+												<AudioFileSource Name="Line4 - Line5 Færdig" ID="{3FB8A860-3A40-4A8C-8489-DD1F83806E78}">
 													<Language>SFX</Language>
-													<AudioFile>Line4.wav</AudioFile>
+													<AudioFile>Line4 - Line5 Færdig.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="426489545"/>
+														<MediaID ID="501182517"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Line4" ID="{C54C6E03-9BFD-4D82-89D1-742C0459DECB}" Platform="Linked"/>
+												<ActiveSource Name="Line4 - Line5 Færdig" ID="{3FB8A860-3A40-4A8C-8489-DD1F83806E78}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Line5" ID="{53BF9D88-46FA-417D-A011-7D884C42D088}" ShortID="671239432">
@@ -3075,16 +3083,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Line5" ID="{FF1FD834-7B6D-4386-86AA-5245D8382B06}">
+												<AudioFileSource Name="Line6 - Line 6" ID="{F5C4337D-E3A5-49CC-B4D1-97FE5C2B7C6C}">
 													<Language>SFX</Language>
-													<AudioFile>Line5.wav</AudioFile>
+													<AudioFile>Line6 - Line 6.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="748052285"/>
+														<MediaID ID="185106183"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Line5" ID="{FF1FD834-7B6D-4386-86AA-5245D8382B06}" Platform="Linked"/>
+												<ActiveSource Name="Line6 - Line 6" ID="{F5C4337D-E3A5-49CC-B4D1-97FE5C2B7C6C}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Line6" ID="{57CD24C6-9704-4DAE-937B-0975E96C581C}" ShortID="856852548">
@@ -3100,16 +3108,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Line6" ID="{5B7D21AC-503A-4377-9BEE-10091AA923C2}">
+												<AudioFileSource Name="Line7 - Line 7 færdig(2)" ID="{05D3BDB6-ECB7-4882-A9E9-8E61C6662574}">
 													<Language>SFX</Language>
-													<AudioFile>Line6.wav</AudioFile>
+													<AudioFile>Line7 - Line 7 færdig(2).wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="93807721"/>
+														<MediaID ID="1002314244"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Line6" ID="{5B7D21AC-503A-4377-9BEE-10091AA923C2}" Platform="Linked"/>
+												<ActiveSource Name="Line7 - Line 7 færdig(2)" ID="{05D3BDB6-ECB7-4882-A9E9-8E61C6662574}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Goddes_Scream" ID="{85D2B713-442C-4B4A-96D0-22E304614D0F}" ShortID="476204272">
@@ -3125,16 +3133,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Goddes_Scream" ID="{427B5046-A778-4DCB-A760-3786DD60C1DE}">
+												<AudioFileSource Name="Line5(Scream) - Mixdown(86)" ID="{66067969-FDEF-4ADF-AB78-01A310BE5FF4}">
 													<Language>SFX</Language>
-													<AudioFile>Goddes_Scream.wav</AudioFile>
+													<AudioFile>Line5(Scream) - Mixdown(86).wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="883655461"/>
+														<MediaID ID="160173699"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Goddes_Scream" ID="{427B5046-A778-4DCB-A760-3786DD60C1DE}" Platform="Linked"/>
+												<ActiveSource Name="Line5(Scream) - Mixdown(86)" ID="{66067969-FDEF-4ADF-AB78-01A310BE5FF4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -3571,12 +3579,12 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>25</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -3639,7 +3647,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>75</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
