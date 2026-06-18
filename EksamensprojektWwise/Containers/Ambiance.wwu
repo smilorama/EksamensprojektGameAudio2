@@ -1561,7 +1561,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1678,7 +1678,7 @@
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>7</Value>
+														<Value>10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1702,6 +1702,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325" ID="{32A1A37D-A978-43F9-BBBF-58D110D4C627}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="7.6227"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325.wav</AudioFile>
 															<MediaIDList>
@@ -1724,6 +1729,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 1" ID="{5587EA32-4652-49C8-952F-C233825CCA51}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="10.16797"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 1.wav</AudioFile>
 															<MediaIDList>
@@ -1746,6 +1756,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 2" ID="{3FA115CC-A1BC-42A9-B71D-E62B078229BC}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="9.40468"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 2.wav</AudioFile>
 															<MediaIDList>
@@ -1768,6 +1783,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 3" ID="{3E365F51-0EFB-473D-BCAA-E97E4095DF67}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="8.09237"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 3.wav</AudioFile>
 															<MediaIDList>
@@ -1790,6 +1810,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327" ID="{EBBA6D42-1669-4425-A3EA-520D8B45C0D1}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="6.90083"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327.wav</AudioFile>
 															<MediaIDList>
@@ -1812,6 +1837,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 1" ID="{3FE6D209-1272-41D7-9F35-A85A6B86BA47}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="7.55147"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 1.wav</AudioFile>
 															<MediaIDList>
@@ -1834,6 +1864,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 2" ID="{63C4316F-B0C7-41ED-B03A-EB80AB640A7C}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="6.05844"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 2.wav</AudioFile>
 															<MediaIDList>
