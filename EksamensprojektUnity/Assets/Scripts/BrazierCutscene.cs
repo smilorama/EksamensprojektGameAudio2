@@ -38,6 +38,7 @@ public class BrazierCutscene : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private string _burnEvent = "";
     [SerializeField] private GameObject _audioEmitter;
+    
 
     private bool _triggered;
     private Material _mushroomMat;
@@ -125,6 +126,8 @@ public class BrazierCutscene : MonoBehaviour
         }
 
         _npcAnimator.Play("Burning", 1, 0f);
+
+        MusicManager.Instance.MusicBurnEvent();
 
         if (!string.IsNullOrEmpty(_burnEvent))
         {

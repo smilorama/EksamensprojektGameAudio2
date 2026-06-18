@@ -54,7 +54,10 @@ public class BrazierTomeOffer : MonoBehaviour
             _promptPanel.SetActive(inRange);
 
         if (inRange && Keyboard.current.fKey.wasPressedThisFrame)
+        {
+            MusicManager.Instance.SetStateTomeFire();
             StartCoroutine(BurnSequence());
+        }
     }
 
     private IEnumerator BurnSequence()
@@ -116,7 +119,6 @@ public class BrazierTomeOffer : MonoBehaviour
 
         MusicGameProgressManager.TomePickedUp = false;
         DialogueUI.Instance.SetFlag("Tome Burned");
-        MusicManager.Instance.SetStateTomeFire();
 
         if (_globalVolume != null && _preTomeProfile != null)
             _globalVolume.profile = _preTomeProfile;

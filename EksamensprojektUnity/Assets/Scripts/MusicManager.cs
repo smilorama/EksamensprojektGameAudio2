@@ -98,4 +98,9 @@ public class MusicManager : MonoBehaviour
     {
         AkUnitySoundEngine.SetState("EndGameMusicStates", "PlayerDeath");
     }
+
+    public void MusicBurnEvent()
+    {
+        AkUnitySoundEngine.PostEvent("Play_2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream", gameObject);
+    }
 }
