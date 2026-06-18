@@ -71,6 +71,11 @@ public class MusicManager : MonoBehaviour
         AkUnitySoundEngine.SetState("EndGameMusicStates", "TomePossession");
     }
 
+    public void SetStateTomeAuraNone()
+    {
+        AkUnitySoundEngine.SetState("TomeAuraStates", "None");
+    }
+
     public void SetStateTomeFire()
     {
         AkUnitySoundEngine.SetState("EndGameMusicStates", "TomeFire");

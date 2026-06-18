@@ -3064,7 +3064,7 @@ Transform:
   m_GameObject: {fileID: 127482183}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
-  m_LocalPosition: {x: 109.5, y: -4.724, z: -11.218002}
+  m_LocalPosition: {x: 109.5, y: -4.724, z: -11.949}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3109,7 +3109,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.28, y: 3.26, z: 3}
+  m_Size: {x: 3.28, y: 3.26, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &127664513
 PrefabInstance:
@@ -3549,6 +3549,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6855776238951996223, guid: cfbc1e971ac884116980417e04e1fdd3, type: 3}
   m_PrefabInstance: {fileID: 540360014}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &142896418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142896419}
+  - component: {fileID: 142896421}
+  - component: {fileID: 142896420}
+  m_Layer: 0
+  m_Name: Dungeon Room Stair Tunnel -> Cave Tunnel 02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &142896419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142896418}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
+  m_LocalPosition: {x: 107.95, y: -4.07, z: 0.108}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1078860363}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &142896420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142896418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cadfbfbc794c7490d93591c00fb78f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoomPortal
+  triggerList: 
+  useOtherObject: 0
+  initialState: 1
+  closePortalTriggerList: 
+  rooms:
+  - {fileID: 817063506}
+  - {fileID: 204139447}
+  isStatic: 0
+--- !u!65 &142896421
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142896418}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.77, y: 4.2, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &143939119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7913729350904929355, guid: cfbc1e971ac884116980417e04e1fdd3, type: 3}
@@ -4989,7 +5063,7 @@ Transform:
   m_GameObject: {fileID: 204139445}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.7071079}
-  m_LocalPosition: {x: 105.84, y: -2.75, z: -1.84}
+  m_LocalPosition: {x: 108.39, y: -2.75, z: -6.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5042,7 +5116,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 19.6, y: 7.1, z: 12.2}
+  m_Size: {x: 10.4, y: 7.1, z: 7.9}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &206566503 stripped
 GameObject:
@@ -15151,7 +15225,7 @@ GameObject:
   - component: {fileID: 623352563}
   - component: {fileID: 623352562}
   m_Layer: 0
-  m_Name: Dungeon Room -> Cave Tunnel 02
+  m_Name: Dungeon Room -> Dungeon Room Stair Tunnel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15190,7 +15264,7 @@ MonoBehaviour:
   closePortalTriggerList: 
   rooms:
   - {fileID: 497543037}
-  - {fileID: 204139447}
+  - {fileID: 817063506}
   isStatic: 0
 --- !u!65 &623352563
 BoxCollider:
@@ -18831,6 +18905,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1064458111539832515, guid: 9b1b08b09d252499989a305aee6732f7, type: 3}
   m_PrefabInstance: {fileID: 816355370}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &817063504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 817063505}
+  - component: {fileID: 817063507}
+  - component: {fileID: 817063506}
+  m_Layer: 0
+  m_Name: Dungeon Room Stair Tunnel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &817063505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817063504}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.7071079}
+  m_LocalPosition: {x: 108.39, y: -2.75, z: 4.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1555367464}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &817063506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817063504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c097f54aff044b79eddaa284bc58de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoom
+  triggerList: f7e1664c
+  useOtherObject: 0
+  priority: 0
+  reverbAuxBus:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c2d2a79eb50a94f0586004c3fbdaff65, type: 2}
+  reverbLevel: 1
+  transmissionLoss: 1
+  distanceBehavior: 0
+  roomToneEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8609e73dbf8d74916a4d3dd6d486daef, type: 2}
+  roomToneAuxSend: 0
+  isStatic: 0
+--- !u!65 &817063507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817063504}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.14, y: 7.1, z: 7.9}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &817253114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7784357873593146272, guid: 6e48b8198dc47422b93974b772203676, type: 3}
@@ -24166,6 +24322,7 @@ Transform:
   - {fileID: 1272812604}
   - {fileID: 596047694}
   - {fileID: 623352561}
+  - {fileID: 142896419}
   - {fileID: 127482184}
   - {fileID: 30494215}
   - {fileID: 916278782}
@@ -27297,6 +27454,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1229121384}
+  - component: {fileID: 1229121386}
+  - component: {fileID: 1229121385}
   m_Layer: 0
   m_Name: Torch (1)
   m_TagString: Untagged
@@ -27321,6 +27480,59 @@ Transform:
   - {fileID: 978609111}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 195, z: 0}
+--- !u!114 &1229121385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229121383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be93e494638654385bac2940f4e0df09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkEvent
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 57e4374610b05442e9da00b250eb04cc, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1229121386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229121383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18007ef524e524cd3ac60a70663703c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!4 &1234664616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4198414015114658821, guid: 6fad1fa430fb549279f20622627c4c2a, type: 3}
@@ -34677,6 +34889,7 @@ Transform:
   - {fileID: 497543036}
   - {fileID: 1465153343}
   - {fileID: 553399884}
+  - {fileID: 817063505}
   - {fileID: 204139446}
   - {fileID: 1798092309}
   - {fileID: 1041381183}
@@ -43913,6 +44126,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1973099834}
+  - component: {fileID: 1973099836}
+  - component: {fileID: 1973099835}
   m_Layer: 0
   m_Name: Torch
   m_TagString: Untagged
@@ -43937,6 +44152,59 @@ Transform:
   - {fileID: 3420311515852724608}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1973099835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973099833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be93e494638654385bac2940f4e0df09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkEvent
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 57e4374610b05442e9da00b250eb04cc, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1973099836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973099833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18007ef524e524cd3ac60a70663703c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!114 &1974779525
 MonoBehaviour:
   m_ObjectHideFlags: 0
