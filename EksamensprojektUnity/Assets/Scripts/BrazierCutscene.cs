@@ -104,6 +104,8 @@ public class BrazierCutscene : MonoBehaviour
         _npcAnimator.Play("Place Object", 1, 0f);
         yield return new WaitForSeconds(_tomeDelay);
 
+        MusicManager.Instance.SetStateTomeAuraNone();
+
         if (_tomeInHand != null) _tomeInHand.SetActive(false);
 
         yield return new WaitForSeconds(_igniteDelay);
