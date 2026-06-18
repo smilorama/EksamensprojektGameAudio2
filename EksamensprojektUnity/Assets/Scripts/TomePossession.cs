@@ -7,6 +7,6 @@ public class TomePossession : MonoBehaviour
         if (!MusicGameProgressManager.TomePickedUp) return;
         if (!other.CompareTag("Player")) return;
 
-        AkUnitySoundEngine.SetState("EndGameMusicStates", "TomePosession");
+        AkUnitySoundEngine.SetState("EndGameMusicStates", "TomePossession");
     }
 }
