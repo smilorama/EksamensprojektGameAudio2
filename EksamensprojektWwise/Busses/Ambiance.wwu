@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5E13ED34-370C-4A75-9299-E85FB4853301}" SchemaVersion="133">
+	<Busses>
+		<WorkUnit Name="Ambiance" ID="{5E13ED34-370C-4A75-9299-E85FB4853301}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Bus Name="Ambiance" ID="{94393881-D3EF-46CA-BD63-981AE7619E17}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
