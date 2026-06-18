@@ -9,18 +9,22 @@
 | `TerrainAudioMaterial` | Terrain | Sampler painted terrain layers til overflade type |
 | `Footsteps` | Player | Timer-baseret footstep lyd via Wwise; poster på separat emitter |
 | `EnemyFootsteps` | Enemy | Animation event-drevet footstep lyd via Wwise med raycast |
-| `Enemy` | Enemy | NavMesh, blend tree, aggro, angreb, death |
+| `Enemy` | Enemy | NavMesh, blend tree, aggro, angreb, death; sender RTPC ved aggro/de-aggro/death |
 | `EnemyResetOnEmpty` | Enemy Animator (Empty state) | Frigiver attack lock når animation er færdig |
-| `DamageZone` | Enemy hånd/våben child | Trigger collider der giver skade til Player |
+| `DamageZone` | Enemy hånd/våben child | Trigger collider der giver skade til Player; poster hit-lyd via Wwise Event |
 | `PlayerDamageZone` | WeaponHolder child | Trigger collider der giver skade til Enemy; aktiveres af WeaponBob; poster hit-lyd |
-| `EnemyHealthBar` | Enemy | Fast UI i højre hjørne med nameplate; vises ved aggro eller efter hit |
+| `EnemyHealthBar` | Enemy | Fast UI i højre hjørne med nameplate; vises ved aggro eller efter hit; Canvas sortingOrder 50 |
 | `WeaponBob` | WeaponHolder (child af Camera) | Svævende hånd: bob, sway, keyframe-baseret melee angreb, swing-lyd |
 | `GradientImage` | UI (runtime) | Horisontal/vertikal gradient MaskableGraphic til brug i UI |
-| `TomeInteract` | Tome pickup objekt | F-interact: bog stiger op, svæver, emission fader, level design swappes, voiceline spilles |
+| `TomeInteract` | Tome pickup objekt | F-interact: bog stiger op, svæver, emission fader, level design swappes, voiceline spilles; sætter TomeAuraStates+EndGameMusicStates TomePickup; starter 2D stereo aura |
+| `WaterfallAudio` | Waterfall objekter | Poster waterfall event i Start; sætter RTPC og skifter renderer farve til #4E0079 når WaterfallAudio.TomePickedUp = true |
+| `TomeAuraEmitter` | Cutscene NPC | Poster 3D aura loop i Start |
 | `Item` | Pickup objekt | Consumable (heal) eller EventTrigger ved pickup |
 | `DialogueUI` | Canvas | Singleton, viser tekst, flag-system |
-| `DialogueTrigger` | NPC | Trigger zone, viser linjer, left click for næste |
+| `DialogueTrigger` | NPC | Trigger zone, viser linjer, left click for næste; efter "Goddess Freed" dialogue: skifter Animator Controller, aktiverer hånd-objekt, enabler enemy script + healthbar, sætter tag til "Enemy", disabler sig selv |
 | `PlayerHealthBar` | Canvas | Slider der viser spillerens HP |
+| `PlayerDeathHandler` | Scene GameObject | OnDeath: disabler komponenter, tilføjer Rigidbody til player, fader til sort, viser You Died panel, restarter scene; fader fra sort ved scene load |
+| `TomeChoiceStateTrigger` | Trigger collider i scenen | Sætter EndGameMusicStates → TomeChoice når TomePickedUp = true |
 
 ---
 
@@ -99,7 +103,10 @@ DialogueUI
 | `WeaponBob` | — | Inspector: `_swingEvent`, `_hitEvent` |
 | `TomeInteract` | — | Inspector: `_voicelineEvent` |
 | `PlayerDamageZone` | — | Inspector: `_hitEvent` |
-| `Enemy` | — | Inspector: `_deathEvent` |
+| `DamageZone` | — | Inspector: `_hitEvent` (AK.Wwise.Event) |
+| `Enemy` | — | Inspector: `_deathEvent`, `_attackEvent` (AK.Wwise.Event), `_aggroRTPC` (AK.Wwise.RTPC) |
+| `WaterfallAudio` | — | Inspector: `_waterfallEvent` (AK.Wwise.Event), `_pickupRTPC` (AK.Wwise.RTPC), `_waterfallRenderers` |
+| `MusicManager` | — | `StartTome2DStereo()` → `Play_4_2_TomeAura_STEREO_2D`, `MusicBurnEvent()` → `2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream`, `SetStateTomeAuraNone()` → TomeAuraStates/None |
 
 ---
 
@@ -275,9 +282,10 @@ Styrer musikken efter tomen er picked up. Alle states sendes via `MusicManager`.
 
 | State | Sendt fra | Hvornår |
 |---|---|---|
-| `TomePickup` | `TomeInteract` | Spilleren interacter med tomen ([F] tryk) |
+| `TomePickup` | `TomeInteract` | Spilleren interacter med tomen ([F] tryk) — sendes til **både** TomeAuraStates og EndGameMusicStates |
 | `TomePossession` | `MusicManager.SetStateTomePossession()` | Hånden med tomen aktiveres tomen er nu i spillerens besiddelse |
-| `TomeFire` | `MusicManager.SetStateTomeFire()` | Tomen brændes i brazieren |
+| `TomeChoice` | `TomeChoiceStateTrigger` | Spilleren når et bestemt område med tomen |
+| `TomeFire` | `BrazierTomeOffer` (ved F-tryk) + `MusicManager.SetStateTomeFire()` | Sendes straks når spilleren trykker F for at brænde tomen |
 | `TomeOutside` | `MusicManager.SetStateTomeOutside()` | Spilleren forlader rummet **uden** at have brændt tomen dårlig ending |
 | `HappyEndning` | `MusicManager.SetStateTomeOutside()` | Spilleren forlader rummet **efter** at have brændt tomen god ending |
 | `PlayerDeath` | `MusicManager.SetStatePlayerDeath()` | Spillerens HP når 0 |
