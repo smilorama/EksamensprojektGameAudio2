@@ -1250,7 +1250,7 @@
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-2</Value>
+																<Value>-21</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1343,6 +1343,23 @@
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<EffectSlot Name="" ID="{5A5766B4-74DB-4463-9B2E-7F4EF7AB5DFC}" ShortID="925733949">
+																<ReferenceList>
+																	<Reference Name="Effect">
+																		<Custom>
+																			<Effect Name="Guitar Distortion (Custom)" ID="{F63BF81C-516D-4CE8-8FA6-ABDDE6F3D492}" ShortID="399366410" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																				<PropertyList>
+																					<Property Name="DistortionType" Type="int32" Value="1"/>
+																				</PropertyList>
+																			</Effect>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</ObjectList>
+													</ObjectLists>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FallToGround1_Cultist" ID="{85C9AEA8-7CD4-4C84-B614-A2FEAAC0F5DD}" ShortID="269802350">
 													<PropertyList>
@@ -1351,6 +1368,11 @@
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
 																<Value>21</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>30</Value>
 															</ValueList>
 														</Property>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
@@ -1443,7 +1465,7 @@
 														</Property>
 														<Property Name="Lowpass" Type="int16">
 															<ValueList>
-																<Value>46</Value>
+																<Value>33</Value>
 															</ValueList>
 														</Property>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
@@ -1546,6 +1568,23 @@
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<EffectSlot Name="" ID="{D81F57A8-8051-4F19-8486-94CB2D898C34}" ShortID="97590640">
+																<ReferenceList>
+																	<Reference Name="Effect">
+																		<Custom>
+																			<Effect Name="Guitar Distortion (Custom)" ID="{C0E39999-AC5E-4939-A35E-7FB524111F53}" ShortID="973362978" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																				<PropertyList>
+																					<Property Name="DistortionType" Type="int32" Value="1"/>
+																				</PropertyList>
+																			</Effect>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</ObjectList>
+													</ObjectLists>
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</Folder>
@@ -1573,7 +1612,6 @@
 										<RandomSequenceContainer Name="Idle_Cultist" ID="{D4246607-D8DF-4139-B95B-BA75999C0DA6}" ShortID="242310088">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.5"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
@@ -2999,7 +3037,7 @@
 												<ActiveSource Name="Line3" ID="{0DE3FFED-E501-409A-9A84-AC37DDB924D6}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Line4" ID="{939D60DD-23AD-4188-ACB9-9C8FF48134A7}" ShortID="444290852">
+										<Sound Name="Why You" ID="{939D60DD-23AD-4188-ACB9-9C8FF48134A7}" ShortID="444290852">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -3194,6 +3232,338 @@
 								<ActiveSource Name="Fire, Burning, Burning Wood, Bonfire, Crispy, Soft Intensity, Loop SND122313 2" ID="{BD2FF0E1-0DF4-4E5C-B945-9CC6F83DCF65}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Fire, Torch, Torch, Burning, Normal, Crackling SND63564 2" ID="{82A5613C-B58A-4A59-A987-0DBE62BD33E4}" ShortID="558141119">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>19</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>39</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-600</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fire, Torch, Torch, Burning, Normal, Crackling SND63564 2" ID="{90964870-600F-4342-9107-AB93B9921D39}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="6938.402"/>
+										<Property Name="LoopBegin" Type="Real64" Value="4.89972"/>
+										<Property Name="LoopEnd" Type="Real64" Value="31.79817"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Fire, Torch, Torch, Burning, Normal, Crackling SND63564 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="429804661"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fire, Torch, Torch, Burning, Normal, Crackling SND63564 2" ID="{90964870-600F-4342-9107-AB93B9921D39}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="Water+Thick" ID="{3B2DAB7A-3D74-460A-BD28-22CC6436725F}" ShortID="998300343">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="LiquidThick_Flow" ID="{769A3780-D447-44F1-8C6C-C3B0D7055F40}" ShortID="591644015">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>23</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>32</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="LiquidThick_Mono" ID="{CC7C0942-E80E-4DD6-A370-B895ECD6B806}" ShortID="344210927">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Liquid &amp; Mud, Misc, Liquid, Bubbling, Thick SND145072" ID="{E632025F-951C-4BF8-9FAE-2476FB0EBE8E}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="7351.094"/>
+														<Property Name="LoopBegin" Type="Real64" Value="5.18326"/>
+														<Property Name="LoopEnd" Type="Real64" Value="54.30082"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Liquid &amp; Mud, Misc, Liquid, Bubbling, Thick SND145072.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="732116225"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Liquid &amp; Mud, Misc, Liquid, Bubbling, Thick SND145072" ID="{E632025F-951C-4BF8-9FAE-2476FB0EBE8E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LiquidThick_Stereo" ID="{FA0FC3BD-A831-484D-AA9B-861BA3662828}" ShortID="768500150">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Liquid &amp; Mud, Misc, Liquid, Bubbling, Thick SND145072 1" ID="{E15556E2-3A0C-4F19-A0AD-54429585372A}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="8289.531"/>
+														<Property Name="LoopBegin" Type="Real64" Value="8.14512"/>
+														<Property Name="LoopEnd" Type="Real64" Value="53.97173"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Liquid &amp; Mud, Misc, Liquid, Bubbling, Thick SND145072 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="39294733"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Liquid &amp; Mud, Misc, Liquid, Bubbling, Thick SND145072 1" ID="{E15556E2-3A0C-4F19-A0AD-54429585372A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="Distance" ID="{B975FABE-955F-4888-AF86-A223C2272056}" ShortID="52671927">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="DistanceToFountain" ID="{35D4ACCB-AFDF-4CBD-89C0-323AD84FA668}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="LiquidThick_Mono" ID="{CC7C0942-E80E-4DD6-A370-B895ECD6B806}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>87.984746124031</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="LiquidThick_Stereo" ID="{FA0FC3BD-A831-484D-AA9B-861BA3662828}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>78.7599399224806</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Water_Flow" ID="{91ED9211-0194-4B82-BC66-FC7992E07476}" ShortID="977253252">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>33</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="WaterFlow_Mono" ID="{12E41F72-7882-42E8-91B6-C89CFC814EDB}" ShortID="436609778">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Water, Fountain, Metal Water Fountain, Continuous Flow (MS) SND122135 2" ID="{1302AE26-EEC9-4A08-8693-8AE85980EF0F}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="5656.453"/>
+														<Property Name="LoopBegin" Type="Real64" Value="3.60956"/>
+														<Property Name="LoopEnd" Type="Real64" Value="30.29105"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Water, Fountain, Metal Water Fountain, Continuous Flow (MS) SND122135 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="989437782"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Water, Fountain, Metal Water Fountain, Continuous Flow (MS) SND122135 2" ID="{1302AE26-EEC9-4A08-8693-8AE85980EF0F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WaterFlow_Stereo" ID="{AD425738-E52B-4CE0-B508-E0DD8EE0520B}" ShortID="783289056">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Water, Fountain, Metal Water Fountain, Continuous Flow (MS) SND122135 3" ID="{D2F25017-B5F7-4C27-95DE-509FD45A80A8}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="6351.918"/>
+														<Property Name="LoopBegin" Type="Real64" Value="4.18774"/>
+														<Property Name="LoopEnd" Type="Real64" Value="28.28953"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Water, Fountain, Metal Water Fountain, Continuous Flow (MS) SND122135 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="695489456"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Water, Fountain, Metal Water Fountain, Continuous Flow (MS) SND122135 3" ID="{D2F25017-B5F7-4C27-95DE-509FD45A80A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="Distance" ID="{9EDC1D8F-7E28-4EFB-8149-E3EF8A47288D}" ShortID="569426898">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="DistanceToFountain" ID="{35D4ACCB-AFDF-4CBD-89C0-323AD84FA668}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="WaterFlow_Mono" ID="{12E41F72-7882-42E8-91B6-C89CFC814EDB}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>90.3103275193799</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="WaterFlow_Stereo" ID="{AD425738-E52B-4CE0-B508-E0DD8EE0520B}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>72.9459864341085</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+							<BlendTrackList>
+								<BlendTrack Name="Mix" ID="{35B36C41-428E-45F8-AF64-A7D792C430C2}" ShortID="884929235">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="TomePickup" ID="{FF26C163-77B8-4A9F-90CD-678ADDF8C06D}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+										</Reference>
+									</ReferenceList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="Water_Flow" ID="{91ED9211-0194-4B82-BC66-FC7992E07476}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>58.1397848837209</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="LiquidThick_Flow" ID="{769A3780-D447-44F1-8C6C-C3B0D7055F40}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>46.9769941860465</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>100</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footsteps" ID="{91B278F9-7F3D-48B0-8425-C3FBC52187B1}" ShortID="673291798">

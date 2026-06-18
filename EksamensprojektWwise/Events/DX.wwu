@@ -70,7 +70,7 @@
 						<Action Name="" ID="{56763834-0EB9-4AFD-B23D-1D1CCA194E7B}" ShortID="614735572">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Line4" ID="{939D60DD-23AD-4188-ACB9-9C8FF48134A7}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+									<ObjectRef Name="Why You" ID="{939D60DD-23AD-4188-ACB9-9C8FF48134A7}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -78,7 +78,17 @@
 				</Event>
 				<Event Name="Play_Goddes_Scream" ID="{53F278CA-D0C7-4804-98B9-417541C5DB4D}">
 					<ChildrenList>
+						<Action Name="" ID="{DC8899CA-A47A-4269-9D27-74C500BA35A7}" ShortID="386135802">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Why You" ID="{939D60DD-23AD-4188-ACB9-9C8FF48134A7}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{BE5BF4A5-5B9F-431F-85F9-10C0814833D8}" ShortID="838695982">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Goddes_Scream" ID="{85D2B713-442C-4B4A-96D0-22E304614D0F}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>

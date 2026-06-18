@@ -331,6 +331,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Torch" ID="{6B5AE456-5589-4EB7-A5C8-680141F07EAD}">
+							<ChildrenList>
+								<Action Name="" ID="{2E5E282F-FA71-4ECE-9C67-7E54D9A67BA2}" ShortID="607134916">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fire, Torch, Torch, Burning, Normal, Crackling SND63564 2" ID="{82A5613C-B58A-4A59-A987-0DBE62BD33E4}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_LiquidThick_Flow" ID="{731BA514-E4D9-4EB4-9C4A-B6EE0B627B55}">
+							<ChildrenList>
+								<Action Name="" ID="{E8F8F157-6759-46C8-AE6D-27BDFF547D41}" ShortID="163475735">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LiquidThick_Flow" ID="{769A3780-D447-44F1-8C6C-C3B0D7055F40}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
