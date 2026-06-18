@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID ATTACK_HITNOTHING = 726189174U;
         static const AkUniqueID ATTACK_HITTERRAIN = 1224938770U;
         static const AkUniqueID DRINK_POTION = 2541729425U;
+        static const AkUniqueID DRUMSVOLUMEUPCAVESCALING = 1852094833U;
         static const AkUniqueID PLAY_2_5_TOMEFORESHADOWING_SYRETFEEDBACKREVERB_BURNINGSCREAM = 496144422U;
         static const AkUniqueID PLAY_2_GROTTE_OG_3_DUNGEON = 3932489860U;
         static const AkUniqueID PLAY_4_1_TOMEAURA_MONO_3D = 2432462949U;
@@ -121,7 +122,13 @@ namespace AK
     {
         static const AkUniqueID DISTANCETOCAVE = 487752188U;
         static const AkUniqueID DISTANCETOFOUNTAIN = 1162280475U;
+        static const AkUniqueID FIGHTINGCULTIST = 1013602733U;
+        static const AkUniqueID FIGHTINGWIZARD = 4002574858U;
         static const AkUniqueID PLAYERHEALTH_PARAM = 2337577746U;
+        static const AkUniqueID ROTATEFLOOR = 1507362382U;
+        static const AkUniqueID RTPC_MUSIC_DUCKING = 534515532U;
+        static const AkUniqueID SCALECAVETUNNEL = 2206156252U;
+        static const AkUniqueID SCALEMUSHROOM = 2901989227U;
         static const AkUniqueID SCALING_PARAMETER = 2551938112U;
         static const AkUniqueID TOMEPOSSESSIONDELAY = 3059304411U;
         static const AkUniqueID TOMEPOSSESSIONMODULATION = 614263488U;

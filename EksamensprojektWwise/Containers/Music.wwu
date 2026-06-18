@@ -9960,6 +9960,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music Bus" ID="{25A3E203-2A4D-4AB6-8D0D-CDEB29754592}" WorkUnitID="{596F31C6-30D4-418B-9BA0-883D2FC54994}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_basic" ID="{8FDA5C0C-3CD3-4556-A79A-93C11C7B243C}" WorkUnitID="{233A0E80-82EE-4E28-986E-504473515653}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream_COMP" ID="{2C9B5093-15CC-4366-ACFC-767CD237595E}">
