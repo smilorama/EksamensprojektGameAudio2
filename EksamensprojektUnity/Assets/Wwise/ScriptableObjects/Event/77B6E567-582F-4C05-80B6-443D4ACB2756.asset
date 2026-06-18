@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0719a08c641a74099be74c1fce563f02, type: 3}
+  m_Name: 77B6E567-582F-4C05-80B6-443D4ACB2756
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
+  objectName: Play_Water_Thick
+  id: 3342312129
+  guid: 77B6E567-582F-4C05-80B6-443D4ACB2756
+  IsInUserDefinedSoundBank: 1
