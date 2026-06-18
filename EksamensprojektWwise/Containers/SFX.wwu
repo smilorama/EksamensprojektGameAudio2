@@ -17,6 +17,8 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Glass" ID="{C08C0D86-39AB-4238-B85A-6CC4E8143036}" ShortID="787390525">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-7</Value>
@@ -125,6 +127,7 @@
 								<RandomSequenceContainer Name="Liquid" ID="{A85669CB-EB51-4312-AADA-37224A824664}" ShortID="329804548">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 									</PropertyList>
@@ -217,6 +220,8 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Refreshed" ID="{AC881A77-B716-4A81-9C38-581F0678DFDF}" ShortID="795865353">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
 												<Value>8</Value>
@@ -273,6 +278,8 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Slurp" ID="{BC8911B7-5484-467F-BE0A-852738B2C6C2}" ShortID="160411074">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>37</Value>
@@ -341,6 +348,10 @@
 								<Folder Name="Tome" ID="{41966FE9-A642-4CAA-839E-F784C76AF90A}" ShortID="55752510">
 									<ChildrenList>
 										<Sound Name="Pickup_Tome" ID="{181C7C2E-5236-44DA-BEB0-9AF997B96924}" ShortID="779507005">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -689,7 +700,7 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Swoosh" ID="{45669C66-8B37-4F34-B88E-5108885908CE}" ShortID="354051291">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -889,6 +900,7 @@
 												<RandomSequenceContainer Name="Attack_Cultist" ID="{20CACA59-F0D2-4AD6-BA2D-C0354E0D2182}" ShortID="692624172">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 														<Property Name="Lowpass" Type="int16">
 															<ValueList>
 																<Value>35</Value>
@@ -1042,6 +1054,7 @@
 												<RandomSequenceContainer Name="Swoosh" ID="{1DFDE4A9-596C-47D3-BA2B-7EF13E8C469E}" ShortID="670131496">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
 																<Value>38</Value>
@@ -1598,6 +1611,7 @@
 												<RandomSequenceContainer Name="TakeDamage_Cultist" ID="{36861591-22C9-4134-B003-8551D53671AB}" ShortID="615489986">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
@@ -1874,6 +1888,10 @@
 								<Folder Name="Health" ID="{2B990246-A296-40C4-921B-E48E8FF680EB}" ShortID="920919450">
 									<ChildrenList>
 										<RandomSequenceContainer Name="Healing" ID="{A86A4035-B24E-4844-96D9-2BD999AA7085}" ShortID="963068046">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1884,6 +1902,10 @@
 											</ReferenceList>
 										</RandomSequenceContainer>
 										<BlendContainer Name="LowHealth" ID="{F6755B30-5FFC-40BE-BAD4-E409FFFC232E}" ShortID="1009168051">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -2176,8 +2198,8 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="TakeDamage_Player" ID="{D40AC92C-C7D2-4265-9EC0-D0F5AF3916E1}" ShortID="414339971">
 											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
@@ -2699,9 +2721,14 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Death_Player" ID="{D9081C31-235B-4C18-A91A-53711D8C8AA6}" ShortID="154747110">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="1m" ID="{B51A8A9E-2E7A-4D55-A731-568E13AAE0AB}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 												</Reference>
@@ -4098,6 +4125,7 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.25"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
