@@ -12233,6 +12233,66 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52804c355034a4c80975d88deda31f89, type: 3}
+--- !u!1001 &507998571
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 96.004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.719
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -49.58
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_Name
+      value: WaterForFountain
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1016845396}
+  m_SourcePrefab: {fileID: 100100000, guid: fca19fffd098a488489a59d95a17f776, type: 3}
 --- !u!1001 &509346840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18876,6 +18936,7 @@ GameObject:
   - component: {fileID: 869111833}
   - component: {fileID: 869111832}
   - component: {fileID: 869111831}
+  - component: {fileID: 869111835}
   m_Layer: 0
   m_Name: LowPoly_Tomedelic_WaterFall (1)
   m_TagString: Untagged
@@ -18896,7 +18957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScrollingTexture
   _scrollDirection: {x: 0, y: -1}
-  _speed: 0.8
+  _speed: 1
 --- !u!23 &869111832
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18922,7 +18983,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 946aede7c84c74fd6ae9d9f4fca4eca1, type: 2}
+  - {fileID: 2100000, guid: 5782e1c3af1084c7e8151bafd05d2b86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18969,6 +19030,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
+--- !u!114 &869111835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869111830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714fa65770a44334b874a4ce1adac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceToObjectParameter
+  _rtpcName: TomePickup
+  _maxDistance: 6
 --- !u!4 &869916231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1064458111539832515, guid: 9b1b08b09d252499989a305aee6732f7, type: 3}
@@ -22055,6 +22130,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TerrainAudioMaterial
   layerToMaterial: 02000000000000000100000001000000
   fallback: 0
+--- !u!1 &1016845395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+  m_PrefabInstance: {fileID: 507998571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1016845396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016845395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57be1ffdc7c9441e0a8eb7cd1de51522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollingTexture
+  _scrollDirection: {x: 0, y: 1}
+  _speed: 0.1
 --- !u!1001 &1017154255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27611,6 +27705,66 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b1b08b09d252499989a305aee6732f7, type: 3}
+--- !u!1001 &1284457746
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 96.00399
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.718999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -38.338
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00000037997955
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000033101992
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      propertyPath: m_Name
+      value: WaterForFountain (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1856111869}
+  m_SourcePrefab: {fileID: 100100000, guid: fca19fffd098a488489a59d95a17f776, type: 3}
 --- !u!1001 &1289632407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40033,6 +40187,25 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b1b08b09d252499989a305aee6732f7, type: 3}
+--- !u!1 &1856111868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fca19fffd098a488489a59d95a17f776, type: 3}
+  m_PrefabInstance: {fileID: 1284457746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1856111869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856111868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57be1ffdc7c9441e0a8eb7cd1de51522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollingTexture
+  _scrollDirection: {x: 0, y: 1}
+  _speed: 0.1
 --- !u!4 &1857646816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1064458111539832515, guid: 9b1b08b09d252499989a305aee6732f7, type: 3}
@@ -51125,6 +51298,7 @@ GameObject:
   - component: {fileID: 8471265261779425809}
   - component: {fileID: 5938855474138509019}
   - component: {fileID: 8471265261779425810}
+  - component: {fileID: 8471265261779425811}
   m_Layer: 0
   m_Name: LowPoly_Tomedelic_WaterFall
   m_TagString: Untagged
@@ -51649,7 +51823,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 946aede7c84c74fd6ae9d9f4fca4eca1, type: 2}
+  - {fileID: 2100000, guid: 5782e1c3af1084c7e8151bafd05d2b86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -53570,7 +53744,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScrollingTexture
   _scrollDirection: {x: 0, y: -1}
-  _speed: 0.8
+  _speed: 1
+--- !u!114 &8471265261779425811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5290588160286740238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714fa65770a44334b874a4ce1adac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceToObjectParameter
+  _rtpcName: TomePickup
+  _maxDistance: 6
 --- !u!33 &8482381506626118910
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -54202,3 +54390,5 @@ SceneRoots:
   - {fileID: 543450651992978406}
   - {fileID: 4764845008282391988}
   - {fileID: 869111834}
+  - {fileID: 507998571}
+  - {fileID: 1284457746}
