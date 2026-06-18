@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DAC0E132-6A2F-4969-BCA6-568CCA67ED82}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="DX" ID="{DAC0E132-6A2F-4969-BCA6-568CCA67ED82}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Goddess" ID="{7709A949-C20B-46A5-9B66-09C691402267}" ShortID="908870582">
+					<ChildrenList>
+						<Folder Name="Voicelines" ID="{F2E9D4B0-9012-419D-A647-6F92DEC76423}" ShortID="235676658">
+							<ChildrenList>
+								<Sound Name="Line1" ID="{08FE5F7A-8D79-435A-ABED-F5258288276D}" ShortID="451067863">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="DX" ID="{3C72F64F-012E-480D-B31A-AFD505D461BD}" WorkUnitID="{F852D459-9DA7-46D9-A938-C5861B663BCC}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_basic" ID="{8FDA5C0C-3CD3-4556-A79A-93C11C7B243C}" WorkUnitID="{233A0E80-82EE-4E28-986E-504473515653}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Line1 - Line1 færdig" ID="{E5A71148-8EA7-46A8-B685-9D603692E127}">
+											<Language>SFX</Language>
+											<AudioFile>Line1 - Line1 færdig.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="491001604"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Line1 - Line1 færdig" ID="{E5A71148-8EA7-46A8-B685-9D603692E127}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Line2" ID="{66A82793-C0ED-48FF-A18B-EC47F31F421C}" ShortID="982562322">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="DX" ID="{3C72F64F-012E-480D-B31A-AFD505D461BD}" WorkUnitID="{F852D459-9DA7-46D9-A938-C5861B663BCC}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_basic" ID="{8FDA5C0C-3CD3-4556-A79A-93C11C7B243C}" WorkUnitID="{233A0E80-82EE-4E28-986E-504473515653}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Line2 - Line2 Færdig" ID="{34AEB22A-04EF-4650-A058-319B7F2AE5E5}">
+											<Language>SFX</Language>
+											<AudioFile>Line2 - Line2 Færdig.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="432152112"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Line2 - Line2 Færdig" ID="{34AEB22A-04EF-4650-A058-319B7F2AE5E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Line3" ID="{908275A7-5E13-4F8B-A0D5-C2F959B49B58}" ShortID="336892119">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="DX" ID="{3C72F64F-012E-480D-B31A-AFD505D461BD}" WorkUnitID="{F852D459-9DA7-46D9-A938-C5861B663BCC}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_basic" ID="{8FDA5C0C-3CD3-4556-A79A-93C11C7B243C}" WorkUnitID="{233A0E80-82EE-4E28-986E-504473515653}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Line3 - Line3 Færdig" ID="{4379144A-8821-4B1E-B1F6-CDDC0629446B}">
+											<Language>SFX</Language>
+											<AudioFile>Line3 - Line3 Færdig.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="670183538"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Line3 - Line3 Færdig" ID="{4379144A-8821-4B1E-B1F6-CDDC0629446B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Why You" ID="{939D60DD-23AD-4188-ACB9-9C8FF48134A7}" ShortID="444290852">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="DX" ID="{3C72F64F-012E-480D-B31A-AFD505D461BD}" WorkUnitID="{F852D459-9DA7-46D9-A938-C5861B663BCC}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_basic" ID="{8FDA5C0C-3CD3-4556-A79A-93C11C7B243C}" WorkUnitID="{233A0E80-82EE-4E28-986E-504473515653}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Line4 - Line5 Færdig" ID="{3FB8A860-3A40-4A8C-8489-DD1F83806E78}">
+											<Language>SFX</Language>
+											<AudioFile>Line4 - Line5 Færdig.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="501182517"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Line4 - Line5 Færdig" ID="{3FB8A860-3A40-4A8C-8489-DD1F83806E78}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Line5" ID="{53BF9D88-46FA-417D-A011-7D884C42D088}" ShortID="671239432">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="DX" ID="{3C72F64F-012E-480D-B31A-AFD505D461BD}" WorkUnitID="{F852D459-9DA7-46D9-A938-C5861B663BCC}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_basic" ID="{8FDA5C0C-3CD3-4556-A79A-93C11C7B243C}" WorkUnitID="{233A0E80-82EE-4E28-986E-504473515653}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Line6 - Line 6" ID="{F5C4337D-E3A5-49CC-B4D1-97FE5C2B7C6C}">
+											<Language>SFX</Language>
+											<AudioFile>Line6 - Line 6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="185106183"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Line6 - Line 6" ID="{F5C4337D-E3A5-49CC-B4D1-97FE5C2B7C6C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Line6" ID="{57CD24C6-9704-4DAE-937B-0975E96C581C}" ShortID="856852548">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="DX" ID="{3C72F64F-012E-480D-B31A-AFD505D461BD}" WorkUnitID="{F852D459-9DA7-46D9-A938-C5861B663BCC}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_basic" ID="{8FDA5C0C-3CD3-4556-A79A-93C11C7B243C}" WorkUnitID="{233A0E80-82EE-4E28-986E-504473515653}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Line7 - Line 7 færdig(2)" ID="{05D3BDB6-ECB7-4882-A9E9-8E61C6662574}">
+											<Language>SFX</Language>
+											<AudioFile>Line7 - Line 7 færdig(2).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1002314244"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Line7 - Line 7 færdig(2)" ID="{05D3BDB6-ECB7-4882-A9E9-8E61C6662574}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Goddes_Scream" ID="{85D2B713-442C-4B4A-96D0-22E304614D0F}" ShortID="476204272">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="DX" ID="{3C72F64F-012E-480D-B31A-AFD505D461BD}" WorkUnitID="{F852D459-9DA7-46D9-A938-C5861B663BCC}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ParkeringRev_007_Klap5" ID="{EB63EECC-E99E-4021-855B-5F7FE0DB6B52}" WorkUnitID="{233A0E80-82EE-4E28-986E-504473515653}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Line5(Scream) - Mixdown(86)" ID="{66067969-FDEF-4ADF-AB78-01A310BE5FF4}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.18625"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Line5(Scream) - Mixdown(86).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="160173699"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Line5(Scream) - Mixdown(86)" ID="{66067969-FDEF-4ADF-AB78-01A310BE5FF4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
