@@ -163,6 +163,7 @@ public class TomeInteract : MonoBehaviour
         yield return new WaitForSeconds(_handActivateDelay);
         if (_leftHandWithTome != null) _leftHandWithTome.SetActive(true);
         MusicManager.Instance.SetStateTomePossession();
+        MusicManager.Instance.SetStateTomeAuraNone();
 
         gameObject.SetActive(false);
     }
