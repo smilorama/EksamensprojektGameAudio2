@@ -44,7 +44,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="5_6_7_EndGameMusicSwitchContainer" ID="{A2EE1626-CEBF-48E8-8084-4F3E3312B07B}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									<ObjectRef Name="5_6_EndGameMusicSwitchContainer" ID="{A2EE1626-CEBF-48E8-8084-4F3E3312B07B}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -54,7 +54,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist_8BARGAMMEL" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist" ID="{FE8C9CD6-0F81-4A61-B70D-69B11D5522F5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -96,6 +96,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist_8BARGAMMEL" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_7_HappyEnding_Playlist" ID="{CE227BB7-CD03-42C2-9024-8A292630FD74}">
+					<ChildrenList>
+						<Action Name="" ID="{9C8A99F3-0C09-463B-A178-7574A7D72F4D}" ShortID="443464381">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="7_HappyEnding_Playlist" ID="{9831C157-921E-4602-8B0F-F8CE82A16555}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
