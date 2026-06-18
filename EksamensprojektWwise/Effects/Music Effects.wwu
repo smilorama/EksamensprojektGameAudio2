@@ -651,7 +651,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>800</YPos>
+																<YPos>500</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -689,6 +689,145 @@
 															<Point>
 																<XPos>100</XPos>
 																<YPos>1200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="Delay0_4sec_ScaleMushroom" ID="{704B2E89-DB01-47EE-8B5A-D2F9B067FE6D}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.4"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{0CB41857-6120-48BA-9584-C43A9C8A18CC}" ShortID="967422660">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetDryMix"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleMushroom" ID="{AE3DF993-E330-4DD7-AC5F-0B4AE08524B9}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{11F6B439-899C-46C9-A57E-D06CB112E7CC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-2.39522</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{F72D15AA-83C2-4372-912F-A2653163A307}" ShortID="638874409">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Feedback"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleMushroom" ID="{AE3DF993-E330-4DD7-AC5F-0B4AE08524B9}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B94562B9-1A02-49A0-95EE-AF6ABFD9FC99}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>41.91617</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="GainDown2db_LFEDown6db_ScaleMushroom" ID="{67A2C828-38EF-4199-B1F7-197F62D31262}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{C3A9260A-28EF-4CB5-B521-BA51200F62BE}" ShortID="932776069">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="FullBandGain"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleMushroom" ID="{AE3DF993-E330-4DD7-AC5F-0B4AE08524B9}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{CAE8C974-5A07-41E7-A215-AC4892DE612A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-2</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{25B43A07-1048-427C-9549-C6BA20CA1BCA}" ShortID="768989416">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="LFEGain"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleMushroom" ID="{AE3DF993-E330-4DD7-AC5F-0B4AE08524B9}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E0F8F015-B901-4ADC-B6C4-C979559474A0}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-6</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
