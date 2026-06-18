@@ -1392,6 +1392,16 @@
 						</Effect>
 					</ChildrenList>
 				</Folder>
+				<Effect Name="Music_Ducking" ID="{D2D0EEA7-13ED-4147-B745-4FFB6787DB0C}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.75"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="GameParameter">
+							<ObjectRef Name="RTPC_Music_Ducking" ID="{E62BEB49-F50B-492C-B2B7-2C6EDBC0B055}" WorkUnitID="{59D72B9F-E2FB-441C-A53E-F253ACC78708}"/>
+						</Reference>
+					</ReferenceList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

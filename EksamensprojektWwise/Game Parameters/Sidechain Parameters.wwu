@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{59D72B9F-E2FB-441C-A53E-F253ACC78708}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Sidechain Parameters" ID="{59D72B9F-E2FB-441C-A53E-F253ACC78708}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_Music_Ducking" ID="{E62BEB49-F50B-492C-B2B7-2C6EDBC0B055}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
