@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
@@ -49,7 +48,7 @@ public class TomeLeaveRoom : MonoBehaviour
             MusicGameProgressManager.TomePickedUp = false;
             DialogueUI.Instance.SetFlag("Goddess Freed");
             MusicManager.Instance.SetStateTomeOutside(DialogueUI.Instance != null && DialogueUI.Instance.HasFlag("Tome Burned"));
-            StartCoroutine(FadeMusicVolume());
+            AkUnitySoundEngine.PostEvent("Delayed_VolumeDown_TomeAura", gameObject);
 
             if (!string.IsNullOrEmpty(_dialogueSoundEvent) && (DialogueUI.Instance == null || !DialogueUI.Instance.HasFlag("Tome Burned")))
             {
@@ -59,15 +58,5 @@ public class TomeLeaveRoom : MonoBehaviour
         }
     }
 
-    private IEnumerator FadeMusicVolume()
-    {
-        float t = 0f;
-        while (t < 1f)
-        {
-            t += Time.deltaTime / 4f;
-            AkUnitySoundEngine.SetRTPCValue("MusicVolume", Mathf.Lerp(0f, 100f, t));
-            yield return null;
-        }
-        AkUnitySoundEngine.SetRTPCValue("MusicVolume", 100f);
-    }
+
 }
