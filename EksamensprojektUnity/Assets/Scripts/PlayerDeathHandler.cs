@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerDeathHandler : MonoBehaviour
 {
@@ -77,6 +76,6 @@ public class PlayerDeathHandler : MonoBehaviour
     private IEnumerator RestartAfterDelay()
     {
         yield return new WaitForSeconds(_restartDelay);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Application.Quit();
     }
 }
