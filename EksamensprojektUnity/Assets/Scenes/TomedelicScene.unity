@@ -1583,7 +1583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 58259310}
   m_Layer: 0
-  m_Name: Dungeon
+  m_Name: Torches
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27701,7 +27701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1229121384
 Transform:
   m_ObjectHideFlags: 0
@@ -37747,7 +37747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1657089335}
   m_Layer: 0
-  m_Name: Temple
+  m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44497,7 +44497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1973099834
 Transform:
   m_ObjectHideFlags: 0
