@@ -590,7 +590,8 @@
 							<PropertyList>
 								<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
 								<Property Name="HFRatio" Type="Real32" Value="3"/>
-								<Property Name="WetLevel" Type="Real32" Value="-20"/>
+								<Property Name="PreDelay" Type="Real32" Value="0.05"/>
+								<Property Name="WetLevel" Type="Real32" Value="-12"/>
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
@@ -600,7 +601,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -616,7 +617,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-6.96656</YPos>
+																<YPos>-4.55183</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -631,7 +632,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -646,13 +647,13 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>20.14389</XPos>
-																<YPos>-15.72911</YPos>
+																<XPos>19.99441</XPos>
+																<YPos>-21.97319</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-11.20302</YPos>
+																<YPos>-16.16162</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -667,7 +668,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -683,7 +684,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>3.73329</YPos>
+																<YPos>5.09676</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -957,10 +958,429 @@
 				</Folder>
 				<Folder Name="FightingCultist_Effects" ID="{12767CE3-A178-457E-A94A-9189BB6945B0}" ShortID="73934271">
 					<ChildrenList>
-						<Effect Name="FightingCultist" ID="{61A81436-2CD2-4FB2-B9D7-AF2C247FD0DA}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3"/>
+						<Effect Name="Distortion_Music_FightingCultist" ID="{61A81436-2CD2-4FB2-B9D7-AF2C247FD0DA}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+							<PropertyList>
+								<Property Name="Rectification" Type="Real32" Value="70"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{1C2A1923-D48A-4AAA-8973-02A20DF5EC69}" ShortID="59530104">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="DistortionDrive"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingCultist" ID="{DD9F19E2-5152-4F50-AE0B-0F504515AA36}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{9C9153AE-4A05-4E6E-A116-0EEB5A58DEBE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-78.4431</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{F7565C83-5D4C-46A1-95C6-45B2B0C3309D}" ShortID="940749604">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Rectification"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingCultist" ID="{DD9F19E2-5152-4F50-AE0B-0F504515AA36}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E78432C8-F1D1-4B59-9EDC-776589AF3D7D}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>13.17365</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{3078DD65-5C9D-4753-8B81-0FAED206589A}" ShortID="75984587">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetDryMix"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{D77583DD-E974-4306-8A4F-DF574DB54A6D}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>30.9795</XPos>
+																<YPos>-31.71198</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>29.94012</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{C8ABD936-45B8-4D6C-8D2E-2969E1BEECC0}" ShortID="733659917">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{3FA66944-5CCA-467B-BA5F-D86C5056735F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.21015</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="Distortion_Aura_FightingCultist_01" ID="{69D86814-9B19-4C6F-90C4-782328450E66}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+							<PropertyList>
+								<Property Name="Rectification" Type="Real32" Value="70"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{821DCDF5-2168-4B49-A42B-22387F9B40E9}" ShortID="1072000524">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="DistortionDrive"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingCultist" ID="{DD9F19E2-5152-4F50-AE0B-0F504515AA36}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{C468915E-DDD7-4CEB-8B05-E51569060688}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-76.04789</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="FightingWizard_Effects" ID="{D249AC16-0866-4454-A9BA-EC569D22986C}" ShortID="524330894"/>
+				<Folder Name="FightingWizard_Effects" ID="{D249AC16-0866-4454-A9BA-EC569D22986C}" ShortID="524330894">
+					<ChildrenList>
+						<Effect Name="Distortion_Aura_FightingWizard" ID="{A123EAA6-CBA7-4C89-9CB6-78472CAB18B7}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{9E834B33-9023-47FB-9342-45685C0AAADF}" ShortID="758429640">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Rectification"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{F88EF484-A7D0-4AD8-A9B9-57DDBA221144}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>95.80837</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{2C8FEE91-19EC-4122-BA68-4B2C2D930F97}" ShortID="553805468">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="DistortionDrive"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{A6B63C45-D741-45C7-B900-9BDD2574BD81}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>10.17964</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{E4399AE4-6F41-4771-9CD6-F07F972D2483}" ShortID="827270669">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetDryMix"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{A58F8EAF-ABA3-44D2-A2A5-962A6E261B04}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>30.9795</XPos>
+																<YPos>-31.71198</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-11.97605</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{68D4AE61-25E9-45D4-8B00-118C084C1818}" ShortID="338733822">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{6C286B33-E3CB-4244-8067-646EDA765259}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>1.22435</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="Matrix_Reverb_Music_FightingWizard" ID="{976CAEDA-B8CD-482D-A420-4FE33027DD88}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{E36D364D-D9AA-408A-B816-6A5F764CD602}" ShortID="513609879">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="ReverbTime"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{F059B319-CE52-48CA-8BC0-A8DF04E60DFA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1.86878</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>3.73329</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{5ED17656-8E6A-4AF7-96DE-A0C3A4EC4DD8}" ShortID="944887342">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="DryLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E6CA473F-C999-4979-A2D4-BA8CD6EFFD40}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0.0778300000000058</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-6.96656</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{B43D4F53-97D7-4787-A05C-64AC966C76E6}" ShortID="839696331">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{4E8AFF51-2762-44D3-81FB-64A1DFE77C46}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96.3000030517578</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>20.14389</XPos>
+																<YPos>-15.72911</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-11.20302</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
