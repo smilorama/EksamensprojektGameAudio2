@@ -1094,26 +1094,15 @@
 				</Folder>
 				<Folder Name="Outside" ID="{52DCB440-A719-4A68-A4BE-14F5D7AA4372}" ShortID="254607049">
 					<ChildrenList>
-						<BlendContainer Name="Outside" ID="{1F1EA5DF-8A56-44F8-BD2B-BCDC33F01178}" ShortID="11157032">
+						<BlendContainer Name="Natural_Weird" ID="{2C921F84-FF27-44A6-A279-0689BA12C92F}" ShortID="734012864">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.25"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>24</Value>
-									</ValueList>
-								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+									<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1123,26 +1112,27 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{5A1850BB-1535-40B4-A4F1-7C6E570EB77C}" ShortID="132155382">
+								<BlendContainer Name="Outside" ID="{1F1EA5DF-8A56-44F8-BD2B-BCDC33F01178}" ShortID="11157032">
 									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.25"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>41</Value>
+												<Value>24</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-330</Value>
-											</ValueList>
-										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 										</Reference>
@@ -1151,130 +1141,26 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{98F22349-9312-4161-8121-B1114BD9BC5F}">
+										<Sound Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{5A1850BB-1535-40B4-A4F1-7C6E570EB77C}" ShortID="132155382">
 											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="23437.493"/>
-												<Property Name="LoopBegin" Type="Real64" Value="16.76659"/>
-												<Property Name="LoopEnd" Type="Real64" Value="161.11344"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="610247601"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{98F22349-9312-4161-8121-B1114BD9BC5F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bird_Loop" ID="{700DCC38-B20E-4C0D-A97F-5E59864B1295}" ShortID="763643661">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-37</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698" ID="{64331A5E-0C19-48C6-A931-1F06102E6453}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="12098.49"/>
-												<Property Name="LoopBegin" Type="Real64" Value="9.06658"/>
-												<Property Name="LoopEnd" Type="Real64" Value="142.39857"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="710763542"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Ambience, Birdsong, Dunnock, Sparse Mountain Spring Atmo With Black Grouse Mating Alps, CCM4 Telinga 02 SND155698" ID="{64331A5E-0C19-48C6-A931-1F06102E6453}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 2" ID="{B6804176-7824-4DDB-BCA7-A7FC39F0F3E6}" ShortID="14480913">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>30</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>630</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 3" ID="{BFF28777-7FF6-412B-BF9E-DAEB446B9BC1}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="31545.062"/>
-												<Property Name="LoopBegin" Type="Real64" Value="23.57235"/>
-												<Property Name="LoopEnd" Type="Real64" Value="160.70272"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="798939857"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 3" ID="{BFF28777-7FF6-412B-BF9E-DAEB446B9BC1}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<BlendContainer Name="Fugle+vind" ID="{122D1ABC-6F1B-4F69-8C62-012EB6588B45}" ShortID="602878644">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Skov1_Ambisonics" ID="{66387A57-2BA1-4312-B0FE-7F930FA82B12}" ShortID="428455099">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>41</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-330</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 												</Reference>
@@ -1283,34 +1169,44 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Skov1_Ambisonics" ID="{8966C4AF-E280-4909-AD98-F51D24647B45}">
+												<AudioFileSource Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{98F22349-9312-4161-8121-B1114BD9BC5F}">
 													<PropertyList>
-														<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="18123.459"/>
-														<Property Name="LoopBegin" Type="Real64" Value="14.10949"/>
-														<Property Name="LoopEnd" Type="Real64" Value="123.17199"/>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="23437.493"/>
+														<Property Name="LoopBegin" Type="Real64" Value="16.76659"/>
+														<Property Name="LoopEnd" Type="Real64" Value="161.11344"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Skov1_Ambisonics.wav</AudioFile>
+													<AudioFile>Originals\SFX\Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="170015886"/>
+														<MediaID ID="610247601"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Skov1_Ambisonics" ID="{8966C4AF-E280-4909-AD98-F51D24647B45}" Platform="Linked"/>
+												<ActiveSource Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{98F22349-9312-4161-8121-B1114BD9BC5F}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Skov2_Ambisonics" ID="{023621C7-6F3F-4FD0-B3CF-DCA0AF7DB763}" ShortID="876896684">
+										<Sound Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 2" ID="{B6804176-7824-4DDB-BCA7-A7FC39F0F3E6}" ShortID="14480913">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>630</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 												</Reference>
@@ -1319,36 +1215,221 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Skov2_Ambisonics" ID="{FA5D203E-34D5-4049-8FEE-A771AE433CC0}">
+												<AudioFileSource Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 3" ID="{BFF28777-7FF6-412B-BF9E-DAEB446B9BC1}">
 													<PropertyList>
-														<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="16273.911"/>
-														<Property Name="LoopBegin" Type="Real64" Value="8.93273"/>
-														<Property Name="LoopEnd" Type="Real64" Value="82.1314"/>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="31545.062"/>
+														<Property Name="LoopBegin" Type="Real64" Value="23.57235"/>
+														<Property Name="LoopEnd" Type="Real64" Value="160.70272"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Skov2_Ambisonics.wav</AudioFile>
+													<AudioFile>Originals\SFX\Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 3.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="57912703"/>
+														<MediaID ID="798939857"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Skov2_Ambisonics" ID="{FA5D203E-34D5-4049-8FEE-A771AE433CC0}" Platform="Linked"/>
+												<ActiveSource Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 3" ID="{BFF28777-7FF6-412B-BF9E-DAEB446B9BC1}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<BlendContainer Name="Fugle+vind" ID="{122D1ABC-6F1B-4F69-8C62-012EB6588B45}" ShortID="602878644">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Skov1_Ambisonics" ID="{66387A57-2BA1-4312-B0FE-7F930FA82B12}" ShortID="428455099">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Skov1_Ambisonics" ID="{8966C4AF-E280-4909-AD98-F51D24647B45}">
+															<PropertyList>
+																<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="18123.459"/>
+																<Property Name="LoopBegin" Type="Real64" Value="14.10949"/>
+																<Property Name="LoopEnd" Type="Real64" Value="123.17199"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Skov1_Ambisonics.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="170015886"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Skov1_Ambisonics" ID="{8966C4AF-E280-4909-AD98-F51D24647B45}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Skov2_Ambisonics" ID="{023621C7-6F3F-4FD0-B3CF-DCA0AF7DB763}" ShortID="876896684">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="25m" ID="{8504CB1B-5FEF-4A29-B937-F2CA1BB4E3D0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Skov2_Ambisonics" ID="{FA5D203E-34D5-4049-8FEE-A771AE433CC0}">
+															<PropertyList>
+																<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="16273.911"/>
+																<Property Name="LoopBegin" Type="Real64" Value="8.93273"/>
+																<Property Name="LoopEnd" Type="Real64" Value="82.1314"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Skov2_Ambisonics.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="57912703"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Skov2_Ambisonics" ID="{FA5D203E-34D5-4049-8FEE-A771AE433CC0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<BlendTrackList>
+												<BlendTrack Name="Vind" ID="{BCD8D9C6-51A1-471A-9357-919967110038}" ShortID="389869913">
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="DistanceToCave" ID="{DF9C27AF-DE0C-42C5-ADBD-2F1204CCB931}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<RTPC Name="" ID="{27F22A44-0097-4BD6-A26B-1807D0C43597}" ShortID="9498542">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="DistanceToCave" ID="{DF9C27AF-DE0C-42C5-ADBD-2F1204CCB931}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{413C1837-DFA4-4B66-8353-D7ED88A75C0B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0.18287</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>71.2</XPos>
+																						<YPos>0.26084</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>-13.62482</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</ObjectList>
+													</ObjectLists>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="Skov1_Ambisonics" ID="{66387A57-2BA1-4312-B0FE-7F930FA82B12}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>50.00025</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+												<BlendTrack Name="Fugle" ID="{6FAA1BB9-0D11-415D-BB91-92EC33C16686}" ShortID="353814936">
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<RTPC Name="" ID="{C033E872-F664-4D7E-BF0A-6303401A742A}" ShortID="1060629769">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="DistanceToCave" ID="{DF9C27AF-DE0C-42C5-ADBD-2F1204CCB931}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{8335C54E-D0B2-458A-8EEF-ADA725DB4F44}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>50.8</XPos>
+																						<YPos>0.14746</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</ObjectList>
+													</ObjectLists>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="Skov2_Ambisonics" ID="{023621C7-6F3F-4FD0-B3CF-DCA0AF7DB763}"/>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
 									</ChildrenList>
 									<BlendTrackList>
-										<BlendTrack Name="Vind" ID="{BCD8D9C6-51A1-471A-9357-919967110038}" ShortID="389869913">
-											<ReferenceList>
-												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="DistanceToCave" ID="{DF9C27AF-DE0C-42C5-ADBD-2F1204CCB931}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
-												</Reference>
-											</ReferenceList>
+										<BlendTrack Name="Wind high" ID="{EAA761E1-5876-435E-8104-2E93806C19CC}" ShortID="542922451">
 											<ObjectLists>
 												<ObjectList Name="RTPC">
-													<RTPC Name="" ID="{27F22A44-0097-4BD6-A26B-1807D0C43597}" ShortID="9498542">
+													<RTPC Name="" ID="{8F493404-FCBC-46F5-A9BF-C7A4F65D4C46}" ShortID="9654174">
 														<PropertyList>
 															<Property Name="PropertyName" Type="string" Value="Volume"/>
 														</PropertyList>
@@ -1358,7 +1439,7 @@
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
-																	<Curve Name="" ID="{413C1837-DFA4-4B66-8353-D7ED88A75C0B}">
+																	<Curve Name="" ID="{D6AD749F-705C-4EDC-B8B0-1788FB66F788}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
@@ -1369,61 +1450,8 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>71.2</XPos>
-																				<YPos>0.26084</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>-13.62482</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</ObjectList>
-											</ObjectLists>
-											<BlendTrackAssocList>
-												<BlendTrackAssoc>
-													<ItemRef Name="Skov1_Ambisonics" ID="{66387A57-2BA1-4312-B0FE-7F930FA82B12}"/>
-													<CrossfadingInfo>
-														<LeftEdgePos>0</LeftEdgePos>
-														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>50.00025</RightEdgePos>
-														<RightFadingMode>Automatic</RightFadingMode>
-													</CrossfadingInfo>
-												</BlendTrackAssoc>
-											</BlendTrackAssocList>
-										</BlendTrack>
-										<BlendTrack Name="Fugle" ID="{6FAA1BB9-0D11-415D-BB91-92EC33C16686}" ShortID="353814936">
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<RTPC Name="" ID="{C033E872-F664-4D7E-BF0A-6303401A742A}" ShortID="1060629769">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="DistanceToCave" ID="{DF9C27AF-DE0C-42C5-ADBD-2F1204CCB931}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{8335C54E-D0B2-458A-8EEF-ADA725DB4F44}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>50.8</XPos>
-																				<YPos>0.14746</YPos>
+																				<XPos>70</XPos>
+																				<YPos>0.11219</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
@@ -1441,40 +1469,393 @@
 											</ObjectLists>
 											<BlendTrackAssocList>
 												<BlendTrackAssoc>
-													<ItemRef Name="Skov2_Ambisonics" ID="{023621C7-6F3F-4FD0-B3CF-DCA0AF7DB763}"/>
+													<ItemRef Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 2" ID="{B6804176-7824-4DDB-BCA7-A7FC39F0F3E6}"/>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="Wind Low" ID="{1CA47BC4-E1F6-4F44-81A8-90425EE6A0F4}" ShortID="168914163">
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<RTPC Name="" ID="{7BB0C94D-C3A0-4EE8-BC0F-D7E80021493A}" ShortID="125338693">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="DistanceToCave" ID="{DF9C27AF-DE0C-42C5-ADBD-2F1204CCB931}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{4745036F-F010-49C6-B9E5-EDBDC1331E8F}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>65</XPos>
+																				<YPos>-1</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>13</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</ObjectList>
+											</ObjectLists>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{5A1850BB-1535-40B4-A4F1-7C6E570EB77C}"/>
 												</BlendTrackAssoc>
 											</BlendTrackAssocList>
 										</BlendTrack>
 									</BlendTrackList>
 								</BlendContainer>
+								<BlendContainer Name="Weird_Outside" ID="{D8BCDA13-517C-451B-8E09-B735C0164789}" ShortID="86400375">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>24</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Designed, Misc, In Motion, Sinister Creaking SND45397" ID="{5598A03B-7F9B-4A6C-8026-287B27B31051}" ShortID="662538497">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Designed, Misc, In Motion, Sinister Creaking SND45397" ID="{5204F061-C1E5-4C59-8FA9-A3B77C853C46}">
+													<Language>SFX</Language>
+													<AudioFile>Designed, Misc, In Motion, Sinister Creaking SND45397.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="872281931"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Designed, Misc, In Motion, Sinister Creaking SND45397" ID="{5204F061-C1E5-4C59-8FA9-A3B77C853C46}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weird_Roomtone" ID="{4283DB93-EC69-4620-9F50-15765E68E62F}" ShortID="327902032">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>37</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambience, Scifi, Otherworldly, Wind, Soft SND123187" ID="{07DCCAC7-1299-45E3-95F4-519352CDFCFA}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="15137.826"/>
+														<Property Name="LoopBegin" Type="Real64" Value="13.27152"/>
+														<Property Name="LoopEnd" Type="Real64" Value="105.84035"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Originals\SFX\Ambience, Scifi, Otherworldly, Wind, Soft SND123187.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="581579051"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambience, Scifi, Otherworldly, Wind, Soft SND123187" ID="{07DCCAC7-1299-45E3-95F4-519352CDFCFA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Thunder" ID="{293E71DC-E4D8-4A54-881B-979AEEBAE4C4}" ShortID="579528527">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E0C2B4A6-C038-4D15-9AE3-4CBDD171E752}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="225"/>
+																	<Property Name="Min" Type="Real64" Value="-250"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E8D8CF49-D36E-4DAD-B83D-56FFD70F639C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325" ID="{2891181F-A9AA-4752-83F9-A7B4489B5564}" ShortID="120239249">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325" ID="{32A1A37D-A978-43F9-BBBF-58D110D4C627}">
+															<Language>SFX</Language>
+															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="625079883"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325" ID="{32A1A37D-A978-43F9-BBBF-58D110D4C627}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 1" ID="{741B87FB-9CF4-4123-8D1B-3C900EAB4A50}" ShortID="820978619">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 1" ID="{5587EA32-4652-49C8-952F-C233825CCA51}">
+															<Language>SFX</Language>
+															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="728625737"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 1" ID="{5587EA32-4652-49C8-952F-C233825CCA51}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 2" ID="{5FA02B40-4C34-482B-93D1-07299B576888}" ShortID="872831345">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 2" ID="{3FA115CC-A1BC-42A9-B71D-E62B078229BC}">
+															<Language>SFX</Language>
+															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="962127654"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 2" ID="{3FA115CC-A1BC-42A9-B71D-E62B078229BC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 3" ID="{D3674ABB-BC1B-402D-87C5-58EDCB46A8EC}" ShortID="154416719">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 3" ID="{3E365F51-0EFB-473D-BCAA-E97E4095DF67}">
+															<Language>SFX</Language>
+															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="636564675"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 3" ID="{3E365F51-0EFB-473D-BCAA-E97E4095DF67}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327" ID="{FB29E0C1-7184-4F36-A508-98646EE2250C}" ShortID="468087414">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327" ID="{EBBA6D42-1669-4425-A3EA-520D8B45C0D1}">
+															<Language>SFX</Language>
+															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="299726683"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327" ID="{EBBA6D42-1669-4425-A3EA-520D8B45C0D1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 1" ID="{6D70E93C-8763-49C2-BD66-F6AC31805EB3}" ShortID="585060947">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 1" ID="{3FE6D209-1272-41D7-9F35-A85A6B86BA47}">
+															<Language>SFX</Language>
+															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="843945298"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 1" ID="{3FE6D209-1272-41D7-9F35-A85A6B86BA47}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 2" ID="{F1258AFE-697F-4BCA-85FD-D0F1700EB500}" ShortID="869824502">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 2" ID="{63C4316F-B0C7-41ED-B03A-EB80AB640A7C}">
+															<Language>SFX</Language>
+															<AudioFile>Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="32787642"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 2" ID="{63C4316F-B0C7-41ED-B03A-EB80AB640A7C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 							<BlendTrackList>
-								<BlendTrack Name="Wind high" ID="{EAA761E1-5876-435E-8104-2E93806C19CC}" ShortID="542922451">
+								<BlendTrack Name="Book Burn" ID="{8EA5B76B-165E-45C5-88CE-7367750E85B0}" ShortID="18061558">
 									<ObjectLists>
 										<ObjectList Name="RTPC">
-											<RTPC Name="" ID="{8F493404-FCBC-46F5-A9BF-C7A4F65D4C46}" ShortID="9654174">
+											<RTPC Name="" ID="{01AF45EC-BC5F-4756-809A-61263904C0A2}" ShortID="208815076">
 												<PropertyList>
 													<Property Name="PropertyName" Type="string" Value="Volume"/>
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="DistanceToCave" ID="{DF9C27AF-DE0C-42C5-ADBD-2F1204CCB931}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+														<ObjectRef Name="Weather" ID="{88C98731-99DB-47DC-B110-C3648039E322}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{D6AD749F-705C-4EDC-B8B0-1788FB66F788}">
+															<Curve Name="" ID="{59DF724B-292E-4534-A437-36B229899CF4}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>0.18287</YPos>
+																		<YPos>-0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>70</XPos>
-																		<YPos>0.11219</YPos>
+																		<XPos>75</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>75.001</XPos>
+																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -1492,41 +1873,46 @@
 									</ObjectLists>
 									<BlendTrackAssocList>
 										<BlendTrackAssoc>
-											<ItemRef Name="Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 2" ID="{B6804176-7824-4DDB-BCA7-A7FC39F0F3E6}"/>
+											<ItemRef Name="Outside" ID="{1F1EA5DF-8A56-44F8-BD2B-BCDC33F01178}"/>
 										</BlendTrackAssoc>
 									</BlendTrackAssocList>
 								</BlendTrack>
-								<BlendTrack Name="Wind Low" ID="{1CA47BC4-E1F6-4F44-81A8-90425EE6A0F4}" ShortID="168914163">
+								<BlendTrack Name="Book Outside" ID="{867D95BB-324E-41E7-AD15-5BAF6F025420}" ShortID="340615394">
 									<ObjectLists>
 										<ObjectList Name="RTPC">
-											<RTPC Name="" ID="{7BB0C94D-C3A0-4EE8-BC0F-D7E80021493A}" ShortID="125338693">
+											<RTPC Name="" ID="{5D53E62B-7235-400D-95DF-1F076346EE8C}" ShortID="146668479">
 												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="DistanceToCave" ID="{DF9C27AF-DE0C-42C5-ADBD-2F1204CCB931}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+														<ObjectRef Name="Weather" ID="{88C98731-99DB-47DC-B110-C3648039E322}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{4745036F-F010-49C6-B9E5-EDBDC1331E8F}">
+															<Curve Name="" ID="{B86EECD4-C18B-4CCE-B6A8-DD9727175248}">
 																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
+																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>0</YPos>
+																		<YPos>-200</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>65</XPos>
-																		<YPos>-1</YPos>
+																		<XPos>25</XPos>
+																		<YPos>-199.99999</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25.001</XPos>
+																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>13</YPos>
+																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -1539,7 +1925,7 @@
 									</ObjectLists>
 									<BlendTrackAssocList>
 										<BlendTrackAssoc>
-											<ItemRef Name="Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616" ID="{5A1850BB-1535-40B4-A4F1-7C6E570EB77C}"/>
+											<ItemRef Name="Weird_Outside" ID="{D8BCDA13-517C-451B-8E09-B735C0164789}"/>
 										</BlendTrackAssoc>
 									</BlendTrackAssocList>
 								</BlendTrack>
@@ -1596,188 +1982,6 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Tunnel" ID="{E7A3226A-4878-490F-8A3C-81303DF89D80}" ShortID="35098144"/>
-				<Folder Name="TheWeird" ID="{93CADD4D-100B-4FD9-9086-8DEEB007C9DC}" ShortID="168240851">
-					<ChildrenList>
-						<BlendContainer Name="Weird_Outside" ID="{D8BCDA13-517C-451B-8E09-B735C0164789}" ShortID="86400375">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Designed, Misc, In Motion, Sinister Creaking SND45397" ID="{5598A03B-7F9B-4A6C-8026-287B27B31051}" ShortID="662538497">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Designed, Misc, In Motion, Sinister Creaking SND45397" ID="{5204F061-C1E5-4C59-8FA9-A3B77C853C46}">
-											<Language>SFX</Language>
-											<AudioFile>Designed, Misc, In Motion, Sinister Creaking SND45397.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="872281931"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Designed, Misc, In Motion, Sinister Creaking SND45397" ID="{5204F061-C1E5-4C59-8FA9-A3B77C853C46}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Weird_Roomtone" ID="{4283DB93-EC69-4620-9F50-15765E68E62F}" ShortID="327902032">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>14</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Ambience, Scifi, Otherworldly, Wind, Soft SND123187" ID="{07DCCAC7-1299-45E3-95F4-519352CDFCFA}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="15137.826"/>
-												<Property Name="LoopBegin" Type="Real64" Value="13.27152"/>
-												<Property Name="LoopEnd" Type="Real64" Value="105.84035"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Originals\SFX\Ambience, Scifi, Otherworldly, Wind, Soft SND123187.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="581579051"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Ambience, Scifi, Otherworldly, Wind, Soft SND123187" ID="{07DCCAC7-1299-45E3-95F4-519352CDFCFA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<RandomSequenceContainer Name="New Random Container" ID="{293E71DC-E4D8-4A54-881B-979AEEBAE4C4}" ShortID="579528527">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Weather, Thunder, Thunder, Near, Thunder Clap, Low Rumble SND82166" ID="{DEAF6616-B9FF-49B2-8259-29DBAF603961}" ShortID="502031901">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Weather, Thunder, Thunder, Near, Thunder Clap, Low Rumble SND82166" ID="{9E05D11D-8AE1-40DF-B0DB-7680D656BB63}">
-													<Language>SFX</Language>
-													<AudioFile>Weather, Thunder, Thunder, Near, Thunder Clap, Low Rumble SND82166.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="820331531"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Weather, Thunder, Thunder, Near, Thunder Clap, Low Rumble SND82166" ID="{9E05D11D-8AE1-40DF-B0DB-7680D656BB63}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Weather, Thunder, Loud Clap Lightning Strike SND76306" ID="{B09E9CB1-12D2-4E49-AFD1-D4850DD65B3F}" ShortID="116223916">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Weather, Thunder, Loud Clap Lightning Strike SND76306" ID="{EAF2D432-9AA4-4CBE-876D-A29854EFA3CC}">
-													<Language>SFX</Language>
-													<AudioFile>Weather, Thunder, Loud Clap Lightning Strike SND76306.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="476510001"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Weather, Thunder, Loud Clap Lightning Strike SND76306" ID="{EAF2D432-9AA4-4CBE-876D-A29854EFA3CC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Weather, Thunder, Thunder Strike, Clap, Slight Distance SND34638" ID="{014F9D32-A12C-48DB-B7D9-60182AFBD1BE}" ShortID="976017875">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Weather, Thunder, Thunder Strike, Clap, Slight Distance SND34638" ID="{2C677E6B-85E8-4713-A8A8-85DE4BBDA87E}">
-													<Language>SFX</Language>
-													<AudioFile>Weather, Thunder, Thunder Strike, Clap, Slight Distance SND34638.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="118214921"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Weather, Thunder, Thunder Strike, Clap, Slight Distance SND34638" ID="{2C677E6B-85E8-4713-A8A8-85DE4BBDA87E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Weather, Thunder, Thunder Clap, Heavy Impact, Dark, Gritty 01 SND12975" ID="{CEF98ED4-2DF1-4BB4-A855-9BFBC763F447}" ShortID="958481329">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Weather, Thunder, Thunder Clap, Heavy Impact, Dark, Gritty 01 SND12975" ID="{368E689B-C12F-42FD-9D0B-55537E9C7D39}">
-													<Language>SFX</Language>
-													<AudioFile>Weather, Thunder, Thunder Clap, Heavy Impact, Dark, Gritty 01 SND12975.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="556625492"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Weather, Thunder, Thunder Clap, Heavy Impact, Dark, Gritty 01 SND12975" ID="{368E689B-C12F-42FD-9D0B-55537E9C7D39}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</BlendContainer>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Running Water" ID="{60EDB17B-64FE-46BC-9846-59F39B0D2E43}" ShortID="881171529">
 					<ChildrenList>
 						<Sound Name="Water_Loop" ID="{323817F7-2ED1-4CCF-95F4-DBE7E40C49C0}" ShortID="878780088">
