@@ -17,24 +17,38 @@ namespace AK
         static const AkUniqueID ATTACK_HITNOTHING = 726189174U;
         static const AkUniqueID ATTACK_HITTERRAIN = 1224938770U;
         static const AkUniqueID DRINK_POTION = 2541729425U;
+        static const AkUniqueID PLAY_2_5_TOMEFORESHADOWING_SYRETFEEDBACKREVERB_BURNINGSCREAM = 496144422U;
         static const AkUniqueID PLAY_2_GROTTE_OG_3_DUNGEON = 3932489860U;
-        static const AkUniqueID PLAY_4_TOMEAURA_3D_LOOP = 2272618794U;
+        static const AkUniqueID PLAY_4_1_TOMEAURA_MONO_3D = 2432462949U;
+        static const AkUniqueID PLAY_4_2_TOMEAURA_STEREO_2D = 2239375868U;
+        static const AkUniqueID PLAY_7_HAPPYENDING_PLAYLIST = 145381604U;
         static const AkUniqueID PLAY_ATTACK_ENEMY_HIT = 486256373U;
         static const AkUniqueID PLAY_ATTACK_ENEMY_MISS = 1284475082U;
         static const AkUniqueID PLAY_BRAZIER = 2521551685U;
         static const AkUniqueID PLAY_CAVE = 3602995889U;
         static const AkUniqueID PLAY_DEATH_CREATURE = 795377228U;
         static const AkUniqueID PLAY_DEATH_CULTIST = 3622272533U;
+        static const AkUniqueID PLAY_DEATH_FIRE = 2368190119U;
         static const AkUniqueID PLAY_ENDGAMEMUSICSWITCHCONTAINER = 3311667097U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
         static const AkUniqueID PLAY_FOOTSTEP_ENEMY = 1095021605U;
+        static const AkUniqueID PLAY_GODDES_SCREAM = 629634596U;
         static const AkUniqueID PLAY_IDLE_CULTIST = 1329754913U;
-        static const AkUniqueID PLAY_LINJE1 = 743624797U;
-        static const AkUniqueID PLAY_LINJE2 = 743624798U;
+        static const AkUniqueID PLAY_JUMP = 3689126666U;
+        static const AkUniqueID PLAY_LAND = 4285282925U;
+        static const AkUniqueID PLAY_LINE1 = 743495117U;
+        static const AkUniqueID PLAY_LINE2 = 743495118U;
+        static const AkUniqueID PLAY_LINE3 = 743495119U;
+        static const AkUniqueID PLAY_LINE4 = 743495112U;
+        static const AkUniqueID PLAY_LINE5 = 743495113U;
+        static const AkUniqueID PLAY_LINE6 = 743495114U;
         static const AkUniqueID PLAY_LOWHEALTH = 1279037710U;
+        static const AkUniqueID PLAY_NATURAL_WEIRD = 2851174315U;
         static const AkUniqueID PLAY_OUTSIDE = 473294595U;
         static const AkUniqueID PLAY_ROOMTONE_TEMPLE = 3699433833U;
+        static const AkUniqueID PLAY_TORCH = 2025845440U;
         static const AkUniqueID PLAY_WATER_LOOP = 1564978696U;
+        static const AkUniqueID PLAY_WATER_THICK = 3342312129U;
         static const AkUniqueID PLAY_WEIRD_ROOMTONE = 2387658637U;
         static const AkUniqueID STOP_IDLE_CULTIST = 1199249995U;
     } // namespace EVENTS
@@ -62,7 +76,8 @@ namespace AK
                 static const AkUniqueID HAPPYENDNING = 376991726U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID PLAYERDEATH = 1656947812U;
-                static const AkUniqueID TOMEBRAENDING = 1119949180U;
+                static const AkUniqueID TOMECHOICE = 4085709289U;
+                static const AkUniqueID TOMEFIRE = 4064190716U;
                 static const AkUniqueID TOMEOUTSIDE = 1776398501U;
                 static const AkUniqueID TOMEPICKUP = 2158032164U;
                 static const AkUniqueID TOMEPOSSESSION = 1212775290U;
@@ -104,10 +119,15 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID DISTANCETOCAVE = 487752188U;
+        static const AkUniqueID DISTANCETOFOUNTAIN = 1162280475U;
         static const AkUniqueID PLAYERHEALTH_PARAM = 2337577746U;
+        static const AkUniqueID SCALING_PARAMETER = 2551938112U;
         static const AkUniqueID TOMEPOSSESSIONDELAY = 3059304411U;
         static const AkUniqueID TOMEPOSSESSIONMODULATION = 614263488U;
         static const AkUniqueID TOMEPOSSESSIONTIMESTRETCH = 828022604U;
+        static const AkUniqueID WATER_THICK = 177830784U;
+        static const AkUniqueID WEATHER = 317282339U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -118,8 +138,12 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIANCE = 2981377429U;
+        static const AkUniqueID DX = 1836525785U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
         static const AkUniqueID MUSIC_BUS = 3127962312U;
+        static const AkUniqueID REVERBS = 3545700988U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
@@ -134,6 +158,7 @@ namespace AK
         static const AkUniqueID PARKERINGREV_006_KLAP4 = 2665109655U;
         static const AkUniqueID PARKERINGREV_007_KLAP5 = 2767839671U;
         static const AkUniqueID PARKERINGREV_008_KLAP6 = 3813691439U;
+        static const AkUniqueID REVERB_BASIC = 2406464834U;
         static const AkUniqueID STORTRUM1_REV = 3943616538U;
         static const AkUniqueID STORTRUM2_REV = 2730326357U;
     } // namespace AUX_BUSSES

@@ -13,6 +13,16 @@
 							<ChildrenList>
 								<Sound Name="Line1" ID="{08FE5F7A-8D79-435A-ABED-F5258288276D}" ShortID="451067863">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>9</Value>
@@ -45,6 +55,21 @@
 								</Sound>
 								<Sound Name="Line2" ID="{66A82793-C0ED-48FF-A18B-EC47F31F421C}" ShortID="982562322">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OutputBusHighpass" Type="int16">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>8</Value>
@@ -77,6 +102,21 @@
 								</Sound>
 								<Sound Name="Line3" ID="{908275A7-5E13-4F8B-A0D5-C2F959B49B58}" ShortID="336892119">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OutputBusHighpass" Type="int16">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>9</Value>
@@ -109,6 +149,21 @@
 								</Sound>
 								<Sound Name="Why You" ID="{939D60DD-23AD-4188-ACB9-9C8FF48134A7}" ShortID="444290852">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OutputBusHighpass" Type="int16">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>7</Value>
@@ -141,6 +196,21 @@
 								</Sound>
 								<Sound Name="Line5" ID="{53BF9D88-46FA-417D-A011-7D884C42D088}" ShortID="671239432">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OutputBusHighpass" Type="int16">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>8</Value>
@@ -173,6 +243,21 @@
 								</Sound>
 								<Sound Name="Line6" ID="{57CD24C6-9704-4DAE-937B-0975E96C581C}" ShortID="856852548">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OutputBusHighpass" Type="int16">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>8</Value>
@@ -205,9 +290,14 @@
 								</Sound>
 								<Sound Name="Goddes_Scream" ID="{85D2B713-442C-4B4A-96D0-22E304614D0F}" ShortID="476204272">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
+										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>3</Value>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OutputBusHighpass" Type="int16">
+											<ValueList>
+												<Value>8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

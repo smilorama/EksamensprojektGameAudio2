@@ -2906,13 +2906,13 @@
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
-										<Value>19</Value>
+										<Value>11</Value>
 									</ValueList>
 								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>39</Value>
+										<Value>54</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
@@ -2921,10 +2921,15 @@
 									</ValueList>
 								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="10m" ID="{80B02EF5-2E52-4632-AA77-AC181AEA7394}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+									<ObjectRef Name="5m" ID="{A7649CF1-658D-46BD-93C8-8ACEAC677CA0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -2955,6 +2960,7 @@
 						<BlendContainer Name="Water+Thick" ID="{3B2DAB7A-3D74-460A-BD28-22CC6436725F}" ShortID="998300343">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="0.8"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
@@ -2979,9 +2985,10 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>32</Value>
+												<Value>44</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>4</Value>

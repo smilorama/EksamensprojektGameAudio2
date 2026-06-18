@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0719a08c641a74099be74c1fce563f02, type: 3}
+  m_Name: D3BC6510-69A7-4F6B-8FD7-A0C5FAFEB293
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
+  objectName: Play_Natural_Weird
+  id: 2851174315
+  guid: D3BC6510-69A7-4F6B-8FD7-A0C5FAFEB293
+  IsInUserDefinedSoundBank: 1
