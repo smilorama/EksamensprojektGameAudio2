@@ -99,18 +99,31 @@
 							</PropertyList>
 						</State>
 						<State Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+						<State Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
 							<StartState Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+							<EndState Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
 							<EndState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+							<EndState Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
 							<Time>1</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
 							<StartState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
 							<EndState Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
-							<Time>1</Time>
+							<Time>0.5</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
@@ -122,13 +135,43 @@
 						<Transition>
 							<StartState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
 							<EndState Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
-							<Time>1</Time>
+							<Time>0.5</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
 							<StartState Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
 							<EndState Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+							<EndState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
 							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+							<EndState Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+							<EndState Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+							<EndState Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+							<EndState Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+							<Time>0.5</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 					</TransitionList>
