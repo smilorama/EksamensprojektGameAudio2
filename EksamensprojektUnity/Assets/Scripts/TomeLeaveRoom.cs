@@ -48,6 +48,7 @@ public class TomeLeaveRoom : MonoBehaviour
             MusicGameProgressManager.TomePickedUp = false;
             DialogueUI.Instance.SetFlag("Goddess Freed");
             MusicManager.Instance.SetStateTomeOutside(DialogueUI.Instance != null && DialogueUI.Instance.HasFlag("Tome Burned"));
+            AkUnitySoundEngine.PostEvent("Delayed_VolumeDown_TomeAura", gameObject);
 
             if (!string.IsNullOrEmpty(_dialogueSoundEvent) && (DialogueUI.Instance == null || !DialogueUI.Instance.HasFlag("Tome Burned")))
             {
@@ -56,4 +57,6 @@ public class TomeLeaveRoom : MonoBehaviour
             }
         }
     }
+
+
 }
