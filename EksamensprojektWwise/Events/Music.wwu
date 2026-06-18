@@ -144,6 +144,24 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Delayed_VolumeDown_TomeAura" ID="{47538E35-B18E-46CA-A34C-E1902A7B6AE3}">
+					<ChildrenList>
+						<Action Name="" ID="{6CD5BC4B-A9E8-4C52-96EF-58183D5A71AC}" ShortID="417669659">
+							<PropertyList>
+								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Delay" Type="Real64" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="7.5"/>
+								<Property Name="Volume" Type="Real64" Value="-10"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="4_2_TomeAura_STEREO" ID="{E3D0C4A8-D001-47AD-9385-5A8930AA49DE}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
