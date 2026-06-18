@@ -11,6 +11,8 @@ public class TomeLeaveRoom : MonoBehaviour
     [Header("Door Blocker (activate on exit)")]
     [SerializeField] private GameObject _blockerObject;
     [SerializeField] private Material _outsideSkybox;
+    [SerializeField] private string _roomToneRTPC = "";
+    [SerializeField] private float _roomToneRTPCValue = 0f;
 
     [Header("Outside Trigger (remove tome + dialogue)")]
     [SerializeField] private GameObject _tomeInPlayerHand;
@@ -37,6 +39,8 @@ public class TomeLeaveRoom : MonoBehaviour
         {
             if (_blockerObject != null) _blockerObject.SetActive(true);
             if (_outsideSkybox != null) RenderSettings.skybox = _outsideSkybox;
+            if (!string.IsNullOrEmpty(_roomToneRTPC))
+                AkUnitySoundEngine.SetRTPCValue(_roomToneRTPC, _roomToneRTPCValue);
         }
         else if (_type == TriggerType.OutsideTrigger)
         {
