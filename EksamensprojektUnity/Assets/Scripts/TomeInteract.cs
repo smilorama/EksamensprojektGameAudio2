@@ -39,8 +39,6 @@ public class TomeInteract : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private string _voicelineEvent = "Play_TomePickup_Voice";
     [SerializeField] private GameObject _audioEmitter;
-    [SerializeField] private string _pickupRTPC = "";
-    [SerializeField] private float _pickupRTPCDuration = 3f;
 
     [Header("Interact")]
     [SerializeField] private float _interactRange = 2.5f;
@@ -72,18 +70,6 @@ public class TomeInteract : MonoBehaviour
         mat.SetColor("_EmissionColor", hdrColor);
     }
 
-    private IEnumerator FadeRTPC(string rtpc, float from, float to, float duration)
-    {
-        float t = 0f;
-        while (t < 1f)
-        {
-            t += Time.deltaTime / duration;
-            AkUnitySoundEngine.SetRTPCValue(rtpc, Mathf.Lerp(from, to, t));
-            yield return null;
-        }
-        AkUnitySoundEngine.SetRTPCValue(rtpc, to);
-    }
-
     private IEnumerator FadeEmission(float from, float to, float duration)
     {
         float t = 0f;
@@ -111,11 +97,11 @@ public class TomeInteract : MonoBehaviour
             if (_interactPromptPanel != null) _interactPromptPanel.SetActive(false);
             StartCoroutine(FadeEmission(_emissionStartIntensity, _emissionIntensity, _emissionFadeDuration));
             StartCoroutine(TomeSequence());
-            if (!string.IsNullOrEmpty(_pickupRTPC))
-                StartCoroutine(FadeRTPC(_pickupRTPC, 0f, 100f, _pickupRTPCDuration));
+            WaterfallAudio.TomePickedUp = true;
             MusicManager.Instance.StartEndGameMusicEvent();
             MusicGameProgressManager.TomePickedUp = true;
             AkUnitySoundEngine.SetState("TomeAuraStates", "TomePickup");
+            AkUnitySoundEngine.SetState("EndGameMusicStates", "TomePickup");
         }
     }
 

@@ -20,9 +20,19 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{97227B94-DAB6-4C7F-ADF5-3716968BCBCA}" ShortID="228831245">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="1_OutsideIntroMusic" ID="{72010CD2-E237-49CD-BDB9-ECACC2B0A329}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_1_IntroStinger" ID="{8E414BD0-527C-4B71-83F5-03558CE9FDD2}">
+				<Event Name="Play_1_OutsideIntroMusic" ID="{8E414BD0-527C-4B71-83F5-03558CE9FDD2}">
 					<PropertyList>
 						<Property Name="Inclusion" Type="bool" Value="False"/>
 					</PropertyList>
@@ -30,7 +40,7 @@
 						<Action Name="" ID="{33B2ABDD-4C70-4D0B-B094-DC6B69AF30ED}" ShortID="447271710">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="1_IntroStinger" ID="{72010CD2-E237-49CD-BDB9-ECACC2B0A329}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									<ObjectRef Name="1_OutsideIntroMusic" ID="{72010CD2-E237-49CD-BDB9-ECACC2B0A329}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -60,15 +70,15 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_4_TomeAura_3D_Loop" ID="{A7C21030-09BF-43CE-9E1E-F0D85BD5C356}">
+				<Event Name="Play_4_1_TomeAura_MONO_3D" ID="{A7C21030-09BF-43CE-9E1E-F0D85BD5C356}">
 					<ChildrenList>
 						<Action Name="" ID="{6094F59C-2B39-4096-88AC-E3EAB94C8776}" ShortID="581817054">
 							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="4_TomeAura_3D_Loop" ID="{B58BBF87-86F7-4668-9054-E903EABB2F2E}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									<ObjectRef Name="4_1_TomeAura_MONO" ID="{1926C691-AB40-4D5B-818D-E7AEB10A1A09}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -95,7 +105,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist_8BARGAMMEL" ID="{3FF7D4DC-C85F-4C1D-9C74-9F1F59D85324}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									<ObjectRef Name="2_Grotte_og_3_Dungeon_Playlist" ID="{FE8C9CD6-0F81-4A61-B70D-69B11D5522F5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -107,6 +117,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="7_HappyEnding_Playlist" ID="{9831C157-921E-4602-8B0F-F8CE82A16555}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream" ID="{82ECF2DF-48FD-465E-9786-829970B8385A}">
+					<ChildrenList>
+						<Action Name="" ID="{419D4E5D-1E70-4A6F-B0E8-918DA35CA478}" ShortID="182882970">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream" ID="{8A823BAC-BD7D-4FAF-BFD0-3977D630DD46}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_4_2_TomeAura_STEREO_2D" ID="{49023969-E6C7-4BDB-824F-F2AB432EF2A8}">
+					<ChildrenList>
+						<Action Name="" ID="{E45568D3-6464-4F89-AEEB-795F6CF5220F}" ShortID="125921434">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="4_2_TomeAura_STEREO" ID="{E3D0C4A8-D001-47AD-9385-5A8930AA49DE}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
