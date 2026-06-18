@@ -26,9 +26,6 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="ParkeringRev_008_Klap6" ID="{EB461F0B-7CF1-48EE-9C71-E50D24EBDD65}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Cave_loop" ID="{B142F949-97AF-4B6B-9DD2-7D4F625BB058}" ShortID="777864748">
@@ -82,8 +79,8 @@
 								</Sound>
 								<RandomSequenceContainer Name="Drips" ID="{C8219430-4CBD-4FCD-B57F-90C319049313}" ShortID="241282832">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
 												<Value>8</Value>
@@ -103,6 +100,7 @@
 										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -132,6 +130,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-6</Value>
@@ -147,6 +150,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ParkeringRev_007_Klap5" ID="{EB63EECC-E99E-4021-855B-5F7FE0DB6B52}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -710,7 +716,6 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="DebrisFalling_Small" ID="{669F9AB7-C7C0-4B00-8D78-3B777B5EEAA1}" ShortID="32766285">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="Highpass" Type="int16">
@@ -725,6 +730,7 @@
 										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -754,6 +760,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-23</Value>
@@ -770,9 +781,21 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ParkeringRev_007_Klap5" ID="{EB63EECC-E99E-4021-855B-5F7FE0DB6B52}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593" ID="{37B8E7FA-1581-4362-A6C6-367EFAEF5103}" ShortID="545743663">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -795,11 +818,24 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{D4CBF596-F347-4463-ACB9-65EED205989C}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="94.8306595365419"/>
+														<Property Name="PanY" Type="Real64" Value="6.52591170825337"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
 											<ActiveSourceList>
 												<ActiveSource Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593" ID="{9D96D465-C044-4F6A-9622-8AB176E267C4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 1" ID="{9975941B-B045-49AC-A8A6-FCD5B45B514F}" ShortID="626881198">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -822,11 +858,24 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{8803D84F-78B6-4BE3-B1D2-AF630237E6C1}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="79.144385026738"/>
+														<Property Name="PanY" Type="Real64" Value="34.5489443378119"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
 											<ActiveSourceList>
 												<ActiveSource Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 1" ID="{CD8FD7A5-D8EF-49F3-9342-051CB326569A}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 2" ID="{672832AD-42AD-4260-A732-FF56205A9C80}" ShortID="327542578">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -849,6 +898,14 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{36955998-D127-423B-9CAB-07C532DA05B3}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="39.9286987522281"/>
+														<Property Name="PanY" Type="Real64" Value="92.1305182341651"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
 											<ActiveSourceList>
 												<ActiveSource Name="Rocks, Crash &amp; Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 2" ID="{8839D5B5-19FB-4A69-BC49-266CCE3314DE}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -1229,6 +1286,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Skov1_Ambisonics" ID="{8966C4AF-E280-4909-AD98-F51D24647B45}">
 													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
 														<Property Name="CrossfadeDuration" Type="Real64" Value="18123.459"/>
 														<Property Name="LoopBegin" Type="Real64" Value="14.10949"/>
 														<Property Name="LoopEnd" Type="Real64" Value="123.17199"/>
@@ -1264,6 +1322,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Skov2_Ambisonics" ID="{FA5D203E-34D5-4049-8FEE-A771AE433CC0}">
 													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="514"/>
 														<Property Name="CrossfadeDuration" Type="Real64" Value="16273.911"/>
 														<Property Name="LoopBegin" Type="Real64" Value="8.93273"/>
 														<Property Name="LoopEnd" Type="Real64" Value="82.1314"/>
@@ -1360,7 +1419,7 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>

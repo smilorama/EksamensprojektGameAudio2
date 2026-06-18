@@ -331,6 +331,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Torch" ID="{6B5AE456-5589-4EB7-A5C8-680141F07EAD}">
+							<ChildrenList>
+								<Action Name="" ID="{2E5E282F-FA71-4ECE-9C67-7E54D9A67BA2}" ShortID="607134916">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fire, Torch, Torch, Burning, Normal, Crackling SND63564 2" ID="{82A5613C-B58A-4A59-A987-0DBE62BD33E4}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Water_Thick" ID="{77B6E567-582F-4C05-80B6-443D4ACB2756}">
+							<ChildrenList>
+								<Action Name="" ID="{12D54D8E-F7BE-43A0-A5F4-8F79BD75CF23}" ShortID="156524250">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Water+Thick" ID="{3B2DAB7A-3D74-460A-BD28-22CC6436725F}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

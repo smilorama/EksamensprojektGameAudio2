@@ -17,14 +17,24 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private List<DialogueLine> lines;
     [SerializeField] private float rotationSpeed = 0.5f;
 
+    [Header("After Goddess Freed Dialogue")]
+    [SerializeField] private string _goddessFreedFlag = "Goddess Freed";
+    [SerializeField] private Animator _wizardAnimator;
+    [SerializeField] private RuntimeAnimatorController _wizardAnimatorController;
+    [SerializeField] private GameObject _handObject;
+    [SerializeField] private MonoBehaviour _enemyScript;
+    [SerializeField] private MonoBehaviour _enemyHealthbar;
+
     private List<DialogueLine> _activeLines = new();
     private int _currentIndex = -1;
     private bool _isActive;
+    private bool _goddessFreedDialoguePlayed;
+    private bool _done;
     private Transform _player;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Player")) return;
+        if (!other.CompareTag("Player") || _done) return;
         _player = other.transform;
         StartDialogue();
     }
@@ -68,13 +78,19 @@ public class DialogueTrigger : MonoBehaviour
                 anyFlagSet = true;
 
         _activeLines.Clear();
+        bool isGoddessFlagged = false;
         foreach (DialogueLine line in lines)
         {
             if (!string.IsNullOrEmpty(line.requiresFlag) && DialogueUI.Instance.HasFlag(line.requiresFlag))
+            {
                 _activeLines.Add(line);
+                if (line.requiresFlag == _goddessFreedFlag) isGoddessFlagged = true;
+            }
             else if (!anyFlagSet && string.IsNullOrEmpty(line.requiresFlag))
                 _activeLines.Add(line);
         }
+
+        _goddessFreedDialoguePlayed = isGoddessFlagged;
 
         if (_activeLines.Count == 0) return;
 
@@ -97,5 +113,20 @@ public class DialogueTrigger : MonoBehaviour
         _isActive = false;
         _currentIndex = -1;
         DialogueUI.Instance.Hide();
+
+        if (_goddessFreedDialoguePlayed)
+        {
+            _goddessFreedDialoguePlayed = false;
+            if (_wizardAnimator != null && _wizardAnimatorController != null)
+                _wizardAnimator.runtimeAnimatorController = _wizardAnimatorController;
+            if (_handObject != null)
+                _handObject.SetActive(true);
+            if (_enemyScript != null)
+                _enemyScript.enabled = true;
+            if (_enemyHealthbar != null)
+                _enemyHealthbar.enabled = true;
+            gameObject.tag = "Enemy";
+            _done = true;
+        }
     }
 }

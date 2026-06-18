@@ -291,4 +291,4 @@ Styrer musikken knyttet til tomens tilstedeværelse i verdenen. Sættes via `Tom
 |---|---|---|
 | `TomeForeshadowing` | `TomeAuraStateTrigger` | Spilleren nærmer sig tomens område auraen anes |
 | `TomeSpiritualRoom` | `TomeAuraStateTrigger` | Spilleren er i det spirituelle rum direkte ved tomen |
-| `TomePickup` | `MusicManager.SetStateTomePossession()` | Hånden med tomen aktiveres auraen går fra verden til spiller |
+| `TomePickup` | `TomeInteract` | Spilleren interacter med tomen ([F] tryk) |
