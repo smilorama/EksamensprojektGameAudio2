@@ -3610,7 +3610,7 @@
 							<MultiSwitchEntry Name="" ID="{68D80E8A-6ABB-4D76-AB3B-05EE8285A20C}">
 								<ReferenceList>
 									<Reference Name="AudioNode">
-										<ObjectRef Name="5_1_TomePickup" ID="{89AD719E-375B-4F90-9291-F7D750E29BC4}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+										<ObjectRef Name="5_TomePossession_Playlist" ID="{4E58524A-A98E-4BC3-AE74-8DD2DC4DD8B5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 									</Reference>
 								</ReferenceList>
 								<ObjectLists>
@@ -3646,7 +3646,7 @@
 							<MultiSwitchEntry Name="" ID="{496C82DF-CB90-46B8-9259-FD869978ECCA}">
 								<ReferenceList>
 									<Reference Name="AudioNode">
-										<ObjectRef Name="5_TomePossession" ID="{60E94346-061C-4402-B3C1-2BC0C4F4871B}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+										<ObjectRef Name="5_TomePossession_Playlist" ID="{4E58524A-A98E-4BC3-AE74-8DD2DC4DD8B5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 									</Reference>
 								</ReferenceList>
 								<ObjectLists>
