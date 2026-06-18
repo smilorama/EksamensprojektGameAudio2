@@ -219,7 +219,11 @@
 												<StateGroupList>
 													<StateGroupInfo>
 														<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-														<StateGroupInfo Name="" ID="{8ED03C45-7A08-4D54-B5AF-2AA32475EF1B}" ShortID="769990886"/>
+														<StateGroupInfo Name="" ID="{8ED03C45-7A08-4D54-B5AF-2AA32475EF1B}" ShortID="769990886">
+															<PropertyList>
+																<Property Name="MusicSyncType" Type="int32" Value="3"/>
+															</PropertyList>
+														</StateGroupInfo>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -634,7 +638,11 @@
 												<StateGroupList>
 													<StateGroupInfo>
 														<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-														<StateGroupInfo Name="" ID="{4C32F61C-7291-4AA4-9075-12C7CBAE4B95}" ShortID="33539575"/>
+														<StateGroupInfo Name="" ID="{4C32F61C-7291-4AA4-9075-12C7CBAE4B95}" ShortID="33539575">
+															<PropertyList>
+																<Property Name="MusicSyncType" Type="int32" Value="3"/>
+															</PropertyList>
+														</StateGroupInfo>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -872,7 +880,11 @@
 												<StateGroupList>
 													<StateGroupInfo>
 														<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-														<StateGroupInfo Name="" ID="{C529F140-3A78-4815-B553-1E71AF1C37E0}" ShortID="679207625"/>
+														<StateGroupInfo Name="" ID="{C529F140-3A78-4815-B553-1E71AF1C37E0}" ShortID="679207625">
+															<PropertyList>
+																<Property Name="MusicSyncType" Type="int32" Value="3"/>
+															</PropertyList>
+														</StateGroupInfo>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -1055,7 +1067,11 @@
 												<StateGroupList>
 													<StateGroupInfo>
 														<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-														<StateGroupInfo Name="" ID="{F2649AE8-B95C-4D7D-9744-5E1ED3F0B82F}" ShortID="602449594"/>
+														<StateGroupInfo Name="" ID="{F2649AE8-B95C-4D7D-9744-5E1ED3F0B82F}" ShortID="602449594">
+															<PropertyList>
+																<Property Name="MusicSyncType" Type="int32" Value="3"/>
+															</PropertyList>
+														</StateGroupInfo>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -2823,7 +2839,11 @@
 												<StateGroupList>
 													<StateGroupInfo>
 														<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
-														<StateGroupInfo Name="" ID="{3EC3C90D-728E-44AC-B5B7-66D73013EADE}" ShortID="577297073"/>
+														<StateGroupInfo Name="" ID="{3EC3C90D-728E-44AC-B5B7-66D73013EADE}" ShortID="577297073">
+															<PropertyList>
+																<Property Name="MusicSyncType" Type="int32" Value="2"/>
+															</PropertyList>
+														</StateGroupInfo>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -3667,7 +3687,7 @@
 						<Property Name="TimeSignatureUpper" Type="int16" Value="5"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -3767,7 +3787,7 @@
 												<StateRef Name="GrotteBeginning" ID="{C9D8A735-F710-45D8-ACD8-F5346D7253C5}"/>
 												<CustomState Name="" ID="{17EFD37F-9513-4A3D-9BFA-980A0A2F9F9F}" ShortID="873106023">
 													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-15"/>
+														<Property Name="Volume" Type="Real64" Value="-13"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -3909,8 +3929,8 @@
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>40.38462</XPos>
-																				<YPos>-6.94036</YPos>
+																				<XPos>40.17483</XPos>
+																				<YPos>-4.25094</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
@@ -4052,8 +4072,8 @@
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>44.65385</XPos>
-																				<YPos>-16.40829</YPos>
+																				<XPos>43.70979</XPos>
+																				<YPos>-11.69951</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
@@ -4437,7 +4457,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>0.002</XPos>
-																				<YPos>-96.3</YPos>
+																				<YPos>-22.36394</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
@@ -4447,7 +4467,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>66</XPos>
-																				<YPos>-96.3</YPos>
+																				<YPos>-18.43805</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -4544,8 +4564,8 @@
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>30.17832</XPos>
-																				<YPos>-96.3</YPos>
+																				<XPos>30.07342</XPos>
+																				<YPos>-20.18105</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
@@ -4667,8 +4687,8 @@
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>14.54895</XPos>
-																				<YPos>-96.3</YPos>
+																				<XPos>14.86364</XPos>
+																				<YPos>-18.43805</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
@@ -4678,7 +4698,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>66</XPos>
-																				<YPos>-96.3</YPos>
+																				<YPos>-18.43805</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -4781,7 +4801,7 @@
 												<StateRef Name="GrotteBeginning" ID="{C9D8A735-F710-45D8-ACD8-F5346D7253C5}"/>
 												<CustomState Name="" ID="{E0938D25-6953-40F9-BB9E-87C578DC0CDD}" ShortID="66629801">
 													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-6"/>
+														<Property Name="Volume" Type="Real64" Value="-2"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -5536,7 +5556,11 @@
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="GrotteBeginning" ID="{C9D8A735-F710-45D8-ACD8-F5346D7253C5}"/>
-												<CustomState Name="" ID="{C37A902B-C9F5-4751-A820-5DEB98152B82}" ShortID="134952082"/>
+												<CustomState Name="" ID="{C37A902B-C9F5-4751-A820-5DEB98152B82}" ShortID="134952082">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-5"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="DungeonBeginning" ID="{A1DD3F3C-5578-48BF-92E1-3DE026EC20E0}"/>
@@ -5995,20 +6019,8 @@
 										<StateGroupRef Name="BeginningMusicRoomStates" ID="{865D8293-A9DA-4438-8BD2-46EE721BC036}"/>
 										<StateGroupInfo Name="" ID="{AF6CF91D-520A-4962-A613-D397A08838CD}" ShortID="837941357"/>
 									</StateGroupInfo>
-									<StateGroupInfo>
-										<StateGroupRef Name="TomeAuraStates" ID="{2D2B7D6A-E6F6-4BC5-BF5E-168881C4C683}"/>
-										<StateGroupInfo Name="" ID="{CE981E15-39C2-4FF7-868A-10B25D4D274E}" ShortID="1052099565"/>
-									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
-									<CustomState>
-										<StateRef Name="TomePickup" ID="{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}"/>
-										<CustomState Name="" ID="{DDE95CCB-F858-4B87-91AB-29D80A589484}" ShortID="383341709"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="TomeSpiritualRoom" ID="{93BAEDA8-D275-44BD-9905-F2A401EDBD37}"/>
-										<CustomState Name="" ID="{121D0490-C70F-4C7B-BD7F-06EF7D2B2007}" ShortID="30651916"/>
-									</CustomState>
 									<CustomState>
 										<StateRef Name="GrotteBeginning" ID="{C9D8A735-F710-45D8-ACD8-F5346D7253C5}"/>
 										<CustomState Name="" ID="{404A4C09-47F9-4637-AF36-B6A2B9B78484}" ShortID="797372118"/>
@@ -6018,24 +6030,12 @@
 										<CustomState Name="" ID="{5057D498-3A47-4C40-9CA6-243EA2821DDF}" ShortID="193932677"/>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
-										<CustomState Name="" ID="{F4E22109-3983-4ED9-A718-68DC3C93D3A2}" ShortID="816940996">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-8"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
 										<StateRef Name="None" ID="{5D6C8137-E92D-4BA1-BDD8-C0AFEE537DBC}"/>
 										<CustomState Name="" ID="{2EB3CBDE-B6B3-4D3E-A698-17494541EFB7}" ShortID="1032781221">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="None" ID="{CC3F7E07-D1F4-4C50-93BC-0732C39AB196}"/>
-										<CustomState Name="" ID="{7A42DFE6-FA55-48AF-A394-CDB0AD2210C6}" ShortID="643795858"/>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
@@ -6054,7 +6054,15 @@
 					</ChildrenList>
 				</MusicPlaylistContainer>
 				<BlendContainer Name="4_1_TomeAura_MONO" ID="{1926C691-AB40-4D5B-818D-E7AEB10A1A09}" ShortID="419905400">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="50m" ID="{39A0FB23-45F9-405B-8F73-C999AC1761B2}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 						</Reference>
