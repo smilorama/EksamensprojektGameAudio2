@@ -25,6 +25,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private string _deathEvent = "Play_EnemyDeath";
     [SerializeField] private string _stopEvent = "Stop_Idle_Cultist";
     [SerializeField] private AK.Wwise.Event _attackEvent;
+    [SerializeField] private AK.Wwise.RTPC _aggroRTPC;
+    [SerializeField] private float _aggroRTPCValue = 100f;
     [SerializeField] private GameObject _audioEmitter;
 
     private NavMeshAgent _agent;
@@ -96,10 +98,14 @@ public class Enemy : MonoBehaviour
         if (hits.Length > 0)
         {
             _player = hits[0].transform;
+            if (_state != State.Aggro && _aggroRTPC.IsValid())
+                _aggroRTPC.SetValue(_audioEmitter != null ? _audioEmitter : gameObject, _aggroRTPCValue);
             _state = State.Aggro;
         }
         else
         {
+            if (_state == State.Aggro && _aggroRTPC.IsValid())
+                _aggroRTPC.SetValue(_audioEmitter != null ? _audioEmitter : gameObject, 0f);
             _player = null;
             _state = State.Idle;
             _animator.SetFloat("Vertical", 0f);
@@ -203,6 +209,9 @@ public class Enemy : MonoBehaviour
     private void StartDeath()
     {
         _dead = true;
+
+        if (_aggroRTPC.IsValid())
+            _aggroRTPC.SetValue(_audioEmitter != null ? _audioEmitter : gameObject, 0f);
 
         _agent.isStopped = true;
         _agent.enabled   = false;

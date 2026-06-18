@@ -238,6 +238,7 @@ Transform:
   m_Children:
   - {fileID: 4507796530836520817}
   - {fileID: 7305681391675730983}
+  - {fileID: 1418429402}
   - {fileID: 4454917972678154789}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5205,7 +5206,7 @@ MonoBehaviour:
   _hitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f985db9e6c20046cd9f05b080ea64ec4, type: 2}
 --- !u!136 &206566506
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18429,8 +18430,8 @@ MonoBehaviour:
   _type: 0
   _blockerObject: {fileID: 143939119}
   _outsideSkybox: {fileID: 2100000, guid: 453c778091388401ab100480558526dc, type: 2}
-  _roomToneRTPC: 
-  _roomToneRTPCValue: 0
+  _roomToneRTPC: Weather
+  _roomToneRTPCValue: 100
   _tomeInPlayerHand: {fileID: 0}
   _dialogueSoundEvent: 
   _audioEmitter: {fileID: 0}
@@ -31975,6 +31976,160 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1244772356930539659, guid: 4d60c2d4e9e40457384f426535c3c1aa, type: 3}
   m_PrefabInstance: {fileID: 1418155341}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1418429401
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5598201}
+    m_Modifications:
+    - target: {fileID: 941339924899655122, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: _hitEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 25527d6e2cdbf417aa6803fc107c35da, type: 2}
+    - target: {fileID: 2016968571159028590, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_Name
+      value: Cultist (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4795564424263718417, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: _nameFont
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ab42ce71e18446f7a391e5ec303aea1, type: 2}
+    - target: {fileID: 4795564424263718417, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: _barSize.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 4795564424263718417, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: _anchorOffset.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055211245595779249, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: _aggroRTPC.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 892323edb870949b680b4abede78cfba, type: 2}
+    - target: {fileID: 7055211245595779249, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: _attackEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f985db9e6c20046cd9f05b080ea64ec4, type: 2}
+    - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 90.08556
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.3876495
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.773848
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9952866
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.096977465
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 11.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530475223491040372, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: _hitEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 25527d6e2cdbf417aa6803fc107c35da, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2016968571159028590, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1418429405}
+    - targetCorrespondingSourceObject: {fileID: 2016968571159028590, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1418429404}
+  m_SourcePrefab: {fileID: 100100000, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+--- !u!4 &1418429402 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7174086046991170730, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+  m_PrefabInstance: {fileID: 1418429401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1418429403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2016968571159028590, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+  m_PrefabInstance: {fileID: 1418429401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1418429404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418429403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be93e494638654385bac2940f4e0df09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkEvent
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 946c491e8910642ec8911fc50112da13, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1418429405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418429403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18007ef524e524cd3ac60a70663703c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!4 &1421222677 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1064458111539832515, guid: 9b1b08b09d252499989a305aee6732f7, type: 3}
@@ -40440,6 +40595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1788595970}
   - component: {fileID: 1788595971}
+  - component: {fileID: 1788595972}
   m_Layer: 0
   m_Name: Distance to cave
   m_TagString: Untagged
@@ -40476,6 +40632,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DistanceToCaveParameter
   _rtpcName: DistanceToCave
   _maxDistance: 75
+--- !u!65 &1788595972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788595969}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.99, y: 3.74, z: 3.55}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1793400722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53466,12 +53643,17 @@ MonoBehaviour:
   rotationSpeed: 5
   attackCooldown: 1.2
   maxHealth: 200
-  _deathEvent: Play_EnemyDeath
+  _deathEvent: Play_Death_Cultist
   _stopEvent: Stop_Idle_Cultist
   _attackEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f985db9e6c20046cd9f05b080ea64ec4, type: 2}
+  _aggroRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 39cf35119166c463099f59111a984a6e, type: 2}
+  _aggroRTPCValue: 100
   _audioEmitter: {fileID: 2070263751}
 --- !u!143 &4507796530836520823
 CharacterController:
@@ -53532,11 +53714,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119c17ec596e5484a8c19305b33d0919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageZone
-  damage: 10
+  damage: 15
   _hitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 25527d6e2cdbf417aa6803fc107c35da, type: 2}
 --- !u!136 &4507796530836520826
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -54405,6 +54587,10 @@ PrefabInstance:
       propertyPath: _anchorOffset.x
       value: -60
       objectReference: {fileID: 0}
+    - target: {fileID: 7055211245595779249, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
+      propertyPath: _aggroRTPC.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 892323edb870949b680b4abede78cfba, type: 2}
     - target: {fileID: 7055211245595779249, guid: 5729807d282d748f28f164be73dcb5d9, type: 3}
       propertyPath: _attackEvent.WwiseObjectReference
       value: 
