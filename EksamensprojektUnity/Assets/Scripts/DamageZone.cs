@@ -3,6 +3,7 @@ using UnityEngine;
 public class DamageZone : MonoBehaviour
 {
     [SerializeField] private int damage = 10;
+    [SerializeField] private AK.Wwise.Event _hitEvent;
 
     private bool _active;
 
@@ -23,6 +24,9 @@ public class DamageZone : MonoBehaviour
         PlayerHealth health = other.GetComponent<PlayerHealth>();
         if (health != null)
             health.TakeDamage(damage);
+
+        if (_hitEvent.IsValid())
+            _hitEvent.Post(gameObject);
 
         _active = false;
     }

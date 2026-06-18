@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private string _deathEvent = "Play_EnemyDeath";
     [SerializeField] private string _stopEvent = "Stop_Idle_Cultist";
+    [SerializeField] private AK.Wwise.Event _attackEvent;
     [SerializeField] private GameObject _audioEmitter;
 
     private NavMeshAgent _agent;
@@ -180,6 +181,8 @@ public class Enemy : MonoBehaviour
             _attackTimer = 0f;
             _isPerformingAction = true;
             _animator.SetTrigger("Attack");
+            if (_attackEvent.IsValid())
+                _attackEvent.Post(_audioEmitter != null ? _audioEmitter : gameObject);
         }
     }
 

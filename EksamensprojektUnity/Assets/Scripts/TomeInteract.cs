@@ -39,7 +39,6 @@ public class TomeInteract : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private string _voicelineEvent = "Play_TomePickup_Voice";
     [SerializeField] private GameObject _audioEmitter;
-    [SerializeField] private WaterfallAudio[] _waterfallAudios;
 
     [Header("Interact")]
     [SerializeField] private float _interactRange = 2.5f;
@@ -98,10 +97,11 @@ public class TomeInteract : MonoBehaviour
             if (_interactPromptPanel != null) _interactPromptPanel.SetActive(false);
             StartCoroutine(FadeEmission(_emissionStartIntensity, _emissionIntensity, _emissionFadeDuration));
             StartCoroutine(TomeSequence());
-            foreach (var w in _waterfallAudios) if (w != null) w.OnTomePickup();
+            WaterfallAudio.TomePickedUp = true;
             MusicManager.Instance.StartEndGameMusicEvent();
             MusicGameProgressManager.TomePickedUp = true;
             AkUnitySoundEngine.SetState("TomeAuraStates", "TomePickup");
+            AkUnitySoundEngine.SetState("EndGameMusicStates", "TomePickup");
         }
     }
 
