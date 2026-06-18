@@ -1674,6 +1674,106 @@
 										<ActiveSource Name="Ambience, Scifi, Otherworldly, Wind, Soft SND123187" ID="{07DCCAC7-1299-45E3-95F4-519352CDFCFA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="New Random Container" ID="{293E71DC-E4D8-4A54-881B-979AEEBAE4C4}" ShortID="579528527">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Weather, Thunder, Thunder, Near, Thunder Clap, Low Rumble SND82166" ID="{DEAF6616-B9FF-49B2-8259-29DBAF603961}" ShortID="502031901">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weather, Thunder, Thunder, Near, Thunder Clap, Low Rumble SND82166" ID="{9E05D11D-8AE1-40DF-B0DB-7680D656BB63}">
+													<Language>SFX</Language>
+													<AudioFile>Weather, Thunder, Thunder, Near, Thunder Clap, Low Rumble SND82166.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="820331531"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weather, Thunder, Thunder, Near, Thunder Clap, Low Rumble SND82166" ID="{9E05D11D-8AE1-40DF-B0DB-7680D656BB63}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weather, Thunder, Loud Clap Lightning Strike SND76306" ID="{B09E9CB1-12D2-4E49-AFD1-D4850DD65B3F}" ShortID="116223916">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weather, Thunder, Loud Clap Lightning Strike SND76306" ID="{EAF2D432-9AA4-4CBE-876D-A29854EFA3CC}">
+													<Language>SFX</Language>
+													<AudioFile>Weather, Thunder, Loud Clap Lightning Strike SND76306.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="476510001"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weather, Thunder, Loud Clap Lightning Strike SND76306" ID="{EAF2D432-9AA4-4CBE-876D-A29854EFA3CC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weather, Thunder, Thunder Strike, Clap, Slight Distance SND34638" ID="{014F9D32-A12C-48DB-B7D9-60182AFBD1BE}" ShortID="976017875">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weather, Thunder, Thunder Strike, Clap, Slight Distance SND34638" ID="{2C677E6B-85E8-4713-A8A8-85DE4BBDA87E}">
+													<Language>SFX</Language>
+													<AudioFile>Weather, Thunder, Thunder Strike, Clap, Slight Distance SND34638.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="118214921"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weather, Thunder, Thunder Strike, Clap, Slight Distance SND34638" ID="{2C677E6B-85E8-4713-A8A8-85DE4BBDA87E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weather, Thunder, Thunder Clap, Heavy Impact, Dark, Gritty 01 SND12975" ID="{CEF98ED4-2DF1-4BB4-A855-9BFBC763F447}" ShortID="958481329">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weather, Thunder, Thunder Clap, Heavy Impact, Dark, Gritty 01 SND12975" ID="{368E689B-C12F-42FD-9D0B-55537E9C7D39}">
+													<Language>SFX</Language>
+													<AudioFile>Weather, Thunder, Thunder Clap, Heavy Impact, Dark, Gritty 01 SND12975.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="556625492"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weather, Thunder, Thunder Clap, Heavy Impact, Dark, Gritty 01 SND12975" ID="{368E689B-C12F-42FD-9D0B-55537E9C7D39}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
