@@ -99,6 +99,7 @@ public class TomeInteract : MonoBehaviour
             StartCoroutine(TomeSequence());
             WaterfallAudio.TomePickedUp = true;
             MusicManager.Instance.StartEndGameMusicEvent();
+            MusicManager.Instance.StartTome2DStereo();
             MusicGameProgressManager.TomePickedUp = true;
             AkUnitySoundEngine.SetState("TomeAuraStates", "TomePickup");
             AkUnitySoundEngine.SetState("EndGameMusicStates", "TomePickup");

@@ -76,6 +76,11 @@ public class MusicManager : MonoBehaviour
         AkUnitySoundEngine.SetState("EndGameMusicStates", "TomeFire");
     }
 
+    public void StartTome2DStereo()
+    {
+        AkUnitySoundEngine.PostEvent("Play_4_2_TomeAura_STEREO_2D", gameObject);
+    }
+
     public void SetStateTomeOutside(bool tomeBurned)
     {
         if (tomeBurned)
