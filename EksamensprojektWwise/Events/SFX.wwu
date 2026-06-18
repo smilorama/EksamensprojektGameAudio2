@@ -342,12 +342,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_LiquidThick_Flow" ID="{731BA514-E4D9-4EB4-9C4A-B6EE0B627B55}">
+						<Event Name="Play_Water_Thick" ID="{77B6E567-582F-4C05-80B6-443D4ACB2756}">
 							<ChildrenList>
-								<Action Name="" ID="{E8F8F157-6759-46C8-AE6D-27BDFF547D41}" ShortID="163475735">
+								<Action Name="" ID="{12D54D8E-F7BE-43A0-A5F4-8F79BD75CF23}" ShortID="156524250">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="LiquidThick_Flow" ID="{769A3780-D447-44F1-8C6C-C3B0D7055F40}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
+											<ObjectRef Name="Water+Thick" ID="{3B2DAB7A-3D74-460A-BD28-22CC6436725F}" WorkUnitID="{C52D7178-0240-492D-BF07-4D85E150F8FD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
