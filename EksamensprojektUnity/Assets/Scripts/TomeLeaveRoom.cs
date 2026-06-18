@@ -31,14 +31,15 @@ public class TomeLeaveRoom : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (_triggered || !other.CompareTag("Player")) return;
-        if (!MusicGameProgressManager.TomePickedUp) return;
+        bool tomeBurned = DialogueUI.Instance != null && DialogueUI.Instance.HasFlag("Tome Burned");
+        if (!MusicGameProgressManager.TomePickedUp && !tomeBurned) return;
 
         _triggered = true;
 
         if (_type == TriggerType.DoorBlocker)
         {
             if (_blockerObject != null) _blockerObject.SetActive(true);
-            if (_outsideSkybox != null) RenderSettings.skybox = _outsideSkybox;
+            if (_outsideSkybox != null && !tomeBurned) RenderSettings.skybox = _outsideSkybox;
             if (!string.IsNullOrEmpty(_roomToneRTPC))
                 AkUnitySoundEngine.SetRTPCValue(_roomToneRTPC, _roomToneRTPCValue);
         }
@@ -46,11 +47,14 @@ public class TomeLeaveRoom : MonoBehaviour
         {
             if (_tomeInPlayerHand != null) _tomeInPlayerHand.SetActive(false);
             MusicGameProgressManager.TomePickedUp = false;
-            DialogueUI.Instance.SetFlag("Goddess Freed");
-            MusicManager.Instance.SetStateTomeOutside(DialogueUI.Instance != null && DialogueUI.Instance.HasFlag("Tome Burned"));
-            AkUnitySoundEngine.PostEvent("Delayed_VolumeDown_TomeAura", gameObject);
+            MusicManager.Instance.SetStateTomeOutside(tomeBurned);
+            if (!tomeBurned)
+            {
+                DialogueUI.Instance.SetFlag("Goddess Freed");
+                AkUnitySoundEngine.PostEvent("Delayed_VolumeDown_TomeAura", gameObject);
+            }
 
-            if (!string.IsNullOrEmpty(_dialogueSoundEvent) && (DialogueUI.Instance == null || !DialogueUI.Instance.HasFlag("Tome Burned")))
+            if (!string.IsNullOrEmpty(_dialogueSoundEvent) && !tomeBurned)
             {
                 GameObject emitter = _audioEmitter != null ? _audioEmitter : gameObject;
                 AkUnitySoundEngine.PostEvent(_dialogueSoundEvent, emitter);

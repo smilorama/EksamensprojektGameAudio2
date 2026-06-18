@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID ATTACK_HITENEMY = 3927008369U;
         static const AkUniqueID ATTACK_HITNOTHING = 726189174U;
         static const AkUniqueID ATTACK_HITTERRAIN = 1224938770U;
+        static const AkUniqueID DELAYED_VOLUMEDOWN_TOMEAURA = 2321636193U;
         static const AkUniqueID DRINK_POTION = 2541729425U;
         static const AkUniqueID DRUMSVOLUMEUPCAVESCALING = 1852094833U;
         static const AkUniqueID PLAY_2_5_TOMEFORESHADOWING_SYRETFEEDBACKREVERB_BURNINGSCREAM = 496144422U;
