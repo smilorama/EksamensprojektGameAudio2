@@ -1291,6 +1291,16 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{7AEF0BE9-CFBF-4F8A-A091-312D0BF526CB}" ShortID="277263559">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="StereoWidth"/>
+										</PropertyList>
+										<ReferenceList/>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
 							<PluginData>
 	<ConvolutionData>
 		<CurveList Version="1">

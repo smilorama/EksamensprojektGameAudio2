@@ -344,6 +344,13 @@
 							</PositioningInfo>
 							<ObjectLists>
 								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{AE71E914-ACB5-409E-9E1D-0145FF22ECB0}" ShortID="1010813241">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+												<ObjectRef Name="Special_Effect_1" ID="{83317D8A-9D4C-438E-BE8C-BC7D27CAD1B0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
 									<EffectSlot Name="" ID="{9C2C8C46-17E8-4A0A-B6C8-4EFDBFF096C5}" ShortID="902540226">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
@@ -385,7 +392,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>0.31976</YPos>
+																<YPos>12.13629</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -407,7 +414,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-17</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -524,7 +531,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-17</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -641,7 +648,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-17</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -758,7 +765,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-18</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
