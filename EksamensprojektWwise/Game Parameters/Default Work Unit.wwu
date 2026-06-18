@@ -23,7 +23,7 @@
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="TomePickup" ID="{FF26C163-77B8-4A9F-90CD-678ADDF8C06D}">
+				<GameParameter Name="Water_Thick" ID="{FF26C163-77B8-4A9F-90CD-678ADDF8C06D}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>

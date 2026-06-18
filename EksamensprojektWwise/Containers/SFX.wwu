@@ -3325,6 +3325,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="LiquidThick_Mono" ID="{CC7C0942-E80E-4DD6-A370-B895ECD6B806}" ShortID="344210927">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -3353,6 +3356,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="LiquidThick_Stereo" ID="{FA0FC3BD-A831-484D-AA9B-861BA3662828}" ShortID="768500150">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -3404,7 +3410,7 @@
 												<BlendTrackAssoc>
 													<ItemRef Name="LiquidThick_Stereo" ID="{FA0FC3BD-A831-484D-AA9B-861BA3662828}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>78.7599399224806</LeftEdgePos>
+														<LeftEdgePos>71.3955988372093</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<RightEdgePos>100</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
@@ -3541,14 +3547,56 @@
 							</ChildrenList>
 							<BlendTrackList>
 								<BlendTrack Name="Mix" ID="{35B36C41-428E-45F8-AF64-A7D792C430C2}" ShortID="884929235">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="TomePickup" ID="{FF26C163-77B8-4A9F-90CD-678ADDF8C06D}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+											<ObjectRef Name="Water_Thick" ID="{FF26C163-77B8-4A9F-90CD-678ADDF8C06D}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
 										</Reference>
 									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{0D36014F-108E-4748-B25B-3C09D90F16BF}" ShortID="734746613">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Water_Thick" ID="{FF26C163-77B8-4A9F-90CD-678ADDF8C06D}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{CD6A7200-D67D-4ACC-B587-73BC71F352BA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>75</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
 									<BlendTrackAssocList>
 										<BlendTrackAssoc>
 											<ItemRef Name="Water_Flow" ID="{91ED9211-0194-4B82-BC66-FC7992E07476}"/>
@@ -3559,14 +3607,57 @@
 												<RightFadingMode>Automatic</RightFadingMode>
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+								<BlendTrack Name="New Blend Track" ID="{C0047590-697C-4214-AE85-D9B8F95991A6}" ShortID="1033832620">
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{41078A15-A293-4B55-8832-6103F8D88EF6}" ShortID="703010320">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Water_Thick" ID="{FF26C163-77B8-4A9F-90CD-678ADDF8C06D}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{98514F41-4EC5-4234-B1D0-F436BEE703C1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>75</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+									<BlendTrackAssocList>
 										<BlendTrackAssoc>
 											<ItemRef Name="LiquidThick_Flow" ID="{769A3780-D447-44F1-8C6C-C3B0D7055F40}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>46.9769941860465</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>100</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
 										</BlendTrackAssoc>
 									</BlendTrackAssocList>
 								</BlendTrack>
