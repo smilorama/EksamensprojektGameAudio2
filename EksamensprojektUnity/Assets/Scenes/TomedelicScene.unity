@@ -776,6 +776,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28992758}
   m_CullTransparentMesh: 1
+--- !u!1 &30494214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30494215}
+  - component: {fileID: 30494217}
+  - component: {fileID: 30494216}
+  m_Layer: 0
+  m_Name: Dungeon Room -> Dungeon Room Post Tome Portal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &30494215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30494214}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.000000029802319, z: -0, w: 1}
+  m_LocalPosition: {x: 91.02, y: 0.514, z: 7.549}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1078860363}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &30494216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30494214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cadfbfbc794c7490d93591c00fb78f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoomPortal
+  triggerList: 
+  useOtherObject: 0
+  initialState: 1
+  closePortalTriggerList: 
+  rooms:
+  - {fileID: 1465153344}
+  - {fileID: 497543037}
+  isStatic: 0
+--- !u!65 &30494217
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30494214}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.12, y: 4.07, z: 1.31}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &33839630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2083,61 +2157,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450d34fb43fac4a16b2af0e930c88e36, type: 3}
---- !u!1 &81258953
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 81258954}
-  - component: {fileID: 81258955}
-  m_Layer: 0
-  m_Name: 'First Cave - (inaktiv bruger Mesh Covex fra selve Cave''en) '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &81258954
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81258953}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.04239711, z: -0, w: 0.99910086}
-  m_LocalPosition: {x: 72.09, y: 1.646, z: 10.241}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 403714811}
-  m_LocalEulerAnglesHint: {x: 0, y: -4.86, z: 0}
---- !u!136 &81258955
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81258953}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 3.51
-  m_Height: 12.09
-  m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &82403992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2838,7 +2857,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.28, y: 3.26, z: 1}
+  m_Size: {x: 3.28, y: 3.26, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &127664513
 PrefabInstance:
@@ -3371,6 +3390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 149174285}
+  - component: {fileID: 149174286}
   m_Layer: 0
   m_Name: Mushroom Scale Point
   m_TagString: Untagged
@@ -3393,6 +3413,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 435050780}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &149174286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149174284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714fa65770a44334b874a4ce1adac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceToObjectParameter
+  _rtpcName: ScaleMushroom
+  _maxDistance: 7
 --- !u!1001 &149371775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7804,7 +7838,7 @@ MonoBehaviour:
   initialState: 1
   closePortalTriggerList: 
   rooms:
-  - {fileID: 1829992559}
+  - {fileID: 3469287838667848168}
   - {fileID: 3469287837884451371}
   isStatic: 0
 --- !u!65 &336166813
@@ -7826,7 +7860,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5, y: 2.5, z: 1}
+  m_Size: {x: 2.5, y: 2.5, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &336297337 stripped
 Transform:
@@ -8163,6 +8197,7 @@ Transform:
   m_Children:
   - {fileID: 468155103}
   - {fileID: 403714811}
+  - {fileID: 1089388584}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &356921369 stripped
@@ -9555,8 +9590,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2089491550}
-  - {fileID: 1889866691}
-  - {fileID: 81258954}
   - {fileID: 1829992555}
   - {fileID: 1078860363}
   - {fileID: 1555367464}
@@ -13115,6 +13148,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6367522677273515656, guid: 019e3d247d47d4961b8cbbc74965d6bf, type: 3}
   m_PrefabInstance: {fileID: 553232687}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &553399883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 553399884}
+  - component: {fileID: 553399886}
+  - component: {fileID: 553399885}
+  m_Layer: 0
+  m_Name: Rotating Floor Room Post Tome Pickup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &553399884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553399883}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.7071079}
+  m_LocalPosition: {x: 78.71, y: 1, z: -0.67}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1555367464}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &553399885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553399883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c097f54aff044b79eddaa284bc58de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoom
+  triggerList: f7e1664c
+  useOtherObject: 0
+  priority: 0
+  reverbAuxBus:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aaaa7f6d5801c4a188ebe10e469c10ab, type: 2}
+  reverbLevel: 0.212
+  transmissionLoss: 1
+  distanceBehavior: 0
+  roomToneEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  roomToneAuxSend: 0
+  isStatic: 0
+--- !u!65 &553399886
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553399883}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.05, y: 9.01, z: 10.58}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &555169558 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1064458111539832515, guid: 9b1b08b09d252499989a305aee6732f7, type: 3}
@@ -14059,7 +14174,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.77, y: 3.67, z: 1}
+  m_Size: {x: 2.77, y: 3.67, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &596047697
 MonoBehaviour:
@@ -14598,7 +14713,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.77, y: 4.2, z: 1}
+  m_Size: {x: 2.77, y: 4.2, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &624341050 stripped
 Transform:
@@ -17745,6 +17860,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 797491843}
+  - component: {fileID: 797491844}
   m_Layer: 0
   m_Name: Rotate Point
   m_TagString: Untagged
@@ -17767,6 +17883,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 435050780}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &797491844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797491842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714fa65770a44334b874a4ce1adac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceToObjectParameter
+  _rtpcName: RotateFloor
+  _maxDistance: 6
 --- !u!1001 &798620147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19746,6 +19876,80 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e48b8198dc47422b93974b772203676, type: 3}
+--- !u!1 &916278781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 916278782}
+  - component: {fileID: 916278784}
+  - component: {fileID: 916278783}
+  m_Layer: 0
+  m_Name: Dungeon Room Post Tome -> Rotating Floor Room Post Tome Portal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &916278782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916278781}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.7071078}
+  m_LocalPosition: {x: 82.86, y: 0.963, z: -2.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1078860363}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &916278783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916278781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cadfbfbc794c7490d93591c00fb78f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoomPortal
+  triggerList: 
+  useOtherObject: 0
+  initialState: 1
+  closePortalTriggerList: 
+  rooms:
+  - {fileID: 1465153344}
+  - {fileID: 553399885}
+  isStatic: 0
+--- !u!65 &916278784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916278781}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.7, y: 2.38, z: 2.63}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &916358071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7784357873593146272, guid: 6e48b8198dc47422b93974b772203676, type: 3}
@@ -22992,6 +23196,8 @@ Transform:
   - {fileID: 596047694}
   - {fileID: 623352561}
   - {fileID: 127482184}
+  - {fileID: 30494215}
+  - {fileID: 916278782}
   - {fileID: 1416991616}
   m_Father: {fileID: 403714811}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23255,7 +23461,7 @@ GameObject:
   - component: {fileID: 1089388586}
   - component: {fileID: 1089388585}
   m_Layer: 0
-  m_Name: MusicManager
+  m_Name: Music Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23269,12 +23475,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089388583}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 95.91561, y: 4.49999, z: -28.93148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1935363887}
+  m_Father: {fileID: 356554140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1089388585
 MonoBehaviour:
@@ -27147,7 +27353,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5, y: 2.5, z: 1}
+  m_Size: {x: 2.5, y: 2.5, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1276748923
 PrefabInstance:
@@ -30005,7 +30211,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 1}
+  m_Size: {x: 2, y: 2, z: 3.01}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1416746803
 PrefabInstance:
@@ -30108,7 +30314,7 @@ Transform:
   m_GameObject: {fileID: 1416991615}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071067, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 75.085, y: 1.12, z: 2.857}
+  m_LocalPosition: {x: 75.08, y: 1.12, z: 2.95}
   m_LocalScale: {x: 1.0769327, y: 1.1491, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30132,7 +30338,7 @@ MonoBehaviour:
   closePortalTriggerList: 
   rooms:
   - {fileID: 1041381184}
-  - {fileID: 1829992559}
+  - {fileID: 553399885}
   isStatic: 0
 --- !u!65 &1416991618
 BoxCollider:
@@ -30153,7 +30359,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 1}
+  m_Size: {x: 2, y: 2, z: 3.49}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1418155341
 PrefabInstance:
@@ -31206,6 +31412,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 342198112983566996, guid: 50a95acf0582d4e139dd31862559a7e9, type: 3}
   m_PrefabInstance: {fileID: 1462480076}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1465153342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1465153343}
+  - component: {fileID: 1465153345}
+  - component: {fileID: 1465153344}
+  m_Layer: 0
+  m_Name: Dungeon Room Post Tome Pickup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1465153343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465153342}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.7071079}
+  m_LocalPosition: {x: 90.18, y: 1, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1555367464}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1465153344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465153342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c097f54aff044b79eddaa284bc58de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoom
+  triggerList: f7e1664c
+  useOtherObject: 0
+  priority: 0
+  reverbAuxBus:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aaaa7f6d5801c4a188ebe10e469c10ab, type: 2}
+  reverbLevel: 0.212
+  transmissionLoss: 1
+  distanceBehavior: 0
+  roomToneEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  roomToneAuxSend: 0
+  isStatic: 0
+--- !u!65 &1465153345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465153342}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.21, y: 9.01, z: 15.39}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1465575046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7784357873593146272, guid: 6e48b8198dc47422b93974b772203676, type: 3}
@@ -33214,6 +33502,8 @@ Transform:
   m_Children:
   - {fileID: 1386714738}
   - {fileID: 497543036}
+  - {fileID: 1465153343}
+  - {fileID: 553399884}
   - {fileID: 204139446}
   - {fileID: 1798092309}
   - {fileID: 1041381183}
@@ -38271,6 +38561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0714fa65770a44334b874a4ce1adac30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DistanceToCaveParameter
+  _rtpcName: DistanceToCave
   _maxDistance: 75
 --- !u!1001 &1793400722
 PrefabInstance:
@@ -39840,7 +40131,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.5, y: 2.5, z: 1}
+  m_Size: {x: 3.5, y: 2.5, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1864554640
 GameObject:
@@ -39851,6 +40142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1864554641}
+  - component: {fileID: 1864554642}
   m_Layer: 0
   m_Name: Scale Point
   m_TagString: Untagged
@@ -39873,6 +40165,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 435050780}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1864554642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864554640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0714fa65770a44334b874a4ce1adac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceToObjectParameter
+  _rtpcName: ScaleCaveTunnel
+  _maxDistance: 6
 --- !u!1 &1868161636
 GameObject:
   m_ObjectHideFlags: 0
@@ -40358,59 +40664,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioMaterial
   audioMaterialType: 1
---- !u!1 &1889866690
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1889866691}
-  - component: {fileID: 1889866692}
-  m_Layer: 0
-  m_Name: First Tunnel - (inaktiv bruger Mesh Covex fra selve tunnellen)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1889866691
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889866690}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.07042353, z: -0, w: 0.9975172}
-  m_LocalPosition: {x: 59.021, y: 1.13, z: 9.24}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 403714811}
-  m_LocalEulerAnglesHint: {x: 0, y: -8.077, z: 0}
---- !u!65 &1889866692
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889866690}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 13.92, y: 2.9, z: 3.42}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1890546853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41325,7 +41578,6 @@ Transform:
   - {fileID: 390468707}
   - {fileID: 1839201644}
   - {fileID: 1573370309}
-  - {fileID: 1089388584}
   m_Father: {fileID: 403714811}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1937549218
@@ -46913,6 +47165,7 @@ GameObject:
   - component: {fileID: 3469287838128572628}
   - component: {fileID: 1711813855139363870}
   - component: {fileID: 3469287838128572629}
+  - component: {fileID: 3469287838128572630}
   m_Layer: 0
   m_Name: LowPoly_Tomemedelic_Tome_of_the_Goddess
   m_TagString: Untagged
@@ -47671,6 +47924,7 @@ GameObject:
   - component: {fileID: 2069492041027427820}
   - component: {fileID: 3105103981852955209}
   - component: {fileID: 933226812248417923}
+  - component: {fileID: 3105103981852955210}
   m_Layer: 0
   m_Name: LowPoly_Tomemedelic_Tome_of_the_Goddess
   m_TagString: Untagged
@@ -48430,6 +48684,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725864538709968726}
   m_Mesh: {fileID: -5495902117074765545, guid: 9ba2b284e50414d5aabee444472f5aea, type: 3}
+--- !u!114 &3105103981852955210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725864538709968726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff067b6cd25e1425eb5c8aec2f6d744f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TomeAuraEmitter
+  _audioEvent: Play_4_TomeAura_3D_Loop
 --- !u!23 &3129779574722978707
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48930,8 +49197,19 @@ MonoBehaviour:
   _interactRange: 1.38
   _promptRange: 2
   _interactPromptPanel: {fileID: 1957775548}
-  tomeAuraStateGroup: TomeAuraStates
-  tomePickupStateValue: TomePickup
+--- !u!114 &3469287838128572630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147535830475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff067b6cd25e1425eb5c8aec2f6d744f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TomeAuraEmitter
+  _audioEvent: Play_4_TomeAura_3D_Loop
 --- !u!33 &3469287838387841414
 MeshFilter:
   m_ObjectHideFlags: 0

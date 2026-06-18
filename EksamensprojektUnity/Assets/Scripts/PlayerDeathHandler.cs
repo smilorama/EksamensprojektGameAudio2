@@ -21,6 +21,8 @@ public class PlayerDeathHandler : MonoBehaviour
         foreach (var c in _componentsToDisableOnDeath)
             if (c != null) c.enabled = false;
 
+        MusicManager.Instance.SetStatePlayerDeath();
+
         if (_youDiedPanel != null) _youDiedPanel.SetActive(true);
         StartCoroutine(RestartAfterDelay());
     }

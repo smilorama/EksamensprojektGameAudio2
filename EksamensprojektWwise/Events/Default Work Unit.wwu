@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream" ID="{82ECF2DF-48FD-465E-9786-829970B8385A}">
+					<ChildrenList>
+						<Action Name="" ID="{419D4E5D-1E70-4A6F-B0E8-918DA35CA478}" ShortID="182882970">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream" ID="{8A823BAC-BD7D-4FAF-BFD0-3977D630DD46}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
