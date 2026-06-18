@@ -18,6 +18,29 @@
 							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
 						</Reference>
 					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<EffectSlot Name="" ID="{74D25988-C3BE-4FD7-88A5-2AF2659B8807}" ShortID="968553617">
+								<ReferenceList>
+									<Reference Name="Effect">
+										<Custom>
+											<Effect Name="Parametric EQ (Custom)" ID="{80994C9F-1BB8-46BE-ADFD-9A31AA3ED7FD}" ShortID="491722242" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<PropertyList>
+													<Property Name="FrequencyBand2" Type="Real32" Value="1541.653"/>
+													<Property Name="FrequencyBand3" Type="Real32" Value="8000"/>
+													<Property Name="GainBand2" Type="Real32" Value="2.820513"/>
+													<Property Name="GainBand3" Type="Real32" Value="1.794872"/>
+													<Property Name="OnOffBand3" Type="bool" Value="True"/>
+													<Property Name="QFactorBand2" Type="Real32" Value="0.4"/>
+													<Property Name="QFactorBand3" Type="Real32" Value="1.8"/>
+												</PropertyList>
+											</Effect>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</EffectSlot>
+						</ObjectList>
+					</ObjectLists>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

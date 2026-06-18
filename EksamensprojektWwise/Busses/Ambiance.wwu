@@ -42,13 +42,13 @@
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-25.07693</XPos>
-														<YPos>-6.07068</YPos>
+														<XPos>-25</XPos>
+														<YPos>-3.87</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-6.07068</YPos>
+														<YPos>-3.87</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -84,13 +84,13 @@
 														<SegmentShape>Log2</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-24.84706</XPos>
-														<YPos>40</YPos>
+														<XPos>-25</XPos>
+														<YPos>24</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>42</YPos>
+														<YPos>26</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
