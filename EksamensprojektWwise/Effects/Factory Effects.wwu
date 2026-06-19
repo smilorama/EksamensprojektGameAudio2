@@ -2166,16 +2166,16 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-2400</YPos>
+																		<YPos>-4800</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.04184</XPos>
-																		<YPos>-600</YPos>
+																		<XPos>5</XPos>
+																		<YPos>-1800</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>20.5020920502092</XPos>
+																		<XPos>10.04284</XPos>
 																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>

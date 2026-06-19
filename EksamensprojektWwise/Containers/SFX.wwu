@@ -1975,7 +1975,7 @@
 																</PropertyList>
 																<ReferenceList>
 																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PlayerHealth_Param" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+																		<ObjectRef Name="PlayerHealthPara" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
@@ -2011,7 +2011,7 @@
 																</PropertyList>
 																<ReferenceList>
 																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PlayerHealth_Param" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+																		<ObjectRef Name="PlayerHealthPara" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
@@ -2092,7 +2092,7 @@
 																</PropertyList>
 																<ReferenceList>
 																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PlayerHealth_Param" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+																		<ObjectRef Name="PlayerHealthPara" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
@@ -2128,7 +2128,7 @@
 																</PropertyList>
 																<ReferenceList>
 																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PlayerHealth_Param" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+																		<ObjectRef Name="PlayerHealthPara" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
@@ -2169,7 +2169,7 @@
 																</PropertyList>
 																<ReferenceList>
 																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PlayerHealth_Param" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+																		<ObjectRef Name="PlayerHealthPara" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
