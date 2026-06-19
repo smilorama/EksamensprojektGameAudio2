@@ -679,7 +679,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-4.55183</YPos>
+																<YPos>-4.72931</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1407,9 +1407,9 @@
 								</ObjectList>
 							</ObjectLists>
 						</Effect>
-						<Effect Name="Delay0_3sec_FightingWizard" ID="{54A7E6AD-DCE0-4C09-A563-2294850F0F40}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+						<Effect Name="Delay0_2sec_FightingWizard" ID="{54A7E6AD-DCE0-4C09-A563-2294850F0F40}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
-								<Property Name="DelayTime" Type="Real32" Value="0.3"/>
+								<Property Name="DelayTime" Type="Real32" Value="0.2"/>
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
@@ -1440,7 +1440,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>17.96406</YPos>
+																<YPos>11.97603</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1471,12 +1471,130 @@
 															</Point>
 															<Point>
 																<XPos>30.04484</XPos>
-																<YPos>34.27585</YPos>
+																<YPos>13.91657</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>44.31138</YPos>
+																<YPos>37.12576</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="Delay0_3sec_FightingWizard" ID="{0C2F55ED-A6CD-46AF-B5D6-C1B27A0448D3}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.3"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{8901506C-5DDB-4E2E-8CE0-16F5B56A54FC}" ShortID="125650437">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetDryMix"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{261DFD29-ED68-445D-97B8-BF245C6A7699}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>30.19432</XPos>
+																<YPos>-11.62787</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>9.58083</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{17D06B41-F512-4EDC-88F7-D68C97949E0E}" ShortID="557707475">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Feedback"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{A85BF944-9411-49D4-B036-EE48E1D59B5A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>30.04484</XPos>
+																<YPos>11.52136</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>28.74252</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
+						<Effect Name="Gain_FightingWizard" ID="{950A9B24-EC41-4B76-A57C-A39CDF2864B2}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{9636B952-4E3C-4FA5-A7E3-AF4161CB219B}" ShortID="1004962669">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="FullBandGain"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{85B94A50-CC21-417D-BA84-A7D2062B78C4}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-1.04895</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>3.54787</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
