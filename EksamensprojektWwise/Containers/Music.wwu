@@ -119,6 +119,11 @@
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="25290.7373835239"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -502,7 +507,7 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -788,7 +793,7 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-4</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1389,7 +1394,7 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1928,7 +1933,7 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-4</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3295,7 +3300,7 @@
 														</PropertyList>
 														<ReferenceList>
 															<Reference Name="ControlInput">
-																<ObjectRef Name="PlayerHealth_Param" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+																<ObjectRef Name="PlayerHealthPara" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
@@ -4103,7 +4108,7 @@
 														</PropertyList>
 														<ReferenceList>
 															<Reference Name="ControlInput">
-																<ObjectRef Name="PlayerHealth_Param" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
+																<ObjectRef Name="PlayerHealthPara" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
@@ -8173,7 +8178,7 @@
 										<StateRef Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
 										<CustomState Name="" ID="{F07726D1-C117-4963-B31C-47982B3392A7}" ShortID="711516354">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="3"/>
+												<Property Name="Volume" Type="Real64" Value="2"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -8250,11 +8255,7 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomeForeshadowing" ID="{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}"/>
-										<CustomState Name="" ID="{2CC5907D-6397-44C9-B49C-4C60D2A77A49}" ShortID="13746335">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="1"/>
-											</PropertyList>
-										</CustomState>
+										<CustomState Name="" ID="{2CC5907D-6397-44C9-B49C-4C60D2A77A49}" ShortID="13746335"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="None" ID="{CC3F7E07-D1F4-4C50-93BC-0732C39AB196}"/>
