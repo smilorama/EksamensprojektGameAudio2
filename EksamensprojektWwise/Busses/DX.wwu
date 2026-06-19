@@ -11,7 +11,7 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -36,12 +36,12 @@
 											<Effect Name="Parametric EQ (Custom)" ID="{0E2797C2-B74C-42E0-8BC1-F6853743CA4D}" ShortID="607542097" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 												<PropertyList>
 													<Property Name="FrequencyBand2" Type="Real32" Value="1541.653"/>
-													<Property Name="FrequencyBand3" Type="Real32" Value="8000"/>
+													<Property Name="FrequencyBand3" Type="Real32" Value="8123.172"/>
 													<Property Name="GainBand2" Type="Real32" Value="2.820513"/>
-													<Property Name="GainBand3" Type="Real32" Value="1.794872"/>
+													<Property Name="GainBand3" Type="Real32" Value="3.333333"/>
 													<Property Name="OnOffBand3" Type="bool" Value="True"/>
 													<Property Name="QFactorBand2" Type="Real32" Value="0.4"/>
-													<Property Name="QFactorBand3" Type="Real32" Value="1.8"/>
+													<Property Name="QFactorBand3" Type="Real32" Value="0.4"/>
 												</PropertyList>
 											</Effect>
 										</Custom>

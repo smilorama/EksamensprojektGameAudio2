@@ -125,7 +125,7 @@ namespace AK
         static const AkUniqueID DISTANCETOFOUNTAIN = 1162280475U;
         static const AkUniqueID FIGHTINGCULTIST = 1013602733U;
         static const AkUniqueID FIGHTINGWIZARD = 4002574858U;
-        static const AkUniqueID PLAYERHEALTH_PARAM = 2337577746U;
+        static const AkUniqueID PLAYERHEALTHPARA = 2126296630U;
         static const AkUniqueID ROTATEFLOOR = 1507362382U;
         static const AkUniqueID RTPC_MUSIC_DUCKING = 534515532U;
         static const AkUniqueID SCALECAVETUNNEL = 2206156252U;

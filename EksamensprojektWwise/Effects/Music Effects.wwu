@@ -611,6 +611,43 @@
 								</ObjectList>
 							</ObjectLists>
 						</Effect>
+						<Effect Name="Pitch_Shift_Down_ScaleCaveTunnel" ID="{BFDD4042-7D02-4148-B9A3-3428131119C0}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{BBEC6F2B-5660-449E-B45F-A4F5060330B6}" ShortID="1054771208">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{882BFF06-B36B-40B3-B320-0138AF4BD716}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-1623.80083</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
 						<Effect Name="Matrix_Reverb_Big_Drums_ScaleCaveTunnel" ID="{13F0D7D3-28CF-41DD-A867-A5E557855390}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
 								<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
@@ -626,7 +663,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -657,7 +694,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -693,7 +730,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -710,43 +747,6 @@
 															<Point>
 																<XPos>100</XPos>
 																<YPos>5.09676</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</ObjectList>
-							</ObjectLists>
-						</Effect>
-						<Effect Name="Pitch_Shift_Down_ScaleCaveTunnel" ID="{BFDD4042-7D02-4148-B9A3-3428131119C0}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<RTPC Name="" ID="{BBEC6F2B-5660-449E-B45F-A4F5060330B6}" ShortID="1054771208">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Pitch"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{882BFF06-B36B-40B3-B320-0138AF4BD716}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-1623.80083</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1011,7 +1011,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-78.4431</YPos>
+																<YPos>-58.23033</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1312,7 +1312,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -1343,7 +1343,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -1374,7 +1374,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -1407,8 +1407,136 @@
 								</ObjectList>
 							</ObjectLists>
 						</Effect>
+						<Effect Name="Delay0_3sec_FightingWizard" ID="{54A7E6AD-DCE0-4C09-A563-2294850F0F40}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.3"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{54B67426-C34B-4912-B632-BA41ADF0EBB5}" ShortID="571239827">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetDryMix"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{85A22651-CF5D-49A7-92CF-EC6C5561A687}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>30.19432</XPos>
+																<YPos>-11.62787</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>17.96406</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{0A41E010-CC8A-4AAA-99EB-EA0589B44200}" ShortID="855322702">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Feedback"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{43EC0E02-55F3-49CD-8A0D-29CBC51797AC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>30.04484</XPos>
+																<YPos>34.27585</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>44.31138</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Effect>
 					</ChildrenList>
 				</Folder>
+				<Effect Name="TomeOutSideStateDistortion" ID="{CCB9A353-D78B-4D5D-BCE7-B31549191B43}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="WetDryMix" Type="Real32" Value="0"/>
+					</PropertyList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="EndGameMusicStates" ID="{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}"/>
+								<StateGroupInfo Name="" ID="{2330B677-BBBD-4C39-9147-0213E6AF06CC}" ShortID="447622077"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
+								<CustomState Name="" ID="{D14123F2-BBD3-4553-8818-ED464595B30C}" ShortID="504547579"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
+								<CustomState Name="" ID="{32BD78F7-9E41-44DD-BAF0-32ADEFAF7FC5}" ShortID="922024765"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
+								<CustomState Name="" ID="{E13994B5-93B0-47AD-8B99-3DEC58792C4D}" ShortID="344229592"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
+								<CustomState Name="" ID="{A668AB0E-8666-4BC4-9DBE-17FE38267291}" ShortID="428533254"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
+								<CustomState Name="" ID="{92F88861-01E5-4ECD-BF8E-2863838CD0AC}" ShortID="698140528"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
+								<CustomState Name="" ID="{888F4299-A43E-4510-8F5A-F10FF99755F7}" ShortID="1060153868"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
+								<CustomState Name="" ID="{743695DC-C2BB-4355-94BD-B09D5008E31D}" ShortID="884709940"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
+								<CustomState Name="" ID="{E04FB6B1-8671-42BC-88E3-B286EF68844C}" ShortID="822734164"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
