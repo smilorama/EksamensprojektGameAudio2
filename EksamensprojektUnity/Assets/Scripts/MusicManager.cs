@@ -103,4 +103,9 @@ public class MusicManager : MonoBehaviour
     {
         AkUnitySoundEngine.PostEvent("Play_2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream", gameObject);
     }
+
+    public void PostDelayedVolumeDownTomeAura()
+    {
+        AkUnitySoundEngine.PostEvent("Delayed_VolumeDown_TomeAura", gameObject);
+    }
 }
