@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}" SchemaVersion="133">
+	<Effects>
+		<WorkUnit Name="DX Effects" ID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Effect Name="DX_Clarity" ID="{342D6DA8-4411-4890-9440-5B4197B93921}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand3" Type="int32" Value="5"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="4954.153"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="702.2383"/>
+						<Property Name="GainBand2" Type="Real32" Value="-0.7692308"/>
+						<Property Name="GainBand3" Type="Real32" Value="4.384615"/>
+						<Property Name="OnOffBand3" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="DX_Clarity_Subtle" ID="{FEB2F636-9253-4232-A1D4-9849B258EE1C}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand3" Type="int32" Value="5"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="4954.153"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="702.2383"/>
+						<Property Name="GainBand2" Type="Real32" Value="-0.7692308"/>
+						<Property Name="GainBand3" Type="Real32" Value="1.846154"/>
+						<Property Name="OnOffBand3" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

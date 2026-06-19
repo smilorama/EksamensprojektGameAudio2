@@ -118,6 +118,9 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="DrumsVolumeUpCaveScaling" ID="{AEEADF1D-06D5-43D9-916D-0DFC23B356BD}">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool" Value="False"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{C19708CB-D694-4E95-BDE9-CC8A37C52768}" ShortID="691375705">
 							<PropertyList>
@@ -152,7 +155,7 @@
 								<Property Name="ActionType" Type="int16" Value="12"/>
 								<Property Name="Delay" Type="Real64" Value="10"/>
 								<Property Name="FadeTime" Type="Real64" Value="10"/>
-								<Property Name="Volume" Type="Real64" Value="-9"/>
+								<Property Name="Volume" Type="Real64" Value="-6"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

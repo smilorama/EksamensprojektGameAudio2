@@ -25,7 +25,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>9</Value>
+												<Value>7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -49,6 +49,17 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{98DDBF46-590F-4238-B575-629C7F23655F}" ShortID="1004772054">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="DX_Clarity_Subtle" ID="{FEB2F636-9253-4232-A1D4-9849B258EE1C}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Line1 - Line1 færdig" ID="{E5A71148-8EA7-46A8-B685-9D603692E127}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -96,6 +107,18 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{8152950C-A0A2-49B7-9E21-45EE39B3FFCC}" ShortID="777478035">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="DX_Clarity" ID="{342D6DA8-4411-4890-9440-5B4197B93921}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+											<EffectSlot Name="" ID="{95D7900B-6400-441C-AAAB-B4CF15EC7344}" ShortID="730030559"/>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Line2 - Line2 Færdig" ID="{34AEB22A-04EF-4650-A058-319B7F2AE5E5}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -143,6 +166,17 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{DFBDF56F-7807-496C-93F1-2F8A0F4C7D6D}" ShortID="724060515">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="DX_Clarity" ID="{342D6DA8-4411-4890-9440-5B4197B93921}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Line3 - Line3 Færdig" ID="{4379144A-8821-4B1E-B1F6-CDDC0629446B}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -237,6 +271,17 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{CFDE4552-D18E-4211-B284-A8361C4F5AE7}" ShortID="929867747">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="DX_Clarity" ID="{342D6DA8-4411-4890-9440-5B4197B93921}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Line6 - Line 6" ID="{F5C4337D-E3A5-49CC-B4D1-97FE5C2B7C6C}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -284,6 +329,17 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{385F9B18-968B-4555-AA16-F089DE310B71}" ShortID="561196019">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="DX_Clarity" ID="{342D6DA8-4411-4890-9440-5B4197B93921}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Line7 - Line 7 færdig(2)" ID="{05D3BDB6-ECB7-4882-A9E9-8E61C6662574}" Platform="Linked"/>
 									</ActiveSourceList>
