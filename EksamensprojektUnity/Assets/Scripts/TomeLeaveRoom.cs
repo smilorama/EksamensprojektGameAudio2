@@ -40,7 +40,7 @@ public class TomeLeaveRoom : MonoBehaviour
         {
             if (_blockerObject != null) _blockerObject.SetActive(true);
             if (_outsideSkybox != null && !tomeBurned) RenderSettings.skybox = _outsideSkybox;
-            if (!string.IsNullOrEmpty(_roomToneRTPC) && !tomeBurned)
+            if (!string.IsNullOrEmpty(_roomToneRTPC) && MusicGameProgressManager.TomePickedUp && !tomeBurned)
                 AkUnitySoundEngine.SetRTPCValue(_roomToneRTPC, _roomToneRTPCValue);
         }
         else if (_type == TriggerType.OutsideTrigger)
@@ -51,7 +51,7 @@ public class TomeLeaveRoom : MonoBehaviour
             if (!tomeBurned)
             {
                 DialogueUI.Instance.SetFlag("Goddess Freed");
-                AkUnitySoundEngine.PostEvent("Delayed_VolumeDown_TomeAura", gameObject);
+                MusicManager.Instance.PostDelayedVolumeDownTomeAura();
             }
 
             if (!string.IsNullOrEmpty(_dialogueSoundEvent) && !tomeBurned)
