@@ -2449,6 +2449,9 @@
 														</StateInfo>
 													</EffectSlot>
 													<EffectSlot Name="" ID="{621C55CE-D99A-4176-9E90-75094C104FF8}" ShortID="349156296">
+														<PropertyList>
+															<Property Name="Bypass" Type="bool" Value="True"/>
+														</PropertyList>
 														<ReferenceList>
 															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 																<ObjectRef Name="Matrix_Reverb_Music_FightingWizard" ID="{976CAEDA-B8CD-482D-A420-4FE33027DD88}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>

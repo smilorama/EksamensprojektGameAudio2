@@ -1301,6 +1301,9 @@
 							</ObjectLists>
 						</Effect>
 						<Effect Name="Matrix_Reverb_Music_FightingWizard" ID="{976CAEDA-B8CD-482D-A420-4FE33027DD88}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<RTPC Name="" ID="{E36D364D-D9AA-408A-B816-6A5F764CD602}" ShortID="513609879">
