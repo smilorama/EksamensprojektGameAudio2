@@ -40,7 +40,7 @@ public class TomeLeaveRoom : MonoBehaviour
         {
             if (_blockerObject != null) _blockerObject.SetActive(true);
             if (_outsideSkybox != null && !tomeBurned) RenderSettings.skybox = _outsideSkybox;
-            if (!string.IsNullOrEmpty(_roomToneRTPC))
+            if (!string.IsNullOrEmpty(_roomToneRTPC) && !tomeBurned)
                 AkUnitySoundEngine.SetRTPCValue(_roomToneRTPC, _roomToneRTPCValue);
         }
         else if (_type == TriggerType.OutsideTrigger)

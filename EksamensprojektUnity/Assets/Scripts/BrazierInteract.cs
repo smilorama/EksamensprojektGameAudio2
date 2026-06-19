@@ -36,11 +36,15 @@ public class BrazierInteract : MonoBehaviour
 
         foreach (var r in _spawnedFire.GetComponentsInChildren<ParticleSystemRenderer>())
         {
+            Debug.Log($"[BrazierInteract] Renderer: {r.gameObject.name}, sharedMaterial: {r.sharedMaterial}");
             if (r.sharedMaterial == null) continue;
             Material mat = new Material(r.sharedMaterial);
             mat.EnableKeyword("_EMISSION");
-            mat.SetColor("_EmissionColor", _emissionColor * _emissionIntensity);
+            float h, s, v;
+            Color.RGBToHSV(_emissionColor, out h, out s, out v);
+            mat.SetColor("_EmissionColor", Color.HSVToRGB(h, s, 1f, true) * _emissionIntensity);
             r.material = mat;
+            Debug.Log($"[BrazierInteract] Set emission on {r.gameObject.name}, shader: {mat.shader.name}");
         }
     }
 
