@@ -575,7 +575,7 @@
 														<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
 														<CustomState Name="" ID="{98EAC175-C898-4306-B2C7-A0DE36CC7143}" ShortID="776646656">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
+																<Property Name="Volume" Type="Real64" Value="-8"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -3240,7 +3240,7 @@
 														<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
 														<CustomState Name="" ID="{1AA69759-0945-49C1-A9EC-0115480EEC93}" ShortID="81611506">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
+																<Property Name="Volume" Type="Real64" Value="-39"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -3248,7 +3248,7 @@
 														<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 														<CustomState Name="" ID="{33B9D9C8-6029-4D70-805A-ADB0D8B4E137}" ShortID="986408127">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-30"/>
+																<Property Name="Volume" Type="Real64" Value="-20"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -3280,13 +3280,17 @@
 														<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
 														<CustomState Name="" ID="{DD0243C0-7ADC-4A6D-BEC7-B8D85F3A8A1C}" ShortID="207138369">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="2"/>
+																<Property Name="Volume" Type="Real64" Value="1"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
-														<CustomState Name="" ID="{60E4B891-E3D7-477A-9DBC-713EA418930F}" ShortID="363751596"/>
+														<CustomState Name="" ID="{60E4B891-E3D7-477A-9DBC-713EA418930F}" ShortID="363751596">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-1"/>
+															</PropertyList>
+														</CustomState>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
@@ -4133,7 +4137,8 @@
 														<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
 														<CustomState Name="" ID="{22DF7774-CDCC-48E7-A70B-4F265C6DAA9E}" ShortID="666093485">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="6"/>
+																<Property Name="Lowpass" Type="int16" Value="49"/>
+																<Property Name="Volume" Type="Real64" Value="2"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -4141,7 +4146,7 @@
 														<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 														<CustomState Name="" ID="{D95033A2-1ADC-42CA-BB2F-1202F775F6F0}" ShortID="988665134">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="6"/>
+																<Property Name="Volume" Type="Real64" Value="1"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -4173,7 +4178,8 @@
 														<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
 														<CustomState Name="" ID="{04637F50-19B8-4208-A774-81F6A3162F44}" ShortID="543803163">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="2"/>
+																<Property Name="Lowpass" Type="int16" Value="38"/>
+																<Property Name="Volume" Type="Real64" Value="-2"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -4181,7 +4187,8 @@
 														<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
 														<CustomState Name="" ID="{6B1E6D98-B634-4F50-93A5-AE43B1998FDB}" ShortID="587917332">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-1"/>
+																<Property Name="Lowpass" Type="int16" Value="55"/>
+																<Property Name="Volume" Type="Real64" Value="-30"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -4364,6 +4371,37 @@
 																			<Point>
 																				<XPos>100</XPos>
 																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+													<RTPC Name="" ID="{F885B362-3A51-4FEF-BAEA-34A6D2E4F62F}" ShortID="710016084">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="FightingWizard" ID="{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}" WorkUnitID="{EECE3103-33CF-4934-A2BB-AF1F8A2CBAC1}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{C40FC186-0EBC-4D5B-A0C0-35697C9604CB}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>2</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -4959,7 +4997,7 @@
 														<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 														<CustomState Name="" ID="{3D627A3E-A913-46E2-A401-F46E77FB7B29}" ShortID="734229621">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="1"/>
+																<Property Name="Volume" Type="Real64" Value="2"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -4995,6 +5033,7 @@
 														<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
 														<CustomState Name="" ID="{2D6286E4-4B4B-442D-A484-FC1490632A30}" ShortID="797315881">
 															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="15"/>
 																<Property Name="Volume" Type="Real64" Value="-2"/>
 															</PropertyList>
 														</CustomState>
