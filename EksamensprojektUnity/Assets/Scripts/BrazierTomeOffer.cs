@@ -118,8 +118,6 @@ public class BrazierTomeOffer : MonoBehaviour
             AkUnitySoundEngine.PostEvent(_restoreEvent, emitter);
         }
 
-        MusicGameProgressManager.TomePickedUp = false;
-
         if (_globalVolume != null && _preTomeProfile != null)
             _globalVolume.profile = _preTomeProfile;
 
