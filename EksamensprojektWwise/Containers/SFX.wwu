@@ -1694,7 +1694,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="10m" ID="{80B02EF5-2E52-4632-AA77-AC181AEA7394}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+													<ObjectRef Name="5m" ID="{A7649CF1-658D-46BD-93C8-8ACEAC677CA0}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
