@@ -645,6 +645,88 @@
 											</Reference>
 										</ReferenceList>
 									</RTPC>
+									<RTPC Name="" ID="{FBE9BD2B-438E-4FE4-9C70-89890B79229E}" ShortID="416866296">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="DryLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{5F9DF52D-3510-4DDA-8C1A-58C144893A42}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>5</XPos>
+																<YPos>-1.9714</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10.28472</XPos>
+																<YPos>-120</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-120</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{242671D0-5749-48FB-8A02-1FAC98C0BB7E}" ShortID="1275336">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="WetLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleCaveTunnel" ID="{779ABA6F-23A4-44D8-9177-88BCBBB35366}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{85EF2EC1-D9F1-4A40-9267-C14E1CF2E255}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-120</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>5.17483</XPos>
+																<YPos>-2.1753</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10.18713</XPos>
+																<YPos>-0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
 								</ObjectList>
 							</ObjectLists>
 						</Effect>
@@ -679,7 +761,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-4.72931</YPos>
+																<YPos>-5.44663</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -745,8 +827,13 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
+																<XPos>20.5102</XPos>
+																<YPos>3.35948</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
 																<XPos>100</XPos>
-																<YPos>5.09676</YPos>
+																<YPos>5.48377</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -791,7 +878,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>500</YPos>
+																<YPos>250</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1359,7 +1446,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-6.96656</YPos>
+																<YPos>-2.38623</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1395,7 +1482,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-11.20302</YPos>
+																<YPos>-10.47847</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1594,7 +1681,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>3.54787</YPos>
+																<YPos>7.98761</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>

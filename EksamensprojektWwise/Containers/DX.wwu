@@ -25,7 +25,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>7</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -58,6 +58,13 @@
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
+											<EffectSlot Name="" ID="{E7CB4193-D309-4F18-A3DF-F2B5D193E43D}" ShortID="1073203173">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+														<ObjectRef Name="DX_Delay_UnUnderstable" ID="{AFE37D0E-52A9-4B8A-8680-D989C04819B2}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
 										</ObjectList>
 									</ObjectLists>
 									<ActiveSourceList>
@@ -83,7 +90,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -142,7 +149,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>9</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -171,7 +178,7 @@
 											<EffectSlot Name="" ID="{DFBDF56F-7807-496C-93F1-2F8A0F4C7D6D}" ShortID="724060515">
 												<ReferenceList>
 													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-														<ObjectRef Name="DX_Clarity" ID="{342D6DA8-4411-4890-9440-5B4197B93921}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
+														<ObjectRef Name="DX_Clarity_WizardLies" ID="{EAA2AF9B-430C-4D0E-BE7C-35387F1AFBF2}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -200,7 +207,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>7</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -224,6 +231,17 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{829CD0A0-AAB8-464F-B151-DCE7DEA846BA}" ShortID="167677974">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="DX_Clarity_IntroduceToWizard" ID="{44175183-6562-4C2D-8380-E253CCE47429}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Line4 - Line5 Færdig" ID="{3FB8A860-3A40-4A8C-8489-DD1F83806E78}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -247,7 +265,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -276,7 +294,7 @@
 											<EffectSlot Name="" ID="{CFDE4552-D18E-4211-B284-A8361C4F5AE7}" ShortID="929867747">
 												<ReferenceList>
 													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-														<ObjectRef Name="DX_Clarity" ID="{342D6DA8-4411-4890-9440-5B4197B93921}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
+														<ObjectRef Name="DX_Clarity_NewSky" ID="{0942EB0A-6A11-4512-B224-A3AF6C9EBC2B}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -305,7 +323,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -334,7 +352,7 @@
 											<EffectSlot Name="" ID="{385F9B18-968B-4555-AA16-F089DE310B71}" ShortID="561196019">
 												<ReferenceList>
 													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-														<ObjectRef Name="DX_Clarity" ID="{342D6DA8-4411-4890-9440-5B4197B93921}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
+														<ObjectRef Name="DX_Clarity_IntroduceToWizard" ID="{44175183-6562-4C2D-8380-E253CCE47429}" WorkUnitID="{7EFDD726-9540-4AA0-B3A4-1792D26BD78B}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -354,6 +372,11 @@
 										<Property Name="OutputBusHighpass" Type="int16">
 											<ValueList>
 												<Value>8</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

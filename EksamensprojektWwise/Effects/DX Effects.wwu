@@ -9,22 +9,76 @@
 			<ChildrenList>
 				<Effect Name="DX_Clarity" ID="{342D6DA8-4411-4890-9440-5B4197B93921}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
 						<Property Name="FilterTypeBand3" Type="int32" Value="5"/>
-						<Property Name="FrequencyBand2" Type="Real32" Value="4954.153"/>
-						<Property Name="FrequencyBand3" Type="Real32" Value="702.2383"/>
-						<Property Name="GainBand2" Type="Real32" Value="-0.7692308"/>
-						<Property Name="GainBand3" Type="Real32" Value="4.384615"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="10748.98"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="1748.248"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="412.7021"/>
+						<Property Name="GainBand1" Type="Real32" Value="0.9230769"/>
+						<Property Name="GainBand2" Type="Real32" Value="-2.307692"/>
+						<Property Name="GainBand3" Type="Real32" Value="2.846154"/>
 						<Property Name="OnOffBand3" Type="bool" Value="True"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="0.2"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
 					</PropertyList>
 				</Effect>
 				<Effect Name="DX_Clarity_Subtle" ID="{FEB2F636-9253-4232-A1D4-9849B258EE1C}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 					<PropertyList>
 						<Property Name="FilterTypeBand3" Type="int32" Value="5"/>
-						<Property Name="FrequencyBand2" Type="Real32" Value="4954.153"/>
-						<Property Name="FrequencyBand3" Type="Real32" Value="702.2383"/>
-						<Property Name="GainBand2" Type="Real32" Value="-0.7692308"/>
-						<Property Name="GainBand3" Type="Real32" Value="1.846154"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="4946.391"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="756.0632"/>
+						<Property Name="GainBand2" Type="Real32" Value="1.846154"/>
+						<Property Name="GainBand3" Type="Real32" Value="2.615385"/>
 						<Property Name="OnOffBand3" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="DX_Clarity_NewSky" ID="{0942EB0A-6A11-4512-B224-A3AF6C9EBC2B}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="6747.143"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="115.5654"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="474.5816"/>
+						<Property Name="GainBand1" Type="Real32" Value="8.153846"/>
+						<Property Name="GainBand2" Type="Real32" Value="2.461539"/>
+						<Property Name="GainBand3" Type="Real32" Value="5.384615"/>
+						<Property Name="OnOffBand3" Type="bool" Value="True"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="0.125"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.7"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="DX_Clarity_IntroduceToWizard" ID="{44175183-6562-4C2D-8380-E253CCE47429}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="5"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="7068.782"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="474.5816"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="1592.772"/>
+						<Property Name="GainBand1" Type="Real32" Value="3.230769"/>
+						<Property Name="GainBand2" Type="Real32" Value="5.384615"/>
+						<Property Name="GainBand3" Type="Real32" Value="3.230769"/>
+						<Property Name="OnOffBand3" Type="bool" Value="True"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="0.4"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.7"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="DX_Delay_UnUnderstable" ID="{AFE37D0E-52A9-4B8A-8680-D989C04819B2}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+					<PropertyList>
+						<Property Name="Feedback" Type="Real32" Value="42.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="DX_Clarity_WizardLies" ID="{EAA2AF9B-430C-4D0E-BE7C-35387F1AFBF2}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="5"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="8255.822"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="1520.298"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="302.5557"/>
+						<Property Name="GainBand1" Type="Real32" Value="0.7692308"/>
+						<Property Name="GainBand2" Type="Real32" Value="-1.846154"/>
+						<Property Name="GainBand3" Type="Real32" Value="3.384615"/>
+						<Property Name="OnOffBand3" Type="bool" Value="True"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="0.2"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
 					</PropertyList>
 				</Effect>
 			</ChildrenList>
