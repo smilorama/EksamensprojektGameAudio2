@@ -29,6 +29,33 @@
 										<MusicTransition Name="Transition" ID="{8D0BAD29-33C9-4E32-8F59-CE164AF6CB0A}">
 											<TransitionInfo/>
 										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{D137ABF1-4825-44AF-ADF1-23BF0B196431}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="6_TomeFire_Playlist" ID="{56B34FC6-9625-4C8E-9A97-A7BD254E0AE1}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="5_TomePossession_Playlist" ID="{4E58524A-A98E-4BC3-AE74-8DD2DC4DD8B5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{2FD008EA-BB51-43D4-B1FF-4681120877D0}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="0.8"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
 								</MusicTransition>
@@ -2449,9 +2476,6 @@
 														</StateInfo>
 													</EffectSlot>
 													<EffectSlot Name="" ID="{621C55CE-D99A-4176-9E90-75094C104FF8}" ShortID="349156296">
-														<PropertyList>
-															<Property Name="Bypass" Type="bool" Value="True"/>
-														</PropertyList>
 														<ReferenceList>
 															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 																<ObjectRef Name="Matrix_Reverb_Music_FightingWizard" ID="{976CAEDA-B8CD-482D-A420-4FE33027DD88}" WorkUnitID="{98648880-01BB-4D40-9B7D-384C7DCF6F0A}"/>
@@ -3523,51 +3547,6 @@
 														</StateInfo>
 													</EffectSlot>
 												</ObjectList>
-												<ObjectList Name="RTPC">
-													<RTPC Name="" ID="{C1CBFBDE-09BB-40BB-8785-3B581A22C974}" ShortID="78555912">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="PlayerHealthPara" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{877F50D2-29AF-4C7C-AD9C-F952489CD4F9}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>Log2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>20</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Log2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>80.58824</XPos>
-																				<YPos>0</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</ObjectList>
 												<ObjectList Name="Sequences">
 													<MusicTrackSequence Name="" ID="{BFC161F4-958C-488D-B6B8-6DD046DBA796}">
 														<ObjectLists>
@@ -4335,50 +4314,6 @@
 													</EffectSlot>
 												</ObjectList>
 												<ObjectList Name="RTPC">
-													<RTPC Name="" ID="{8D9F6C23-C34B-4CF7-8BC7-331632CE3F42}" ShortID="519945235">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="PlayerHealthPara" ID="{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}" WorkUnitID="{212AD789-B087-4C60-848D-1E701557CCB5}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{0864C7C2-E131-4463-AF16-5E20BBAF2236}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>Log2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>20</XPos>
-																				<YPos>0</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Exp2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>80</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Exp2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
 													<RTPC Name="" ID="{F885B362-3A51-4FEF-BAEA-34A6D2E4F62F}" ShortID="710016084">
 														<PropertyList>
 															<Property Name="PropertyName" Type="string" Value="Volume"/>
@@ -5959,6 +5894,24 @@
 											<ReferenceList>
 												<Reference Name="EntryPathObject">
 													<ObjectRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}" WorkUnitID="{535A3FFB-9A7B-4495-846C-ACF40509EA46}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{DF00863B-6285-4FAC-8DB9-447A31A4789D}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="5_TomePossession_Playlist" ID="{4E58524A-A98E-4BC3-AE74-8DD2DC4DD8B5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{0416DACD-F49B-4474-B5FC-7A26859344A5}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}" WorkUnitID="{535A3FFB-9A7B-4495-846C-ACF40509EA46}"/>
 												</Reference>
 											</ReferenceList>
 										</PluginInnerObject>
@@ -10321,7 +10274,7 @@
 										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
 										<CustomState Name="" ID="{72AB72C1-45BD-45DA-AFE2-67FF73D09D85}" ShortID="173387085">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-15"/>
+												<Property Name="Volume" Type="Real64" Value="-16"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -10430,7 +10383,11 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
-										<CustomState Name="" ID="{714FAC2C-2064-482B-86D2-A70E4EFDEC74}" ShortID="975923263"/>
+										<CustomState Name="" ID="{714FAC2C-2064-482B-86D2-A70E4EFDEC74}" ShortID="975923263">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-1"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomePickup" ID="{4CE39B41-627B-4B11-B947-197F691ECCB2}"/>
@@ -10544,7 +10501,7 @@
 										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
 										<CustomState Name="" ID="{18408A6A-772D-4D96-AA3F-5C0664BF088A}" ShortID="532185291">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-10"/>
+												<Property Name="Volume" Type="Real64" Value="-11"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -10660,7 +10617,7 @@
 										<StateRef Name="HappyEndning" ID="{D7173921-D059-4AEC-B285-CE3BF3E4919B}"/>
 										<CustomState Name="" ID="{FD95899D-4F49-431A-97AF-EB5096493263}" ShortID="609793080">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-2"/>
+												<Property Name="Volume" Type="Real64" Value="-3"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -11010,7 +10967,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-11</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
