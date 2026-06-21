@@ -4113,7 +4113,7 @@
 														<CustomState Name="" ID="{22DF7774-CDCC-48E7-A70B-4F265C6DAA9E}" ShortID="666093485">
 															<PropertyList>
 																<Property Name="Lowpass" Type="int16" Value="49"/>
-																<Property Name="Volume" Type="Real64" Value="2"/>
+																<Property Name="Volume" Type="Real64" Value="3"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
