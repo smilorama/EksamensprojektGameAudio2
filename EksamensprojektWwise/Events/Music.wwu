@@ -155,7 +155,7 @@
 								<Property Name="ActionType" Type="int16" Value="12"/>
 								<Property Name="Delay" Type="Real64" Value="10"/>
 								<Property Name="FadeTime" Type="Real64" Value="10"/>
-								<Property Name="Volume" Type="Real64" Value="-6"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

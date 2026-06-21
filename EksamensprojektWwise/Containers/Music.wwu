@@ -602,7 +602,7 @@
 														<StateRef Name="PlayerDeath" ID="{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}"/>
 														<CustomState Name="" ID="{98EAC175-C898-4306-B2C7-A0DE36CC7143}" ShortID="776646656">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-8"/>
+																<Property Name="Volume" Type="Real64" Value="-7"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -1464,7 +1464,7 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2714,7 +2714,7 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2811,7 +2811,7 @@
 														<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 														<CustomState Name="" ID="{61D2539D-4F53-4DA4-B28D-1FC75C4180F6}" ShortID="229000279">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
+																<Property Name="Volume" Type="Real64" Value="-2"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -3272,7 +3272,7 @@
 														<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 														<CustomState Name="" ID="{33B9D9C8-6029-4D70-805A-ADB0D8B4E137}" ShortID="986408127">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-20"/>
+																<Property Name="Volume" Type="Real64" Value="-17"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -3304,17 +3304,13 @@
 														<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
 														<CustomState Name="" ID="{DD0243C0-7ADC-4A6D-BEC7-B8D85F3A8A1C}" ShortID="207138369">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="1"/>
+																<Property Name="Volume" Type="Real64" Value="2"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
-														<CustomState Name="" ID="{60E4B891-E3D7-477A-9DBC-713EA418930F}" ShortID="363751596">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-1"/>
-															</PropertyList>
-														</CustomState>
+														<CustomState Name="" ID="{60E4B891-E3D7-477A-9DBC-713EA418930F}" ShortID="363751596"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="TomeFire" ID="{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}"/>
@@ -4055,7 +4051,7 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-1</Value>
+														<Value>1</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4123,11 +4119,7 @@
 													</CustomState>
 													<CustomState>
 														<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
-														<CustomState Name="" ID="{D95033A2-1ADC-42CA-BB2F-1202F775F6F0}" ShortID="988665134">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="1"/>
-															</PropertyList>
-														</CustomState>
+														<CustomState Name="" ID="{D95033A2-1ADC-42CA-BB2F-1202F775F6F0}" ShortID="988665134"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
@@ -4158,7 +4150,7 @@
 														<CustomState Name="" ID="{04637F50-19B8-4208-A774-81F6A3162F44}" ShortID="543803163">
 															<PropertyList>
 																<Property Name="Lowpass" Type="int16" Value="38"/>
-																<Property Name="Volume" Type="Real64" Value="-2"/>
+																<Property Name="Volume" Type="Real64" Value="-1"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -4932,7 +4924,7 @@
 														<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 														<CustomState Name="" ID="{3D627A3E-A913-46E2-A401-F46E77FB7B29}" ShortID="734229621">
 															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="2"/>
+																<Property Name="Volume" Type="Real64" Value="3"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -4962,14 +4954,18 @@
 													</CustomState>
 													<CustomState>
 														<StateRef Name="TomeChoice" ID="{634C17EF-91D5-4CD4-B5AA-40275398D1E6}"/>
-														<CustomState Name="" ID="{EB322C2C-05DA-40B1-9F6B-0B4BE79594E5}" ShortID="569487271"/>
+														<CustomState Name="" ID="{EB322C2C-05DA-40B1-9F6B-0B4BE79594E5}" ShortID="569487271">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="1"/>
+															</PropertyList>
+														</CustomState>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="TomePossession" ID="{0A586B35-3899-4E53-8B4B-48F4063AAB75}"/>
 														<CustomState Name="" ID="{2D6286E4-4B4B-442D-A484-FC1490632A30}" ShortID="797315881">
 															<PropertyList>
 																<Property Name="Lowpass" Type="int16" Value="15"/>
-																<Property Name="Volume" Type="Real64" Value="-2"/>
+																<Property Name="Volume" Type="Real64" Value="-1"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -9147,7 +9143,7 @@
 										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 										<CustomState Name="" ID="{2525FF03-F0BB-42B2-8028-1D21F84EE8B3}" ShortID="164552023">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-3"/>
+												<Property Name="Volume" Type="Real64" Value="-1"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -9258,7 +9254,7 @@
 										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 										<CustomState Name="" ID="{39C93837-94BB-4CFF-A82F-1C1C4CAA1B70}" ShortID="698546321">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-3"/>
+												<Property Name="Volume" Type="Real64" Value="-2"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -9367,11 +9363,7 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
-										<CustomState Name="" ID="{F9FFD9C1-453D-4C53-BC5F-1F9058D67DA1}" ShortID="98155140">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-3"/>
-											</PropertyList>
-										</CustomState>
+										<CustomState Name="" ID="{F9FFD9C1-453D-4C53-BC5F-1F9058D67DA1}" ShortID="98155140"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
@@ -9480,7 +9472,7 @@
 										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 										<CustomState Name="" ID="{2B0674DF-3BF2-48CD-A34B-78720F068A27}" ShortID="676103472">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-3"/>
+												<Property Name="Volume" Type="Real64" Value="-2"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -9591,7 +9583,7 @@
 										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 										<CustomState Name="" ID="{A6667BA7-878D-4AF2-8B9A-976D95569BA3}" ShortID="608798268">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-9"/>
+												<Property Name="Volume" Type="Real64" Value="-6"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -9702,7 +9694,7 @@
 										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 										<CustomState Name="" ID="{34A6D937-0B38-49FE-9E03-EF0E8DA923E7}" ShortID="404823362">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-12"/>
+												<Property Name="Volume" Type="Real64" Value="-11"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -9811,11 +9803,7 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
-										<CustomState Name="" ID="{9647401E-7F5C-4432-8994-3E7B904B7704}" ShortID="636457275">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-3"/>
-											</PropertyList>
-										</CustomState>
+										<CustomState Name="" ID="{9647401E-7F5C-4432-8994-3E7B904B7704}" ShortID="636457275"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
@@ -9924,7 +9912,7 @@
 										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 										<CustomState Name="" ID="{D758AB24-6EE2-407B-B536-8D6409372C3E}" ShortID="339742404">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-3"/>
+												<Property Name="Volume" Type="Real64" Value="-2"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -10033,11 +10021,7 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
-										<CustomState Name="" ID="{5DC26624-1B95-486B-A254-CF3A6D026C13}" ShortID="463549074">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-3"/>
-											</PropertyList>
-										</CustomState>
+										<CustomState Name="" ID="{5DC26624-1B95-486B-A254-CF3A6D026C13}" ShortID="463549074"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="None" ID="{CB9631CB-F45D-489F-BE52-A7E8831B39EB}"/>
@@ -10146,7 +10130,7 @@
 										<StateRef Name="TomeOutside" ID="{BC014D77-778E-486D-BAED-F1D171D30707}"/>
 										<CustomState Name="" ID="{46DBAF2C-C0D9-4D7F-B473-4427010CF35B}" ShortID="388375194">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-3"/>
+												<Property Name="Volume" Type="Real64" Value="-2"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>

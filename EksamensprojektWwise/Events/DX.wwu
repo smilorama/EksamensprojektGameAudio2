@@ -24,6 +24,9 @@
 				<Event Name="Play_Line5" ID="{74D6B2B0-3A75-40AA-837D-D5B840274333}">
 					<ChildrenList>
 						<Action Name="" ID="{40379D9F-2AB6-4DCF-86F0-1EE6EC2DFDC9}" ShortID="642878067">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="4.5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Line5" ID="{53BF9D88-46FA-417D-A011-7D884C42D088}" WorkUnitID="{DAC0E132-6A2F-4969-BCA6-568CCA67ED82}"/>
