@@ -2145,6 +2145,11 @@
 								<Effect Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
 										<Property Name="DryLevel" Type="Real32" Value="0"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="Real32" Value="-1200"/>
 									</PropertyList>
 									<ObjectLists>
@@ -2243,7 +2248,7 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-0.26389</YPos>
+																		<YPos>-0.01396</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
@@ -2252,13 +2257,13 @@
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.3299856527977</XPos>
-																		<YPos>-96.9470552151118</YPos>
+																		<XPos>10.2108</XPos>
+																		<YPos>-0.01527</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>-120</YPos>
+																		<YPos>0.01538</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>

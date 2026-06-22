@@ -662,7 +662,7 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>0</YPos>
+																<YPos>-0</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
@@ -703,13 +703,8 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-120</YPos>
+																<YPos>0.15745</YPos>
 																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>5.17483</XPos>
-																<YPos>-2.1753</YPos>
-																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>10.18713</XPos>
@@ -916,6 +911,47 @@
 															<Point>
 																<XPos>100</XPos>
 																<YPos>1200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{949A8DB2-0DA4-4DA9-8DF0-F7FDFF6810A2}" ShortID="587913538">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="DryLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="ScaleMushroom" ID="{AE3DF993-E330-4DD7-AC5F-0B4AE08524B9}" WorkUnitID="{D35893DA-03F9-4ABE-AA3C-466C4F29510F}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{1B715EBD-9BA2-425D-B3ED-B34014D6AF74}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>5.36353</XPos>
+																<YPos>-2.67755</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10.13111</XPos>
+																<YPos>-120</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-120</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
