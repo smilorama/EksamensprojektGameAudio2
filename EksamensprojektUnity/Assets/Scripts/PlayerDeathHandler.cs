@@ -31,6 +31,7 @@ public class PlayerDeathHandler : MonoBehaviour
         foreach (var c in _componentsToDisableOnDeath)
             if (c != null) c.enabled = false;
 
+        AkUnitySoundEngine.PostEvent("PlayerDies", gameObject);
         MusicManager.Instance.SetStatePlayerDeath();
 
         if (_playerRoot != null)
