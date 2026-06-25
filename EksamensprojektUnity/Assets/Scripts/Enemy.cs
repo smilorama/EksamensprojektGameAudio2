@@ -64,12 +64,7 @@ public class Enemy : MonoBehaviour
     {
         if (_dead) return;
 
-        _detectionTimer += Time.deltaTime;
-        if (_detectionTimer >= 1f)
-        {
-            _detectionTimer = 0f;
-            DetectPlayer();
-        }
+        DetectPlayer();
 
         if (_state == State.Aggro)
         {

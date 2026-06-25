@@ -68,28 +68,14 @@ public class EnemyHealthBar : MonoBehaviour
 
     private void BuildUI()
     {
-        var rootGO = new GameObject("EnemyHUD");
-        rootGO.transform.SetParent(transform, false);
-
-        var canvas = rootGO.AddComponent<Canvas>();
-        canvas.renderMode   = RenderMode.ScreenSpaceOverlay;
-        canvas.sortingOrder = 50;
-
-        var scaler = rootGO.AddComponent<CanvasScaler>();
-        scaler.uiScaleMode         = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-        scaler.referenceResolution = new Vector2(1920, 1080);
-        scaler.matchWidthOrHeight  = 0.5f;
-
-        rootGO.AddComponent<GraphicRaycaster>();
-
-        var canvasRect      = rootGO.GetComponent<RectTransform>();
-        canvasRect.anchorMin = Vector2.zero;
-        canvasRect.anchorMax = Vector2.one;
-        canvasRect.offsetMin = canvasRect.offsetMax = Vector2.zero;
+        var rawImage = GameObject.Find("RawImage");
+        Transform uiParent = rawImage != null
+            ? rawImage.transform
+            : transform;
 
         // container — bottom-right
-        var containerGO   = new GameObject("Container");
-        containerGO.transform.SetParent(rootGO.transform, false);
+        var containerGO   = new GameObject("EnemyHUD");
+        containerGO.transform.SetParent(uiParent, false);
         var containerRect = containerGO.AddComponent<RectTransform>();
         containerRect.anchorMin        = new Vector2(1f, 0f);
         containerRect.anchorMax        = new Vector2(1f, 0f);
