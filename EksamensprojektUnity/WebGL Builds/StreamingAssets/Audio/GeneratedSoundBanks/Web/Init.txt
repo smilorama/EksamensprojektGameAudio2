@@ -1,0 +1,80 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	538938061	EndGameMusicStates			\Music States Work Unit\EndGameMusicStates	
+	831006884	BeginningMusicRoomStates			\Music States Work Unit\BeginningMusicRoomStates	
+	3042705799	TomeAuraStates			\Music States Work Unit\TomeAuraStates	
+
+State	ID	Name	State Group			Notes
+	376991726	HappyEndning	EndGameMusicStates			
+	748895195	None	EndGameMusicStates			
+	1212775290	TomePossession	EndGameMusicStates			
+	1656947812	PlayerDeath	EndGameMusicStates			
+	1776398501	TomeOutside	EndGameMusicStates			
+	2158032164	TomePickup	EndGameMusicStates			
+	4064190716	TomeFire	EndGameMusicStates			
+	4085709289	TomeChoice	EndGameMusicStates			
+	87758831	GrotteBeginning	BeginningMusicRoomStates			
+	748895195	None	BeginningMusicRoomStates			
+	4167468798	DungeonBeginning	BeginningMusicRoomStates			
+	748895195	None	TomeAuraStates			
+	1167319226	TomeSpiritualRoom	TomeAuraStates			
+	1866109078	TomeForeshadowing	TomeAuraStates			
+	2158032164	TomePickup	TomeAuraStates			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	534515532	RTPC_Music_Ducking			\Sidechain Parameters\RTPC_Music_Ducking	
+	2551938112	Scaling_Parameter			\Default Work Unit\Scaling_Parameter	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\SFX\SFX	
+	1836525785	DX			\DX\DX	
+	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	2981377429	Ambiance			\Ambiance\Ambiance	
+	3127962312	Music Bus			\Music Busses Work Unit\Music Bus	
+	3545700988	Reverbs			\Reverbs\Reverbs	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	230976631	ParkeringRev_003_Klap1			\Reverbs\Reverbs\ParkeringRev_003_Klap1	
+	288340792	ParkeringRev_001_Baelte1			\Reverbs\Reverbs\ParkeringRev_001_Baelte1	
+	903063735	ParkeringRev_005_Klap3			\Reverbs\Reverbs\ParkeringRev_005_Klap3	
+	1020492676	ParkeringRev_002_Baelte2			\Reverbs\Reverbs\ParkeringRev_002_Baelte2	
+	2406464834	Reverb_basic			\Reverbs\Reverbs\Reverb_basic	
+	2665109655	ParkeringRev_006_Klap4			\Reverbs\Reverbs\ParkeringRev_006_Klap4	
+	2730326357	StortRum2_Rev			\Reverbs\Reverbs\StortRum2_Rev	
+	2767839671	ParkeringRev_007_Klap5			\Reverbs\Reverbs\ParkeringRev_007_Klap5	
+	2986432809	LilleRum_Rev			\Reverbs\Reverbs\LilleRum_Rev	
+	3454183034	MediumRum_Rev			\Reverbs\Reverbs\MediumRum_Rev	
+	3813691439	ParkeringRev_008_Klap6			\Reverbs\Reverbs\ParkeringRev_008_Klap6	
+	3943616538	StortRum1_Rev			\Reverbs\Reverbs\StortRum1_Rev	
+	3950004767	ParkeringRev_004_Klap2			\Reverbs\Reverbs\ParkeringRev_004_Klap2	
+
+Effect plug-ins	ID	Name	Type				Notes
+	491722242	Parametric EQ (Custom)	Wwise Parametric EQ			
+	585755507	AK Convolution Reverb (Custom)	Wwise Convolution Reverb			
+	594760645	ParkeringsKaelderRev_002_POS1_Baelte2	Wwise Convolution Reverb			
+	607542097	Parametric EQ (Custom)	Wwise Parametric EQ			
+	608376853	AK Convolution Reverb (Custom)	Wwise Convolution Reverb			
+	687509270	ParkeringsKaelderRev_006_POS1_Klap4	Wwise Convolution Reverb			
+	828059804	AK Convolution Reverb (Custom)	Wwise Convolution Reverb			
+	1002684216	AK Convolution Reverb (Custom)	Wwise Convolution Reverb			
+	1762233992	ParkeringsKaelderRev_003_POS1_Klap1	Wwise Convolution Reverb			
+	1801446618	ParkeringsKaelderRev_008_POS1_Klap6	Wwise Convolution Reverb			
+	2061749240	ParkeringsKaelderRev_007_POS1_Klap5	Wwise Convolution Reverb			
+	2150368138	ParkeringsKaelderRev_004_POS1_Klap2	Wwise Convolution Reverb			
+	2473324471	ParkeringsKaelderRev_001_POS1_Baelte1	Wwise Convolution Reverb			
+	2805769450	Special_Effect_1	Wwise Flanger			
+	2818560370	Music_Ducking	Wwise Meter			
+	2897104085	ParkeringsKaelderRev_004_POS2_Klap2	Wwise Convolution Reverb			
+	2956205901	StKatharinen_Org_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 
+	3118747631	ParkeringsKaelderRev_003_POS2_Klap1	Wwise Convolution Reverb			
+	3272923513	ParkeringsKaelderRev_006_POS2_Klap4	Wwise Convolution Reverb			
+	3355026671	ParkeringsKaelderRev_005_POS2_Klap3	Wwise Convolution Reverb			
+	3771302295	ParkeringsKaelderRev_007_POS2_Klap5	Wwise Convolution Reverb			
+	3824753181	ParkeringsKaelderRev_008_POS2_Klap6	Wwise Convolution Reverb			
+	3975957288	ParkeringsKaelderRev_005_POS1_Klap3	Wwise Convolution Reverb			
+	4042358952	ParkeringsKaelderRev_001_POS2_Baelte1	Wwise Convolution Reverb			
+	4068993418	ParkeringsKaelderRev_002_POS2_Baelte2	Wwise Convolution Reverb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

@@ -1,0 +1,398 @@
+Event	ID	Name			Wwise Object Path	Notes
+	145381604	Play_7_HappyEnding_Playlist			\Music\Play_7_HappyEnding_Playlist	
+	473294595	Play_Outside			\Ambiance\Sættes Ind i roomtone i unity\Play_Outside	
+	486256373	Play_Attack_Enemy_Hit			\SFX\Enemies\Attack_Enemy\Play_Attack_Enemy_Hit	
+	496144422	Play_2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream			\Music\Play_2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream	
+	629634596	Play_Goddes_Scream			\DX\Play_Goddes_Scream	
+	726189174	Attack_HitNothing			\SFX\Player\Attack_HitNothing	
+	743495112	Play_Line4			\DX\Play_Line4	
+	743495113	Play_Line5			\DX\Play_Line5	
+	743495114	Play_Line6			\DX\Play_Line6	
+	743495117	Play_Line1			\DX\Play_Line1	
+	743495118	Play_Line2			\DX\Play_Line2	
+	743495119	Play_Line3			\DX\Play_Line3	
+	795377228	Play_Death_Creature			\SFX\Enemies\Death_Enemy\Play_Death_Creature	
+	1095021605	Play_Footstep_Enemy			\SFX\Enemies\Play_Footstep_Enemy	
+	1199249995	Stop_Idle_Cultist			\SFX\Enemies\Stop_Idle_Cultist	
+	1224938770	Attack_HitTerrain			\SFX\Player\Attack_HitTerrain	
+	1279037710	Play_LowHealth			\SFX\Player\Play_LowHealth	
+	1284475082	Play_Attack_Enemy_Miss			\SFX\Enemies\Attack_Enemy\Play_Attack_Enemy_Miss	
+	1329754913	Play_Idle_Cultist			\SFX\Enemies\Play_Idle_Cultist	
+	1564978696	Play_Water_Loop			\Ambiance\Play_Water_Loop	
+	1602358412	Play_Footstep			\SFX\Player\Play_Footstep	
+	1886223539	PlayerDies			\SFX\Player\PlayerDies	
+	2025845440	Play_Torch			\SFX\Environment\Play_Torch	
+	2239375868	Play_4_2_TomeAura_STEREO_2D			\Music\Play_4_2_TomeAura_STEREO_2D	
+	2321636193	Delayed_VolumeDown_TomeAura			\Music\Delayed_VolumeDown_TomeAura	
+	2368190119	Play_Death_Fire			\SFX\Player\Play_Death_Fire	
+	2387658637	Play_Weird_Roomtone			\Ambiance\Sættes Ind i roomtone i unity\Play_Weird_Roomtone	
+	2432462949	Play_4_1_TomeAura_MONO_3D			\Music\Play_4_1_TomeAura_MONO_3D	
+	2521551685	Play_Brazier			\SFX\Environment\Play_Brazier	
+	2541729425	Drink_Potion			\SFX\Player\Drink_Potion	
+	2851174315	Play_Natural_Weird			\Ambiance\Sættes Ind i roomtone i unity\Play_Natural_Weird	
+	3311667097	Play_EndGameMusicSwitchContainer			\Music\Play_EndGameMusicSwitchContainer	
+	3342312129	Play_Water_Thick			\SFX\Environment\Play_Water_Thick	
+	3602995889	Play_Cave			\Ambiance\Sættes Ind i roomtone i unity\Play_Cave	
+	3622272533	Play_Death_Cultist			\SFX\Enemies\Death_Enemy\Play_Death_Cultist	
+	3689126666	Play_Jump			\SFX\Player\Play_Jump	
+	3699433833	Play_Roomtone_Temple			\Ambiance\Sættes Ind i roomtone i unity\Play_Roomtone_Temple	
+	3927008369	Attack_HitEnemy			\SFX\Player\Attack_HitEnemy	
+	3932489860	Play_2_Grotte_og_3_Dungeon			\Music\Play_2_Grotte_og_3_Dungeon	
+	4285282925	Play_Land			\SFX\Player\Play_Land	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	4050929301	Materials			\Default Work Unit\Materials	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	Materials			
+	2195636714	Dirt	Materials			
+	2637588553	Tile	Materials			
+	2654748154	Water	Materials			
+	4248645337	Grass	Materials			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	538938061	EndGameMusicStates			\Music States Work Unit\EndGameMusicStates	
+	831006884	BeginningMusicRoomStates			\Music States Work Unit\BeginningMusicRoomStates	
+	3042705799	TomeAuraStates			\Music States Work Unit\TomeAuraStates	
+
+State	ID	Name	State Group			Notes
+	376991726	HappyEndning	EndGameMusicStates			
+	748895195	None	EndGameMusicStates			
+	1212775290	TomePossession	EndGameMusicStates			
+	1656947812	PlayerDeath	EndGameMusicStates			
+	1776398501	TomeOutside	EndGameMusicStates			
+	2158032164	TomePickup	EndGameMusicStates			
+	4064190716	TomeFire	EndGameMusicStates			
+	4085709289	TomeChoice	EndGameMusicStates			
+	87758831	GrotteBeginning	BeginningMusicRoomStates			
+	748895195	None	BeginningMusicRoomStates			
+	4167468798	DungeonBeginning	BeginningMusicRoomStates			
+	748895195	None	TomeAuraStates			
+	1167319226	TomeSpiritualRoom	TomeAuraStates			
+	1866109078	TomeForeshadowing	TomeAuraStates			
+	2158032164	TomePickup	TomeAuraStates			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	177830784	Water_Thick			\Default Work Unit\Water_Thick	
+	317282339	Weather			\Default Work Unit\Weather	
+	487752188	DistanceToCave			\Default Work Unit\DistanceToCave	
+	1013602733	FightingCultist			\Fighting Effects Work Unit\FightingCultist	
+	1162280475	DistanceToFountain			\Default Work Unit\DistanceToFountain	
+	1507362382	RotateFloor			\PsychedelicRTPCs Work Unit\RotateFloor	
+	2126296630	PlayerHealthPara			\Default Work Unit\PlayerHealthPara	
+	2206156252	ScaleCaveTunnel			\PsychedelicRTPCs Work Unit\ScaleCaveTunnel	
+	2551938112	Scaling_Parameter			\Default Work Unit\Scaling_Parameter	
+	2901989227	ScaleMushroom			\PsychedelicRTPCs Work Unit\ScaleMushroom	
+	4002574858	FightingWizard			\Fighting Effects Work Unit\FightingWizard	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	230976631	ParkeringRev_003_Klap1			\Reverbs\Reverbs\ParkeringRev_003_Klap1	
+	288340792	ParkeringRev_001_Baelte1			\Reverbs\Reverbs\ParkeringRev_001_Baelte1	
+	903063735	ParkeringRev_005_Klap3			\Reverbs\Reverbs\ParkeringRev_005_Klap3	
+	1020492676	ParkeringRev_002_Baelte2			\Reverbs\Reverbs\ParkeringRev_002_Baelte2	
+	2406464834	Reverb_basic			\Reverbs\Reverbs\Reverb_basic	
+	2665109655	ParkeringRev_006_Klap4			\Reverbs\Reverbs\ParkeringRev_006_Klap4	
+	2730326357	StortRum2_Rev			\Reverbs\Reverbs\StortRum2_Rev	
+	2767839671	ParkeringRev_007_Klap5			\Reverbs\Reverbs\ParkeringRev_007_Klap5	
+	2986432809	LilleRum_Rev			\Reverbs\Reverbs\LilleRum_Rev	
+	3454183034	MediumRum_Rev			\Reverbs\Reverbs\MediumRum_Rev	
+	3813691439	ParkeringRev_008_Klap6			\Reverbs\Reverbs\ParkeringRev_008_Klap6	
+	3943616538	StortRum1_Rev			\Reverbs\Reverbs\StortRum1_Rev	
+	3950004767	ParkeringRev_004_Klap2			\Reverbs\Reverbs\ParkeringRev_004_Klap2	
+
+Effect plug-ins	ID	Name	Type				Notes
+	93140369	Pitch_Shift_Up_ScaleMushroom	Wwise Pitch Shifter			
+	144809958	Matrix_Reverb_Big_Drums_ScaleCaveTunnel	Wwise Matrix Reverb			
+	282024855	Guitar Distortion (Custom)	Wwise Guitar Distortion			
+	399366410	Guitar Distortion (Custom)	Wwise Guitar Distortion			
+	585755507	AK Convolution Reverb (Custom)	Wwise Convolution Reverb			
+	594760645	ParkeringsKaelderRev_002_POS1_Baelte2	Wwise Convolution Reverb			
+	608376853	AK Convolution Reverb (Custom)	Wwise Convolution Reverb			
+	687509270	ParkeringsKaelderRev_006_POS1_Klap4	Wwise Convolution Reverb			
+	828059804	AK Convolution Reverb (Custom)	Wwise Convolution Reverb			
+	973362978	Guitar Distortion (Custom)	Wwise Guitar Distortion			
+	1002684216	AK Convolution Reverb (Custom)	Wwise Convolution Reverb			
+	1007974615	Distortion_Music_FightingCultist	Wwise Guitar Distortion			
+	1182611252	DX_Clarity_IntroduceToWizard	Wwise Parametric EQ			
+	1435226616	DX_Clarity	Wwise Parametric EQ			
+	1445128625	Delay0_3sec_FightingWizard	Wwise Delay			
+	1489990280	TimeStretch_ScaleMushroom	Wwise Time Stretch			
+	1552268136	Delay0_2sec_FightingWizard	Wwise Delay			
+	1759944409	Cut_3dB_100Hz	Wwise Parametric EQ			
+	1762233992	ParkeringsKaelderRev_003_POS1_Klap1	Wwise Convolution Reverb			
+	1801446618	ParkeringsKaelderRev_008_POS1_Klap6	Wwise Convolution Reverb			
+	1921036728	DX_Clarity_Subtle	Wwise Parametric EQ			
+	1957548907	Delay0_3sec_RotateFloor	Wwise Delay			
+	2061749240	ParkeringsKaelderRev_007_POS1_Klap5	Wwise Convolution Reverb			
+	2135227012	DX_Delay_UnUnderstable	Wwise Delay			
+	2150368138	ParkeringsKaelderRev_004_POS1_Klap2	Wwise Convolution Reverb			
+	2458355353	Matrix_Reverb_RotateFloor	Wwise Matrix Reverb			
+	2473324471	ParkeringsKaelderRev_001_POS1_Baelte1	Wwise Convolution Reverb			
+	2498346878	Distortion_Aura_FightingWizard	Wwise Guitar Distortion			
+	2699997848	Matrix_Reverb_Big_ScaleCaveTunnel	Wwise Matrix Reverb			
+	2805769450	Special_Effect_1	Wwise Flanger			
+	2867360478	GainDown2db_LFEDown6db_RotateFloor	Wwise Gain			
+	2897104085	ParkeringsKaelderRev_004_POS2_Klap2	Wwise Convolution Reverb			
+	2956205901	StKatharinen_Org_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 
+	2965217305	Pitch_Shift_Down_ScaleCaveTunnel	Wwise Pitch Shifter			
+	3045691639	Delay0_4sec_ScaleMushroom	Wwise Delay			
+	3118747631	ParkeringsKaelderRev_003_POS2_Klap1	Wwise Convolution Reverb			
+	3272923513	ParkeringsKaelderRev_006_POS2_Klap4	Wwise Convolution Reverb			
+	3352172015	DX_Clarity_WizardLies	Wwise Parametric EQ			
+	3355026671	ParkeringsKaelderRev_005_POS2_Klap3	Wwise Convolution Reverb			
+	3421406277	TomeOutSideStateDistortion	Wwise Guitar Distortion			
+	3771302295	ParkeringsKaelderRev_007_POS2_Klap5	Wwise Convolution Reverb			
+	3824753181	ParkeringsKaelderRev_008_POS2_Klap6	Wwise Convolution Reverb			
+	3934140731	Matrix_Reverb_Music_FightingWizard	Wwise Matrix Reverb			
+	3975957288	ParkeringsKaelderRev_005_POS1_Klap3	Wwise Convolution Reverb			
+	4042358952	ParkeringsKaelderRev_001_POS2_Baelte1	Wwise Convolution Reverb			
+	4068993418	ParkeringsKaelderRev_002_POS2_Baelte2	Wwise Convolution Reverb			
+	4082497528	Gain_FightingWizard	Wwise Gain			
+	4148374354	Delay0_4sec_RotateFloor	Wwise Delay			
+	4205087806	DX_Clarity_NewSky	Wwise Parametric EQ			
+	4209348196	FlangerChillWobbleAtMax_RotateFloor	Wwise Flanger			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	9050923	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4	.cache\4E\{4EEDC96C-A737-547E-93D1-841586E37CF8}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 4		13628
+	9733275	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\C0\{C011C20C-79CE-FD4F-D966-EF4E35F22825}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		286679
+	10393740	5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0	.cache\CF\{CF0A1817-BA0C-EF18-9E9B-6E0621FC4805}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0		242967
+	10886791	5_TomePossession_GuitSG_ChordsStabs_EDobHarDur_150BPM_7-4_L6M-P0	.cache\99\{99C546B6-78B8-2154-E3C4-9E7F13F7FDF3}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_ChordsStabs_EDobHarDur_150BPM_7-4_L6M-P0		107874
+	11324990	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 3	.cache\42\{420CD74E-5482-AAD7-2C26-36CE670AAC98}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 3		5746
+	12687120	Enemy_Idle_Cultist 1_L	.cache\8F\{8F6D5524-D916-F631-F323-71A8192A128B}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Idle_Cultist\Enemy_Idle_Cultist 1_L		28034
+	32787642	Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 2	.cache\91\{9163FFD6-FAC0-A01A-1034-74ADC131947C}.wem		\Containers\Ambiance\Outside\Natural_Weird\Weird_Outside\Thunder\Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 2		385031
+	34941651	5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\DD\{DDC2A018-C5E8-D78A-0B9A-332E10434FB8}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		241288
+	39294733	LiquidThick_Stereo	.cache\5E\{5E5C9406-1F45-3728-E4F6-48D901ECD655}.wem		\Containers\SFX\Environment\Water+Thick\LiquidThick_Flow\LiquidThick_Stereo		1048971
+	40772458	Enemy_Idle_Cultist 2_L	.cache\21\{21149EA2-B0DD-D895-F387-6BF28342BB92}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Idle_Cultist\Enemy_Idle_Cultist 2_L		33258
+	40854654	Footstep_Dirt_04	.cache\C8\{C8D20E09-6D07-7C71-0FA3-DE5A8E2076CD}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_04		7136
+	51501727	5_TomePossession_AddDrums_Intensity3_150BPM_7-4_L6M-P0	.cache\28\{28423B71-CD6B-FF24-7BE0-FEB4B9493485}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity3_150BPM_7-4_L6M-P0		259953
+	53055825	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\3A\{3AC8CA4A-DFBD-2B48-182D-E4A53D94F129}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		244740
+	54775850	Fire_Brazier	.cache\DF\{DF2D1ABF-3A11-010B-F3FB-A5E6FC9B24CD}.wem		\Containers\SFX\Environment\Fire_Brazier		390511
+	56027850	5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\BD\{BDBB7552-E4AF-AC25-B64B-C52480225CBF}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		197273
+	57912703	Skov2_Ambisonics	.cache\6B\{6BDA1F16-2CA3-E61B-E8A9-5CA13228FC9B}.wem		\Containers\Ambiance\Outside\Natural_Weird\Outside\Fugle+vind\Skov2_Ambisonics		1452925
+	59141569	Aura2_C_SGGuit_STEREO	.cache\F9\{F9794861-A255-8821-6EBA-3CD949CA92A7}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura2_C_SGGuit_STEREO		800829
+	60611334	5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0	.cache\1A\{1A68993B-6F22-AEBE-78AB-24A39720317F}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0		258436
+	64353166	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5	.cache\C5\{C5833BC2-F0C9-373F-D50A-134FBA63D4DA}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 5		14843
+	65402954	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 5	.cache\60\{60582CE2-D331-0B30-33CB-DDF9241BF3AF}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 5		6285
+	66847261	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\58\{58F67B9D-A6EE-DEDB-DD15-762D238C042B}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		196602
+	72039706	Aura3_C-oktav_SGGuit_MONO	.cache\9E\{9E136379-195B-CEA4-FAD4-2720CA771BCA}.wem		\Containers\Music\4_1_TomeAura_MONO\Aura3_C-oktav_SGGuit_MONO		391423
+	76161126	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334	.cache\CC\{CCB8263F-0F3A-164A-6552-824593BFE394}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334		12829
+	76714845	Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3	.cache\0D\{0D13EE3E-6F72-1C91-1DEB-239BF510FF04}.wem		\Containers\SFX\Pickups\Potions\Glass\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 3		3438
+	77227721	Voices, Male, Jump, Short SND85291 4	.cache\03\{03F94080-F31B-AF3F-78C8-6150C19D97FB}.wem		\Containers\SFX\Karaktere\Player\Jump\Jump\Voices, Male, Jump, Short SND85291 4		3704
+	78797213	6_TomeFire_GuitSG_BackwardsBend	.cache\B0\{B0B1FF6A-3C3B-61A4-8393-A99E13BC6D69}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\6_TomeFire_Playlist\6_Pre-TomeFire\6_TomeFire_GuitSG_BackwardsBend		71711
+	83300568	Swooshes, Swish, Sword Swing, Heavy Slow SND59349 3	.cache\97\{9774E054-A718-180D-43C2-F9E7CAFFF577}.wem		\Containers\SFX\Weapon\Swoosh\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 3		3877
+	84267646	Cave Drip 5_L	.cache\EC\{ECA3F118-4BDD-EE28-3A75-BD49A712329E}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 5_L		2848
+	87830714	Enemy_Idle_Cultist 5_L	.cache\B6\{B61189FB-BBF2-94B2-DAB9-7A36421156B6}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Idle_Cultist\Enemy_Idle_Cultist 5_L		30850
+	93540194	Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1	.cache\86\{862825EE-0DED-9FF9-B8F5-3FEEC97FF985}.wem		\Containers\SFX\Pickups\Potions\Glass\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 1		5837
+	101196853	Aura6_AbDurComp_STEREO	.cache\45\{45C50ADD-FA67-1F59-E88C-AAE5EC5402F7}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura6_AbDurComp_STEREO		1011546
+	101755418	Voices, Male, Type 04, Jump, Short, Video Game 03 SND85542	.cache\D7\{D731C899-763C-2020-E59A-E7EDD953DEE4}.wem		\Containers\SFX\Karaktere\Player\Jump\Land\Voices, Male, Type 04, Jump, Short, Video Game 03 SND85542		3492
+	125489295	Aura4_H_SGGuit_MONO	.cache\35\{35FDEBA6-8B58-C963-A84A-87FEEB8AEA97}.wem		\Containers\Music\4_1_TomeAura_MONO\Aura4_H_SGGuit_MONO		347282
+	128140966	Aura6_AbDurComp_VocoderCarr_STEREO	.cache\27\{2730970F-7A6B-E52D-4E50-03414E98422D}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura6_AbDurComp_VocoderCarr_STEREO		901687
+	136009524	Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 1	.cache\2A\{2A061CE3-B245-CD08-CB34-C66D2B3907E2}.wem		\Containers\SFX\Weapon\Impact_Terrain\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 1		18582
+	143646930	Voices, Male, Jump, Short SND85291 3	.cache\7A\{7A8B1275-5199-5F85-7FE5-8D6A543B5B46}.wem		\Containers\SFX\Karaktere\Player\Jump\Jump\Voices, Male, Jump, Short SND85291 3		3395
+	154528275	Weapons, Knife, Dagger, Slash, Quick, Ring Out 01 SND147826 6	.cache\E1\{E1613937-F429-E9FE-BC0B-F5BD135BBC10}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Attack\Attack_Cultist\Weapons, Knife, Dagger, Slash, Quick, Ring Out 01 SND147826 6		7781
+	159901596	Footsteps, Human, Boots, Tile, Walk, Close SND126059 4	.cache\DB\{DB9ECCD9-C6C3-08FB-24AA-36C8EFDB03F0}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 4		4898
+	160173699	Goddes_Scream	.cache\64\{64CC55DF-0EDB-D9C3-F3BF-451175C2474D}.wem		\Containers\DX\Goddess\Voicelines\Goddes_Scream		105298
+	167150839	5_TomePossession_AddDrums_Intensity4_150BPM_7-4_L6M-P0	.cache\FB\{FBB60AD5-FAC6-3BE6-FDC1-795FEC2F3C87}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity4_150BPM_7-4_L6M-P0		273621
+	167561134	Voices, Scream, Pained Scream Male, Scream SND63772	.cache\88\{888343BD-A01A-85BC-D836-63C3504FF4C1}.wem		\Containers\SFX\Karaktere\Player\Death\Voices, Scream, Pained Scream Male, Scream SND63772		50888
+	170015886	Skov1_Ambisonics	.cache\E0\{E04C2D3B-76B5-E220-8500-C16EE111E7A9}.wem		\Containers\Ambiance\Outside\Natural_Weird\Outside\Fugle+vind\Skov1_Ambisonics		2174341
+	175445395	2_Grotte_MonochordTop_DRY_E-DobHarDur_150BPM_5-4_L32M-P0_var1	.cache\FA\{FA86BB08-CB02-5C27-EF9A-19F91527D3D0}.wem		\Containers\Music\2_Grotte_og_3_Dungeon_Playlist\2_Grotte_og_3_Dungeon\2_Grotte_MonochordTop_DRY_E-DobHarDur_150BPM_5-4_L32M-P0_var1		932352
+	175604284	5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\59\{59252F0D-1E01-6F3C-10EC-2A84BACC794C}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		199465
+	179104024	Water, Drip, Drip, Glugs SND138199 1	.cache\7E\{7E3BBD54-F76B-8D86-A754-78ED46064562}.wem		\Containers\SFX\Pickups\Potions\Liquid\Water, Drip, Drip, Glugs SND138199 1		5135
+	185106183	Line5	.cache\9D\{9D713862-4C9B-60AB-D909-BE128FB942E3}.wem		\Containers\DX\Goddess\Voicelines\Line5		106894
+	190250882	Footsteps, Human, Boots, Tile, Walk, Close SND126059 1	.cache\53\{53783092-7932-42B8-7394-3A91DE23D4E7}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 1		4104
+	192158385	Voices, Male, Jump, Short SND85291	.cache\6C\{6C184D5C-BE23-EAF5-C9A9-2838F8DE4C7B}.wem		\Containers\SFX\Karaktere\Player\Jump\Jump\Voices, Male, Jump, Short SND85291		3805
+	195421402	Food & Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943 1	.cache\B7\{B72CB680-2F82-84FB-6219-831A2F6BF6A9}.wem		\Containers\SFX\Pickups\Potions\Slurp\Food & Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943 1		18383
+	203567275	Death_enemy 3_L(2)	.cache\A3\{A34EFDB7-3C81-429B-C205-E450DDD90731}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Death\FallToGround1_Cultist\Death_enemy 3_L(2)		15621
+	209518170	Aura3_C-oktav_SGGuit_STEREO	.cache\5D\{5DB27667-871B-892F-BEA0-27A814AA5E05}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura3_C-oktav_SGGuit_STEREO		790395
+	211184319	Food & Drink, Drinking, Human, Drink, Slurp Water Followed By Refreshed Ahh SND22913	.cache\65\{65DF938A-08B6-13B2-404E-C0F29C479824}.wem		\Containers\SFX\Pickups\Potions\Refreshed\Food & Drink, Drinking, Human, Drink, Slurp Water Followed By Refreshed Ahh SND22913		17070
+	241482612	Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2	.cache\A7\{A7D0A897-2698-DEC6-06C1-10BFE15E47B1}.wem		\Containers\SFX\Pickups\Potions\Glass\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310 2		5911
+	244005076	2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1	.cache\9D\{9D6DC380-E9BC-FCB2-888F-95FEC602AF0A}.wem		\Containers\Music\2_Grotte_og_3_Dungeon_Playlist\2_Grotte_og_3_Dungeon\2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1		428697
+	247521029	Cave Drip 6_L	.cache\75\{75EA053A-7C52-FCC6-A655-8DF880F929CC}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 6_L		3967
+	248010114	Cave Drip 2_L	.cache\F1\{F1D39E56-DE5E-87C8-6B54-9294AEBA293E}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 2_L		3099
+	253322058	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\22\{22C04382-DD17-2C54-33C0-E813E0C2270F}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		287874
+	269515754	5_TomePossession_AddDrums_Intensity1_150BPM_7-4_L6M-P0	.cache\52\{522E0741-BA25-138F-6FF0-222B2BF1EDD9}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity1_150BPM_7-4_L6M-P0		266776
+	269890350	Food & Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943	.cache\7B\{7B3E8B9B-5DB1-10C5-BF38-C86E379807FD}.wem		\Containers\SFX\Pickups\Potions\Slurp\Food & Drink, Drinking, Female, Drinking, Sipping, Breathing SND77943		13993
+	273775820	Footsteps, Human, Boots, Tile, Walk, Close SND126059 2	.cache\AC\{ACA211A1-4A00-1F18-6B9B-5328B88C6179}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 2		4516
+	274584269	2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1	.cache\63\{63F61F24-90A4-6CAE-1591-3ACFD0E09B97}.wem		\Containers\Music\2_Grotte_og_3_Dungeon_Playlist\2_Grotte_og_3_Dungeon\2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1		877302
+	277693819	Attack__Enemy_Swoosh_L(2)	.cache\FF\{FF4DC7D9-5B73-D8E7-136A-83AA59E87F14}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Attack\Swoosh\Attack__Enemy_Swoosh_L(2)		3504
+	285422653	Footsteps_Grass_01	.cache\64\{6415C72B-1725-F82B-3954-0E8ED2D768C1}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Grass_Footsteps\Footsteps_Grass_01		3609
+	290909069	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\43\{43255DE0-C31A-C0EE-572E-43A995E872AC}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		165123
+	291088983	2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1	.cache\0C\{0CFB1D7B-96A0-4D59-4BCE-EC36E1E1D7C6}.wem		\Containers\Music\2_Grotte_og_3_Dungeon_Playlist\2_Grotte_og_3_Dungeon\2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1		488276
+	296946990	Voices, Male, Type 04, Jump, Short, Video Game 03 SND85542 1	.cache\EE\{EEC75C04-D4B4-0368-CBF0-453E07F72106}.wem		\Containers\SFX\Karaktere\Player\Jump\Land\Voices, Male, Type 04, Jump, Short, Video Game 03 SND85542 1		7982
+	297175037	5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0	.cache\1D\{1D3F20E0-E828-E633-EDDF-3F948D3772FA}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0		248624
+	299726683	Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327	.cache\C6\{C6CD9F4C-CBE3-4B19-A790-85E588D6878E}.wem		\Containers\Ambiance\Outside\Natural_Weird\Weird_Outside\Thunder\Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327		425749
+	299777249	Cave Drip 9_L	.cache\6D\{6DA198FF-B162-0C13-A3CB-6E367540706A}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 9_L		4897
+	306789449	Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 2	.cache\F4\{F4475BA9-6FCF-E9E7-5636-53D2672FCB12}.wem		\Containers\SFX\Weapon\Impact_Terrain\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892 2		17055
+	310809385	5_TomePossession_AddDrums_Intensity4_150BPM_7-4_L6M-P0	.cache\42\{4230531A-3253-5A36-89C0-54161542CECE}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity4_150BPM_7-4_L6M-P0		293039
+	314035865	Footsteps, Human, Boots, Tile, Walk, Close SND126059 9	.cache\C7\{C79B2E69-5684-3DA5-5A04-C13856DE4797}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 9		4731
+	328703910	2_Grotte_MonochordBasDrone_var1_SpinnMod_E-dobbelt-harmonisk-dur_150BPM_5-4_L32M-P0	.cache\E1\{E1B2A8F6-2A55-A236-1CAB-E9427E7E9E0D}.wem		\Containers\Music\2_Grotte_og_3_Dungeon_Playlist\2_Grotte_og_3_Dungeon\2_Grotte_MonochordBasDrone_var1_SpinnMod_E-dobbelt-harmonisk-dur_150BPM_5-4_L32M-P0		907184
+	329201388	Leather, Impact, Leather Suitcase, Hit, Soft 02 SND142552 2	.cache\FB\{FB6B9302-F8A0-FEDE-4C49-58ED9C4FA8BE}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Death\FallToGround2_Cultist\Leather, Impact, Leather Suitcase, Hit, Soft 02 SND142552 2		6558
+	341584387	Aura2_C_SGGuit_MONO	.cache\07\{07C810C4-891A-FE13-6653-704FC33B92DD}.wem		\Containers\Music\4_1_TomeAura_MONO\Aura2_C_SGGuit_MONO		410396
+	343147211	Cave Drip 11_L	.cache\1C\{1CF5E6AF-2B58-58E5-5D11-4317425F6770}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 11_L		4645
+	343433641	Human, Breath, Male, Breathing In Helmet 01, Panic, Rapid Mouth Breathing, Breath Shortage, Close Perspective SND111822	.cache\EC\{ECCF6923-8EB1-43BB-A2D7-0CE5D770757A}.wem		\Containers\SFX\Karaktere\Player\Health\LowHealth\Human, Breath, Male, Breathing In Helmet 01, Panic, Rapid Mouth Breathing, Breath Shortage, Close Perspective SND111822		386265
+	346434020	Footstep_Dirt_03	.cache\C5\{C59636D4-3D9B-9DB7-175D-83B0392CA191}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_03		6468
+	347773816	Aura4_H_VocoderCarr_STEREO	.cache\45\{45DCD4BE-9DA9-08E9-00BD-EED8060B38B6}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura4_H_VocoderCarr_STEREO		620288
+	352602298	Voices, Male, Jump, Short SND85291 1	.cache\89\{89FB18AD-3D4E-2D2B-1136-2E30683843F9}.wem		\Containers\SFX\Karaktere\Player\Jump\Jump\Voices, Male, Jump, Short SND85291 1		4619
+	364498900	5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\8B\{8B6172CA-2AEC-F2D0-734B-FC20892E3FC3}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		195676
+	365491036	Cave Drip 10_L	.cache\6E\{6E5FE2C9-E8CD-EBC0-1FA6-1E9A596B82B7}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 10_L		2866
+	366901166	6_TomeFire_SyretFeedbackReverb_BurningScream_COMP	.cache\DB\{DBB6817F-D181-4982-A99A-B1E53AFF374F}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\6_TomeFire_Playlist\6_TomeFire\6_TomeFire_SyretFeedbackReverb_BurningScream_COMP		286235
+	379604598	Cave Drip 12_L	.cache\0A\{0AC82085-989D-3671-E541-430F06091DD3}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 12_L		3800
+	390898073	5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\77\{7710F451-6F1A-47BB-1178-B6871EBA35DD}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		241608
+	393422278	5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0	.cache\0C\{0CBAAF0D-F62C-1AF7-0D0D-677B8640CAD8}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0		250101
+	395368543	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\D2\{D2FD65CA-29C2-C6B9-BAA2-CE8965E6DF39}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		283639
+	409983025	5_TomePossession_AddDrums_Intensity1_150BPM_7-4_L6M-P0	.cache\80\{809E5C2D-760B-4AA6-842C-2BD2F882FBC1}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity1_150BPM_7-4_L6M-P0		256307
+	413930304	5_TomePossession_AddDrums_Intensity2_150BPM_7-4_L6M-P0	.cache\18\{186883F4-5832-C690-AB32-DF30063A86C2}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity2_150BPM_7-4_L6M-P0		226578
+	429804661	Fire, Torch, Torch, Burning, Normal, Crackling SND63564 2	.cache\4B\{4BD8E2DD-ABAB-741D-0465-159391B5A4BE}.wem		\Containers\SFX\Environment\Fire, Torch, Torch, Burning, Normal, Crackling SND63564 2		398598
+	432152112	Line2	.cache\13\{13AFE2D5-9D37-279A-AF69-0E609138FFE1}.wem		\Containers\DX\Goddess\Voicelines\Line2		108428
+	432302171	Aura2_C_VocoderCarr_MONO	.cache\B4\{B4B056CE-587A-BB26-467A-D11AC342D41B}.wem		\Containers\Music\4_1_TomeAura_MONO\Aura2_C_VocoderCarr_MONO		445178
+	448608242	5_TomePossession_AddDrums_Intensity2_150BPM_7-4_L6M-P0	.cache\29\{29767429-C786-3331-071B-61F045A9F5DB}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity2_150BPM_7-4_L6M-P0		229917
+	465581458	2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1	.cache\20\{205D3559-53B7-8CC0-0B87-3C404FADF55A}.wem		\Containers\Music\2_Grotte_og_3_Dungeon_Playlist\2_Grotte_og_3_Dungeon\2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1		655496
+	466594292	Aura2_C_VocoderCarr_STEREO	.cache\7D\{7D8D3ED3-F05D-00EF-2988-7402D530DFF9}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura2_C_VocoderCarr_STEREO		819243
+	470773186	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911	.cache\4B\{4B27DCA5-6DEF-15F1-9123-1F8854A6A150}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911		5260
+	480340967	Aura1_Ab5_VocoderCarr_MONO	.cache\3E\{3EF9696E-A5F2-D10A-5B77-EB519563A702}.wem		\Containers\Music\4_1_TomeAura_MONO\Aura1_Ab5_VocoderCarr_MONO		378610
+	484941457	5_TomePossession_AddDrums_Intensity4_150BPM_7-4_L6M-P0	.cache\68\{689F8D2C-59AF-15B1-97F2-1051CB765BC5}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity4_150BPM_7-4_L6M-P0		280308
+	486738875	Rocks, Crash & Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 2	.cache\17\{17CB1DCE-4CC1-FC9C-0635-D912C6EAF5F3}.wem		\Containers\Ambiance\Cave\Cave\DebrisFalling_Small\Rocks, Crash & Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 2		29270
+	491001604	Line1	.cache\94\{94B1FDFE-A72F-FF02-2B3F-C597FEC774EE}.wem		\Containers\DX\Goddess\Voicelines\Line1		95540
+	501182517	Why You	.cache\47\{4783406C-3DA5-43F7-6CAE-DE03821AA0C7}.wem		\Containers\DX\Goddess\Voicelines\Why You		41175
+	523590442	5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0	.cache\00\{00A8C341-00D7-AF9D-CD37-7C355043BA87}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0		244007
+	531170677	5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\1A\{1A15F707-571C-78C0-275F-DFF12D80F21E}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		201102
+	531386157	Death_enemy 1_L(2)	.cache\6D\{6D39D1AD-3C8E-FAE9-4FA2-272A2A68C7ED}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Death\FallToGround1_Cultist\Death_enemy 1_L(2)		14583
+	531713444	Cave Drip 1_L	.cache\6C\{6CF9AF39-604F-E077-FCFB-F7F2798E96EC}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 1_L		5316
+	532906210	Swooshes, Swish, Sword Swing, Heavy Slow SND59349 1	.cache\89\{8930BD45-6081-094B-FF90-B08E05114CD3}.wem		\Containers\SFX\Weapon\Swoosh\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 1		4131
+	534031158	Swooshes, Swish, Sword Swing, Heavy Slow SND59349 2	.cache\93\{93D478B5-3B27-5743-CF25-757212734086}.wem		\Containers\SFX\Weapon\Swoosh\Swooshes, Swish, Sword Swing, Heavy Slow SND59349 2		3376
+	537433830	5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\3C\{3C5FE200-5A00-95E8-FB94-63FE22E593A6}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		258989
+	548223565	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 1	.cache\0E\{0EAB8578-6B70-AB66-863E-D61C5E72D20E}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 1		4922
+	548260550	Footsteps, Human, Boots, Tile, Walk, Close SND126059 5	.cache\8C\{8CF53B5F-BCE4-FFEC-4858-E047E2EB5085}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 5		4947
+	550860632	Voices, Male, Jump, Short SND85291 2	.cache\69\{697C54EF-5649-917F-CF81-51C98AD9CAFD}.wem		\Containers\SFX\Karaktere\Player\Jump\Jump\Voices, Male, Jump, Short SND85291 2		3259
+	556030888	Death_Fire	.cache\CF\{CF21D96E-7658-9304-E17A-6B963F80D8D3}.wem		\Containers\SFX\Karaktere\Player\Death\Death_Fire		83226
+	564761307	Aura6_AbDurComp_MONO	.cache\5E\{5E0D16BA-7330-31EF-C6E9-7A75E9BCF600}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura6_AbDurComp_MONO		468736
+	569971201	5_TomePossession_AddDrums_Intensity2_150BPM_7-4_L6M-P0	.cache\7E\{7E61AF45-88D5-1D4D-174D-C00A9139099D}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity2_150BPM_7-4_L6M-P0		215129
+	581579051	Weird_Roomtone	.cache\72\{725B75FF-15D9-5074-36D4-E28764C21763}.wem		\Containers\Ambiance\Outside\Natural_Weird\Weird_Outside\Weird_Roomtone		1463285
+	584406833	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\DA\{DA1DDB35-D57D-7C36-F292-2C0379CF13C6}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		288493
+	586972917	5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\38\{3856CB72-45E9-2742-0D8B-809D2F71CD1E}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		197567
+	590440295	Attack__Enemy_Swoosh_L	.cache\46\{46007B0F-78F4-DE56-C7B8-EB07604DE433}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Attack\Swoosh\Attack__Enemy_Swoosh_L		3800
+	598511320	5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\7C\{7CCF0340-F468-1C8A-7793-B882AE00CA42}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		197623
+	604086085	Footsteps, Human, Boots, Tile, Walk, Close SND126059 7	.cache\73\{735AF469-2AD2-4AE9-B156-181E45BDA18D}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 7		4551
+	604110561	Swooshes, Swish, Sword Swing, Heavy Slow SND59349	.cache\36\{363CDF56-5DF2-3A04-AD2B-BDF0ED9AD4A7}.wem		\Containers\SFX\Weapon\Swoosh\Swooshes, Swish, Sword Swing, Heavy Slow SND59349		3853
+	605995683	Weapons, Knife, Dagger, Slash, Quick, Ring Out 01 SND147826 5	.cache\0C\{0C3B6C70-66DC-3BC5-D2E7-3BA6E5D989CD}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Attack\Attack_Cultist\Weapons, Knife, Dagger, Slash, Quick, Ring Out 01 SND147826 5		8904
+	610247601	Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616	.cache\EA\{EA0C4D40-2E21-279E-23EA-21E62DDC2118}.wem		\Containers\Ambiance\Outside\Natural_Weird\Outside\Ambience, Alpine, Forest Valley, Frozen, Soft Wind, France 01 SND139616		2783332
+	614351445	LowHealth_Player 1	.cache\0D\{0D8A3C10-2DB6-4FF8-FA04-51F254498E50}.wem		\Containers\SFX\Karaktere\Player\Health\LowHealth\LowHealth_Player 1		236085
+	615642400	Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892	.cache\58\{58738FDB-65A8-BD53-D21C-17BA8F7437B1}.wem		\Containers\SFX\Weapon\Impact_Terrain\Weapons, Sword, Metal Impact, Block, Parry, Sword Fight, Ring Out 04 SND56892		9824
+	625079883	Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325	.cache\A1\{A1A8DED7-A5E7-8F69-45C3-B60E2041C563}.wem		\Containers\Ambiance\Outside\Natural_Weird\Weird_Outside\Thunder\Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325		552995
+	632674483	5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\7D\{7DC4A45F-1939-A438-4CE1-B3FF0EA2B42A}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		200138
+	636564675	Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 3	.cache\B4\{B4AC853B-86E7-0FA0-1C5C-88F95EA9EF5A}.wem		\Containers\Ambiance\Outside\Natural_Weird\Weird_Outside\Thunder\Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 3		421430
+	637545055	5_TomePossession_GuitSG_ChordsStabs_EDobHarDur_150BPM_7-4_L6M-P0	.cache\DE\{DE59682E-0849-B04D-C88B-0C4ABCBD9241}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_ChordsStabs_EDobHarDur_150BPM_7-4_L6M-P0		112085
+	640137105	Attack__Enemy_Swoosh_L(3)	.cache\BC\{BCD0D4CF-F2B3-3780-C45B-528EF85447B1}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Attack\Swoosh\Attack__Enemy_Swoosh_L(3)		3561
+	654903299	2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1	.cache\62\{6279F39E-4971-C7FF-FDB0-422EEC50F1F8}.wem		\Containers\Music\2_Grotte_og_3_Dungeon_Playlist\2_Grotte_og_3_Dungeon\2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1		538028
+	669522410	5_TomePossession_AddDrums_Intensity4_150BPM_7-4_L6M-P0	.cache\DC\{DC553749-D1B1-E649-3D5F-087FB9262E2E}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity4_150BPM_7-4_L6M-P0		287574
+	670183538	Line3	.cache\59\{59BD4192-D680-4CF0-0802-4A5BCFD355D7}.wem		\Containers\DX\Goddess\Voicelines\Line3		105524
+	679307101	2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream	.cache\13\{1328EB45-ACA1-2F39-855E-CE9ED062BC14}.wem		\Containers\Music\2_5_TomeForeshadowing_SyretFeedbackReverb_BurningScream		89684
+	682464755	5_TomePossession_AddDrums_Intensity3_150BPM_7-4_L6M-P0	.cache\B8\{B8E5D078-39F9-30C7-D88D-DE7D4D114F1D}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity3_150BPM_7-4_L6M-P0		260801
+	688127468	Footsteps_Grass_03	.cache\3F\{3FBE1AF8-AE7C-C511-A8BC-1564D0B10139}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Grass_Footsteps\Footsteps_Grass_03		3695
+	695489456	WaterFlow_Stereo	.cache\18\{18987CA7-C838-B4FE-4B68-152D31865240}.wem		\Containers\SFX\Environment\Water+Thick\Water_Flow\WaterFlow_Stereo		410589
+	699071472	5_TomePossession_GuitSG_ChordsStabs_EDobHarDur_150BPM_7-4_L6M-P0	.cache\9D\{9DED045E-8734-9D9F-7360-EB454E01626A}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_ChordsStabs_EDobHarDur_150BPM_7-4_L6M-P0		118977
+	699179822	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\FC\{FC2A592C-5928-5D66-9E7D-77305B2539EF}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		164175
+	710290391	Cave Drip 8_L	.cache\29\{2933C7B3-5A69-2B4A-F79C-313AE88FF874}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 8_L		5250
+	716957317	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\C3\{C353C396-043E-4BAF-6450-954C769D730A}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		292672
+	718460086	Rocks, Crash & Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 1	.cache\F8\{F86A0EFD-6D83-A332-F448-B0355236F29E}.wem		\Containers\Ambiance\Cave\Cave\DebrisFalling_Small\Rocks, Crash & Debris, Debris, Falling, Smaller Rocks, Gravel SND137593 1		25534
+	728625737	Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 1	.cache\BB\{BBBAE32F-EDAC-CA46-3679-DC31166DA1C7}.wem		\Containers\Ambiance\Outside\Natural_Weird\Weird_Outside\Thunder\Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 1		527459
+	732116225	LiquidThick_Mono	.cache\3C\{3CE353A9-7863-32E7-0604-B360D80773E5}.wem		\Containers\SFX\Environment\Water+Thick\LiquidThick_Flow\LiquidThick_Mono		649622
+	734205553	2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1	.cache\50\{5076B090-1162-2A7D-1D79-27041B137A62}.wem		\Containers\Music\2_Grotte_og_3_Dungeon_Playlist\2_Grotte_og_3_Dungeon\2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1		1063421
+	738952870	Aura4_H_SGGuit_STEREO	.cache\57\{579D9F3B-35CD-9102-275E-3AC8E213EB43}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura4_H_SGGuit_STEREO		638727
+	742240364	Aura6_AbDurComp_VocoderCarr_MONO	.cache\E3\{E3889C1A-5A5A-8C96-4837-47BA88B47674}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura6_AbDurComp_VocoderCarr_MONO		428346
+	744189271	5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0	.cache\91\{91F1EEBB-E4C0-1602-F2DA-DFA812AF0D3C}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0		249660
+	744914723	Aura1_Ab5_SGGuit_STEREO	.cache\D2\{D2DB7B96-7864-09D6-A396-83CA17E42CA8}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura1_Ab5_SGGuit_STEREO		883495
+	751256179	Aura1_Ab5_SGGuit_MONO	.cache\1D\{1DDA6B1E-D0C7-2A77-07FB-8F2F3F2CA996}.wem		\Containers\Music\4_1_TomeAura_MONO\Aura1_Ab5_SGGuit_MONO		420498
+	756680328	Water, Drip, Drip, Glugs SND138199 3	.cache\BB\{BB27483B-1448-DC0C-49C3-EFF431D7E2EF}.wem		\Containers\SFX\Pickups\Potions\Liquid\Water, Drip, Drip, Glugs SND138199 3		14205
+	759909297	Cave Drip 14_L	.cache\81\{8191257D-B3D1-9E86-10F8-EDE5985BFF87}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 14_L		4633
+	764656285	Footsteps, Human, Boots, Tile, Walk, Close SND126059 6	.cache\3D\{3D13C1A7-DF7F-548A-112F-D3C0EF5EC872}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 6		5771
+	775746859	Aura3_C-oktav_VocoderCarr_STEREO	.cache\31\{31B354F1-F46F-B1AB-D104-A44695C5CBE7}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura3_C-oktav_VocoderCarr_STEREO		923188
+	775889287	Enemy_Idle_Cultist 4_L	.cache\FE\{FEDEB8F8-00B7-9BB0-B760-15A69F81118A}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Idle_Cultist\Enemy_Idle_Cultist 4_L		43660
+	779969700	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\73\{736C23A9-95D4-3D91-DB89-68CBC45E40F7}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		300613
+	783642933	5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\8C\{8CC9E572-2F96-2C7E-A076-C5EE8EBCFBA9}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		241469
+	795461115	Footstep_Dirt_01	.cache\C6\{C65C48DC-0107-A58B-6115-C179B7B01AB7}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_01		6305
+	797834416	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 4	.cache\78\{78CAF6B3-D24A-B920-3B2D-B5589EE847D4}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 4		5711
+	798939857	Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 2	.cache\F1\{F16C44E6-8739-F4D8-2805-B60F30A667E0}.wem		\Containers\Ambiance\Outside\Natural_Weird\Outside\Wind, General, Mountain Wind, Constant With Strong Gusts, Winter, Snowy, Cabin Area 01 SND89939 2		2545238
+	799013277	Cave Drip 15_L	.cache\24\{24F565D1-00AA-36D1-0A7F-18E6E2740F40}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 15_L		4323
+	799234239	Cave_loop	.cache\8F\{8F35560A-F9BD-17A7-EAA7-3E560D5CD3AC}.wem		\Containers\Ambiance\Cave\Cave\Cave_loop		1737981
+	799996187	Enemy_Idle_Cultist 6_L	.cache\46\{46CD5B4A-E10E-DDB0-E6FE-DDE6F6AE47B3}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Idle_Cultist\Enemy_Idle_Cultist 6_L		34240
+	801940484	Cave Drip 13_L	.cache\7C\{7C5611A5-6263-2FF0-40A1-3184328F5CA1}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 13_L		3865
+	805140033	5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\17\{1776957F-D048-B211-25F9-13BD7EC4D994}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_MonochordBasDegraded_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		198123
+	809035489	Cave Drip 7_L	.cache\BB\{BBEB1233-2D24-9B25-A77B-89B80B844F2F}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 7_L		3236
+	816504299	Footstep_Dirt_02	.cache\3B\{3B129628-8587-B32D-5C93-38F505B4A026}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_02		6783
+	817034296	Weapons, Knife, Dagger, Slash, Quick, Ring Out 01 SND147826 7	.cache\35\{352F985D-36A1-494D-C224-698CCE3D1D2D}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Attack\Attack_Cultist\Weapons, Knife, Dagger, Slash, Quick, Ring Out 01 SND147826 7		9281
+	822069161	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 6	.cache\EF\{EFAFC4D0-4DEA-0233-C9F9-728E9198D7F1}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 6		7116
+	827190618	5_TomePossession_AddDrums_Intensity1_150BPM_7-4_L6M-P0	.cache\F8\{F8F67FA6-4C5C-47EC-CC77-9389B813EAE5}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity1_150BPM_7-4_L6M-P0		267482
+	829219745	Footstep_Dirt_06	.cache\BA\{BA2867B9-D113-C17C-2A4C-EF0B2B874DD5}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_06		5390
+	831596660	Footsteps, Human, Boots, Tile, Walk, Close SND126059 3	.cache\AD\{AD89152B-F91C-39B8-0C7B-70A96371C251}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 3		7334
+	843945298	Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 1	.cache\5C\{5C4A11A6-5159-E85A-1291-E2071A642C2B}.wem		\Containers\Ambiance\Outside\Natural_Weird\Weird_Outside\Thunder\Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 01 SND144327 1		390888
+	848047502	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\16\{16E65430-388C-8DF2-C1BF-B57D67433F24}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		241980
+	854877386	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\BB\{BB3B851C-4A4B-C6AE-5273-B46DC98B83ED}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		169801
+	856036391	5_TomePossession_AddDrums_Intensity2_150BPM_7-4_L6M-P0	.cache\59\{594DFE8B-C3C9-516B-820E-5684896A2CE1}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity2_150BPM_7-4_L6M-P0		217224
+	856077854	Attack__Enemy_Swoosh_L(4)	.cache\2A\{2A9ED1A3-6F7E-364A-D06C-1132DE5DA752}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Attack\Swoosh\Attack__Enemy_Swoosh_L(4)		3629
+	857529583	5_TomePossession_AddDrums_Intensity3_150BPM_7-4_L6M-P0	.cache\8D\{8DA89634-BCE2-5D41-036D-2D2CB08E96B1}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity3_150BPM_7-4_L6M-P0		254408
+	862375342	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\AE\{AEA32740-EB77-ED1C-4F93-D8F1D5C4340A}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		250500
+	862967256	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3	.cache\02\{020ADC29-9919-CF08-01EA-CA3AA243AE4B}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 3		15697
+	866659620	5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0	.cache\E0\{E0A53531-96AA-4DB1-471A-6170AED760A8}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_StreichfettStringStabs_E-dobbelt-harmonisk-dur_150BPM_7-4_L6M-P0		241633
+	872281931	Designed, Misc, In Motion, Sinister Creaking SND45397	.cache\7A\{7A20AC79-A954-1BDB-3CAC-F2FAAD168CC7}.wem		\Containers\Ambiance\Outside\Natural_Weird\Weird_Outside\Designed, Misc, In Motion, Sinister Creaking SND45397		1373479
+	873783077	2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1	.cache\66\{666C4D85-8F7D-9980-CD7D-8DA3FA68F196}.wem		\Containers\Music\2_Grotte_og_3_Dungeon_Playlist\2_Grotte_og_3_Dungeon\2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1		688127
+	883841130	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454	.cache\6B\{6B9DF098-773D-8C62-C5BD-727439544DF5}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Death\Death_Cultist\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454		7643
+	884533933	Leather, Impact, Leather Suitcase, Hit, Soft 02 SND142552	.cache\68\{68A418AE-C585-23DB-94CD-3920D62BBF98}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Death\FallToGround2_Cultist\Leather, Impact, Leather Suitcase, Hit, Soft 02 SND142552		4385
+	886097976	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\56\{56E3AFBC-2972-62E5-B1FD-089A277A1E40}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		304720
+	887528280	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1	.cache\94\{94C81107-0F87-8A5C-80AB-DA63C774F1B8}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 1		9924
+	890269888	6_TomeFire_GuitSG_DissonantHit	.cache\26\{26E4ACF1-E04B-F790-34EA-4B9AD6E4451F}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\6_TomeFire_Playlist\6_TomeFire\6_TomeFire_GuitSG_DissonantHit		667942
+	890687662	Roomtone_Temple	.cache\C9\{C9BDAC5B-A220-70E4-7DA9-5BAA155A3856}.wem		\Containers\Ambiance\Temple\Roomtone_Temple		1786058
+	900721683	Footsteps_Grass_04	.cache\4A\{4A72EA2C-5FDB-6619-EEFA-BF230A6F9BA2}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Grass_Footsteps\Footsteps_Grass_04		4334
+	906609901	Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 2	.cache\96\{967E385B-CEE9-5DA2-A379-F0C055F7D6A0}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Stone_Footsteps\Footsteps, Human, Sneakers, Cobblestone, Walk, Close SND127911 2		4948
+	908738018	Footsteps_Grass_02	.cache\12\{1265D22B-D66C-A70E-1B05-4B08F315873A}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Grass_Footsteps\Footsteps_Grass_02		2606
+	922864528	Aura1_Ab5_VocoderCarr_STEREO	.cache\09\{09007426-D3E5-F5EE-0D95-707DDFD71B8C}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura1_Ab5_VocoderCarr_STEREO		660157
+	924424003	Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310	.cache\67\{67DB4EBF-A1E9-764F-5F8D-59AF0B7C70D5}.wem		\Containers\SFX\Pickups\Potions\Glass\Glass, Impact, Bottle, Glass, Hit, Ground 03 SND111310		5876
+	925857258	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454 1	.cache\1E\{1EA65DED-057B-3FF4-09F8-8734FA536878}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Death\Death_Cultist\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454 1		9906
+	929578660	Footsteps, Human, Boots, Tile, Walk, Close SND126059 10	.cache\D7\{D74C46A1-8B3F-2E90-C280-EDD38B432E35}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 10		5343
+	936934710	2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1	.cache\09\{0931CCB1-CC9E-1F5B-2D18-64F597AA4625}.wem		\Containers\Music\2_Grotte_og_3_Dungeon_Playlist\2_Grotte_og_3_Dungeon\2_Grotte_MonochordTop_3-4Delay_E-DobHarDur_150BPM_5-4_L32M-P0_var1_1		894227
+	941491301	5_TomePossession_AddDrums_Intensity1_150BPM_7-4_L6M-P0	.cache\11\{11D2A624-56ED-22E0-130B-C78672A0FD08}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity1_150BPM_7-4_L6M-P0		257248
+	950148688	Cave Drip 3_L	.cache\D5\{D52CF02B-6085-1F5D-C8A8-2E9723FFA4AD}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 3_L		5260
+	954431824	Enemy_Idle_Cultist 3_L	.cache\82\{82BCA0D0-FE0D-3FD1-0579-53B9EB2CEFAC}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Idle_Cultist\Enemy_Idle_Cultist 3_L		38090
+	962127654	Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 2	.cache\96\{96138E92-A84C-3949-38DB-2BF80F25C633}.wem		\Containers\Ambiance\Outside\Natural_Weird\Weird_Outside\Thunder\Weather, Thunder, Rumble, Distant, No Rain, Smardzowice, Poland 03 SND144325 2		510958
+	963058772	Weapons, Knife, Dagger, Slash, Quick, Ring Out 01 SND147826 4	.cache\A8\{A88A1D25-757D-1C3D-0655-FBA1232172B2}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Attack\Attack_Cultist\Weapons, Knife, Dagger, Slash, Quick, Ring Out 01 SND147826 4		8698
+	973862875	Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454 2	.cache\D4\{D43DD2B4-CFD9-B5FF-CEE5-2FFBD1FB818C}.wem		\Containers\SFX\Karaktere\Enemies\Cultists\Death\Death_Cultist\Creatures, Humanoid, Zombie, Deaths, Agony, Male, Groans, Pain 01 SND137454 2		8993
+	985370320	Rocks, Crash & Debris, Debris, Falling, Smaller Rocks, Gravel SND137593	.cache\C7\{C7ADDBFB-D6AF-025D-8D72-DFB5F546EC36}.wem		\Containers\Ambiance\Cave\Cave\DebrisFalling_Small\Rocks, Crash & Debris, Debris, Falling, Smaller Rocks, Gravel SND137593		46365
+	989437782	WaterFlow_Mono	.cache\4B\{4BC456AC-81C0-16C7-4D8B-3837FFD081D4}.wem		\Containers\SFX\Environment\Water+Thick\Water_Flow\WaterFlow_Mono		366254
+	994355771	Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2	.cache\F5\{F5CAFB0B-94B6-A9C2-664E-763A33BE71C0}.wem		\Containers\SFX\Weapon\Impact_Enemy\Weapons, Sword, Light, One Handed, Attack, Hit Flesh, Impact SND117334 2		11455
+	1002314244	Line6	.cache\C4\{C44F6C0F-3276-8707-8446-701A275E7725}.wem		\Containers\DX\Goddess\Voicelines\Line6		84229
+	1006206456	5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0	.cache\DF\{DF39E05F-BBB1-049B-0781-D7ECA79B259A}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_GuitSG_RevMelodi_EDobHarDur_150BPM_7-4_L6M-P0		249912
+	1017406152	Footsteps, Human, Boots, Tile, Walk, Close SND126059 8	.cache\48\{48328525-8615-D6F6-337D-1632AEEA2D1A}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Tile_Footsteps\Footsteps, Human, Boots, Tile, Walk, Close SND126059 8		5187
+	1021556930	Voices, Male, Type 04, Jump, Short, Video Game 04 SND85541	.cache\E1\{E1C60962-325F-3994-28D8-D1666C35EB5E}.wem		\Containers\SFX\Karaktere\Player\Jump\Land\Voices, Male, Type 04, Jump, Short, Video Game 04 SND85541		3292
+	1021673391	Footstep_Dirt_05	.cache\8E\{8EE21407-188E-9262-DC68-EDA5D6FCB59C}.wem		\Containers\SFX\Footsteps\Footsteps_Player\Dirt_Footsteps\Footstep_Dirt_05		6829
+	1028225117	5_TomePossession_AddDrums_Intensity3_150BPM_7-4_L6M-P0	.cache\9E\{9E69DF2C-1503-E1A6-FA53-62951EB6BFE6}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Intensity3_150BPM_7-4_L6M-P0		243855
+	1038967016	Aura4_H_VocoderCarr_MONO	.cache\9B\{9B05BFFC-0A46-1A75-F869-EB61EA914DA9}.wem		\Containers\Music\4_1_TomeAura_MONO\Aura4_H_VocoderCarr_MONO		332532
+	1046621383	Water, Drip, Drip, Glugs SND138199 2	.cache\BE\{BEED0DE1-4EAC-6AEA-C47F-9DAA1ED73B25}.wem		\Containers\SFX\Pickups\Potions\Liquid\Water, Drip, Drip, Glugs SND138199 2		5576
+	1054966768	Cave Drip 4_L	.cache\CB\{CB340814-AA49-DB28-5702-8F629F137F06}.wem		\Containers\Ambiance\Cave\Cave\Drips\Cave Drip 4_L		3898
+	1057287034	Aura5_H-oktav_VocoderCarr_STEREO	.cache\3B\{3B5A0DDB-B8D8-4A1B-24CE-4157336477AD}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura5_H-oktav_VocoderCarr_STEREO		967721
+	1065228060	5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0	.cache\D4\{D41B87EA-F0F6-8FDA-4F1D-022439973C4C}.wem		\Containers\Music\5_6_EndGameMusicSwitchContainer\5_TomePossession_Playlist\5_TomePossession\5_TomePossession_AddDrums_Hi-hat_150BPM_7-4_L6M-P0		251561
+	1066397161	Aura3_C-oktav_VocoderCarr_MONO	.cache\8D\{8DDD65AB-6765-A6B4-60A3-D19AEB5A1EC3}.wem		\Containers\Music\4_1_TomeAura_MONO\Aura3_C-oktav_VocoderCarr_MONO		510130
+	1068155031	Aura5_H-oktav_SGGuit_STEREO	.cache\5F\{5F8802DD-0F09-D79F-FB2D-8BBA67F5C398}.wem		\Containers\Music\4_2_TomeAura_STEREO\Aura5_H-oktav_SGGuit_STEREO		902701
+
+Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	35171273	AK Convolution Reverb (Custom)	.cache\88\{8894A7D2-E663-6D30-B53D-01C7AE39B7DD}.wem	Wwise Convolution Reverb (Custom)	\Busses\Reverbs\Reverbs\StortRum1_Rev\[Effect Slot [0]: (AK Convolution Reverb)]\AK Convolution Reverb (Custom)		1526064
+	35864990	AK Convolution Reverb (Custom)	.cache\B3\{B340EECD-2B6A-E943-8E58-952C239CB553}.wem	Wwise Convolution Reverb (Custom)	\Busses\Reverbs\Reverbs\StortRum2_Rev\[Effect Slot [0]: (AK Convolution Reverb)]\AK Convolution Reverb (Custom)		1550384
+	109047318	ParkeringsKaelderRev_008_POS2_Klap6	.cache\1A\{1A53E1BB-BCB3-7BCC-4C91-8A16060803C9}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_008_POS2_Klap6		1263392
+	111080024	ParkeringsKaelderRev_005_POS2_Klap3	.cache\10\{1052F5D6-F59F-0082-BE31-B0E4F9E48B77}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_005_POS2_Klap3		2213840
+	123720562	ParkeringsKaelderRev_007_POS2_Klap5	.cache\8C\{8C19826A-6906-6078-726F-56BB80874668}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_007_POS2_Klap5		2451696
+	246152441	AK Convolution Reverb (Custom)	.cache\C9\{C92B75E5-3477-5D60-F8CF-4D8222CDCC2D}.wem	Wwise Convolution Reverb (Custom)	\Busses\Reverbs\Reverbs\LilleRum_Rev\[Effect Slot [0]: (AK Convolution Reverb)]\AK Convolution Reverb (Custom)		678336
+	269216117	ParkeringsKaelderRev_007_POS1_Klap5	.cache\C4\{C4387251-A949-8A04-102D-5D8CE697F8B8}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_007_POS1_Klap5		2159600
+	316841660	ParkeringsKaelderRev_001_POS2_Baelte1	.cache\2B\{2B7DD49A-7146-B77D-F16B-43B3822CFE1B}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_001_POS2_Baelte1		1303328
+	366673366	ParkeringsKaelderRev_008_POS1_Klap6	.cache\92\{92441EA3-FFF5-9F6D-D302-F23F9F378F9D}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_008_POS1_Klap6		1146656
+	413241516	ParkeringsKaelderRev_004_POS1_Klap2	.cache\11\{11127652-0FB4-BD9B-CC74-9B2EF36CA1AC}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_004_POS1_Klap2		1342576
+	413241517	ParkeringsKaelderRev_004_POS2_Klap2	.cache\BB\{BB433FFE-0F81-9629-4E5A-B16ED57A353F}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_004_POS2_Klap2		1646192
+	458685331	ParkeringsKaelderRev_005_POS1_Klap3	.cache\37\{37D13986-27DC-838D-8117-74FC3BDE2DB2}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_005_POS1_Klap3		1999040
+	482592376	ParkeringsKaelderRev_002_POS2_Baelte2	.cache\2C\{2C979EA4-D185-5979-910E-1090CD919E6C}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_002_POS2_Baelte2		1693520
+	519212060	ParkeringsKaelderRev_006_POS2_Klap4	.cache\6B\{6B8B52AF-6B32-50E8-2D8D-346133142F90}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_006_POS2_Klap4		1669520
+	554353145	AK Convolution Reverb (Custom)	.cache\48\{48685EF3-CEE8-1633-8AB3-A858B723BBB4}.wem	Wwise Convolution Reverb (Custom)	\Busses\Reverbs\Reverbs\MediumRum_Rev\[Effect Slot [0]: (AK Convolution Reverb)]\AK Convolution Reverb (Custom)		904160
+	630256157	ParkeringsKaelderRev_006_POS1_Klap4	.cache\62\{62B58406-1FA5-8A58-ED95-60D1FA794D3E}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_006_POS1_Klap4		1399696
+	632083201	ParkeringsKaelderRev_001_POS1_Baelte1	.cache\CA\{CA714710-CAB4-E28E-EBF6-056636A60D57}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_001_POS1_Baelte1		1188128
+	632083202	ParkeringsKaelderRev_002_POS1_Baelte2	.cache\3A\{3AAE1313-3353-2D3B-9471-80D5A378518A}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_002_POS1_Baelte2		1467216
+	1005069349	StKatharinen_Org_Stereo	.cache\F7\{F7F24EE6-0AD7-169F-35FE-601BCDCFC390}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Stereo\Cathedrals and Churches\StKatharinen_Org_Stereo	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 	706624
+	1037469219	ParkeringsKaelderRev_003_POS1_Klap1	.cache\9B\{9B6FFC54-846D-B14B-8E82-E613FE53292C}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_003_POS1_Klap1		267360
+	1037469220	ParkeringsKaelderRev_003_POS2_Klap1	.cache\0E\{0EC878DF-A24E-F7F2-4B20-E2EB1B53E3E6}.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ParkeringsKaelderReverb\ParkeringsKaelderRev_003_POS2_Klap1		292000
+

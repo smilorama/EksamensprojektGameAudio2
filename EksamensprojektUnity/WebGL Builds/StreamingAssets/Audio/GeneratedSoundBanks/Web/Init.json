@@ -1,0 +1,1096 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{029AE795-9314-9C0D-EF9B-174FA67902D6}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Media": [
+     {
+      "Id": "35171273",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "StortRum1_IR.wav",
+      "CachePath": "88/{8894A7D2-E663-6D30-B53D-01C7AE39B7DD}.wem"
+     },
+     {
+      "Id": "35864990",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "StortRum2_IR.wav",
+      "CachePath": "B3/{B340EECD-2B6A-E943-8E58-952C239CB553}.wem"
+     },
+     {
+      "Id": "109047318",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_008_POS2_Klap6.wav",
+      "CachePath": "1A/{1A53E1BB-BCB3-7BCC-4C91-8A16060803C9}.wem"
+     },
+     {
+      "Id": "111080024",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_005_POS2_Klap3.wav",
+      "CachePath": "10/{1052F5D6-F59F-0082-BE31-B0E4F9E48B77}.wem"
+     },
+     {
+      "Id": "123720562",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_007_POS2_Klap5.wav",
+      "CachePath": "8C/{8C19826A-6906-6078-726F-56BB80874668}.wem"
+     },
+     {
+      "Id": "246152441",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "LilleRum_IR.wav",
+      "CachePath": "C9/{C92B75E5-3477-5D60-F8CF-4D8222CDCC2D}.wem"
+     },
+     {
+      "Id": "269216117",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_007_POS1_Klap5.wav",
+      "CachePath": "C4/{C4387251-A949-8A04-102D-5D8CE697F8B8}.wem"
+     },
+     {
+      "Id": "316841660",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_001_POS2_Baelte1.wav",
+      "CachePath": "2B/{2B7DD49A-7146-B77D-F16B-43B3822CFE1B}.wem"
+     },
+     {
+      "Id": "366673366",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_008_POS1_Klap6.wav",
+      "CachePath": "92/{92441EA3-FFF5-9F6D-D302-F23F9F378F9D}.wem"
+     },
+     {
+      "Id": "413241516",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_004_POS1_Klap2.wav",
+      "CachePath": "11/{11127652-0FB4-BD9B-CC74-9B2EF36CA1AC}.wem"
+     },
+     {
+      "Id": "413241517",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_004_POS2_Klap2.wav",
+      "CachePath": "BB/{BB433FFE-0F81-9629-4E5A-B16ED57A353F}.wem"
+     },
+     {
+      "Id": "458685331",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_005_POS1_Klap3.wav",
+      "CachePath": "37/{37D13986-27DC-838D-8117-74FC3BDE2DB2}.wem"
+     },
+     {
+      "Id": "482592376",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_002_POS2_Baelte2.wav",
+      "CachePath": "2C/{2C979EA4-D185-5979-910E-1090CD919E6C}.wem"
+     },
+     {
+      "Id": "519212060",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_006_POS2_Klap4.wav",
+      "CachePath": "6B/{6B8B52AF-6B32-50E8-2D8D-346133142F90}.wem"
+     },
+     {
+      "Id": "554353145",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "MediumRum_IR.wav",
+      "CachePath": "48/{48685EF3-CEE8-1633-8AB3-A858B723BBB4}.wem"
+     },
+     {
+      "Id": "630256157",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_006_POS1_Klap4.wav",
+      "CachePath": "62/{62B58406-1FA5-8A58-ED95-60D1FA794D3E}.wem"
+     },
+     {
+      "Id": "632083201",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_001_POS1_Baelte1.wav",
+      "CachePath": "CA/{CA714710-CAB4-E28E-EBF6-056636A60D57}.wem"
+     },
+     {
+      "Id": "632083202",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_002_POS1_Baelte2.wav",
+      "CachePath": "3A/{3AAE1313-3353-2D3B-9471-80D5A378518A}.wem"
+     },
+     {
+      "Id": "1005069349",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "AK_Factory_IR\\Churches\\AK St-Katharinen.wav",
+      "CachePath": "F7/{F7F24EE6-0AD7-169F-35FE-601BCDCFC390}.wem"
+     },
+     {
+      "Id": "1037469219",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_003_POS1_Klap1.wav",
+      "CachePath": "9B/{9B6FFC54-846D-B14B-8E82-E613FE53292C}.wem"
+     },
+     {
+      "Id": "1037469220",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "Ambisonic_IR_Parkeringskaelder_Kolding_Soendre_Havnegade_CUT_003_POS2_Klap1.wav",
+      "CachePath": "0E/{0EC878DF-A24E-F7F2-4B20-E2EB1B53E3E6}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "491722242",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{80994C9F-1BB8-46BE-ADFD-9A31AA3ED7FD}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "585755507",
+       "Name": "AK Convolution Reverb (Custom)",
+       "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\StortRum2_Rev\\[Effect Slot [0]: (AK Convolution Reverb)]\\AK Convolution Reverb (Custom)",
+       "GUID": "{CA1D2B05-6EE9-49F4-8511-CC60E03F6F4E}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "35864990"
+        }
+       ]
+      },
+      {
+       "Id": "607542097",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Busses\\DX\\DX\\[Effect Slot [1]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{0E2797C2-B74C-42E0-8BC1-F6853743CA4D}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "608376853",
+       "Name": "AK Convolution Reverb (Custom)",
+       "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\MediumRum_Rev\\[Effect Slot [0]: (AK Convolution Reverb)]\\AK Convolution Reverb (Custom)",
+       "GUID": "{EA0027CD-6483-4BC7-8B0A-2B168AA83813}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "554353145"
+        }
+       ]
+      },
+      {
+       "Id": "828059804",
+       "Name": "AK Convolution Reverb (Custom)",
+       "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\LilleRum_Rev\\[Effect Slot [0]: (AK Convolution Reverb)]\\AK Convolution Reverb (Custom)",
+       "GUID": "{D8E5C015-5DD7-4B60-B00B-8DDA791FB8E5}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "246152441"
+        }
+       ]
+      },
+      {
+       "Id": "1002684216",
+       "Name": "AK Convolution Reverb (Custom)",
+       "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\StortRum1_Rev\\[Effect Slot [0]: (AK Convolution Reverb)]\\AK Convolution Reverb (Custom)",
+       "GUID": "{BBA44736-3891-4226-B00B-9285D263273D}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "35171273"
+        }
+       ]
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "594760645",
+       "Name": "ParkeringsKaelderRev_002_POS1_Baelte2",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_002_POS1_Baelte2",
+       "GUID": "{DC43F656-B593-4A24-8DC8-541B58649DA9}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "632083202"
+        }
+       ]
+      },
+      {
+       "Id": "687509270",
+       "Name": "ParkeringsKaelderRev_006_POS1_Klap4",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_006_POS1_Klap4",
+       "GUID": "{121B658F-0F8C-43E5-82E2-DE591C650097}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "630256157"
+        }
+       ]
+      },
+      {
+       "Id": "1762233992",
+       "Name": "ParkeringsKaelderRev_003_POS1_Klap1",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_003_POS1_Klap1",
+       "GUID": "{E9E1ED73-746D-4B46-BFE3-31F0D4D5451E}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "1037469219"
+        }
+       ]
+      },
+      {
+       "Id": "1801446618",
+       "Name": "ParkeringsKaelderRev_008_POS1_Klap6",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_008_POS1_Klap6",
+       "GUID": "{E451331B-824F-46CD-A4C8-B424A574100F}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "366673366"
+        }
+       ]
+      },
+      {
+       "Id": "2061749240",
+       "Name": "ParkeringsKaelderRev_007_POS1_Klap5",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_007_POS1_Klap5",
+       "GUID": "{147D2327-6036-4322-BBF1-89CF834419F1}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "269216117"
+        }
+       ]
+      },
+      {
+       "Id": "2150368138",
+       "Name": "ParkeringsKaelderRev_004_POS1_Klap2",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_004_POS1_Klap2",
+       "GUID": "{0524C14E-7C90-4FC0-8FA1-0724664069D4}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "413241516"
+        }
+       ]
+      },
+      {
+       "Id": "2473324471",
+       "Name": "ParkeringsKaelderRev_001_POS1_Baelte1",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_001_POS1_Baelte1",
+       "GUID": "{7DC28D83-50E2-4861-AC70-332BA027B678}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "632083201"
+        }
+       ]
+      },
+      {
+       "Id": "2805769450",
+       "Name": "Special_Effect_1",
+       "ObjectPath": "\\Effects\\Factory Effects\\Flanger\\Special_Effect_1",
+       "GUID": "{83317D8A-9D4C-438E-BE8C-BC7D27CAD1B0}",
+       "LibName": "Wwise Flanger",
+       "LibId": "8192003"
+      },
+      {
+       "Id": "2818560370",
+       "Name": "Music_Ducking",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Music_Ducking",
+       "GUID": "{D2D0EEA7-13ED-4147-B745-4FFB6787DB0C}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
+       "Id": "2897104085",
+       "Name": "ParkeringsKaelderRev_004_POS2_Klap2",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_004_POS2_Klap2",
+       "GUID": "{FBDB7643-14B2-406F-8A24-4795EBC0F0A1}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "413241517"
+        }
+       ]
+      },
+      {
+       "Id": "2956205901",
+       "Name": "StKatharinen_Org_Stereo",
+       "ObjectPath": "\\Effects\\Factory AK Convolution Reverb Effects Stereo\\Cathedrals and Churches\\StKatharinen_Org_Stereo",
+       "GUID": "{9C3A1E3A-5E83-45E6-BF99-418C5ACCE6FE}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "1005069349"
+        }
+       ]
+      },
+      {
+       "Id": "3118747631",
+       "Name": "ParkeringsKaelderRev_003_POS2_Klap1",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_003_POS2_Klap1",
+       "GUID": "{F37AA737-9386-4F56-BC7A-B0676BFB24DD}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "1037469220"
+        }
+       ]
+      },
+      {
+       "Id": "3272923513",
+       "Name": "ParkeringsKaelderRev_006_POS2_Klap4",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_006_POS2_Klap4",
+       "GUID": "{B0F75007-F0C4-463C-9C0D-3B428C44A55B}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "519212060"
+        }
+       ]
+      },
+      {
+       "Id": "3355026671",
+       "Name": "ParkeringsKaelderRev_005_POS2_Klap3",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_005_POS2_Klap3",
+       "GUID": "{B30752CC-C769-4AF5-B5D6-5ECD613C3ABE}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "111080024"
+        }
+       ]
+      },
+      {
+       "Id": "3771302295",
+       "Name": "ParkeringsKaelderRev_007_POS2_Klap5",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_007_POS2_Klap5",
+       "GUID": "{4DBBD2C0-24DE-4E60-915F-8C095F14E7D8}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "123720562"
+        }
+       ]
+      },
+      {
+       "Id": "3824753181",
+       "Name": "ParkeringsKaelderRev_008_POS2_Klap6",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_008_POS2_Klap6",
+       "GUID": "{6DE92323-B6E3-4B88-8EC3-6F73B1A1B22A}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "109047318"
+        }
+       ]
+      },
+      {
+       "Id": "3975957288",
+       "Name": "ParkeringsKaelderRev_005_POS1_Klap3",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_005_POS1_Klap3",
+       "GUID": "{82AFE6A9-2514-4A00-800D-9647162F1C09}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "458685331"
+        }
+       ]
+      },
+      {
+       "Id": "4042358952",
+       "Name": "ParkeringsKaelderRev_001_POS2_Baelte1",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_001_POS2_Baelte1",
+       "GUID": "{914E1DB5-6759-4C8B-841C-EBD100DBCD17}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "316841660"
+        }
+       ]
+      },
+      {
+       "Id": "4068993418",
+       "Name": "ParkeringsKaelderRev_002_POS2_Baelte2",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ParkeringsKaelderReverb\\ParkeringsKaelderRev_002_POS2_Baelte2",
+       "GUID": "{7043005D-1530-4DF2-ADA8-8C9023C81B77}",
+       "Color": "5",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "482592376"
+        }
+       ]
+      }
+     ],
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Devices\\Default Work Unit\\No_Output",
+       "GUID": "{5C519F7D-69F7-4720-AA60-08AB5C789E90}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Devices\\Default Work Unit\\System",
+       "GUID": "{D364DB56-82EC-4887-BA7F-9B458EA45D87}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Busses\\SFX\\SFX",
+      "GUID": "{ACB0E46B-5CC7-47E3-BB9A-50AC6711F175}",
+      "Color": "19"
+     },
+     {
+      "Id": "1836525785",
+      "Name": "DX",
+      "ObjectPath": "\\Busses\\DX\\DX",
+      "GUID": "{3C72F64F-012E-480D-B31A-AFD505D461BD}",
+      "Color": "10",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "607542097"
+        }
+       ],
+       "ShareSets": [
+        {
+         "Id": "2818560370"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2246998526",
+      "Name": "Main Audio Bus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}",
+      "Color": "10",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "491722242"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2981377429",
+      "Name": "Ambiance",
+      "ObjectPath": "\\Busses\\Ambiance\\Ambiance",
+      "GUID": "{94393881-D3EF-46CA-BD63-981AE7619E17}",
+      "Color": "13"
+     },
+     {
+      "Id": "3127962312",
+      "Name": "Music Bus",
+      "ObjectPath": "\\Busses\\Music Busses Work Unit\\Music Bus",
+      "GUID": "{25A3E203-2A4D-4AB6-8D0D-CDEB29754592}",
+      "Color": "2"
+     },
+     {
+      "Id": "3545700988",
+      "Name": "Reverbs",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs",
+      "GUID": "{64881D0C-BF70-4920-95C0-238557E07380}",
+      "Color": "4"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "230976631",
+      "Name": "ParkeringRev_003_Klap1",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\ParkeringRev_003_Klap1",
+      "GUID": "{66BD27AD-84C4-4CC7-BAF0-61CD84B35513}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1762233992"
+        },
+        {
+         "Id": "3118747631"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "288340792",
+      "Name": "ParkeringRev_001_Baelte1",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\ParkeringRev_001_Baelte1",
+      "GUID": "{1C819525-A377-47E8-AA30-AE1F2AC1DC10}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2473324471"
+        },
+        {
+         "Id": "4042358952"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "903063735",
+      "Name": "ParkeringRev_005_Klap3",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\ParkeringRev_005_Klap3",
+      "GUID": "{3C82042B-92D3-49A6-A03B-126B8F970BFB}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3355026671"
+        },
+        {
+         "Id": "3975957288"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1020492676",
+      "Name": "ParkeringRev_002_Baelte2",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\ParkeringRev_002_Baelte2",
+      "GUID": "{A8EA3155-BB37-49B2-B903-A8A4503DFB59}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "594760645"
+        },
+        {
+         "Id": "4068993418"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2406464834",
+      "Name": "Reverb_basic",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\Reverb_basic",
+      "GUID": "{8FDA5C0C-3CD3-4556-A79A-93C11C7B243C}",
+      "Color": "4",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2956205901"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2665109655",
+      "Name": "ParkeringRev_006_Klap4",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\ParkeringRev_006_Klap4",
+      "GUID": "{BDD18640-C7BC-4765-B404-54C88AB0322B}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "687509270"
+        },
+        {
+         "Id": "3272923513"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2730326357",
+      "Name": "StortRum2_Rev",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\StortRum2_Rev",
+      "GUID": "{F1F42EDF-4281-44FF-AD07-C06FED455278}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "585755507"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2767839671",
+      "Name": "ParkeringRev_007_Klap5",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\ParkeringRev_007_Klap5",
+      "GUID": "{EB63EECC-E99E-4021-855B-5F7FE0DB6B52}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2061749240"
+        },
+        {
+         "Id": "3771302295"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2986432809",
+      "Name": "LilleRum_Rev",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\LilleRum_Rev",
+      "GUID": "{23A00AD6-AA0A-47D5-BED5-FF50FF39D115}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "828059804"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3454183034",
+      "Name": "MediumRum_Rev",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\MediumRum_Rev",
+      "GUID": "{9297FD44-D123-4EE5-BEE4-AE4DE3E663EB}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "608376853"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3813691439",
+      "Name": "ParkeringRev_008_Klap6",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\ParkeringRev_008_Klap6",
+      "GUID": "{EB461F0B-7CF1-48EE-9C71-E50D24EBDD65}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1801446618"
+        },
+        {
+         "Id": "2805769450"
+        },
+        {
+         "Id": "3824753181"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3943616538",
+      "Name": "StortRum1_Rev",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\StortRum1_Rev",
+      "GUID": "{AFF70ED8-8A36-4FF9-BAE7-11B9C96B02AF}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "1002684216"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3950004767",
+      "Name": "ParkeringRev_004_Klap2",
+      "ObjectPath": "\\Busses\\Reverbs\\Reverbs\\ParkeringRev_004_Klap2",
+      "GUID": "{F434E6BB-BB9D-4559-9D3D-341BB01FD648}",
+      "Color": "4",
+      "MaxAttenuation": "50",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2150368138"
+        },
+        {
+         "Id": "2897104085"
+        }
+       ]
+      }
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "177830784",
+      "Name": "Water_Thick",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Water_Thick",
+      "GUID": "{FF26C163-77B8-4A9F-90CD-678ADDF8C06D}"
+     },
+     {
+      "Id": "317282339",
+      "Name": "Weather",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Weather",
+      "GUID": "{88C98731-99DB-47DC-B110-C3648039E322}"
+     },
+     {
+      "Id": "487752188",
+      "Name": "DistanceToCave",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\DistanceToCave",
+      "GUID": "{DF9C27AF-DE0C-42C5-ADBD-2F1204CCB931}"
+     },
+     {
+      "Id": "534515532",
+      "Name": "RTPC_Music_Ducking",
+      "ObjectPath": "\\Game Parameters\\Sidechain Parameters\\RTPC_Music_Ducking",
+      "GUID": "{E62BEB49-F50B-492C-B2B7-2C6EDBC0B055}"
+     },
+     {
+      "Id": "614263488",
+      "Name": "TomePossessionModulation",
+      "ObjectPath": "\\Game Parameters\\Music RTPC Work Unit\\TomePossessionModulation",
+      "GUID": "{A1F7AA47-3155-4100-912F-59C6D8F6CB1F}",
+      "Color": "2"
+     },
+     {
+      "Id": "828022604",
+      "Name": "TomePossessionTimeStretch",
+      "ObjectPath": "\\Game Parameters\\Music RTPC Work Unit\\TomePossessionTimeStretch",
+      "GUID": "{B85ACA72-B1AE-4AF3-9CC5-10C0C43C96DC}",
+      "Color": "2"
+     },
+     {
+      "Id": "1013602733",
+      "Name": "FightingCultist",
+      "ObjectPath": "\\Game Parameters\\Fighting Effects Work Unit\\FightingCultist",
+      "GUID": "{DD9F19E2-5152-4F50-AE0B-0F504515AA36}",
+      "Color": "9"
+     },
+     {
+      "Id": "1162280475",
+      "Name": "DistanceToFountain",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\DistanceToFountain",
+      "GUID": "{35D4ACCB-AFDF-4CBD-89C0-323AD84FA668}"
+     },
+     {
+      "Id": "1507362382",
+      "Name": "RotateFloor",
+      "ObjectPath": "\\Game Parameters\\PsychedelicRTPCs Work Unit\\RotateFloor",
+      "GUID": "{2C7990AF-4611-4CD2-9975-C6A58C8E6E66}",
+      "Color": "13"
+     },
+     {
+      "Id": "2126296630",
+      "Name": "PlayerHealthPara",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerHealthPara",
+      "GUID": "{C1DB2D7A-E3DB-4D35-B1B1-9455C00293DB}"
+     },
+     {
+      "Id": "2206156252",
+      "Name": "ScaleCaveTunnel",
+      "ObjectPath": "\\Game Parameters\\PsychedelicRTPCs Work Unit\\ScaleCaveTunnel",
+      "GUID": "{779ABA6F-23A4-44D8-9177-88BCBBB35366}",
+      "Color": "13"
+     },
+     {
+      "Id": "2551938112",
+      "Name": "Scaling_Parameter",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Scaling_Parameter",
+      "GUID": "{D89BCF8E-A3E9-46DD-9A8A-C6EA9215AD91}"
+     },
+     {
+      "Id": "2901989227",
+      "Name": "ScaleMushroom",
+      "ObjectPath": "\\Game Parameters\\PsychedelicRTPCs Work Unit\\ScaleMushroom",
+      "GUID": "{AE3DF993-E330-4DD7-AC5F-0B4AE08524B9}",
+      "Color": "13"
+     },
+     {
+      "Id": "3059304411",
+      "Name": "TomePossessionDelay",
+      "ObjectPath": "\\Game Parameters\\Music RTPC Work Unit\\TomePossessionDelay",
+      "GUID": "{620E7D4E-C2F7-4C50-9998-E38FA15AEE55}",
+      "Color": "2"
+     },
+     {
+      "Id": "4002574858",
+      "Name": "FightingWizard",
+      "ObjectPath": "\\Game Parameters\\Fighting Effects Work Unit\\FightingWizard",
+      "GUID": "{635AE9F3-297D-4E93-AD26-C8CC16A1BB01}",
+      "Color": "9"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "538938061",
+      "Name": "EndGameMusicStates",
+      "ObjectPath": "\\States\\Music States Work Unit\\EndGameMusicStates",
+      "GUID": "{B3284E6F-AEDA-40BB-A4F5-DBDF1D05C762}",
+      "Color": "2",
+      "States": [
+       {
+        "Id": "376991726",
+        "Name": "HappyEndning",
+        "ObjectPath": "\\States\\Music States Work Unit\\EndGameMusicStates\\HappyEndning",
+        "GUID": "{D7173921-D059-4AEC-B285-CE3BF3E4919B}",
+        "Color": "2"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Music States Work Unit\\EndGameMusicStates\\None",
+        "GUID": "{CB9631CB-F45D-489F-BE52-A7E8831B39EB}",
+        "Color": "2"
+       },
+       {
+        "Id": "1212775290",
+        "Name": "TomePossession",
+        "ObjectPath": "\\States\\Music States Work Unit\\EndGameMusicStates\\TomePossession",
+        "GUID": "{0A586B35-3899-4E53-8B4B-48F4063AAB75}",
+        "Color": "2"
+       },
+       {
+        "Id": "1656947812",
+        "Name": "PlayerDeath",
+        "ObjectPath": "\\States\\Music States Work Unit\\EndGameMusicStates\\PlayerDeath",
+        "GUID": "{CE6448C1-9586-459E-A119-F0C2F6E7CCE3}",
+        "Color": "2"
+       },
+       {
+        "Id": "1776398501",
+        "Name": "TomeOutside",
+        "ObjectPath": "\\States\\Music States Work Unit\\EndGameMusicStates\\TomeOutside",
+        "GUID": "{BC014D77-778E-486D-BAED-F1D171D30707}",
+        "Color": "2"
+       },
+       {
+        "Id": "2158032164",
+        "Name": "TomePickup",
+        "ObjectPath": "\\States\\Music States Work Unit\\EndGameMusicStates\\TomePickup",
+        "GUID": "{4CE39B41-627B-4B11-B947-197F691ECCB2}",
+        "Color": "2"
+       },
+       {
+        "Id": "4064190716",
+        "Name": "TomeFire",
+        "ObjectPath": "\\States\\Music States Work Unit\\EndGameMusicStates\\TomeFire",
+        "GUID": "{FF631251-CDDC-4E5C-BCC8-D0C4F12DB5BD}",
+        "Color": "2"
+       },
+       {
+        "Id": "4085709289",
+        "Name": "TomeChoice",
+        "ObjectPath": "\\States\\Music States Work Unit\\EndGameMusicStates\\TomeChoice",
+        "GUID": "{634C17EF-91D5-4CD4-B5AA-40275398D1E6}",
+        "Color": "2"
+       }
+      ]
+     },
+     {
+      "Id": "831006884",
+      "Name": "BeginningMusicRoomStates",
+      "ObjectPath": "\\States\\Music States Work Unit\\BeginningMusicRoomStates",
+      "GUID": "{865D8293-A9DA-4438-8BD2-46EE721BC036}",
+      "Color": "2",
+      "States": [
+       {
+        "Id": "87758831",
+        "Name": "GrotteBeginning",
+        "ObjectPath": "\\States\\Music States Work Unit\\BeginningMusicRoomStates\\GrotteBeginning",
+        "GUID": "{C9D8A735-F710-45D8-ACD8-F5346D7253C5}",
+        "Color": "2"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Music States Work Unit\\BeginningMusicRoomStates\\None",
+        "GUID": "{5D6C8137-E92D-4BA1-BDD8-C0AFEE537DBC}",
+        "Color": "2"
+       },
+       {
+        "Id": "4167468798",
+        "Name": "DungeonBeginning",
+        "ObjectPath": "\\States\\Music States Work Unit\\BeginningMusicRoomStates\\DungeonBeginning",
+        "GUID": "{A1DD3F3C-5578-48BF-92E1-3DE026EC20E0}",
+        "Color": "2"
+       }
+      ]
+     },
+     {
+      "Id": "3042705799",
+      "Name": "TomeAuraStates",
+      "ObjectPath": "\\States\\Music States Work Unit\\TomeAuraStates",
+      "GUID": "{2D2B7D6A-E6F6-4BC5-BF5E-168881C4C683}",
+      "Color": "2",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Music States Work Unit\\TomeAuraStates\\None",
+        "GUID": "{CC3F7E07-D1F4-4C50-93BC-0732C39AB196}",
+        "Color": "2"
+       },
+       {
+        "Id": "1167319226",
+        "Name": "TomeSpiritualRoom",
+        "ObjectPath": "\\States\\Music States Work Unit\\TomeAuraStates\\TomeSpiritualRoom",
+        "GUID": "{93BAEDA8-D275-44BD-9905-F2A401EDBD37}",
+        "Color": "2"
+       },
+       {
+        "Id": "1866109078",
+        "Name": "TomeForeshadowing",
+        "ObjectPath": "\\States\\Music States Work Unit\\TomeAuraStates\\TomeForeshadowing",
+        "GUID": "{747C5B82-A3F5-4B26-BD31-052EBB9B1F61}",
+        "Color": "2"
+       },
+       {
+        "Id": "2158032164",
+        "Name": "TomePickup",
+        "ObjectPath": "\\States\\Music States Work Unit\\TomeAuraStates\\TomePickup",
+        "GUID": "{3C482E40-CB9D-42C8-8EDF-0BE804332F7F}",
+        "Color": "2"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "4050929301",
+      "Name": "Materials",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Materials",
+      "GUID": "{0DAB6914-6D47-450C-9BA0-1482A41A4A1D}",
+      "Switches": [
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Stone",
+        "GUID": "{0DA7F6CF-E32D-410A-B986-195A12189456}"
+       },
+       {
+        "Id": "2195636714",
+        "Name": "Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Dirt",
+        "GUID": "{4F6EB3E3-9B89-4634-BFB2-465AF249AB28}"
+       },
+       {
+        "Id": "2637588553",
+        "Name": "Tile",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Tile",
+        "GUID": "{E8149D30-1FA3-4149-9D41-710150DC386C}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Water",
+        "GUID": "{7BA9EC96-D7B9-4838-B425-F1454DDD5181}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Grass",
+        "GUID": "{CD180C9A-4665-4114-8E4D-FE8E427A5B8A}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A5611801-0171-7E5B-AE2E-4AEC0065D931}"
+ }
+}
